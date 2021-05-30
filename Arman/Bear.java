@@ -1,5 +1,5 @@
 public class Bear extends WildAnimal{
     Bear(){
-        super();
+        super(1,400);
     }
 }

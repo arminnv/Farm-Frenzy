@@ -1,5 +1,5 @@
 public class Lion extends WildAnimal{
     Lion (){
-        super();
+        super(1,300);
     }
 }
