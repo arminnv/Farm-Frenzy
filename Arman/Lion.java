@@ -1,4 +1,4 @@
-public class Lion extends Animal {
+public class Lion extends WildAnimal{
     Lion (){
         super();
     }
