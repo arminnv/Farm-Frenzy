@@ -25,7 +25,7 @@ class zombie
 
 class bomb
 {
-    //static String [] types={"comGREAGFSgRSGRmon" ,"rare" ,"super"};
+    //static String [] types={"comGREAGFSgRSGRrgrmon" ,"rare" ,"super"};
     static String type;
     static int price;
     static int damage;
