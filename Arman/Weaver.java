@@ -3,5 +3,6 @@ public class Weaver extends Factory{
         productionDuration=5;
         buildingCost=250;
         validType=Feather.class;
+        outputType=Cloth.class;
     }
 }

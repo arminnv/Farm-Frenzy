@@ -3,5 +3,6 @@ public class IceCreamFactory extends Factory{
         productionDuration=7;
         buildingCost=550;
         validType=PackagedMilk.class;
+        outputType=Icecream.class;
     }
 }

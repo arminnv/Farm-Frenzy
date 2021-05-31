@@ -12,6 +12,9 @@ public class InputProcessor {
     public static String plant="(?i) plant \\d+ \\d+";
     public static String work="(?i) work \\w+";
     public static String cage="(?i) cage \\d+ \\d+";
-    public static String turn="(?i)  trun \\d+";
+    public static String turn="(?i)  turn \\d+";
     public static String truckLoad="(?i) truck load \\w+";
+    public static String truckUnLoad="(?i) truck unload \\w+";
+    public static String truckGo="(?i) truck go";
+
 }
