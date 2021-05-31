@@ -1,5 +1,8 @@
 public class Animal {
+
+    String type;
     int x;
     int y;
-    String type;
+    int step;
+    int Price;
 }
