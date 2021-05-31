@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String args[])
     {
-        System.out.println(11);
+        Scanner sc = new Scanner(System.in);
+
+        Plant.plant(sc.nextInt(), sc.nextInt());
+        //Plant.plant(sc.nextInt(), sc.nextInt());
+        Output.show();
     }
 }

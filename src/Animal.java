@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
 
     String type;
     int x;

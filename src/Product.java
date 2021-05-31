@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Product {
+public abstract class Product {
 
     static ArrayList<Product> list = new ArrayList<>();
 

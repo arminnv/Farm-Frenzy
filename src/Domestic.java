@@ -10,7 +10,7 @@ public class Domestic extends Animal{
     String productType;
     int health = 100;
     int productionTime;
-    int lifeShortage;
+    int lifeReduction = 10;
     boolean hungry = false;
 
     Domestic()
