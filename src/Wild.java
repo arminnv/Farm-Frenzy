@@ -7,11 +7,9 @@ public class Wild extends Animal{
     int cages;
     int leftCages;
 
-    Wild()
-    {}
-
     Wild(String name)
     {
+        name = name.toLowerCase();
         if(name.equals("lion"))
         {
             type = "Lion";

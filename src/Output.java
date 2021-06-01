@@ -2,10 +2,11 @@ public class Output {
 
     static void show()
     {
-        System.out.println(Time.time);
+        System.out.println("time : " + Time.time);
         showLand();
         showAnimals();
         showProducts();
+        showTasks();
     }
 
     static void showLand()
@@ -48,7 +49,7 @@ public class Output {
         }
     }
 
-    static  void showProducts()
+    static void showProducts()
     {
         for (int i=0; i<Product.list.size(); i++)
         {
@@ -56,6 +57,15 @@ public class Output {
             if(product.collected)
                 continue;
             System.out.println(product.type + " " + product.x + " " + product.y);
+        }
+    }
+
+    static void showTasks()
+    {
+        for (int i=0; i<Task.list.size(); i++)
+        {
+            Task task = Task.list.get(i);
+            System.out.println(task.name + ": " + task.claimed + "/" + task.goal);
         }
     }
 

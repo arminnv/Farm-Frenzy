@@ -18,9 +18,6 @@ public class Domestic extends Animal{
     int lifeReduction = 10;
     boolean hungry = false;
 
-    Domestic()
-    {}
-
     Domestic(String name)
     {
         if(name.equals("chicken"))
