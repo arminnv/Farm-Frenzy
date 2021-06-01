@@ -10,6 +10,42 @@ public class Wild extends Animal{
     Wild()
     {}
 
+    Wild(String name)
+    {
+        if(name.equals("lion"))
+        {
+            type = "Lion";
+            price = 300;
+            step = 1;
+            cages = 3;
+            leftCages = 3;
+            x = random();
+            y = random();
+        }
+
+        else if(name.equals("bear"))
+        {
+            type = "Bear";
+            price = 400;
+            step = 1;
+            cages = 4;
+            leftCages = 4;
+            x = random();
+            y = random();
+        }
+
+        else if(name.equals("tiger"))
+        {
+            type = "Tiger";
+            price = 500;
+            step = 2;
+            cages = 4;
+            leftCages = 4;
+            x = random();
+            y = random();
+        }
+    }
+
 
     void walk()
     {}
