@@ -44,10 +44,75 @@ public class Wild extends Animal{
         }
     }
 
-
-    void walk()
-    {}
+    static void add(String name)
+    {
+        Wild.list.add(new Wild(name));
+    }
 
     void kill()
+    {
+        Wild.list.remove(this);
+    }
+
+    void walk()
+    {
+        int d = randomDirection();
+        for(int k=1; k<=step; k++)
+        {
+
+            if(d==0)
+                x++;
+            else if(d==1)
+                y++;
+            else if(d==2)
+                x--;
+            else if(d==3)
+                y--;
+
+            if(x>6)
+                x=6;
+            if(x<1)
+                x=1;
+            if(y>6)
+                y=6;
+            if(y<1)
+                y=1;
+
+            for(int j=0; j<Hound.list.size(); j++)
+            {
+                Hound hound = Hound.list.get(j);
+                if(hound.x == x && hound.y == y)
+                {
+                    hound.kill();
+                    kill();
+                    return;
+                }
+            }
+
+            for(int j=0; j<Domestic.list.size(); j++)
+            {
+                Domestic domestic = Domestic.list.get(j);
+                if(domestic.x == x && domestic.y == y)
+                {
+                    domestic.kill();
+                    break;
+                }
+            }
+
+            for(int j=0; j<Cat.list.size(); j++)
+            {
+                Cat cat = Cat.list.get(j);
+                if(cat.x == x && cat.y == y)
+                {
+                    cat.kill();
+                    break;
+                }
+            }
+
+
+        }
+    }
+
+    void die()
     {}
 }

@@ -15,6 +15,7 @@ public class Domestic extends Animal{
     String productType;
     int health = 100;
     int productionTime;
+    int timePassed = 0;
     int lifeReduction = 10;
     boolean hungry = false;
 
@@ -87,16 +88,81 @@ public class Domestic extends Animal{
 
 
     void eat()
-    {}
+    {
+        if(health>50)
+            return;
+        if(Plant.num[x-1][y-1]>0)
+        {
+            Plant.num[x-1][y-1]--;
+            health = 100;
+        }
+    }
 
     void produce()
-    {}
+    {
+        timePassed++;
+        if(timePassed >= productionTime)
+        {
+            timePassed = 0;
+            Product newProduct = new Product(productType);
+            newProduct.x = x;
+            newProduct.y = y;
+            Product.list.add(newProduct);
+        }
+    }
+
+    void kill()
+    {
+        Domestic.list.remove(this);
+    }
 
     void walk()
-    {}
+    {
+        int d = randomDirection();
+        if(d==0)
+            x += step;
+        else if(d==1)
+            y += step;
+        else if(d==2)
+            x -= step;
+        else if(d==3)
+            y -= step;
 
-    void die()
-    {}
+        if(x>6)
+            x=6;
+        if(x<1)
+            x=1;
+        if(y>6)
+            y=6;
+        if(y<1)
+            y=1;
+    }
+
+    static void reduce()
+    {
+        for(int i=0; i<Domestic.list.size(); i++)
+        {
+            Domestic.list.get(i).health -= Domestic.list.get(i).lifeReduction;
+        }
+
+        boolean b = true;
+        while(b)
+        {
+        b = false;
+
+        for(int i=0; i<Domestic.list.size(); i++)
+        {
+            if(Domestic.list.get(i).health<=0)
+            {
+                Domestic.list.remove(i);
+                b = true;
+                break;
+            }
+        }
+        }
+    }
+
+
 
 
 

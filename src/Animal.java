@@ -13,4 +13,10 @@ public abstract class Animal {
         Random rand = new Random();
         return rand.nextInt(6) + 1;
     }
+
+    static int randomDirection()
+    {
+        Random rand = new Random();
+        return rand.nextInt(4);
+    }
 }

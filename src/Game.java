@@ -1,4 +1,4 @@
 public class Game {
 
-    static int coins = 400;
+    static int coins = 4000;
 }

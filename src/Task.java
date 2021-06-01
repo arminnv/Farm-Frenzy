@@ -7,4 +7,15 @@ public class Task {
     String name;
     int claimed = 0;
     int goal;
+
+    Task(String Name, int Goal)
+    {
+        name = Name;
+        goal = Goal;
+    }
+
+    static void add(String name, int goal)
+    {
+        Task.list.add(new Task(name, goal));
+    }
 }

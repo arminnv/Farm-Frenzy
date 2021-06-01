@@ -7,6 +7,7 @@ public class Output {
         showAnimals();
         showProducts();
         showTasks();
+        System.out.println("--------------------------------------");
     }
 
     static void showLand()
