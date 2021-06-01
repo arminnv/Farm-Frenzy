@@ -35,10 +35,16 @@ public class Output {
             System.out.println(wild.type + " " + wild.leftCages + " " + wild.x + " " + wild.y);
         }
 
-        for (int i=0; i<Domestic.list.size(); i++)
+        for (int i=0; i<Cat.list.size(); i++)
         {
-            Pet pet = Pet.list.get(i);
-            System.out.println(pet.type + " " + pet.x + " " + pet.y);
+            Cat cat = Cat.list.get(i);
+            System.out.println(cat.type + " " + cat.x + " " + cat.y);
+        }
+
+        for (int i=0; i<Hound.list.size(); i++)
+        {
+            Hound hound = Hound.list.get(i);
+            System.out.println(hound.type + " " + hound.x + " " + hound.y);
         }
     }
 
