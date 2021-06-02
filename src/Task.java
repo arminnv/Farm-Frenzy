@@ -14,8 +14,8 @@ public class Task {
         goal = Goal;
     }
 
-    static void add(String name, int goal)
+    static void add(Mission mission)
     {
-        Task.list.add(new Task(name, goal));
+        Task.list.addAll(mission.tasks);
     }
 }

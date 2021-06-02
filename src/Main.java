@@ -24,6 +24,7 @@ public class Main {
         Mission.list.add(mission1);
         Mission.save();
         Mission.load();
+        Task.add(mission1);
         System.out.println(Mission.list.get(0).coins);
 
         //Plant.plant(sc.nextInt(), sc.nextInt());
