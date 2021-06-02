@@ -17,6 +17,7 @@ public class Time {
         eat();
         Product.expire();
         produce();
+        collect();
         removeCage();
     }
 
@@ -70,6 +71,14 @@ public class Time {
             Wild wild = Wild.list.get(i);
             if(wild.leftCages < wild.cages)
                 wild.leftCages++;
+        }
+    }
+
+    static void collect()
+    {
+        for(int i=0; i<Cat.list.size(); i++)
+        {
+            Cat.list.get(i).collect();
         }
     }
 

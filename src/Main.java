@@ -27,15 +27,26 @@ public class Main {
         Task.add(mission1);
         System.out.println(Mission.list.get(0).coins);
 
-        //Plant.plant(sc.nextInt(), sc.nextInt());
-        //Plant.plant(sc.nextInt(), sc.nextInt());
+        Plant.plant(1, 3);
+        Plant.plant(4, 5);
+        Plant.plant(6, 2);
+        Plant.plant(6, 2);
+        Plant.plant(6, 2);
+        Plant.plant(6, 2);
+        Plant.plant(6, 2);
+        Plant.plant(1, 3);
+        Plant.plant(4, 5);
+        Plant.plant(1, 3);
+        Plant.plant(4, 5);
+        /*for(int j=0; j<6; j++)
         for(int i=0; i<6; i++)
-            Plant.num[i][1]= 4;
+            Plant.num[i][j]= 4;*/
         Domestic.buy("chiCkeN");
         Domestic.buy("BuFfalo");
         Cat.buy();
         Hound.buy();
         Wild.add("Tiger");
+        Wild.add("BeAR");
         Output.show();
         Time.turn(1);
         Output.show();
@@ -57,6 +68,18 @@ public class Main {
         Output.show();
         Time.turn(1);
         Output.show();
-        //System.out.println(Game.coins);
+
+        Product.pickup(sc.nextInt(), sc.nextInt());
+        int x= sc.nextInt();
+        int y = sc.nextInt();
+        Wild.cage(x, y);
+        Wild.cage(x, y);
+        //Wild.cage(x, y);
+        //Wild.cage(x, y);
+        //Wild.cage(x, y);
+        Output.show();
+        Time.turn(1);
+        Output.show();
+        //System.out.println(G4ame.coins);
     }
 }

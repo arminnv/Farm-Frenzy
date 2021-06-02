@@ -118,24 +118,43 @@ public class Domestic extends Animal{
 
     void walk()
     {
-        int d = randomDirection();
-        if(d==0)
-            x += step;
-        else if(d==1)
-            y += step;
-        else if(d==2)
-            x -= step;
-        else if(d==3)
-            y -= step;
+        int[] closest = {0,0};
+        find(closest);
+        if(health > 50 || closest[0] == 0)
+        {
+            int d = randomDirection();
+            if(d==0)
+                x += step;
+            else if(d==1)
+                y += step;
+            else if(d==2)
+                x -= step;
+            else if(d==3)
+                y -= step;
 
-        if(x>6)
-            x=6;
-        if(x<1)
-            x=1;
-        if(y>6)
-            y=6;
-        if(y<1)
-            y=1;
+            if(x>6)
+                x=6;
+            if(x<1)
+                x=1;
+            if(y>6)
+                y=6;
+            if(y<1)
+                y=1;
+        }
+        else
+        {
+            int x0 = closest[0];
+            int y0 = closest[1];
+            if(x0 > x)
+                x++;
+            else if(x0 < x)
+                x--;
+            else if(y0 > y)
+                y++;
+            else if(y0 < y)
+                y--;
+        }
+
     }
 
     static void reduce()
@@ -159,6 +178,26 @@ public class Domestic extends Animal{
                 break;
             }
         }
+        }
+    }
+
+    void find(int[] closest)
+    {
+        int min = 20;
+        for (int i=0; i<6; i++)
+        {
+            for(int j=0; j<6; j++)
+            {
+                if(Plant.num[i][j] > 0)
+                {
+                    if(Math.abs(i+1-x) + Math.abs(j+1-y) < min);
+                    {
+                        closest[0] = i+1;
+                        closest[1] = j+1;
+                        min = Math.abs(i+1-x) + Math.abs(j+1-y);
+                    }
+                }
+            }
         }
     }
 
