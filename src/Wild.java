@@ -113,6 +113,21 @@ public class Wild extends Animal{
         }
     }
 
-    void die()
-    {}
+    static void cage(int x, int y)
+    {
+        for (int i=0; i<Wild.list.size(); i++)
+        {
+            Wild wild = Wild.list.get(i);
+            if(wild.x == x && wild.y == y)
+            {
+                wild.leftCages--;
+                if(wild.leftCages<=0)
+                {
+                    Wild.list.remove(wild);
+                    Product.list.add(new Product(wild.type));
+                }
+                return;
+            }
+        }
+    }
 }

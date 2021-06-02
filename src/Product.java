@@ -85,6 +85,7 @@ public class Product {
             price = 300;
             expirationTime = 5;
             space = 15;
+            collected = true;
         }
         else if(name.equals("Bear"))
         {
@@ -92,6 +93,7 @@ public class Product {
             price = 400;
             expirationTime = 5;
             space = 15;
+            collected = true;
         }
         else if(name.equals("Tiger"))
         {
@@ -99,6 +101,7 @@ public class Product {
             price = 500;
             expirationTime = 5;
             space = 15;
+            collected = true;
         }
     }
 

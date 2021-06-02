@@ -17,6 +17,7 @@ public class Time {
         eat();
         Product.expire();
         produce();
+        removeCage();
     }
 
     static void walk()
@@ -59,6 +60,16 @@ public class Time {
         for (int i=0; i<Domestic.list.size(); i++)
         {
             Domestic.list.get(i).produce();
+        }
+    }
+
+    static void removeCage()
+    {
+        for(int i=0; i<Wild.list.size(); i++)
+        {
+            Wild wild = Wild.list.get(i);
+            if(wild.leftCages < wild.cages)
+                wild.leftCages++;
         }
     }
 
