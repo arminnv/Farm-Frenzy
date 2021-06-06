@@ -50,7 +50,6 @@ public class Menu {
                 int level = sc.nextInt();
                 if(user.unlockedLevels >= level)
                 {
-                    Task.add(Mission.list.get(level-1));
                     Game.run(Mission.list.get(level-1));
                 }
                 else
