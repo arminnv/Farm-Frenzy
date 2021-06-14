@@ -5,7 +5,7 @@ public class Main {
         Logger.delete();
         User.load();
         Mission.load();
-        User.current = Menu.enter();
+        //User.current = Menu.enter();
         Game.run(Mission.list.get(0));
     }
 }

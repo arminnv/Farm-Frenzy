@@ -95,7 +95,7 @@ public class Mission {
         tasks.add(new Task("Egg", 6));
         HashMap<Integer, String> wilds = new HashMap<>();
         wilds.put(2, "Tiger");
-        wilds.put(4, "Bear");
+        wilds.put(1, "Bear");
         int maxTime = 500;
         HashMap<Integer, Integer> bonus = new HashMap<>();
 

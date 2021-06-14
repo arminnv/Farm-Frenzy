@@ -3,9 +3,11 @@ import java.util.Scanner;
 public class Game {
 
     static int coins = 4000;
+    static Mission mission;
 
     static void run(Mission mission)
     {
+        Game.mission = mission;
         Task.add(mission);
         Scanner sc = new Scanner(System.in);
 
@@ -27,8 +29,8 @@ public class Game {
             Domestic.buy("BuFfalo");
             Cat.buy();
             Hound.buy();
-            Wild.add("Tiger");
-            Wild.add("BeAR");
+            //Wild.add("Tiger");
+            //Wild.add("BeAR");
             Output.show();
             Time.turn(1);
             Output.show();

@@ -11,6 +11,7 @@ public class Time {
 
     static void update()
     {
+        appear();
         eat();
         Domestic.reduce();
         walk();
@@ -80,6 +81,14 @@ public class Time {
         for(int i=0; i<Cat.list.size(); i++)
         {
             Cat.list.get(i).collect();
+        }
+    }
+
+    static void appear()
+    {
+        if(Game.mission.wilds.get(time) != null)
+        {
+            Wild.add(Game.mission.wilds.get(time));
         }
     }
 
