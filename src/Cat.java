@@ -21,7 +21,7 @@ public class Cat extends Animal{
             Game.coins -= newCat.price;
             Cat.list.add(newCat);
             Task.claim("Cat");
-            Logger.write('e', "cat has been bought");
+            Logger.write('i', "cat has been bought");
         }
         else
         {
