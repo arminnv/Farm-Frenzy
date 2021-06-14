@@ -20,14 +20,20 @@ public class Cat extends Animal{
         {
             Game.coins -= newCat.price;
             Cat.list.add(newCat);
+            Task.claim("Cat");
+            Logger.write('e', "cat has been bought");
         }
         else
+        {
             System.out.println("not enough coins");
+            Logger.write('e', "not enough coins");
+        }
     }
 
     void kill()
     {
         Cat.list.remove(this);
+        Logger.write('i',"cat got killed");
     }
 
     void walk()
@@ -77,6 +83,8 @@ public class Cat extends Animal{
                 if(product.x == x && product.y == y)
                 {
                     product.collected = true;
+                    Task.claim(product.type);
+                    Logger.write('i',"cat collected "+product.type);
                 }
             }
         }

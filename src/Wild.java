@@ -52,6 +52,7 @@ public class Wild extends Animal{
     void kill()
     {
         Wild.list.remove(this);
+        Logger.write('i',type+" got killed");
     }
 
     void walk()
@@ -123,6 +124,8 @@ public class Wild extends Animal{
                 wild.leftCages--;
                 if(wild.leftCages<=0)
                 {
+                    Logger.write('i',Wild.list.get(i).type+" got caged");
+                    Task.claim(wild.type);
                     Wild.list.remove(wild);
                     Product.list.add(new Product(wild.type));
                 }

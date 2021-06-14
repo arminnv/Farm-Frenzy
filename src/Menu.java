@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-    static void enter()
+    static User enter()
     {
         Scanner sc = new Scanner(System.in);
         while(true)
@@ -20,7 +20,7 @@ public class Menu {
                 if(user != null)
                 {
                     main(user);
-                    break;
+                    return user;
                 }
             }
             else if(st.equals("signup"))
@@ -31,7 +31,7 @@ public class Menu {
                 if(user != null)
                 {
                     main(user);
-                    break;
+                    return user;
                 }
             }
         }

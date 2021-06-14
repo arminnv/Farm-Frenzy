@@ -110,8 +110,15 @@ public class Product {
         for(int i=0; i<Product.list.size(); i++)
         {
             if(Product.list.get(i).x == x && Product.list.get(i).y == y)
+            {
                 Product.list.get(i).collected = true;
+                Task.claim(Product.list.get(i).type);
+                Logger.write('i', Product.list.get(i).type+" got picked up");
+                return;
+            }
         }
+        System.out.println("product not found");
+        Logger.write('e',"product not found");
     }
 
     static void expire()
@@ -131,6 +138,7 @@ public class Product {
             {
                 if(Product.list.get(i).expirationTime<=0)
                 {
+                    Logger.write('i',Product.list.get(i).type+" got expired");
                     Product.list.remove(i);
                     b = true;
                     break;

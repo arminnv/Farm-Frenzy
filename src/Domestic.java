@@ -74,6 +74,7 @@ public class Domestic extends Animal{
         if(newDomestic.type.equals(""))
         {
             System.out.println("animal type not found");
+            Logger.write('e',"animal type not found");
             return;
         }
 
@@ -81,9 +82,14 @@ public class Domestic extends Animal{
         {
             Game.coins -= newDomestic.price;
             Domestic.list.add(newDomestic);
+            Task.claim(newDomestic.type);
+            Logger.write('i',"animal has been bought");
         }
         else
+        {
             System.out.println("not enough coins");
+            Logger.write('e',"not enough coins");
+        }
     }
 
 
@@ -95,6 +101,7 @@ public class Domestic extends Animal{
         {
             Plant.num[x-1][y-1]--;
             health = 100;
+            Logger.write('i', type+ "ate");
         }
     }
 
@@ -108,12 +115,14 @@ public class Domestic extends Animal{
             newProduct.x = x;
             newProduct.y = y;
             Product.list.add(newProduct);
+            Logger.write('i',type + " produced a product");
         }
     }
 
     void kill()
     {
         Domestic.list.remove(this);
+        Logger.write('i', type + " died");
     }
 
     void walk()

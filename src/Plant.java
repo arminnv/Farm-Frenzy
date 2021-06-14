@@ -9,5 +9,6 @@ public class Plant {
     static void plant(int x, int y)
     {
         num[x-1][y-1]++;
+        Logger.write('i',"planted successfully");
     }
 }

@@ -9,6 +9,7 @@ public class User {
 
     static ArrayList<User> list = new ArrayList<>();
 
+    static User current;
     String userName;
     String password;
     int unlockedLevels = 1;
@@ -56,16 +57,19 @@ public class User {
                 if(User.list.get(i).password.equals(password))
                 {
                     System.out.println("login successful");
+                    Logger.write('i',"login successful");
                     return User.list.get(i);
                 }
                 else
                 {
                     System.out.println("wrong password");
+                    Logger.write('e',"wrong password");
                     return null;
                 }
             }
         }
         System.out.println("username not found");
+        Logger.write('e',"username not found");
         return null;
     }
 
@@ -77,6 +81,7 @@ public class User {
         else
         {
             System.out.println("username already exists");
+            Logger.write('e',"username already exists");
             return null;
         }
 
@@ -105,7 +110,10 @@ public class User {
         catch (IOException e)
         {
             System.out.println("error");
+            Logger.write('e',"error");
         }
+        System.out.println("signup successful");
+        Logger.write('i', "signup successful");
         return newUser;
     }
 }

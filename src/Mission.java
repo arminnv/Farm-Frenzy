@@ -47,13 +47,13 @@ public class Mission {
                 if(str.charAt(str.length()-1) == '*')
                 {
                     str = str.substring(0, str.length()-1);
+                    Gson gson = new Gson();
+                    Mission mission = gson.fromJson(str, Mission.class);
+                    Mission.list.add(mission);
                     break;
                 }
             }
             reader.close();
-            Gson gson = new Gson();
-            Mission mission = gson.fromJson(str, Mission.class);
-            Mission.list.add(mission);
         }
         catch (FileNotFoundException e)
         {
@@ -80,5 +80,28 @@ public class Mission {
         {
             System.out.println("error");
         }
+    }
+
+
+    static void write()
+    {
+        Mission.levels = 5;
+        int level = 1;
+        int coins = 4000;
+        ArrayList<Task> tasks = new ArrayList<>();
+        tasks.add(new Task("Coins", 60000));
+        tasks.add(new Task("Bread", 4));
+        tasks.add(new Task("Milk", 5));
+        tasks.add(new Task("Egg", 6));
+        HashMap<Integer, String> wilds = new HashMap<>();
+        wilds.put(2, "Tiger");
+        wilds.put(4, "Bear");
+        int maxTime = 500;
+        HashMap<Integer, Integer> bonus = new HashMap<>();
+
+        Mission mission1 = new Mission(level, coins, tasks, wilds, maxTime, bonus);
+        Mission.list.add(mission1);
+        Mission.save();
+        Mission.list.clear();
     }
 }

@@ -20,14 +20,20 @@ public class Hound extends Animal{
         {
             Game.coins -= newHound.price;
             Hound.list.add(newHound);
+            Task.claim("Hound");
+            Logger.write('i',"hound has been bought");
         }
         else
+        {
             System.out.println("not enough coins");
+            Logger.write('e',"not enough coins");
+        }
     }
 
     void kill()
     {
         Hound.list.remove(this);
+        Logger.write('i',"hound got killed");
     }
 
     void walk()
