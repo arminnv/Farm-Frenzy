@@ -115,7 +115,7 @@ public class Domestic extends Animal{
             newProduct.x = x;
             newProduct.y = y;
             Product.list.add(newProduct);
-            Logger.write('i',type + " produced a product");
+            Logger.write('i',type + " produced " + productType);
         }
     }
 
