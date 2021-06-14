@@ -83,7 +83,7 @@ public class Domestic extends Animal{
             Game.coins -= newDomestic.price;
             Domestic.list.add(newDomestic);
             Task.claim(newDomestic.type);
-            Logger.write('i',"animal has been bought");
+            Logger.write('i',newDomestic.type + " has been bought");
         }
         else
         {
@@ -101,7 +101,7 @@ public class Domestic extends Animal{
         {
             Plant.num[x-1][y-1]--;
             health = 100;
-            Logger.write('i', type+ "ate");
+            Logger.write('i', type+ " ate");
         }
     }
 
