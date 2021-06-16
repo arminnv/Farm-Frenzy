@@ -16,5 +16,7 @@ public class Main {
         System.out.println(type4);
         if (type1.equals(type3))
             System.out.println(1);
+        Factory m=new Mill();
+        m.produce(new Egg(),1);
     }
 }

@@ -1,8 +1,5 @@
 public class MilkPackagingFactory extends Factory{
     MilkPackagingFactory(){
-        buildingCost=400;
-        validType=Milk.class;
-        productionDuration=6;
-        outputType=PackagedMilk.class;
+        super(Milk.class,PackagedMilk.class,400,6);
     }
 }

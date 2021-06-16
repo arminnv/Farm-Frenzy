@@ -1,8 +1,5 @@
 public class Bakery extends Factory{
     Bakery(){
-        validType=Flour.class;
-        productionDuration=5;
-        buildingCost=250;
-        outputType=Bread.class;
+        super(Flour.class,Bread.class,250,5);
     }
 }

@@ -1,8 +1,5 @@
 public class Weaver extends Factory{
     Weaver(){
-        productionDuration=5;
-        buildingCost=250;
-        validType=Feather.class;
-        outputType=Cloth.class;
+        super(Feather.class,Cloth.class,250,5);
     }
 }

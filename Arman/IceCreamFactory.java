@@ -1,8 +1,5 @@
 public class IceCreamFactory extends Factory{
     IceCreamFactory(){
-        productionDuration=7;
-        buildingCost=550;
-        validType=PackagedMilk.class;
-        outputType=Icecream.class;
+        super(PackagedMilk.class,Icecream.class,550,7);
     }
 }
