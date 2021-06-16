@@ -1,5 +1,5 @@
 public class SewingFactory extends Factory{
     SewingFactory(){
-        super(Cloth.class,Shirt.class,400,6);
+        super("Sewing factory","Fabric","Shirt",400,6);
     }
 }

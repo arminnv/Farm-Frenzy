@@ -1,5 +1,5 @@
 public class Bakery extends Factory{
     Bakery(){
-        super(Flour.class,Bread.class,250,5);
+        super("Bakery","Flour","Bread",250,5);
     }
 }

@@ -1,4 +1,5 @@
 public class InputProcessor {
+
     public static String userName="(?i)username \\w+";
     public static String password="(?i) password \\w+";
     public static String login="(?i) log in";
@@ -14,7 +15,4 @@ public class InputProcessor {
     public static String cage="(?i) cage \\d+ \\d+";
     public static String turn="(?i)  turn \\d+";
     public static String truckLoad="(?i) truck load \\w+";
-    public static String truckUnLoad="(?i) truck unload \\w+";
-    public static String truckGo="(?i) truck go";
-
 }

@@ -1,5 +1,5 @@
 public class MilkPackagingFactory extends Factory{
     MilkPackagingFactory(){
-        super(Milk.class,PackagedMilk.class,400,6);
+        super("Milk packaging factory","Milk","Packet Milk",400,6);
     }
 }
