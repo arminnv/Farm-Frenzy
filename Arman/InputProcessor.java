@@ -15,4 +15,16 @@ public class InputProcessor {
     public static String cage="(?i) cage \\d+ \\d+";
     public static String turn="(?i)  turn \\d+";
     public static String truckLoad="(?i) truck load \\w+";
+    public static String truckUnLoad="(?i) truck unload \\w+";
+
+
+    public void TruckLoad(String item){
+
+    }
+    public void TruckUnload(String item){
+
+    }
+    public void TruckGo(){
+
+    }
 }

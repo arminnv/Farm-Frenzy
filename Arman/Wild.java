@@ -17,6 +17,7 @@ public class Wild extends Animal{
             type = "Lion";
             price = 300;
             step = 1;
+            space =15;
             cages = 3;
             leftCages = 3;
             x = random();
@@ -28,6 +29,7 @@ public class Wild extends Animal{
             type = "Bear";
             price = 400;
             step = 1;
+            space =15;
             cages = 4;
             leftCages = 4;
             x = random();
@@ -39,6 +41,7 @@ public class Wild extends Animal{
             type = "Tiger";
             price = 500;
             step = 2;
+            space =1;
             cages = 4;
             leftCages = 4;
             x = random();
@@ -63,15 +66,15 @@ public class Wild extends Animal{
         for(int k=1; k<=step; k++)
         {
 
-            if(d==0)
+            if((d==0)&&(x<6))
                 x++;
-            else if(d==1)
+            else if((d==1)&&(y<6))
                 y++;
-            else if(d==2)
+            else if((d==2)&&(x>0))
                 x--;
-            else if(d==3)
+            else if((d==3)&&(y>0))
                 y--;
-
+            /*
             if(x>6)
                 x=6;
             if(x<1)
@@ -80,7 +83,7 @@ public class Wild extends Animal{
                 y=6;
             if(y<1)
                 y=1;
-
+            */
             for(int j=0; j<Hound.list.size(); j++)
             {
                 Hound hound = Hound.list.get(j);

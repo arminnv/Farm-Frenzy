@@ -19,7 +19,7 @@ public class Domestic extends Animal{
     int lifeReduction = 10;
     boolean hungry = false;
 
-    Domestic(String name)
+    Domestic(String name, boolean addToMap)
     {
         if(name.equals("chicken"))
         {
@@ -28,8 +28,10 @@ public class Domestic extends Animal{
             productType = "Egg";
             price = 100;
             step = 1;
+            space = 1;
             x = random();
             y = random();
+            number=animalIntegerHashMap.get("Chicken");
         }
 
         else if(name.equals("turkey"))
@@ -39,8 +41,10 @@ public class Domestic extends Animal{
             productType = "Feather";
             price = 200;
             step = 1;
+            space = 1;
             x = random();
             y = random();
+            number=animalIntegerHashMap.get("Turkey");
         }
 
         else if(name.equals("buffalo"))
@@ -50,10 +54,13 @@ public class Domestic extends Animal{
             productType = "Milk";
             price = 400;
             step = 1;
+            space = 1;
             x = random();
             y = random();
+            number=animalIntegerHashMap.get("Buffalo");
         }
-        this.addToMap();
+        if (addToMap)
+            this.addToMap();
     }
 
     static void buy(String name)
@@ -71,7 +78,7 @@ public class Domestic extends Animal{
             return;
         }
 
-        Domestic newDomestic = new Domestic(name);
+        Domestic newDomestic = new Domestic(name,true);
         if(newDomestic.type.equals(""))
         {
             System.out.println("animal type not found");

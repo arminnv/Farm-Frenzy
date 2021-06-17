@@ -1,11 +1,12 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Product {
 
     static ArrayList<Product> list = new ArrayList<>();
 
     String type;
-    String previousType;
+    String previousType;//possibly be omitted
     int price;
     int expirationTime;
     int x;

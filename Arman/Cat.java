@@ -4,19 +4,24 @@ public class Cat extends Animal{
 
     static ArrayList<Cat> list = new ArrayList<>();
 
-    Cat()
+    Cat(boolean addToMap)
     {
         type = "Cat";
         price = 100;
         step = 1;
         x = random();
         y = random();
-        this.addToMap();
+        space=1;
+
+        if (addToMap) {
+            this.addToMap();
+            number = animalIntegerHashMap.get("Cat");
+        }
     }
 
     static void buy()
     {
-        Cat newCat = new Cat();
+        Cat newCat = new Cat(false);
         if(newCat.price <= Game.coins)
         {
             Game.coins -= newCat.price;

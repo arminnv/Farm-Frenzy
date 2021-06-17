@@ -22,7 +22,7 @@ public class Warehouse {
             occupied += product.space;
             for (Product product1 : products) {
                 if (product1.type.equals(product.type)) {
-                    productIntegerHashMap.put(product1.type, productIntegerHashMap.get(product1) + 1);
+                    productIntegerHashMap.put(product1.type, productIntegerHashMap.get(product1.type) + 1);
                     return true;
                 }
             }
@@ -34,7 +34,7 @@ public class Warehouse {
     }
     public boolean remove(Product product, int number){
         for (Product product1:products){
-            int num=productIntegerHashMap.get(product1);
+            int num=productIntegerHashMap.get(product1.type);
             if (product.type.equals(product1.type) && num>number){
                 productIntegerHashMap.put(product1.type,num-number);
                 return true;

@@ -84,7 +84,7 @@ public class User {
             Logger.write('e',"username already exists");
             return null;
         }
-
+        //omit start
         String st = "";
         try
         {
@@ -99,10 +99,10 @@ public class User {
         }
         catch (IOException e)
         {}
-
+        //omit end
         try
         {
-            FileWriter writer = new FileWriter("users.txt");
+            FileWriter writer = new FileWriter("users.txt");//new FileWriter("users.txt",true);
             String json = new Gson().toJson(newUser);
             writer.write(st + json + "*");
             writer.close();

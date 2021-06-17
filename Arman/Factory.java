@@ -41,7 +41,7 @@ public class Factory {
         }
         if (productionDuration==0){
             for(int i=0;i<underProduction;i++){
-
+                new Product(validType);
             }
         }
     }
