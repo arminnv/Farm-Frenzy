@@ -2,11 +2,10 @@ import java.util.HashMap;
 
 public class Truck {
     private static Truck t;
-    public static final int MAX_CAPACITY=10;
+    public static final int MAX_CAPACITY=15;
     int capacity;
     boolean loaded;
-    HashMap<Animal,Integer> animalIntegerHashMap=new HashMap<>();
-    HashMap<Product,Integer> productIntegerHashMap=new HashMap<>();
+    HashMap<String,Integer> IntegerHashMap=new HashMap<>();
     Truck(){
         capacity=0;
         loaded=false;
@@ -17,14 +16,28 @@ public class Truck {
         return t;
     }
     public void load(Product product){
-        if (Warehouse.getInstance())
+        HashMap<String,Integer> map=Warehouse.getInstance().productIntegerHashMap;
+        if (map.containsKey(product.type)){
+            if ( (map.get(product.type)>0)&&(capacity+product.space<=MAX_CAPACITY)) {
+                capacity+=product.space;
+                IntegerHashMap.put(product.type, map.get(product.type)+1);
+            }
+        }
     }
+    /*
     public void load(Animal animal){
-        if (Animal.animalIntegerHashMap.containsKey(animal.type))
+        HashMap<String,Integer> map=Animal.animalIntegerHashMap;
+        if (map.containsKey(animal.type)){
+            if ( (map.get(animal.type)>0)&&(capacity+animal.space<=MAX_CAPACITY)) {
+                capacity+=animal.space;
+                IntegerHashMap.put(animal.type, map.get(animal.type)+1);
+            }
+        }
     }
+     */
     public void unload(){
-        animalIntegerHashMap.clear();
-        productIntegerHashMap.clear();
+        IntegerHashMap.clear();
+        capacity=0;
     }
     public void confirm(){
 

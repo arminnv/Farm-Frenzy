@@ -6,7 +6,7 @@ public class Warehouse {
     int capacity;
     int occupied;
     ArrayList<Product> products=new ArrayList<>();
-    HashMap<Product,Integer> productIntegerHashMap=new HashMap<>();
+    HashMap<String,Integer> productIntegerHashMap=new HashMap<>();
     Warehouse(){
         capacity=30;
     }
@@ -22,12 +22,12 @@ public class Warehouse {
             occupied += product.space;
             for (Product product1 : products) {
                 if (product1.type.equals(product.type)) {
-                    productIntegerHashMap.put(product1, productIntegerHashMap.get(product1) + 1);
+                    productIntegerHashMap.put(product1.type, productIntegerHashMap.get(product1) + 1);
                     return true;
                 }
             }
             products.add(product);
-            productIntegerHashMap.put(product, 1);
+            productIntegerHashMap.put(product.type, 1);
             return true;
         }
         return false;
@@ -36,7 +36,7 @@ public class Warehouse {
         for (Product product1:products){
             int num=productIntegerHashMap.get(product1);
             if (product.type.equals(product1.type) && num>number){
-                productIntegerHashMap.put(product1,num-number);
+                productIntegerHashMap.put(product1.type,num-number);
                 return true;
             }
         }
