@@ -46,6 +46,7 @@ public class Cat extends Animal{
     {
         if(this.find() == null)
         {
+            //randomStep
             int d = randomDirection();
             if((d==0)&&(x+step<=6))
                 x += step;

@@ -6,12 +6,13 @@ import java.util.Random;
 public class Domestic extends Animal{
 
     static ArrayList<Domestic> list = new ArrayList<>();
-    /*static HashMap<String, String> domesticProduct = new HashMap<String, String>() {{
+    /*
+    static HashMap<String, String> domesticProduct = new HashMap<String, String>() {{
         put("Chicken", "Egg");
         put("Turkey", "Feather");
         put("Buffalo", "Milk");
     }};
-     */
+    */
     String productType;
     int health = 100;
     int productionTime;
@@ -31,7 +32,10 @@ public class Domestic extends Animal{
             space = 1;
             x = random();
             y = random();
-            number=animalIntegerHashMap.get("Chicken");
+            if (addToMap) {
+                this.addToMap();
+                number = animalIntegerHashMap.get("Chicken");
+            }
         }
 
         else if(name.equals("turkey"))
@@ -44,7 +48,10 @@ public class Domestic extends Animal{
             space = 1;
             x = random();
             y = random();
-            number=animalIntegerHashMap.get("Turkey");
+            if (addToMap) {
+                this.addToMap();
+                number = animalIntegerHashMap.get("Turkey");
+            }
         }
 
         else if(name.equals("buffalo"))
@@ -57,10 +64,11 @@ public class Domestic extends Animal{
             space = 1;
             x = random();
             y = random();
-            number=animalIntegerHashMap.get("Buffalo");
+            if (addToMap) {
+                this.addToMap();
+                number = animalIntegerHashMap.get("Buffalo");
+            }
         }
-        if (addToMap)
-            this.addToMap();
     }
 
     static void buy(String name)
@@ -139,6 +147,7 @@ public class Domestic extends Animal{
         find(closest);
         if(health > 50 || closest[0] == 0)
         {
+            //randomStep()
             int d = randomDirection();
             if(d==0)
                 x += step;

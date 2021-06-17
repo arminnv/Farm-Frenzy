@@ -54,7 +54,8 @@ public class Logger {
             System.out.println("error");
         }
     }
-
+    //LocalDateTime.now().d.toString());
+    //
     static String getDate()
     {
         Date date = Calendar.getInstance().getTime();

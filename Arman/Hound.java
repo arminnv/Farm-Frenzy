@@ -12,8 +12,8 @@ public class Hound extends Animal{
         x = random();
         y = random();
         space=1;
-        number=animalIntegerHashMap.get("Hound");
         this.addToMap();
+        number=animalIntegerHashMap.get("Hound");
     }
 
     static void buy()
