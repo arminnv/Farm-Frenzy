@@ -4,18 +4,24 @@ public class Cat extends Animal{
 
     static ArrayList<Cat> list = new ArrayList<>();
 
-    Cat()
+    Cat(boolean addToMap)
     {
         type = "Cat";
         price = 100;
         step = 1;
         x = random();
         y = random();
+        space=1;
+
+        if (addToMap) {
+            this.addToMap();
+            number = animalIntegerHashMap.get("Cat");
+        }
     }
 
     static void buy()
     {
-        Cat newCat = new Cat();
+        Cat newCat = new Cat(false);
         if(newCat.price <= Game.coins)
         {
             Game.coins -= newCat.price;
@@ -41,15 +47,15 @@ public class Cat extends Animal{
         if(this.find() == null)
         {
             int d = randomDirection();
-            if(d==0)
+            if((d==0)&&(x+step<=6))
                 x += step;
-            else if(d==1)
+            else if((d==1)&&(y+step<=6))
                 y += step;
-            else if(d==2)
+            else if((d==2)&&(x-step>=1))
                 x -= step;
-            else if(d==3)
+            else if((d==3)&&(y-step>=1))
                 y -= step;
-
+            /*
             if(x>6)
                 x=6;
             if(x<1)
@@ -58,6 +64,7 @@ public class Cat extends Animal{
                 y=6;
             if(y<1)
                 y=1;
+             */
         }
         else
         {
@@ -80,9 +87,9 @@ public class Cat extends Animal{
             Product product = Product.list.get(i);
             if(!product.collected)
             {
-                if(product.x == x && product.y == y)
-                {
-                    product.collected = true;
+                if( (product.x == x && product.y == y) && ( Warehouse.getInstance().add(product) ) ) {
+                    product.collected = true;///
+                    Product.list.remove(product);//proposed
                     Task.claim(product.type);
                     Logger.write('i',"cat collected "+product.type);
                 }
@@ -97,7 +104,7 @@ public class Cat extends Animal{
         for (int i=0; i<Product.list.size(); i++)
         {
             Product product = Product.list.get(i);
-            if(!product.collected)
+            if((!product.collected) && (!product.type.equals("Tiger")) && (!product.type.equals("Bear")) && (!product.type.equals("Lion")) )
             {
                 if(Math.abs(product.x-x) + Math.abs(product.y-y) < min)
                 {

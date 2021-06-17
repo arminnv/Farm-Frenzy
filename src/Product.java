@@ -1,11 +1,12 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Product {
 
     static ArrayList<Product> list = new ArrayList<>();
 
     String type;
-    String previousType;
+    String previousType;//possibly be omitted
     int price;
     int expirationTime;
     int x;
@@ -109,12 +110,20 @@ public class Product {
     {
         for(int i=0; i<Product.list.size(); i++)
         {
-            if(Product.list.get(i).x == x && Product.list.get(i).y == y)
+            Product p=Product.list.get(i);
+            if(p.x == x && p.y == y)
             {
-                Product.list.get(i).collected = true;
-                Task.claim(Product.list.get(i).type);
-                Logger.write('i', Product.list.get(i).type+" got picked up");
-                return;
+                if (Warehouse.getInstance().add(p)) {
+                    p.collected = true;
+                    list.remove(p);//proposed
+                    Task.claim(Product.list.get(i).type);
+                    Logger.write('i', Product.list.get(i).type + " got picked up");
+                    return;
+                }
+                else {
+                    Logger.write('e', "Warehouse did not have enough space");
+                    return;
+                }
             }
         }
         System.out.println("product not found");
@@ -126,7 +135,7 @@ public class Product {
         for(int i=0; i<Product.list.size(); i++)
         {
             if(!Product.list.get(i).collected)
-            Product.list.get(i).expirationTime--;
+                Product.list.get(i).expirationTime--;
         }
 
         boolean b = true;
@@ -141,7 +150,7 @@ public class Product {
                     Logger.write('i',Product.list.get(i).type+" got expired");
                     Product.list.remove(i);
                     b = true;
-                    break;
+                    break;///????
                 }
             }
         }

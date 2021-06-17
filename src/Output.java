@@ -3,7 +3,6 @@ public class Output {
     static void show()
     {
         System.out.println("time : " + Time.time);
-        System.out.println("coins : " + Game.coins);
         showLand();
         showAnimals();
         showProducts();
@@ -68,6 +67,11 @@ public class Output {
         {
             Task task = Task.list.get(i);
             System.out.println(task.name + ": " + task.claimed + "/" + task.goal);
+        }
+    }
+    static void showWarehouse(){
+        for (Product product:Warehouse.getInstance().products){
+            System.out.println(product.type+" "+Warehouse.getInstance().productIntegerHashMap.get(product));
         }
     }
 

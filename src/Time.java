@@ -20,6 +20,7 @@ public class Time {
         produce();
         collect();
         removeCage();
+        //Task.check();
     }
 
     static void walk()
@@ -70,8 +71,9 @@ public class Time {
         for(int i=0; i<Wild.list.size(); i++)
         {
             Wild wild = Wild.list.get(i);
-            if(wild.leftCages < wild.cages)
+            if( (wild.leftCages < wild.cages)&&(!wild.consecutiveCageOrder) )
                 wild.leftCages++;
+            wild.consecutiveCageOrder=false;
         }
     }
 
@@ -89,6 +91,9 @@ public class Time {
         {
             Wild.add(Game.mission.wilds.get(time));
         }
+    }
+    static void factoryProduce(){
+
     }
 
 }

@@ -151,7 +151,5 @@ public class User {
             System.out.println("error");
             Logger.write('e',"error");
         }
-        System.out.println("signup successful");
-        Logger.write('i', "signup successful");
     }
 }

@@ -6,12 +6,12 @@ import java.util.Random;
 public class Domestic extends Animal{
 
     static ArrayList<Domestic> list = new ArrayList<>();
-    static HashMap<String, String> domesticProduct = new HashMap<String, String>() {{
+    /*static HashMap<String, String> domesticProduct = new HashMap<String, String>() {{
         put("Chicken", "Egg");
         put("Turkey", "Feather");
         put("Buffalo", "Milk");
     }};
-
+     */
     String productType;
     int health = 100;
     int productionTime;
@@ -19,7 +19,7 @@ public class Domestic extends Animal{
     int lifeReduction = 10;
     boolean hungry = false;
 
-    Domestic(String name)
+    Domestic(String name, boolean addToMap)
     {
         if(name.equals("chicken"))
         {
@@ -28,6 +28,7 @@ public class Domestic extends Animal{
             productType = "Egg";
             price = 100;
             step = 1;
+            space = 1;
             x = random();
             y = random();
         }
@@ -39,6 +40,7 @@ public class Domestic extends Animal{
             productType = "Feather";
             price = 200;
             step = 1;
+            space = 1;
             x = random();
             y = random();
         }
@@ -50,8 +52,14 @@ public class Domestic extends Animal{
             productType = "Milk";
             price = 400;
             step = 1;
+            space = 1;
             x = random();
             y = random();
+        }
+        if (addToMap)
+        {
+            this.addToMap();
+            number=animalIntegerHashMap.get(type);
         }
     }
 
@@ -70,7 +78,7 @@ public class Domestic extends Animal{
             return;
         }
 
-        Domestic newDomestic = new Domestic(name);
+        Domestic newDomestic = new Domestic(name,true);
         if(newDomestic.type.equals(""))
         {
             System.out.println("animal type not found");
@@ -176,17 +184,17 @@ public class Domestic extends Animal{
         boolean b = true;
         while(b)
         {
-        b = false;
+            b = false;
 
-        for(int i=0; i<Domestic.list.size(); i++)
-        {
-            if(Domestic.list.get(i).health<=0)
+            for(int i=0; i<Domestic.list.size(); i++)
             {
-                Domestic.list.remove(i);
-                b = true;
-                break;
+                if(Domestic.list.get(i).health<=0)
+                {
+                    Domestic.list.remove(i);
+                    b = true;
+                    break;
+                }
             }
-        }
         }
     }
 
@@ -199,7 +207,7 @@ public class Domestic extends Animal{
             {
                 if(Plant.num[i][j] > 0)
                 {
-                    if(Math.abs(i+1-x) + Math.abs(j+1-y) < min);
+                    if(Math.abs(i+1-x) + Math.abs(j+1-y) < min)
                     {
                         closest[0] = i+1;
                         closest[1] = j+1;
