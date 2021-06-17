@@ -26,7 +26,21 @@ public class Game {
             Plant.plant(4, 5);
 
             Domestic.buy("chiCkeN");
+            Domestic.buy("chiCkeN");
+            Domestic.buy("chiCkeN");
+            Domestic.buy("chiCkeN");
+            Domestic.buy("chiCkeN");
+            Domestic.buy("chiCkeN");
+            Domestic.buy("chiCkeN");
+            Domestic.buy("chiCkeN");
+            Domestic.buy("chiCkeN");
+            Domestic.buy("chiCkeN");
+            Domestic.buy("chiCkeN");
             Domestic.buy("BuFfalo");
+            Cat.buy();
+            Hound.buy();
+            Cat.buy();
+            Hound.buy();
             Cat.buy();
             Hound.buy();
             //Wild.add("Tiger");
@@ -53,18 +67,11 @@ public class Game {
             Time.turn(1);
             Output.show();
 
-            Product.pickup(sc.nextInt(), sc.nextInt());
-            int x= sc.nextInt();
-            int y = sc.nextInt();
-            Wild.cage(x, y);
-            Wild.cage(x, y);
-            //Wild.cage(x, y);
-            //Wild.cage(x, y);
-            //Wild.cage(x, y);
-            Output.show();
-            Time.turn(1);
-            Output.show();
-            break;
+
+            if(Task.check(mission.level))
+                break;
         }
+
+        Menu.main(User.current);
     }
 }

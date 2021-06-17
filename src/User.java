@@ -116,4 +116,42 @@ public class User {
         Logger.write('i', "signup successful");
         return newUser;
     }
+
+    static void levelUp(User user)
+    {
+        String st = "";
+        String s;
+        try
+        {
+
+            FileReader reader = new FileReader("users.txt");
+            Scanner sc = new Scanner(reader);
+            while (sc.hasNextLine())
+            {
+                s = sc.nextLine();
+                if(!s.contains(user.userName))
+                st += s;
+            }
+            reader.close();
+        }
+        catch (IOException e)
+        {}
+
+        try
+        {
+            FileWriter writer = new FileWriter("users.txt");
+            String json = new Gson().toJson(user);
+            writer.write(st + json + "*");
+            writer.close();
+            User.list.clear();
+            User.load();
+        }
+        catch (IOException e)
+        {
+            System.out.println("error");
+            Logger.write('e',"error");
+        }
+        System.out.println("signup successful");
+        Logger.write('i', "signup successful");
+    }
 }

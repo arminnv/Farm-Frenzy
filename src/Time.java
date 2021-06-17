@@ -20,7 +20,6 @@ public class Time {
         produce();
         collect();
         removeCage();
-        Task.check();
     }
 
     static void walk()

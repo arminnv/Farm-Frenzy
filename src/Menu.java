@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-    static User enter()
+    static void enter()
     {
         Scanner sc = new Scanner(System.in);
         while(true)
@@ -19,8 +19,8 @@ public class Menu {
                 User user = User.login(name, pass);
                 if(user != null)
                 {
+                    User.current = user;
                     main(user);
-                    return user;
                 }
             }
             else if(st.equals("signup"))
@@ -30,8 +30,8 @@ public class Menu {
                 User user = User.signup(name, pass);
                 if(user != null)
                 {
+                    User.current = user;
                     main(user);
-                    return user;
                 }
             }
         }
@@ -59,6 +59,7 @@ public class Menu {
             {
                 sc.next();
                 enter();
+                Logger.write('i',"log out successful");
                 break;
             }
             else if(st.equals("settings"))
