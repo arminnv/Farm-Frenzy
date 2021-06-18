@@ -21,18 +21,36 @@ public class Truck {
             t=new Truck();
         return t;
     }
-    public void loadProduct(String type){
-        HashMap<String,Integer> map=Warehouse.getInstance().productIntegerHashMap;
-        if (map.containsKey(type)){
+    public void TruckUnload(String item){
+        if (Product.nameList.contains(item))
+            unloadProduct(item);
+        else{
+            unloadAnimal(item);
+        }
+    }
+    public void TruckLoad(String item){
+        if (Product.nameList.contains(item))
+            Truck.getInstance().loadProduct(item);
+        else{
+            if (item.equals("cat"))
+                loadAnimal(item,"Cat");
+            else if (item.equals("hound"))
+                loadAnimal(item,"Cat");
+            else
+                loadAnimal(item,"Domestic");
+        }
+    }
+    private void loadProduct(String type){
+        if (Warehouse.getInstance().inquiry(type,1)){
             Product p=new Product(type);
-            if ( (map.get(type)>0)&&(capacity+p.space<=MAX_CAPACITY)) {
+            if (capacity+p.space<=MAX_CAPACITY) {
                 capacity+=p.space;
-                productIntegerHashMap.put(type, map.get(type)+1);
+                productIntegerHashMap.put(type, productIntegerHashMap.get(type)+1);
             }
         }
     }
 
-    public void loadAnimal(String name, String generalType){
+    private void loadAnimal(String name, String generalType){
         HashMap<String,Integer> map=Animal.animalIntegerHashMap;
         if (map.containsKey(name)){
             Animal animal=new Domestic(name,false);
@@ -50,7 +68,7 @@ public class Truck {
         }
     }
 
-    public void unloadProduct(String type){
+    private void unloadProduct(String type){
         if (productIntegerHashMap.containsKey(type)){
             Product p=new Product(type);
             if ( (productIntegerHashMap.get(type)>0)&&(capacity+p.space<=MAX_CAPACITY)) {
@@ -60,7 +78,7 @@ public class Truck {
         }
     }
 
-    public void unloadAnimal(String name){
+    private void unloadAnimal(String name){
         HashMap<String,Integer> map=animalIntegerHashMap;
         if (map.containsKey(name)){
             Animal animal=new Domestic(name,false);
@@ -91,12 +109,13 @@ public class Truck {
             }
             money+=animal.price*animalIntegerHashMap.get(name);
         }
+        timeLeft=TOTAL_DURATION;
         animalIntegerHashMap.clear();
         productIntegerHashMap.clear();
     }
     public void update(){
         if (timeLeft==0){
-            Game.coins+=money;
+            Game.addCoins(money);
             money=0;
             return;
         }

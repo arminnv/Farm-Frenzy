@@ -19,12 +19,22 @@ public class Time {
         Product.expire();
         produce();
         collect();
+        factoryUpdate();
+        Truck.getInstance().update();
         removeCage();
-        //Task.check();
+        Well.getInstance().fillingProcess();
+        Plant.warn();
+        Output.show();
     }
 
     static void walk()
     {
+        //proposed
+        /*
+        for (Animal animal:Animal.animals){
+            animal.walk
+        }
+         */
         for(int i=0; i<Domestic.list.size(); i++)
         {
             Domestic domestic = Domestic.list.get(i);
@@ -92,8 +102,10 @@ public class Time {
             Wild.add(Game.mission.wilds.get(time));
         }
     }
-    static void factoryProduce(){
-
+    static void factoryUpdate(){
+        for (Factory factory:Factory.factories){
+            factory.update();
+        }
     }
 
 }

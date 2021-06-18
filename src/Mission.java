@@ -50,7 +50,7 @@ public class Mission {
                     Gson gson = new Gson();
                     Mission mission = gson.fromJson(str, Mission.class);
                     Mission.list.add(mission);
-                    str = "";
+                    str="";
                 }
             }
             reader.close();
@@ -85,7 +85,6 @@ public class Mission {
 
     static void write()
     {
-        Mission.levels = 5;
         int level;
         int coins;
         int maxTime;
@@ -122,8 +121,6 @@ public class Mission {
         maxTime = 500;
         Mission mission2 = new Mission(level, coins, tasks2, wilds2, maxTime, bonus2);
         Mission.list.add(mission2);
-
-
         Mission.save();
         Mission.list.clear();
     }

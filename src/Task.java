@@ -36,19 +36,19 @@ public class Task {
         boolean result  = true;
         for (int i=0; i<list.size(); i++)
         {
-           if(!list.get(i).complete)
-           {
-               result = false;
-               break;
-           }
+            if(!list.get(i).complete)
+            {
+                result = false;
+                break;
+            }
         }
         if(result)
         {
-        User.current.unlockedLevels = max(User.current.unlockedLevels, level + 1);
-        User.levelUp(User.current);
-        System.out.println("****** level complete ******");
-        Logger.write('i',"level complete");
-        clear();
+            User.current.unlockedLevels = Math.max(User.current.unlockedLevels, level + 1);
+            User.levelUp(User.current);
+            System.out.println("****** level complete ******");
+            Logger.write('i',"level complete");
+            clear();
         }
 
         return result;
@@ -66,11 +66,5 @@ public class Task {
             for (int j=0; j<6; j++)
                 Plant.num[i][j] = 0;
 
-    }
-
-    static int max(int a, int b)
-    {
-        if(a>b) return a;
-        else return b;
     }
 }

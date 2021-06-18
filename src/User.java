@@ -84,7 +84,7 @@ public class User {
             Logger.write('e',"username already exists");
             return null;
         }
-
+        //omit start
         String st = "";
         try
         {
@@ -99,10 +99,10 @@ public class User {
         }
         catch (IOException e)
         {}
-
+        //omit end
         try
         {
-            FileWriter writer = new FileWriter("users.txt");
+            FileWriter writer = new FileWriter("users.txt");//new FileWriter("users.txt",true);
             String json = new Gson().toJson(newUser);
             writer.write(st + json + "*");
             writer.close();
@@ -123,14 +123,13 @@ public class User {
         String s;
         try
         {
-
             FileReader reader = new FileReader("users.txt");
             Scanner sc = new Scanner(reader);
             while (sc.hasNextLine())
             {
                 s = sc.nextLine();
                 if(!s.contains(user.userName))
-                st += s;
+                    st += s;
             }
             reader.close();
         }
@@ -151,5 +150,7 @@ public class User {
             System.out.println("error");
             Logger.write('e',"error");
         }
+        System.out.println("signup successful");
+        Logger.write('i', "signup successful");
     }
 }

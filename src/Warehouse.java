@@ -6,7 +6,7 @@ public class Warehouse {
     int capacity;
     int occupied;
     ArrayList<Product> products=new ArrayList<>();
-    HashMap<String,Integer> productIntegerHashMap=new HashMap<>();
+    private HashMap<String,Integer> productIntegerHashMap=new HashMap<>();
     Warehouse(){
         capacity=30;
     }
@@ -41,5 +41,15 @@ public class Warehouse {
             }
         }
         return false;
+    }
+    public boolean inquiry(String type,int number){
+        if (!productIntegerHashMap.containsKey(type))
+            return false;
+        return productIntegerHashMap.get(type) >= number;
+    }
+    public void show(){
+        for (Product product:Warehouse.getInstance().products){
+            System.out.println(product.type+" "+productIntegerHashMap.get(product.type));
+        }
     }
 }

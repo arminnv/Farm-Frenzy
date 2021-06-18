@@ -22,9 +22,9 @@ public class Cat extends Animal{
     static void buy()
     {
         Cat newCat = new Cat(false);
-        if(newCat.price <= Game.coins)
+        if(newCat.price <= Game.getCoins())
         {
-            Game.coins -= newCat.price;
+            Game.addCoins(-newCat.price);
             Cat.list.add(newCat);
             Task.claim("Cat");
             Logger.write('i', "cat has been bought");
@@ -46,6 +46,7 @@ public class Cat extends Animal{
     {
         if(this.find() == null)
         {
+            //randomStep
             int d = randomDirection();
             if((d==0)&&(x+step<=6))
                 x += step;

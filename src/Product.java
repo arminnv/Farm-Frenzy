@@ -1,10 +1,8 @@
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 
 public class Product {
-
+    public static final Set<String> nameList=Set.of("Egg", "Feather", "Milk", "Flour", "Fabric", "Packet Milk", "Bread", "Shirt", "Ice Cream", "Lion", "Bear", "Tiger");
     static ArrayList<Product> list = new ArrayList<>();
-
     String type;
     String previousType;//possibly be omitted
     int price;
@@ -13,9 +11,9 @@ public class Product {
     int y;
     boolean collected = false;
     int space;
-
     Product(String name)
     {
+
         type = name;
         if(name.equals("Egg"))
         {
@@ -118,12 +116,11 @@ public class Product {
                     list.remove(p);//proposed
                     Task.claim(Product.list.get(i).type);
                     Logger.write('i', Product.list.get(i).type + " got picked up");
-                    return;
                 }
                 else {
                     Logger.write('e', "Warehouse did not have enough space");
-                    return;
                 }
+                return;
             }
         }
         System.out.println("product not found");

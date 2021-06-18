@@ -13,6 +13,14 @@ public class Factory {
     String validType;
     String outputType;
     int underProduction;
+    public static void Initialise(){
+        new SewingFactory();
+        new Mill();
+        new Weaver();
+        new Bakery();
+        new MilkPackagingFactory();
+        new IceCreamFactory();
+    }
     Factory(String name, String validType,String outputType,int buildingCost, int productionDefaultDuration){
         this.name=name;
         this.outputType=outputType;
@@ -26,9 +34,10 @@ public class Factory {
         maxAllowedLevel=2;
         factories.add(this);
     }
-    public void produce(Product product,int number) {
-        if (product.type.equals(validType) &&(number!=0)){
+    private void produce(int number) {
+        if ((number!=0)&&Warehouse.getInstance().inquiry(validType,number)){
             productionDuration= (int)Math.ceil(productionDefaultDuration*number*1.0/level);
+            Warehouse.getInstance().remove(new Product(validType),number);
             underProduction=number;//Class.forName(outputType.getTypeName()).getDeclaredConstructor().newInstance()
             System.out.println(outputType);
             return;
@@ -46,10 +55,16 @@ public class Factory {
         }
     }
     public void upgrade(){
-        if ( (Game.coins>upgradeCost)&&(level+1<=maxAllowedLevel) ){
-            Game.coins -= upgradeCost;
+        if ( (Game.getCoins()>upgradeCost)&&(level+1<=maxAllowedLevel) ){
+            Game.addCoins(-upgradeCost);
             level++;
             Logger.write('i',"Factory"+name+"was upgraded to level "+level);
+        }
+    }
+    public static void produce(String factoryName,int number){
+        for (Factory factory:factories){
+            if (factory.name.equals(factoryName))
+                factory.produce(number);
         }
     }
 }

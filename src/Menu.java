@@ -2,7 +2,13 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Menu {
-
+    public static String userName="(?i)username \\w+";
+    public static String password="(?i)password \\w+";
+    public static String login="(?i)log in";
+    public static String signup="(?i)signup";
+    public static String start="(?i)start \\d+";
+    public static String logout="(?i)log out";
+    public static String settings="(?i)settings";
     static void enter()
     {
         Scanner sc = new Scanner(System.in);
@@ -45,7 +51,7 @@ public class Menu {
             System.out.println("start | log out | settings");
             String st = sc.next().toLowerCase();
 
-            if(st.equals("start"))
+            if(st.matches(start))
             {
                 int level = sc.nextInt();
                 if(user.unlockedLevels >= level)
