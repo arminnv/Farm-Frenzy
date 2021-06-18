@@ -17,10 +17,13 @@ public class Well {
     public void water(int x, int y){
         if (capacity>0){
             Plant.num[x-1][y-1]++;
+            capacity--;
             Logger.write('i',"planted successfully");
+            System.out.println("planted successfully");
         }
         else {
             Logger.write('e',"Error: not enough water in the well");
+            System.out.println("Error: not enough water in the well");
         }
 
     }
@@ -31,6 +34,7 @@ public class Well {
         }
         //not empty
         Logger.write('e',"Error: Well is not empty and cannot be filled");
+        System.out.println("Error: Well is not empty and cannot be filled");
     }
     public void fillingProcess(){
         if ((process)&&(counter<FILL_TURN))

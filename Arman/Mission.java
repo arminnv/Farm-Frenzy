@@ -15,19 +15,21 @@ public class Mission {
 
     int level;
     int coins;
+    int reward;
     ArrayList<Task> tasks = new ArrayList<>();
     HashMap<Integer, String> wilds = new HashMap<>();
     int maxTime;
-    HashMap<Integer, Integer> bonus = new HashMap<>();
+    HashMap<Integer, Integer> TimeBonus = new HashMap<>();
 
-    Mission(int Level, int Coins, ArrayList<Task> Tasks, HashMap<Integer, String> Wilds, int MaxTime, HashMap<Integer, Integer> Bonus)
+    Mission(int Level, int Coins, ArrayList<Task> Tasks, HashMap<Integer, String> Wilds, int MaxTime, HashMap<Integer, Integer> TimeBonus, int reward)
     {
+        this.reward=reward;
         level = Level;
         coins = Coins;
         tasks = Tasks;
         wilds = Wilds;
         maxTime = MaxTime;
-        bonus = Bonus;
+        this.TimeBonus = TimeBonus;
     }
 
     static void load()
@@ -88,13 +90,18 @@ public class Mission {
         int level;
         int coins;
         int maxTime;
+        int reward;
 
         //mission 1
         level = 1;
         coins = 4000;
+        reward=10;
         ArrayList<Task> tasks1 = new ArrayList<>();
         HashMap<Integer, Integer> bonus1 = new HashMap<>();
         HashMap<Integer, String> wilds1 = new HashMap<>();
+        bonus1.put(10,200);
+        bonus1.put(20,20);
+        bonus1.put(30,0);
         //tasks1.add(new Task("Coins", 60000));
         //tasks1.add(new Task("Bread", 4));
         //tasks1.add(new Task("Milk", 5));
@@ -102,7 +109,7 @@ public class Mission {
         wilds1.put(2, "Tiger");
         wilds1.put(1, "Bear");
         maxTime = 500;
-        Mission mission1 = new Mission(level, coins, tasks1, wilds1, maxTime, bonus1);
+        Mission mission1 = new Mission(level, coins, tasks1, wilds1, maxTime, bonus1,reward);
         Mission.list.add(mission1);
 
 
@@ -119,7 +126,7 @@ public class Mission {
         wilds2.put(2, "Tiger");
         wilds2.put(1, "Bear");
         maxTime = 500;
-        Mission mission2 = new Mission(level, coins, tasks2, wilds2, maxTime, bonus2);
+        Mission mission2 = new Mission(level, coins, tasks2, wilds2, maxTime, bonus2,reward);
         Mission.list.add(mission2);
         Mission.save();
         Mission.list.clear();

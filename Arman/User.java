@@ -13,12 +13,13 @@ public class User {
     String userName;
     String password;
     int unlockedLevels = 1;
-    int bonusCoins = 0;
+    int points;
 
     User(String name, String pass)
     {
         userName = name;
         password = pass;
+        points=0;
     }
 
     static void load()
@@ -56,6 +57,7 @@ public class User {
             {
                 if(User.list.get(i).password.equals(password))
                 {
+                    User.current = User.list.get(i);
                     System.out.println("login successful");
                     Logger.write('i',"login successful");
                     return User.list.get(i);
@@ -86,6 +88,7 @@ public class User {
         }
         //omit start
         String st = "";
+        /*
         try
         {
 
@@ -100,11 +103,13 @@ public class User {
         catch (IOException e)
         {}
         //omit end
+
+         */
         try
         {
-            FileWriter writer = new FileWriter("users.txt");//new FileWriter("users.txt",true);
+            FileWriter writer = new FileWriter("users.txt",true);//new FileWriter("users.txt",true);
             String json = new Gson().toJson(newUser);
-            writer.write(st + json + "*");
+            writer.write(st + json + "*\n");
             writer.close();
         }
         catch (IOException e)
@@ -112,6 +117,7 @@ public class User {
             System.out.println("error");
             Logger.write('e',"error");
         }
+        User.current = newUser;
         System.out.println("signup successful");
         Logger.write('i', "signup successful");
         return newUser;
@@ -121,6 +127,13 @@ public class User {
     {
         String st = "";
         String s;
+        user.points+=Game.mission.reward;
+        HashMap<Integer,Integer> map=Game.mission.TimeBonus;
+        for (Integer time:map.keySet()){
+            if (Time.time<=time){
+                user.points+=map.get(time);
+            }
+        }
         try
         {
             FileReader reader = new FileReader("users.txt");
@@ -140,7 +153,7 @@ public class User {
         {
             FileWriter writer = new FileWriter("users.txt");
             String json = new Gson().toJson(user);
-            writer.write(st + json + "*");
+            writer.write(st + json + "*\n");
             writer.close();
             User.list.clear();
             User.load();

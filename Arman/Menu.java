@@ -36,10 +36,11 @@ public class Menu {
                 User user = User.signup(name, pass);
                 if(user != null)
                 {
-                    User.current = user;
                     main(user);
                 }
             }
+            else
+                System.out.println("Invalid Command");
         }
     }
 
@@ -51,7 +52,7 @@ public class Menu {
             System.out.println("start | log out | settings");
             String st = sc.next().toLowerCase();
 
-            if(st.matches(start))
+            if(st.equals("start"))
             {
                 int level = sc.nextInt();
                 if(user.unlockedLevels >= level)

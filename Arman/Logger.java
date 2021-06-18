@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Logger {
-
+    public static final File logFile=new File("log.txt");
     static void write(char ch, String st)
     {
         String s = "";
@@ -29,9 +29,11 @@ public class Logger {
             tag = "[Info], ";
 
         st = tag + getDate() + ", " + st;
+        System.out.println(logFile.getAbsolutePath());
+        System.out.println(logFile.exists());
         try
         {
-            FileReader reader = new FileReader("log.txt");
+            FileReader reader = new FileReader(logFile);
             Scanner sc = new Scanner(reader);
             header+=sc.nextLine();
             sc.nextLine();
@@ -42,17 +44,26 @@ public class Logger {
             reader.close();
         }
         catch (IOException e) {
-            header+= LocalDateTime.now().toString()+"\n";
+            System.out.println(e.toString());
+            LocalDateTime d=LocalDateTime.now();
+            header+= d.toLocalDate().toString()+" "+d.toLocalTime().toString()+"\n";
         }
         finally {
-            header+="Latest change by :"+User.current.userName;
-            header+= LocalDateTime.now().toString()+"\n";
+            header+="Latest change by :";
+            if (User.current!=null)
+                header+=User.current.userName+"\n";
+            else
+                header+="No user exists\n";
+            LocalDateTime d=LocalDateTime.now();
+            header+= d.toLocalDate().toString()+" "+d.toLocalTime().toString()+"\n";
         }
         try
         {
-            FileWriter writer = new FileWriter("log.txt");
-            writer.write(header+ "\n" +s + "\n" +  st);
-            //writer.write(st);
+            FileWriter writer = new FileWriter(logFile);
+            if (!s.equals(""))
+                writer.write(header +s + "\n" +  st);
+            else
+                writer.write(header+st);
             writer.close();
         }
         catch (IOException e)
@@ -60,8 +71,7 @@ public class Logger {
             System.out.println("error");
         }
     }
-    //LocalDateTime.now().d.toString());
-    //
+
     static String getDate()
     {
         Date date = Calendar.getInstance().getTime();
@@ -72,7 +82,6 @@ public class Logger {
 
     static void delete()
     {
-        File file = new File("log.txt");
-        file.delete();
+       logFile.delete();
     }
 }

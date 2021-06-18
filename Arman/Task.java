@@ -42,10 +42,10 @@ public class Task {
                 break;
             }
         }
-        if(result)
-        {
+        if(result) {
             User.current.unlockedLevels = Math.max(User.current.unlockedLevels, level + 1);
             User.levelUp(User.current);
+
             System.out.println("****** level complete ******");
             Logger.write('i',"level complete");
             clear();

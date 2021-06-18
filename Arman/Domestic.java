@@ -6,13 +6,6 @@ import java.util.Random;
 public class Domestic extends Animal{
 
     static ArrayList<Domestic> list = new ArrayList<>();
-    /*
-    static HashMap<String, String> domesticProduct = new HashMap<String, String>() {{
-        put("Chicken", "Egg");
-        put("Turkey", "Feather");
-        put("Buffalo", "Milk");
-    }};
-    */
     String productType;
     int health = 100;
     int productionTime;
@@ -185,26 +178,16 @@ public class Domestic extends Animal{
 
     static void reduce()
     {
-        for(int i=0; i<Domestic.list.size(); i++)
-        {
+        for(int i=0; i<Domestic.list.size(); i++) {
             Domestic.list.get(i).health -= Domestic.list.get(i).lifeReduction;
         }
-
-        boolean b = true;
-        while(b)
-        {
-        b = false;
-
-        for(int i=0; i<Domestic.list.size(); i++)
-        {
-            if(Domestic.list.get(i).health<=0)
-            {
+        for(int i=0; i<Domestic.list.size(); i++) {
+            if(Domestic.list.get(i).health<=0) {
                 Domestic.list.remove(i);
-                b = true;
-                break;
+                i--;
             }
         }
-        }
+
     }
 
     void find(int[] closest)

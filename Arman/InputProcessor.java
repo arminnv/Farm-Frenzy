@@ -55,7 +55,7 @@ public class InputProcessor {
         else if (input.matches(inquiry))
             Output.show();
         else if (input.matches(turn)){
-            Time.turn(Integer.parseInt(a[2]));
+            Time.turn(Integer.parseInt(a[1]));
             Output.show();
         }
     }
