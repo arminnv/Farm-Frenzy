@@ -7,6 +7,7 @@ public class Game {
 
     static void run(Mission mission)
     {
+        System.out.println("level "+mission.level+" started");
         Game.mission = mission;
         Task.add(mission);
         Factory.Initialise();
