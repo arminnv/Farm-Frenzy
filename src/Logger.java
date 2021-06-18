@@ -45,7 +45,7 @@ public class Logger {
             header+= LocalDateTime.now().toString()+"\n";
         }
         finally {
-            header+="Latest change by :"+User.current.userName;
+            header+=" Latest change by :"+User.current.userName;
             header+=" " + LocalDateTime.now().toString()+"\n";
         }
         try
