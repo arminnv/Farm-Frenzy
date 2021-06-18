@@ -9,6 +9,7 @@ public class Game {
     {
         Game.mission = mission;
         Task.add(mission);
+        Factory.Initialise();
         Scanner sc = new Scanner(System.in);
 
         while (true)
