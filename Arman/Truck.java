@@ -115,7 +115,7 @@ public class Truck {
     }
     public void update(){
         if (timeLeft==0){
-            Game.coins+=money;
+            Game.addCoins(money);
             money=0;
             return;
         }

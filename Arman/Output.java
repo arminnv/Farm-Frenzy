@@ -3,7 +3,7 @@ public class Output {
     static void show()
     {
         System.out.println("time : " + Time.time);
-        System.out.println("coins: "+Game.coins);
+        System.out.println("coins: "+Game.getCoins());
         showLand();
         showAnimals();
         showProducts();

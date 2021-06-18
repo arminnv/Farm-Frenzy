@@ -19,9 +19,9 @@ public class Hound extends Animal{
     static void buy()
     {
         Hound newHound = new Hound();
-        if(newHound.price <= Game.coins)
+        if(newHound.price <= Game.getCoins())
         {
-            Game.coins -= newHound.price;
+            Game.addCoins(-newHound.price);
             Hound.list.add(newHound);
             Task.claim("Hound");
             Logger.write('i',"hound has been bought");

@@ -22,9 +22,9 @@ public class Cat extends Animal{
     static void buy()
     {
         Cat newCat = new Cat(false);
-        if(newCat.price <= Game.coins)
+        if(newCat.price <= Game.getCoins())
         {
-            Game.coins -= newCat.price;
+            Game.addCoins(-newCat.price);
             Cat.list.add(newCat);
             Task.claim("Cat");
             Logger.write('i', "cat has been bought");

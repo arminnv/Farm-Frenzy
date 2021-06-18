@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Game {
 
-    static int coins = 4000;
+    private static int coins = 4000;
     static Mission mission;
 
     static void run(Mission mission)
@@ -17,5 +17,14 @@ public class Game {
                 break;
         }
         Menu.main(User.current);
+    }
+
+    public static void addCoins(int coins) {
+        Game.coins += coins;
+        Task.claim("Coins");
+    }
+
+    public static int getCoins() {
+        return coins;
     }
 }

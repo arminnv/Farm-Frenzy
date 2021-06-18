@@ -94,9 +94,9 @@ public class Domestic extends Animal{
             return;
         }
 
-        if(newDomestic.price <= Game.coins)
+        if(newDomestic.price <= Game.getCoins())
         {
-            Game.coins -= newDomestic.price;
+            Game.addCoins(-newDomestic.price);
             Domestic.list.add(newDomestic);
             Task.claim(newDomestic.type);
             Logger.write('i',newDomestic.type + " has been bought");

@@ -55,8 +55,8 @@ public class Factory {
         }
     }
     public void upgrade(){
-        if ( (Game.coins>upgradeCost)&&(level+1<=maxAllowedLevel) ){
-            Game.coins -= upgradeCost;
+        if ( (Game.getCoins()>upgradeCost)&&(level+1<=maxAllowedLevel) ){
+            Game.addCoins(-upgradeCost);
             level++;
             Logger.write('i',"Factory"+name+"was upgraded to level "+level);
         }
