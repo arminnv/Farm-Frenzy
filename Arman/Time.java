@@ -22,6 +22,8 @@ public class Time {
         factoryUpdate();
         Truck.getInstance().update();
         removeCage();
+        Well.getInstance().fillingProcess();
+        Plant.warn();
     }
 
     static void walk()

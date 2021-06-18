@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
@@ -15,37 +16,42 @@ public class Logger {
     static void write(char ch, String st)
     {
         String s = "";
-        String str = "";
+        String tag = "";
+        String header="";
 
         if(ch  == 'i')
-            str = "[Info], ";
+            tag = "[Info], ";
         else if(ch == 'e')
-            str = "[Error], ";
+            tag = "[Error], ";
         else if(ch == 'a')
-            str = "[Alarm], ";
+            tag = "[Alarm], ";
         else
-            str = "[Info], ";
+            tag = "[Info], ";
 
-        st = str + getDate() + ", " + st;
-
-        //omit start
+        st = tag + getDate() + ", " + st;
         try
         {
             FileReader reader = new FileReader("log.txt");
             Scanner sc = new Scanner(reader);
-            while (sc.hasNextLine())
-            {
+            header+=sc.nextLine();
+            sc.nextLine();
+            sc.nextLine();
+            while (sc.hasNextLine()) {
                 s += sc.nextLine() + "\n";
             }
             reader.close();
         }
-        catch (IOException e)
-        {}
-        //omit end
+        catch (IOException e) {
+            header+= LocalDateTime.now().toString()+"\n";
+        }
+        finally {
+            header+="Latest change by :"+User.current.userName;
+            header+= LocalDateTime.now().toString()+"\n";
+        }
         try
         {
-            FileWriter writer = new FileWriter("log.txt");//new FileWriter("log.txt",true)
-            writer.write(s + "\n" +  st);
+            FileWriter writer = new FileWriter("log.txt");
+            writer.write(header+ "\n" +s + "\n" +  st);
             //writer.write(st);
             writer.close();
         }
