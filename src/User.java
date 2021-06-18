@@ -57,6 +57,7 @@ public class User {
                 if(User.list.get(i).password.equals(password))
                 {
                     System.out.println("login successful");
+                    User.current = User.list.get(i);
                     Logger.write('i',"login successful");
                     return User.list.get(i);
                 }
@@ -112,6 +113,7 @@ public class User {
             System.out.println("error");
             Logger.write('e',"error");
         }
+        User.current = newUser;
         System.out.println("signup successful");
         Logger.write('i', "signup successful");
         return newUser;
