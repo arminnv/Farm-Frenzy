@@ -29,13 +29,11 @@ public class Logger {
             tag = "[Info], ";
 
         st = tag + getDate() + ", " + st;
-        System.out.println(logFile.getAbsolutePath());
-        System.out.println(logFile.exists());
         try
         {
             FileReader reader = new FileReader(logFile);
             Scanner sc = new Scanner(reader);
-            header+=sc.nextLine();
+            header+=sc.nextLine()+"\n";
             sc.nextLine();
             sc.nextLine();
             while (sc.hasNextLine()) {
@@ -80,8 +78,7 @@ public class Logger {
         return  strDate;
     }
 
-    static void delete()
-    {
+    static void delete() {
        logFile.delete();
     }
 }

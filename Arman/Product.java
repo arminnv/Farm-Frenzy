@@ -113,9 +113,9 @@ public class Product {
             {
                 if (Warehouse.getInstance().add(p)) {
                     p.collected = true;
-                    list.remove(p);//proposed
                     Task.claim(Product.list.get(i).type);
                     Logger.write('i', Product.list.get(i).type + " got picked up");
+                    list.remove(p);//proposed
                 }
                 else {
                     Logger.write('e', "Warehouse did not have enough space");
@@ -145,7 +145,7 @@ public class Product {
                 if(Product.list.get(i).expirationTime<=0)
                 {
                     Logger.write('i',Product.list.get(i).type+" got expired");
-                    Product.list.remove(i);
+                    Product.list.remove(i);//proposed
                     b = true;
                     break;///????
                 }

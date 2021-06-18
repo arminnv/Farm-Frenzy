@@ -8,7 +8,6 @@ public class Game {
         System.out.println("level "+mission.level+" started");
         Game.mission = mission;
         Task.add(mission);
-        Factory.Initialise();
         while (!Task.check(mission.level)) {
             InputProcessor.process();
         }

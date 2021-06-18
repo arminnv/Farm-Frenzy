@@ -93,6 +93,7 @@ public class Domestic extends Animal{
             Domestic.list.add(newDomestic);
             Task.claim(newDomestic.type);
             Logger.write('i',newDomestic.type + " has been bought");
+            System.out.println(newDomestic.type + " has been bought");
         }
         else
         {

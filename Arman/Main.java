@@ -11,7 +11,7 @@ public class Main {
         System.out.println(d.toLocalTime());
         System.out.println(d.toString());
         Mission.write();
-        Logger.delete();
+        //Logger.delete();
         User.load();
         Mission.load();
         Menu.enter();

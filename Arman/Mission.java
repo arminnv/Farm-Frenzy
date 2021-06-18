@@ -130,5 +130,14 @@ public class Mission {
         Mission.list.add(mission2);
         Mission.save();
         Mission.list.clear();
+        //mission 3
+        level=3;
+        coins=4000;
+        ArrayList<Task> tasks3=new ArrayList<>();
+        HashMap<Integer, Integer> bonus3=new HashMap<>();
+        HashMap<Integer,String> wilds3=new HashMap<>();
+        tasks3.add(new Task("Fabric", 1));
+        wilds3.put(1,"Lion");
+        Mission mission3=new Mission(level,coins, tasks3,wilds3,maxTime,bonus3,reward);
     }
 }
