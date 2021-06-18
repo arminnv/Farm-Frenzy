@@ -7,6 +7,7 @@ public class Output {
         showAnimals();
         showProducts();
         showTasks();
+        showWarehouse();
         System.out.println("--------------------------------------");
     }
 
@@ -25,6 +26,9 @@ public class Output {
 
     static void showAnimals()
     {
+        //implement show for animals
+        //for (Animal animal:Animal.animals)
+        //     animal.show
         for (int i=0; i<Domestic.list.size(); i++)
         {
             Domestic domestic = Domestic.list.get(i);
@@ -70,9 +74,7 @@ public class Output {
         }
     }
     static void showWarehouse(){
-        for (Product product:Warehouse.getInstance().products){
-            System.out.println(product.type+" "+Warehouse.getInstance().productIntegerHashMap.get(product));
-        }
+        Warehouse.getInstance().show();
     }
 
 }

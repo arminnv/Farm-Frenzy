@@ -14,7 +14,7 @@ public class Plant {
     public static void warn(){
         int a=0;
         for (int i=0;i<6;i++){
-            for (int j=0;i<6;j++){
+            for (int j=0;j<6;j++){
                 a+=num[i][j];
             }
         }

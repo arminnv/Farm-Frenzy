@@ -50,7 +50,7 @@ public class Mission {
                     Gson gson = new Gson();
                     Mission mission = gson.fromJson(str, Mission.class);
                     Mission.list.add(mission);
-                    break;
+                    str="";
                 }
             }
             reader.close();
@@ -72,7 +72,7 @@ public class Mission {
             {
                 Mission mission = Mission.list.get(i);
                 String json = new Gson().toJson(mission);
-                writer.write(json + "*");
+                writer.write(json + "*\n");
             }
             writer.close();
         }
@@ -85,22 +85,42 @@ public class Mission {
 
     static void write()
     {
-        Mission.levels = 5;
-        int level = 1;
-        int coins = 4000;
-        ArrayList<Task> tasks = new ArrayList<>();
-        tasks.add(new Task("Coins", 60000));
-        tasks.add(new Task("Bread", 4));
-        tasks.add(new Task("Milk", 5));
-        tasks.add(new Task("Egg", 6));
-        HashMap<Integer, String> wilds = new HashMap<>();
-        wilds.put(2, "Tiger");
-        wilds.put(1, "Bear");
-        int maxTime = 500;
-        HashMap<Integer, Integer> bonus = new HashMap<>();
+        int level;
+        int coins;
+        int maxTime;
 
-        Mission mission1 = new Mission(level, coins, tasks, wilds, maxTime, bonus);
+        //mission 1
+        level = 1;
+        coins = 4000;
+        ArrayList<Task> tasks1 = new ArrayList<>();
+        HashMap<Integer, Integer> bonus1 = new HashMap<>();
+        HashMap<Integer, String> wilds1 = new HashMap<>();
+        //tasks1.add(new Task("Coins", 60000));
+        //tasks1.add(new Task("Bread", 4));
+        //tasks1.add(new Task("Milk", 5));
+        tasks1.add(new Task("Egg", 6));
+        wilds1.put(2, "Tiger");
+        wilds1.put(1, "Bear");
+        maxTime = 500;
+        Mission mission1 = new Mission(level, coins, tasks1, wilds1, maxTime, bonus1);
         Mission.list.add(mission1);
+
+
+        //mission 2
+        level = 2;
+        coins = 4000;
+        ArrayList<Task> tasks2 = new ArrayList<>();
+        HashMap<Integer, Integer> bonus2 = new HashMap<>();
+        HashMap<Integer, String> wilds2 = new HashMap<>();
+        tasks2.add(new Task("Coins", 60000));
+        tasks2.add(new Task("Bread", 4));
+        tasks2.add(new Task("Milk", 5));
+        tasks2.add(new Task("Egg", 6));
+        wilds2.put(2, "Tiger");
+        wilds2.put(1, "Bear");
+        maxTime = 500;
+        Mission mission2 = new Mission(level, coins, tasks2, wilds2, maxTime, bonus2);
+        Mission.list.add(mission2);
         Mission.save();
         Mission.list.clear();
     }
