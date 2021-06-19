@@ -6,14 +6,14 @@ public class Hound extends Animal{
 
     Hound()
     {
-        type = "Hound";
+        type = "hound";
         price = 100;
         step = 1;
         x = random();
         y = random();
         space=1;
         this.addToMap();
-        number=animalIntegerHashMap.get("Hound");
+        number= animalIDNumHashMap.get("hound");
     }
 
     static void buy()
@@ -23,7 +23,7 @@ public class Hound extends Animal{
         {
             Game.addCoins(-newHound.price);
             Hound.list.add(newHound);
-            Task.claim("Hound");
+            Task.claim("hound");
             Logger.write('i',"hound has been bought");
         }
         else
@@ -36,6 +36,7 @@ public class Hound extends Animal{
     void kill()
     {
         Hound.list.remove(this);
+        removeFromMap(this.type);
         Logger.write('i',"hound got killed");
     }
 

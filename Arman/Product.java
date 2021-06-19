@@ -13,7 +13,6 @@ public class Product {
     int space;
     Product(String name)
     {
-
         type = name;
         if(name.equals("Egg"))
         {

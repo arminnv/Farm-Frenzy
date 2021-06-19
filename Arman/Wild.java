@@ -14,7 +14,7 @@ public class Wild extends Animal{
         name = name.toLowerCase();
         if(name.equals("lion"))
         {
-            type = "Lion";
+            type = "lion";
             price = 300;
             step = 1;
             space =15;
@@ -26,7 +26,7 @@ public class Wild extends Animal{
 
         else if(name.equals("bear"))
         {
-            type = "Bear";
+            type = "bear";
             price = 400;
             step = 1;
             space =15;
@@ -38,7 +38,7 @@ public class Wild extends Animal{
 
         else if(name.equals("tiger"))
         {
-            type = "Tiger";
+            type = "tiger";
             price = 500;
             step = 2;
             space =1;

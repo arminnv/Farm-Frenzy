@@ -2,15 +2,14 @@ public class Time {
 
     static int time = 0;
 
-    static void turn(int n)
-    {
-        Time.time += n;
-        for(int i=0; i<n; i++)
+    static void turn(int n) {
+        for(int i=0; i<n; i++) {
             update();
+            Time.time++;
+        }
     }
 
-    static void update()
-    {
+    static void update() {
         appear();
         eat();
         Domestic.reduce();

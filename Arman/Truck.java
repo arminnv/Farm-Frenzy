@@ -29,15 +29,20 @@ public class Truck {
         }
     }
     public void TruckLoad(String item){
+        if (Truck.getInstance().timeLeft>0){
+            System.out.println("Error: Truck is on the way");
+            Logger.write('e',"Truck is on the way");
+            return;
+        }
         if (Product.nameList.contains(item))
             Truck.getInstance().loadProduct(item);
         else{
             if (item.equals("cat"))
-                loadAnimal(item,"Cat");
+                loadAnimal(item,"cat");
             else if (item.equals("hound"))
-                loadAnimal(item,"Cat");
+                loadAnimal(item,"hound");
             else
-                loadAnimal(item,"Domestic");
+                loadAnimal(item,"Domestic");//wild animal problem
         }
     }
     private void loadProduct(String type){
@@ -45,18 +50,21 @@ public class Truck {
             Product p=new Product(type);
             if (capacity+p.space<=MAX_CAPACITY) {
                 capacity+=p.space;
-                productIntegerHashMap.put(type, productIntegerHashMap.get(type)+1);
+                if (productIntegerHashMap.containsKey(type))
+                    productIntegerHashMap.put(type, productIntegerHashMap.get(type)+1);
+                else
+                    productIntegerHashMap.put(type, 1);
             }
         }
     }
 
     private void loadAnimal(String name, String generalType){
-        HashMap<String,Integer> map=Animal.animalIntegerHashMap;
+        HashMap<String,Integer> map=Animal.animalIDNumHashMap;
         if (map.containsKey(name)){
             Animal animal=new Domestic(name,false);
-            if (generalType.equals("Cat"))
+            if (generalType.equals("cat"))
                 animal=new Cat(false);
-            else if (generalType.equals("Hound"))
+            else if (generalType.equals("hound"))
                 animal=new Hound();
             else if (!generalType.equals("Domestic"))
                 return;
@@ -71,7 +79,7 @@ public class Truck {
     private void unloadProduct(String type){
         if (productIntegerHashMap.containsKey(type)){
             Product p=new Product(type);
-            if ( (productIntegerHashMap.get(type)>0)&&(capacity+p.space<=MAX_CAPACITY)) {
+            if ( productIntegerHashMap.get(type)>0 ) {//&&(capacity+p.space<=MAX_CAPACITY) ??????
                 capacity-=p.space;
                 productIntegerHashMap.put(type, productIntegerHashMap.get(type)-1);
             }
@@ -86,7 +94,7 @@ public class Truck {
                 animal=new Cat(false);
             else if (name.equals("Hound"))
                 animal=new Hound();
-            if ( (map.get(name)>0)&&(capacity+animal.space<=MAX_CAPACITY)) {
+            if ( map.get(name)>0 ) { //&&(capacity+animal.space<=MAX_CAPACITY) ??????
                 capacity-=animal.space;
                 animalIntegerHashMap.put(animal.type, map.get(animal.type)-1);
             }
@@ -112,6 +120,7 @@ public class Truck {
         timeLeft=TOTAL_DURATION;
         animalIntegerHashMap.clear();
         productIntegerHashMap.clear();
+        capacity=0;
     }
     public void update(){
         if (timeLeft==0){

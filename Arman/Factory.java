@@ -1,9 +1,11 @@
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Factory {
     public static final String[] nameList={"Mill","Weaver","Sewing factory","Milk packaging factory","Ice cream factory","Bakery"};
     static ArrayList<Factory> factories=new ArrayList<>();
+    static Random r=new Random();
     int level;
     int maxAllowedLevel;
     int buildingCost;
@@ -25,41 +27,34 @@ public class Factory {
         underProduction=0;
         level=1;
         maxAllowedLevel=2;
-        factories.add(this);
+        if (addToList)
+            factories.add(this);
     }
-    private Factory(String name){
+    private static Factory createFactory(String name,boolean addToList){
+        Factory factory=null;
         if (name.equals("Mill"))
-            new Mill();
+            factory=new Mill(addToList);
         else if (name.equals("Weaver"))
-            new Weaver();
+            factory=new Weaver(addToList);
         else if (name.equals("Sewing factory"))
-            new SewingFactory();
+            factory=new SewingFactory(addToList);
         else if (name.equals("Milk packaging factory"))
-            new MilkPackagingFactory();
+            factory=new MilkPackagingFactory(addToList);
         else if (name.equals("Ice cream factory"))
-            new IceCreamFactory();
+            factory=new IceCreamFactory(addToList);
         else if (name.equals("Bakery"))
-            new Bakery();
+            factory=new Bakery(addToList);
+        return factory;
     }
     private void produce(int number) {
         if ((number!=0)&&Warehouse.getInstance().inquiry(validType,number)){
             productionDuration= (int)Math.ceil(productionDefaultDuration*number*1.0/level);
             Warehouse.getInstance().remove(new Product(validType),number);
             underProduction=number;//Class.forName(outputType.getTypeName()).getDeclaredConstructor().newInstance()
-            System.out.println(outputType);
+            System.out.println(outputType);///omit later
             return;
         }
         Logger.write('e',"Product cannot be produced");
-    }
-    public void update(){
-        if (productionDuration>0){
-            productionDuration--;
-        }
-        if (productionDuration==0){
-            for(int i=0;i<underProduction;i++){
-                new Product(validType);
-            }
-        }
     }
     private void upgrade(){
         if ( (Game.getCoins()>upgradeCost)&&(level+1<=maxAllowedLevel) ){
@@ -71,6 +66,21 @@ public class Factory {
         }
         System.out.println("Insufficient money or max level error");
         Logger.write('e',"Insufficient money or max level error");
+    }
+    public void update(){
+        if (productionDuration>0){
+            productionDuration--;
+        }
+        if (productionDuration==0){
+            for(int i=0;i<underProduction;i++){
+                Product product=new Product(outputType);
+                product.x=r.nextInt(6)+1;
+                product.y=r.nextInt(6)+1;
+                Product.list.add(product);
+                int a=1;//debug
+            }
+            underProduction=0;
+        }
     }
     public static void upgrade(String name){
         for (Factory factory:factories){
@@ -98,9 +108,18 @@ public class Factory {
                         return;
                     }
                 }
-                new Factory(name);
-                System.out.println("Factory was built successfully");
-                Logger.write('i',"Factory was built successfully");
+                Factory f=createFactory(name,false);
+                if (f!=null){//name is always valid so this is always true
+                    if (f.buildingCost<=Game.getCoins()){
+                        createFactory(name,true);
+                        Game.addCoins(-f.buildingCost);
+                        System.out.println("Factory was built successfully");
+                        Logger.write('i',"Factory was built successfully");
+                        return;
+                    }
+                }
+                System.out.println("Error");
+                return;
             }
         }
         System.out.println("Factory name is invalid");

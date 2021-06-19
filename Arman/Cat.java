@@ -6,7 +6,7 @@ public class Cat extends Animal{
 
     Cat(boolean addToMap)
     {
-        type = "Cat";
+        type = "cat";
         price = 100;
         step = 1;
         x = random();
@@ -15,7 +15,7 @@ public class Cat extends Animal{
 
         if (addToMap) {
             this.addToMap();
-            number = animalIntegerHashMap.get("Cat");
+            number = animalIDNumHashMap.get("cat");
         }
     }
 
@@ -26,7 +26,7 @@ public class Cat extends Animal{
         {
             Game.addCoins(-newCat.price);
             Cat.list.add(newCat);
-            Task.claim("Cat");
+            Task.claim("cat");
             Logger.write('i', "cat has been bought");
         }
         else
@@ -39,6 +39,7 @@ public class Cat extends Animal{
     void kill()
     {
         Cat.list.remove(this);
+        removeFromMap(this.type);
         Logger.write('i',"cat got killed");
     }
 
