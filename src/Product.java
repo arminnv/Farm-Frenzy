@@ -6,14 +6,13 @@ public class Product {
     String type;
     String previousType;//possibly be omitted
     int price;
-    int expirationTime;
+    int expirationTime = -3;
     int x;
     int y;
     boolean collected = false;
     int space;
     Product(String name)
     {
-
         type = name;
         if(name.equals("Egg"))
         {
@@ -84,7 +83,6 @@ public class Product {
             price = 300;
             expirationTime = 5;
             space = 15;
-            collected = true;
         }
         else if(name.equals("Bear"))
         {
@@ -92,7 +90,6 @@ public class Product {
             price = 400;
             expirationTime = 5;
             space = 15;
-            collected = true;
         }
         else if(name.equals("Tiger"))
         {
@@ -100,7 +97,6 @@ public class Product {
             price = 500;
             expirationTime = 5;
             space = 15;
-            collected = true;
         }
     }
 
@@ -113,9 +109,8 @@ public class Product {
             {
                 if (Warehouse.getInstance().add(p)) {
                     p.collected = true;
-                    list.remove(p);//proposed
-                    Task.claim(Product.list.get(i).type);
-                    Logger.write('i', Product.list.get(i).type + " got picked up");
+                    Task.claim(p.type);
+                    Logger.write('i', p.type + " got picked up");
                 }
                 else {
                     Logger.write('e', "Warehouse did not have enough space");
@@ -131,7 +126,7 @@ public class Product {
     {
         for(int i=0; i<Product.list.size(); i++)
         {
-            if(!Product.list.get(i).collected)
+            if(!Product.list.get(i).collected && Product.list.get(i).expirationTime!=-3)
                 Product.list.get(i).expirationTime--;
         }
 
@@ -142,10 +137,10 @@ public class Product {
 
             for(int i=0; i<Product.list.size(); i++)
             {
-                if(Product.list.get(i).expirationTime<=0)
+                if(Product.list.get(i).expirationTime<=0 && Product.list.get(i).expirationTime!= -3)
                 {
                     Logger.write('i',Product.list.get(i).type+" got expired");
-                    Product.list.remove(i);
+                    Product.list.remove(i);//proposed
                     b = true;
                     break;///????
                 }

@@ -15,6 +15,8 @@ public class InputProcessor {
     public static String wareHouseShow="(?i)warehouse";
     public static String inquiry="(?i)inquiry";
     public static String exit="(?i)exit";
+    public static String buildFactory="(?i)build \\w+";
+    public static String upgradeFactory="(?i) upgrade \\w+";
 
     public static void process(){
         Scanner scanner=new Scanner(System.in);
@@ -55,8 +57,17 @@ public class InputProcessor {
         else if (input.matches(inquiry))
             Output.show();
         else if (input.matches(turn)){
-            Time.turn(Integer.parseInt(a[2]));
-            Output.show();
+            Time.turn(Integer.parseInt(a[1]));
+            //Output.show();
+        }
+        else if (input.matches(buildFactory)){
+            Factory.build(a[1]);
+        }
+        else if (input.matches(upgradeFactory)){
+            Factory.upgrade(a[1]);
+        }
+        else {
+            System.out.println("Invalid command. Enter command again");
         }
     }
 }

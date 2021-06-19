@@ -15,7 +15,7 @@ public class Cat extends Animal{
 
         if (addToMap) {
             this.addToMap();
-            number = animalIntegerHashMap.get("Cat");
+            number = animalIDNumHashMap.get("Cat");
         }
     }
 
@@ -39,6 +39,7 @@ public class Cat extends Animal{
     void kill()
     {
         Cat.list.remove(this);
+        removeFromMap(this.type);
         Logger.write('i',"cat got killed");
     }
 

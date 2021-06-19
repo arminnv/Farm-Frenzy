@@ -13,7 +13,7 @@ public class Hound extends Animal{
         y = random();
         space=1;
         this.addToMap();
-        number=animalIntegerHashMap.get("Hound");
+        number= animalIDNumHashMap.get("Hound");
     }
 
     static void buy()
@@ -36,6 +36,7 @@ public class Hound extends Animal{
     void kill()
     {
         Hound.list.remove(this);
+        removeFromMap(this.type);
         Logger.write('i',"hound got killed");
     }
 

@@ -1,5 +1,6 @@
+
 public class SewingFactory extends Factory{
-    SewingFactory(){
-        super("Sewing factory","Fabric","Shirt",400,6);
+    SewingFactory(boolean addToList){
+        super("Sewing factory","Fabric","Shirt",400,6,addToList);
     }
 }

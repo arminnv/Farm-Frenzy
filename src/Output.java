@@ -39,7 +39,7 @@ public class Output {
         for (int i=0; i<Wild.list.size(); i++)
         {
             Wild wild = Wild.list.get(i);
-            System.out.println(wild.type + " " + wild.leftCages + " " + wild.x + " " + wild.y);
+            System.out.println(wild.type + " left cages: "+ wild.leftCages + " " + wild.x + " " + wild.y);
         }
 
         for (int i=0; i<Cat.list.size(); i++)
