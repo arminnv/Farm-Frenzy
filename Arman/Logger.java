@@ -1,5 +1,3 @@
-import com.google.gson.Gson;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -7,6 +5,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
@@ -43,7 +42,7 @@ public class Logger {
         }
         catch (IOException e) {
             System.out.println(e.toString());
-            LocalDateTime d=LocalDateTime.now();
+            LocalDateTime d=LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS);
             header+= d.toLocalDate().toString()+" "+d.toLocalTime().toString()+"\n";
         }
         finally {
@@ -52,7 +51,7 @@ public class Logger {
                 header+=User.current.userName+"\n";
             else
                 header+="No user exists\n";
-            LocalDateTime d=LocalDateTime.now();
+            LocalDateTime d=LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS);
             header+= d.toLocalDate().toString()+" "+d.toLocalTime().toString()+"\n";
         }
         try
@@ -70,15 +69,9 @@ public class Logger {
         }
     }
 
-    static String getDate()
-    {
+    static String getDate() {
         Date date = Calendar.getInstance().getTime();
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        String strDate = dateFormat.format(date);
-        return  strDate;
-    }
-
-    static void delete() {
-       logFile.delete();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        return dateFormat.format(date);
     }
 }

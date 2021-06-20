@@ -6,7 +6,7 @@ public class Cat extends Animal{
 
     Cat(boolean addToMap)
     {
-        type = "Cat";
+        type = "cat";
         price = 100;
         step = 1;
         x = random();
@@ -15,7 +15,7 @@ public class Cat extends Animal{
 
         if (addToMap) {
             this.addToMap();
-            number = animalIntegerHashMap.get("Cat");
+            number = animalIDNumHashMap.get("cat");
         }
     }
 
@@ -24,9 +24,10 @@ public class Cat extends Animal{
         Cat newCat = new Cat(false);
         if(newCat.price <= Game.getCoins())
         {
+            newCat=new Cat(true);
             Game.addCoins(-newCat.price);
             Cat.list.add(newCat);
-            Task.claim("Cat");
+            Task.claim("cat");
             Logger.write('i', "cat has been bought");
         }
         else
@@ -39,14 +40,13 @@ public class Cat extends Animal{
     void kill()
     {
         Cat.list.remove(this);
+        removeFromMap(this.type);
         Logger.write('i',"cat got killed");
     }
 
     void walk()
     {
-        if(this.find() == null)
-        {
-            //randomStep
+        if(this.find() == null) {
             int d = randomDirection();
             if((d==0)&&(x+step<=6))
                 x += step;
@@ -56,16 +56,6 @@ public class Cat extends Animal{
                 x -= step;
             else if((d==3)&&(y-step>=1))
                 y -= step;
-            /*
-            if(x>6)
-                x=6;
-            if(x<1)
-                x=1;
-            if(y>6)
-                y=6;
-            if(y<1)
-                y=1;
-             */
         }
         else
         {
@@ -104,8 +94,8 @@ public class Cat extends Animal{
         Product closest = null;
         for (int i=0; i<Product.list.size(); i++)
         {
-            Product product = Product.list.get(i);
-            if((!product.collected) && (!product.type.equals("Tiger")) && (!product.type.equals("Bear")) && (!product.type.equals("Lion")) )
+            Product product = Product.list.get(i);//cats do not collect caged wild animals
+            if((!product.collected) && (!product.type.equals("tiger")) && (!product.type.equals("bear")) && (!product.type.equals("lion")) )
             {
                 if(Math.abs(product.x-x) + Math.abs(product.y-y) < min)
                 {

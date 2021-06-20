@@ -1,5 +1,5 @@
 public class Mill extends Factory{
-    Mill(){
-        super("Mill","Egg","Flour",150,4);
+    Mill(boolean addToMap){
+        super("mill","egg","flour",150,4,addToMap);
     }
 }

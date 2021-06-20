@@ -17,8 +17,9 @@ public class Warehouse {
         return w;
     }
 
-    public boolean add(Product product){//must be checked for bugs
+    public boolean add(Product product){
         if (occupied+product.space<capacity) {
+            //Product.list.remove(product);
             occupied += product.space;
             for (Product product1 : products) {
                 if (product1.type.equals(product.type)) {
@@ -35,9 +36,14 @@ public class Warehouse {
     public boolean remove(Product product, int number){
         for (Product product1:products){
             int num=productIntegerHashMap.get(product1.type);
-            if (product.type.equals(product1.type) && num>number){
+            if (product.type.equals(product1.type) && num>=number){
+                occupied-=product.space;
                 productIntegerHashMap.put(product1.type,num-number);
-                return true;
+                if (num-number==0) {
+                    productIntegerHashMap.remove(product1.type);
+                    products.remove(product1);
+                    return true;
+                }
             }
         }
         return false;
@@ -48,6 +54,8 @@ public class Warehouse {
         return productIntegerHashMap.get(type) >= number;
     }
     public void show(){
+        System.out.println("----Warehouse----");
+        System.out.println("Occupied space: "+occupied);
         for (Product product:Warehouse.getInstance().products){
             System.out.println(product.type+" "+productIntegerHashMap.get(product.type));
         }

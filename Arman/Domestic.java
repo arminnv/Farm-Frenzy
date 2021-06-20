@@ -1,25 +1,23 @@
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Random;
+import java.util.Set;
 
 public class Domestic extends Animal{
 
     static ArrayList<Domestic> list = new ArrayList<>();
+    public static final Set<String> nameList=Set.of("chicken","turkey","buffalo");
     String productType;
     int health = 100;
     int productionTime;
     int timePassed = 0;
     int lifeReduction = 10;
-    boolean hungry = false;
 
     Domestic(String name, boolean addToMap)
     {
         if(name.equals("chicken"))
         {
-            type = "Chicken";
+            type = "chicken";
             productionTime = 2;
-            productType = "Egg";
+            productType = "egg";
             price = 100;
             step = 1;
             space = 1;
@@ -27,15 +25,15 @@ public class Domestic extends Animal{
             y = random();
             if (addToMap) {
                 this.addToMap();
-                number = animalIntegerHashMap.get("Chicken");
+                number = animalIDNumHashMap.get("chicken");
             }
         }
 
         else if(name.equals("turkey"))
         {
-            type = "Turkey";
+            type = "turkey";
             productionTime = 3;
-            productType = "Feather";
+            productType = "feather";
             price = 200;
             step = 1;
             space = 1;
@@ -43,15 +41,15 @@ public class Domestic extends Animal{
             y = random();
             if (addToMap) {
                 this.addToMap();
-                number = animalIntegerHashMap.get("Turkey");
+                number = animalIDNumHashMap.get("turkey");
             }
         }
 
         else if(name.equals("buffalo"))
         {
-            type = "Buffalo";
+            type = "buffalo";
             productionTime = 5;
-            productType = "Milk";
+            productType = "milk";
             price = 400;
             step = 1;
             space = 1;
@@ -59,7 +57,7 @@ public class Domestic extends Animal{
             y = random();
             if (addToMap) {
                 this.addToMap();
-                number = animalIntegerHashMap.get("Buffalo");
+                number = animalIDNumHashMap.get("buffalo");
             }
         }
     }
@@ -132,6 +130,7 @@ public class Domestic extends Animal{
     void kill()
     {
         Domestic.list.remove(this);
+        removeFromMap(this.type);
         Logger.write('i', type + " died");
     }
 
@@ -141,7 +140,6 @@ public class Domestic extends Animal{
         find(closest);
         if(health > 50 || closest[0] == 0)
         {
-            //randomStep()
             int d = randomDirection();
             if(d==0)
                 x += step;

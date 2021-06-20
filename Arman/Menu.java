@@ -1,14 +1,6 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Menu {
-    public static String userName="(?i)username \\w+";
-    public static String password="(?i)password \\w+";
-    public static String login="(?i)log in";
-    public static String signup="(?i)signup";
-    public static String start="(?i)start \\d+";
-    public static String logout="(?i)log out";
-    public static String settings="(?i)settings";
     static void enter()
     {
         Scanner sc = new Scanner(System.in);
@@ -39,6 +31,8 @@ public class Menu {
                     main(user);
                 }
             }
+            else if (st.equals("exit"))
+                break;
             else
                 System.out.println("Invalid Command");
         }
@@ -69,9 +63,9 @@ public class Menu {
                 Logger.write('i',"log out successful");
                 break;
             }
-            else if(st.equals("settings"))
-            {
-
+            else if(st.equals("settings")) {
+                System.out.println("⚙ settings ⚙\n" +
+                        "VOLUME   - ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒ +");
             }
         }
     }

@@ -134,8 +134,7 @@ public class User {
                 user.points+=map.get(time);
             }
         }
-        try
-        {
+        try {
             FileReader reader = new FileReader("users.txt");
             Scanner sc = new Scanner(reader);
             while (sc.hasNextLine())
@@ -163,7 +162,5 @@ public class User {
             System.out.println("error");
             Logger.write('e',"error");
         }
-        System.out.println("signup successful");
-        Logger.write('i', "signup successful");
     }
 }

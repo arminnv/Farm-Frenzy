@@ -1,5 +1,5 @@
 public class Bakery extends Factory{
-    Bakery(){
-        super("Bakery","Flour","Bread",250,5);
+    Bakery(boolean addToMap){
+        super("bakery","flour","bread",250,5,addToMap);
     }
 }

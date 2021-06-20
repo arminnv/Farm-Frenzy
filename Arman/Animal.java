@@ -1,11 +1,9 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
 public abstract class Animal {
-    static HashMap<String,Integer> animalIntegerHashMap=new HashMap<>();
-    static HashMap<String,Integer> animalNumber=new HashMap<>();
-    static ArrayList<Animal> animals=new ArrayList<>();
+    static HashMap<String,Integer> animalIDNumHashMap =new HashMap<>();//non wild
+    static HashMap<String,Integer> animalCount =new HashMap<>();//non wild
 
     String type = "";
     int number;
@@ -24,39 +22,21 @@ public abstract class Animal {
     {
         return rand.nextInt(4);
     }
-    public void randomStep(){
-        int d = randomDirection();
-        if((d==0)&&(x+1<=6))
-            x++;
-        else if((d==1)&&(y+1<=6))
-            y++;
-        else if((d==2)&&(x-1>=1))
-            x--;
-        else if((d==3)&&(y-1>=1))
-            y--;
-    }
-    public void addToMap(){
-        if (animalIntegerHashMap.containsKey(this.type)){
-            animalIntegerHashMap.put(this.type,animalIntegerHashMap.get(this.type)+1);
-            animalNumber.put(this.type,animalNumber.get(this.type)+1);
+    public void addToMap(){//important note: add chickens 1-3 then remove them. next chicken ID:1
+        if (animalCount.containsKey(this.type)){
+            animalIDNumHashMap.put(this.type, animalIDNumHashMap.get(this.type)+1);
+            animalCount.put(this.type, animalCount.get(this.type)+1);
         }
         else {
-            animalNumber.put(this.type,1);
-            animalIntegerHashMap.put(this.type,1);
+            animalCount.put(this.type,1);
+            animalIDNumHashMap.put(this.type,1);
         }
     }
     public static void removeFromMap(String type){
-        if (animalNumber.containsKey(type)){
-            animalNumber.put(type,animalNumber.get(type)-1);
-            if (animalNumber.get(type)==0)
-                animalNumber.remove(type);
-            for (int i=0;i<animals.size();i++) {
-                Animal animal=animals.get(i);
-                if (animal.type.equals(type)){
-                    animals.remove(animal);
-                    break;
-                }
-            }
+        if (animalCount.containsKey(type)){
+            animalCount.put(type, animalCount.get(type)-1);
+            if (animalCount.get(type)==0)
+                animalCount.remove(type);
         }
     }
     abstract void walk();

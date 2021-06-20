@@ -2,15 +2,14 @@ public class Time {
 
     static int time = 0;
 
-    static void turn(int n)
-    {
-        Time.time += n;
-        for(int i=0; i<n; i++)
+    static void turn(int n) {
+        for(int i=0; i<n; i++) {
             update();
+            Time.time++;
+        }
     }
 
-    static void update()
-    {
+    static void update() {
         appear();
         eat();
         Domestic.reduce();
@@ -29,12 +28,6 @@ public class Time {
 
     static void walk()
     {
-        //proposed
-        /*
-        for (Animal animal:Animal.animals){
-            animal.walk
-        }
-         */
         for(int i=0; i<Domestic.list.size(); i++)
         {
             Domestic domestic = Domestic.list.get(i);

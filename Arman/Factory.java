@@ -1,9 +1,10 @@
-import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Random;
 
-public class Factory {
-    public static final String[] nameList={"Mill","Weaver","Sewing factory","Milk packaging factory","Ice cream factory","Bakery"};
+public abstract class Factory {
+    public static final String[] nameList={"mill","weaver","sewing factory","milk packaging factory","ice cream factory","bakery"};
     static ArrayList<Factory> factories=new ArrayList<>();
+    static Random r=new Random();
     int level;
     int maxAllowedLevel;
     int buildingCost;
@@ -25,31 +26,47 @@ public class Factory {
         underProduction=0;
         level=1;
         maxAllowedLevel=2;
-        factories.add(this);
+        if (addToList)
+            factories.add(this);
     }
-    private Factory(String name){
-        if (name.equals("Mill"))
-            new Mill();
-        else if (name.equals("Weaver"))
-            new Weaver();
-        else if (name.equals("Sewing factory"))
-            new SewingFactory();
-        else if (name.equals("Milk packaging factory"))
-            new MilkPackagingFactory();
-        else if (name.equals("Ice cream factory"))
-            new IceCreamFactory();
-        else if (name.equals("Bakery"))
-            new Bakery();
+    private static Factory createFactory(String name,boolean addToList){
+        Factory factory=null;
+        if (name.equals("mill"))
+            factory=new Mill(addToList);
+        else if (name.equals("weaver"))
+            factory=new Weaver(addToList);
+        else if (name.equals("sewing factory"))
+            factory=new SewingFactory(addToList);
+        else if (name.equals("milk packaging factory"))
+            factory=new MilkPackagingFactory(addToList);
+        else if (name.equals("ice cream factory"))
+            factory=new IceCreamFactory(addToList);
+        else if (name.equals("bakery"))
+            factory=new Bakery(addToList);
+        return factory;
     }
     private void produce(int number) {
         if ((number!=0)&&Warehouse.getInstance().inquiry(validType,number)){
             productionDuration= (int)Math.ceil(productionDefaultDuration*number*1.0/level);
             Warehouse.getInstance().remove(new Product(validType),number);
             underProduction=number;//Class.forName(outputType.getTypeName()).getDeclaredConstructor().newInstance()
-            System.out.println(outputType);
+            System.out.println("Product is getting produced");
+            Logger.write('i',"Product is getting produced");
             return;
         }
+        System.out.println("Product cannot be produced");
         Logger.write('e',"Product cannot be produced");
+    }
+    private void upgrade(){
+        if ( (Game.getCoins()>upgradeCost)&&(level+1<=maxAllowedLevel) ){
+            Game.addCoins(-upgradeCost);
+            level++;
+            Logger.write('i',"Factory "+name+" was upgraded to level "+level);
+            System.out.println("Factory "+name+" was upgraded to level "+level);
+            return;
+        }
+        System.out.println("Insufficient money or max level error");
+        Logger.write('e',"Insufficient money or max level error");
     }
     public void update(){
         if (productionDuration>0){
@@ -57,20 +74,14 @@ public class Factory {
         }
         if (productionDuration==0){
             for(int i=0;i<underProduction;i++){
-                new Product(validType);
+                Product product=new Product(outputType);
+                product.x=r.nextInt(6)+1;
+                product.y=r.nextInt(6)+1;
+                Product.list.add(product);
+                Logger.write('i',this.name+ " produced "+product.type);
             }
+            underProduction=0;
         }
-    }
-    private void upgrade(){
-        if ( (Game.getCoins()>upgradeCost)&&(level+1<=maxAllowedLevel) ){
-            Game.addCoins(-upgradeCost);
-            level++;
-            Logger.write('i',"Factory"+name+"was upgraded to level "+level);
-            System.out.println("Factory"+name+"was upgraded to level "+level);
-            return;
-        }
-        System.out.println("Insufficient money or max level error");
-        Logger.write('e',"Insufficient money or max level error");
     }
     public static void upgrade(String name){
         for (Factory factory:factories){
@@ -84,9 +95,13 @@ public class Factory {
     }
     public static void produce(String factoryName,int number){
         for (Factory factory:factories){
-            if (factory.name.equals(factoryName))
+            if (factory.name.equals(factoryName)) {
                 factory.produce(number);
+                return;
+            }
         }
+        System.out.println("Factory was not found");
+        Logger.write('e',"Factory was not found");
     }
     public static void build(String name){
         for (String name1:nameList){
@@ -98,9 +113,18 @@ public class Factory {
                         return;
                     }
                 }
-                new Factory(name);
-                System.out.println("Factory was built successfully");
-                Logger.write('i',"Factory was built successfully");
+                Factory f=createFactory(name,false);
+                if (f!=null){//name is always valid so this is always true
+                    if (f.buildingCost<=Game.getCoins()){
+                        createFactory(name,true);
+                        Game.addCoins(-f.buildingCost);
+                        System.out.println("Factory was built successfully");
+                        Logger.write('i',"Factory was built successfully");
+                        return;
+                    }
+                }
+                System.out.println("Error");
+                return;
             }
         }
         System.out.println("Factory name is invalid");

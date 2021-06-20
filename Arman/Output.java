@@ -27,9 +27,6 @@ public class Output {
 
     static void showAnimals()
     {
-        //implement show for animals
-        //for (Animal animal:Animal.animals)
-        //     animal.show
         for (int i=0; i<Domestic.list.size(); i++)
         {
             Domestic domestic = Domestic.list.get(i);
@@ -39,7 +36,7 @@ public class Output {
         for (int i=0; i<Wild.list.size(); i++)
         {
             Wild wild = Wild.list.get(i);
-            System.out.println(wild.type + " " + wild.leftCages + " " + wild.x + " " + wild.y);
+            System.out.println(wild.type + " left cages: "+ wild.leftCages + " " + wild.x + " " + wild.y);
         }
 
         for (int i=0; i<Cat.list.size(); i++)
@@ -57,8 +54,7 @@ public class Output {
 
     static void showProducts()
     {
-        for (int i=0; i<Product.list.size(); i++)
-        {
+        for (int i=0; i<Product.list.size(); i++) {
             Product product = Product.list.get(i);
             if(product.collected)
                 continue;
@@ -68,8 +64,7 @@ public class Output {
 
     static void showTasks()
     {
-        for (int i=0; i<Task.list.size(); i++)
-        {
+        for (int i=0; i<Task.list.size(); i++) {
             Task task = Task.list.get(i);
             System.out.println(task.name + ": " + task.claimed + "/" + task.goal);
         }
