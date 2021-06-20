@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
@@ -43,7 +44,7 @@ public class Logger {
         }
         catch (IOException e) {
             System.out.println(e.toString());
-            LocalDateTime d=LocalDateTime.now();
+            LocalDateTime d=LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS);
             header+= d.toLocalDate().toString()+" "+d.toLocalTime().toString()+"\n";
         }
         finally {
@@ -52,7 +53,7 @@ public class Logger {
                 header+=User.current.userName+"\n";
             else
                 header+="No user exists\n";
-            LocalDateTime d=LocalDateTime.now();
+            LocalDateTime d=LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS);
             header+= d.toLocalDate().toString()+" "+d.toLocalTime().toString()+"\n";
         }
         try

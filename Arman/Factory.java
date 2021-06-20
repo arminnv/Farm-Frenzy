@@ -2,8 +2,8 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Factory {
-    public static final String[] nameList={"Mill","Weaver","Sewing factory","Milk packaging factory","Ice cream factory","Bakery"};
+public abstract class Factory {
+    public static final String[] nameList={"mill","weaver","sewing factory","milk packaging factory","ice cream factory","bakery"};
     static ArrayList<Factory> factories=new ArrayList<>();
     static Random r=new Random();
     int level;

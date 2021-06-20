@@ -1,754 +1,86 @@
 2021-06-19 00:05:46.396156
 Latest change by :arman
-2021-06-19 17:31:32.192783600
-[Info], 2021-05-19 12:05:46, login successful
+2021-06-20 17:40:18
+[Info], 2021-06-20 04:17:08, login successful
 
-[Info], 2021-16-19 12:16:42, login successful
+[Info], 2021-06-20 04:17:22, chicken has been bought
 
-[Info], 2021-18-19 12:18:44, login successful
+[Info], 2021-06-20 04:17:25, cat has been bought
 
-[Info], 2021-18-19 12:18:56, Chicken has been bought
+[Info], 2021-06-20 04:17:30, hound has been bought
 
-[Info], 2021-19-19 12:19:01, Chicken has been bought
+[Info], 2021-06-20 04:17:54, cat loaded
 
-[Info], 2021-19-19 12:19:05, planted successfully
+[Info], 2021-06-20 04:18:02, hound loaded
 
-[Info], 2021-19-19 12:19:07, planted successfully
+[Info], 2021-06-20 04:18:06, truck left
 
-[Info], 2021-19-19 12:19:14, planted successfully
+[Info], 2021-06-20 04:18:21, chicken produced Egg
 
-[Info], 2021-19-19 12:19:18, planted successfully
+[Info], 2021-06-20 04:18:21, chicken produced Egg
 
-[Info], 2021-19-19 12:19:33, planted successfully
+[Info], 2021-06-20 04:18:21, Egg got expired
 
-[Error], 2021-19-19 12:19:47, Error: not enough water in the well
+[Info], 2021-06-20 04:18:21, chicken produced Egg
 
-[Info], 2021-25-19 12:25:51, login successful
+[Info], 2021-06-20 04:18:21, Egg got expired
 
-[Info], 2021-26-19 12:26:02, Chicken has been bought
+[Info], 2021-06-20 04:18:21, chicken produced Egg
 
-[Info], 2021-26-19 12:26:13, Chicken has been bought
+[Info], 2021-06-20 04:18:21, Egg got expired
 
-[Info], 2021-27-19 12:27:35, login successful
+[Info], 2021-06-20 04:18:21, Egg got expired
 
-[Info], 2021-27-19 12:27:45, Chicken has been bought
+[Info], 2021-06-20 04:19:25, bear got caged
 
-[Info], 2021-27-19 12:27:53, Chicken has been bought
+[Info], 2021-06-20 04:19:30, bear got expired
 
-[Info], 2021-28-19 12:28:00, Chicken has been bought
+[Error], 2021-06-20 04:20:06, product not found
 
-[Info], 2021-28-19 12:28:08, planted successfully
+[Info], 2021-06-20 04:22:09, login successful
 
-[Info], 2021-28-19 12:28:12, planted successfully
+[Info], 2021-06-20 04:22:34, bear got caged
 
-[Info], 2021-28-19 12:28:15, planted successfully
+[Info], 2021-06-20 04:22:39, bear got picked up
 
-[Info], 2021-28-19 12:28:17, planted successfully
+[Info], 2021-06-20 04:22:59, truck left
 
-[Info], 2021-28-19 12:28:20, planted successfully
+[Info], 2021-06-20 05:31:13, login successful
 
-[Error], 2021-28-19 12:28:24, Error: not enough water in the well
+[Info], 2021-06-20 05:31:35, bear got caged
 
-[Info], 2021-28-19 12:28:50, Chicken produced Egg
+[Info], 2021-06-20 05:31:40, bear got picked up
 
-[Info], 2021-28-19 12:28:50, Chicken produced Egg
+[Error], 2021-06-20 05:31:54, Empty truck cannot leave
 
-[Info], 2021-28-19 12:28:50, Chicken produced Egg
+[Info], 2021-06-20 05:32:43, login successful
 
-[Info], 2021-29-19 12:29:03, Chicken produced Egg
+[Info], 2021-06-20 05:33:03, bear got caged
 
-[Info], 2021-29-19 12:29:03, Chicken produced Egg
+[Info], 2021-06-20 05:33:54, bear got picked up
 
-[Info], 2021-29-19 12:29:03, Chicken produced Egg
+[Info], 2021-06-20 05:35:02, login successful
 
-[Info], 2021-29-19 12:29:03, Chicken ate
+[Info], 2021-06-20 05:35:19, bear got caged
 
-[Info], 2021-29-19 12:29:03, Chicken ate
+[Info], 2021-06-20 05:35:23, bear got picked up
 
-[Info], 2021-29-19 12:29:03, Chicken ate
+[Info], 2021-06-20 05:35:40, truck left
 
-[Info], 2021-29-19 12:29:03, Egg got expired
+[Info], 2021-06-20 05:38:24, login successful
 
-[Info], 2021-29-19 12:29:03, Egg got expired
+[Info], 2021-06-20 05:38:49, bear got caged
 
-[Info], 2021-29-19 12:29:03, Egg got expired
+[Info], 2021-06-20 05:38:54, bear got picked up
 
-[Info], 2021-29-19 12:29:03, Chicken produced Egg
+[Info], 2021-06-20 05:39:10, truck left
 
-[Info], 2021-29-19 12:29:03, Chicken produced Egg
+[Info], 2021-06-20 05:39:38, tiger got caged
 
-[Info], 2021-29-19 12:29:03, Chicken produced Egg
+[Info], 2021-06-20 05:39:42, tiger got picked up
 
-[Info], 2021-29-19 12:29:07, Egg got expired
+[Error], 2021-06-20 05:39:54, Factory name is invalid
 
-[Info], 2021-29-19 12:29:07, Egg got expired
+[Error], 2021-06-20 05:40:01, Factory name is invalid
 
-[Info], 2021-29-19 12:29:07, Egg got expired
-
-[Info], 2021-29-19 12:29:07, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:07, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:07, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:07, Chicken ate
-
-[Info], 2021-29-19 12:29:07, Egg got expired
-
-[Info], 2021-29-19 12:29:07, Egg got expired
-
-[Info], 2021-29-19 12:29:07, Egg got expired
-
-[Info], 2021-29-19 12:29:07, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:07, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:07, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:07, Chicken ate
-
-[Info], 2021-29-19 12:29:08, Egg got expired
-
-[Info], 2021-29-19 12:29:08, Egg got expired
-
-[Info], 2021-29-19 12:29:08, Egg got expired
-
-[Info], 2021-29-19 12:29:08, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:08, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:08, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:08, Egg got expired
-
-[Info], 2021-29-19 12:29:08, Egg got expired
-
-[Info], 2021-29-19 12:29:08, Egg got expired
-
-[Info], 2021-29-19 12:29:08, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:08, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:08, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:08, Egg got expired
-
-[Info], 2021-29-19 12:29:08, Egg got expired
-
-[Info], 2021-29-19 12:29:08, Egg got expired
-
-[Info], 2021-29-19 12:29:08, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:08, Chicken produced Egg
-
-[Info], 2021-29-19 12:29:26, Egg got picked up
-
-[Info], 2021-29-19 12:29:31, Egg got picked up
-
-[Info], 2021-29-19 12:29:37, Egg got picked up
-
-[Info], 2021-29-19 12:29:43, Egg got picked up
-
-[Info], 2021-02-19 01:02:39, login successful
-
-[Info], 2021-02-19 01:02:49, Chicken has been bought
-
-[Info], 2021-02-19 01:02:51, Chicken produced Egg
-
-[Info], 2021-03-19 01:03:40, login successful
-
-[Info], 2021-03-19 01:03:55, Chicken has been bought
-
-[Info], 2021-03-19 01:03:57, Chicken produced Egg
-
-[Info], 2021-05-19 01:05:07, login successful
-
-[Info], 2021-05-19 01:05:17, Chicken has been bought
-
-[Info], 2021-05-19 01:05:20, Chicken produced Egg
-
-[Info], 2021-05-19 01:05:33, Egg got picked up
-
-[Info], 2021-07-19 01:07:52, login successful
-
-[Info], 2021-18-19 10:18:32, login successful
-
-[Error], 2021-19-19 10:19:33, Factory name is invalid
-
-[Info], 2021-19-19 10:19:51, login successful
-
-[Error], 2021-21-19 10:21:07, Factory name is invalid
-
-[Info], 2021-21-19 10:21:20, login successful
-
-[Error], 2021-21-19 10:21:33, animal type not found
-
-[Error], 2021-21-19 10:21:51, Factory name is invalid
-
-[Info], 2021-23-19 10:23:00, Factory was built successfully
-
-[Error], 2021-23-19 10:23:00, Factory name is invalid
-
-[Info], 2021-38-19 10:38:43, login successful
-
-[Info], 2021-38-19 10:38:52, Chicken has been bought
-
-[Info], 2021-38-19 10:38:57, Chicken has been bought
-
-[Info], 2021-39-19 10:39:00, planted successfully
-
-[Info], 2021-39-19 10:39:03, planted successfully
-
-[Info], 2021-39-19 10:39:07, planted successfully
-
-[Info], 2021-39-19 10:39:20, Chicken produced Egg
-
-[Info], 2021-39-19 10:39:20, Chicken produced Egg
-
-[Info], 2021-39-19 10:39:20, Chicken produced Egg
-
-[Info], 2021-39-19 10:39:20, Chicken produced Egg
-
-[Info], 2021-39-19 10:39:36, Egg got picked up
-
-[Info], 2021-39-19 10:39:45, Egg got picked up
-
-[Info], 2021-39-19 10:39:50, Egg got picked up
-
-[Info], 2021-39-19 10:39:54, Egg got picked up
-
-[Info], 2021-46-19 10:46:05, Factory was built successfully
-
-[Error], 2021-46-19 10:46:05, Factory name is invalid
-
-[Info], 2021-46-19 10:46:38, Chicken ate
-
-[Info], 2021-46-19 10:46:38, Chicken produced Egg
-
-[Info], 2021-46-19 10:46:38, Chicken produced Egg
-
-[Info], 2021-46-19 10:46:38, Chicken ate
-
-[Info], 2021-46-19 10:46:38, Chicken produced Egg
-
-[Info], 2021-46-19 10:46:38, Chicken produced Egg
-
-[Info], 2021-47-19 10:47:19, Egg got expired
-
-[Info], 2021-47-19 10:47:19, Egg got expired
-
-[Info], 2021-47-19 10:47:19, Chicken produced Egg
-
-[Info], 2021-47-19 10:47:19, Chicken produced Egg
-
-[Info], 2021-17-19 11:17:12, login successful
-
-[Info], 2021-17-19 11:17:22, Chicken has been bought
-
-[Info], 2021-17-19 11:17:27, Chicken has been bought
-
-[Info], 2021-17-19 11:17:32, Chicken produced Egg
-
-[Info], 2021-17-19 11:17:32, Chicken produced Egg
-
-[Info], 2021-18-19 11:18:15, Egg got picked up
-
-[Info], 2021-18-19 11:18:19, Egg got picked up
-
-[Info], 2021-18-19 11:18:26, Factory was built successfully
-
-[Info], 2021-18-19 11:18:46, Chicken produced Egg
-
-[Info], 2021-18-19 11:18:46, Chicken produced Egg
-
-[Info], 2021-18-19 11:18:46, Chicken produced Egg
-
-[Info], 2021-18-19 11:18:46, Chicken produced Egg
-
-[Info], 2021-18-19 11:18:46, Egg got expired
-
-[Info], 2021-18-19 11:18:46, Egg got expired
-
-[Info], 2021-18-19 11:18:46, Chicken produced Egg
-
-[Info], 2021-18-19 11:18:46, Chicken produced Egg
-
-[Info], 2021-20-19 11:20:42, login successful
-
-[Info], 2021-20-19 11:20:50, Chicken has been bought
-
-[Info], 2021-20-19 11:20:55, Chicken has been bought
-
-[Info], 2021-21-19 11:21:09, Chicken produced Egg
-
-[Info], 2021-21-19 11:21:44, login successful
-
-[Info], 2021-21-19 11:21:52, Chicken has been bought
-
-[Info], 2021-21-19 11:21:57, Chicken has been bought
-
-[Info], 2021-22-19 11:22:02, Factory was built successfully
-
-[Info], 2021-22-19 11:22:07, Factory was built successfully
-
-[Info], 2021-22-19 11:22:17, Chicken produced Egg
-
-[Info], 2021-22-19 11:22:17, Chicken produced Egg
-
-[Info], 2021-22-19 11:22:48, login successful
-
-[Info], 2021-22-19 11:22:56, Chicken has been bought
-
-[Info], 2021-22-19 11:22:59, Chicken has been bought
-
-[Error], 2021-23-19 11:23:04, Factory name is invalid
-
-[Info], 2021-23-19 11:23:10, Factory was built successfully
-
-[Info], 2021-23-19 11:23:17, Factory was built successfully
-
-[Info], 2021-23-19 11:23:54, Chicken produced Egg
-
-[Info], 2021-24-19 11:24:10, login successful
-
-[Info], 2021-24-19 11:24:18, Chicken has been bought
-
-[Info], 2021-24-19 11:24:21, Chicken has been bought
-
-[Info], 2021-24-19 11:24:25, Factory was built successfully
-
-[Info], 2021-24-19 11:24:30, Factory was built successfully
-
-[Error], 2021-24-19 11:24:40, Product cannot be produced
-
-[Info], 2021-24-19 11:24:57, Chicken produced Egg
-
-[Info], 2021-24-19 11:24:57, Chicken produced Egg
-
-[Info], 2021-25-19 11:25:15, Chicken produced Egg
-
-[Info], 2021-25-19 11:25:15, Chicken produced Egg
-
-[Info], 2021-25-19 11:25:17, Egg got expired
-
-[Info], 2021-25-19 11:25:17, Egg got expired
-
-[Info], 2021-25-19 11:25:17, Chicken produced Egg
-
-[Info], 2021-25-19 11:25:17, Chicken produced Egg
-
-[Info], 2021-25-19 11:25:20, Egg got expired
-
-[Info], 2021-25-19 11:25:20, Egg got expired
-
-[Info], 2021-25-19 11:25:20, Chicken produced Egg
-
-[Info], 2021-25-19 11:25:20, Chicken produced Egg
-
-[Info], 2021-25-19 11:25:33, Egg got picked up
-
-[Info], 2021-25-19 11:25:52, Chicken died
-
-[Info], 2021-26-19 11:26:08, Egg got expired
-
-[Info], 2021-26-19 11:26:44, login successful
-
-[Info], 2021-26-19 11:26:50, Chicken has been bought
-
-[Info], 2021-26-19 11:26:55, Chicken produced Egg
-
-[Info], 2021-27-19 11:27:00, Factory was built successfully
-
-[Info], 2021-27-19 11:27:04, Factory was built successfully
-
-[Error], 2021-27-19 11:27:10, Product cannot be produced
-
-[Info], 2021-27-19 11:27:29, Egg got picked up
-
-[Info], 2021-27-19 11:27:43, Chicken produced Egg
-
-[Info], 2021-28-19 11:28:16, Chicken produced Egg
-
-[Info], 2021-29-19 11:29:11, Egg got expired
-
-[Info], 2021-29-19 11:29:12, Chicken produced Egg
-
-[Info], 2021-43-19 11:43:08, login successful
-
-[Info], 2021-43-19 11:43:15, Chicken has been bought
-
-[Info], 2021-43-19 11:43:20, Chicken has been bought
-
-[Info], 2021-43-19 11:43:25, Factory was built successfully
-
-[Info], 2021-43-19 11:43:30, Factory was built successfully
-
-[Error], 2021-43-19 11:43:39, Factory already exists
-
-[Info], 2021-43-19 11:43:45, Chicken produced Egg
-
-[Info], 2021-43-19 11:43:45, Chicken produced Egg
-
-[Info], 2021-43-19 11:43:52, Egg got picked up
-
-[Info], 2021-44-19 11:44:22, Chicken produced Egg
-
-[Info], 2021-44-19 11:44:22, Chicken produced Egg
-
-[Info], 2021-44-19 11:44:22, Egg got expired
-
-[Info], 2021-44-19 11:44:22, Chicken produced Egg
-
-[Info], 2021-44-19 11:44:22, Chicken produced Egg
-
-[Info], 2021-44-19 11:44:22, Egg got expired
-
-[Info], 2021-44-19 11:44:22, Egg got expired
-
-[Info], 2021-44-19 11:44:22, Chicken produced Egg
-
-[Info], 2021-44-19 11:44:22, Chicken produced Egg
-
-[Info], 2021-48-19 11:48:50, login successful
-
-[Info], 2021-49-19 11:49:01, Chicken has been bought
-
-[Info], 2021-49-19 11:49:06, Chicken has been bought
-
-[Info], 2021-49-19 11:49:09, Factory was built successfully
-
-[Error], 2021-49-19 11:49:14, Factory already exists
-
-[Info], 2021-49-19 11:49:34, Chicken produced Egg
-
-[Info], 2021-49-19 11:49:34, Chicken produced Egg
-
-[Info], 2021-49-19 11:49:34, Chicken died
-
-[Info], 2021-50-19 11:50:02, Egg got picked up
-
-[Info], 2021-50-19 11:50:42, Chicken produced Egg
-
-[Info], 2021-50-19 11:50:46, Egg got expired
-
-[Info], 2021-50-19 11:50:46, Chicken produced Egg
-
-[Info], 2021-50-19 11:50:48, Egg got expired
-
-[Info], 2021-50-19 11:50:48, Chicken produced Egg
-
-[Info], 2021-52-19 11:52:13, login successful
-
-[Info], 2021-52-19 11:52:22, Chicken has been bought
-
-[Info], 2021-52-19 11:52:25, Chicken has been bought
-
-[Info], 2021-52-19 11:52:30, Factory was built successfully
-
-[Info], 2021-52-19 11:52:42, Chicken produced Egg
-
-[Info], 2021-52-19 11:52:42, Chicken produced Egg
-
-[Info], 2021-53-19 11:53:12, Egg got picked up
-
-[Info], 2021-53-19 11:53:38, Egg got picked up
-
-[Info], 2021-06-19 12:06:53, login successful
-
-[Info], 2021-07-19 12:07:00, Chicken has been bought
-
-[Info], 2021-07-19 12:07:03, Chicken has been bought
-
-[Info], 2021-07-19 12:07:08, Factory was built successfully
-
-[Info], 2021-07-19 12:07:13, Chicken produced Egg
-
-[Info], 2021-07-19 12:07:13, Chicken produced Egg
-
-[Info], 2021-07-19 12:07:28, Egg got picked up
-
-[Info], 2021-07-19 12:07:34, Egg got picked up
-
-[Info], 2021-08-19 12:08:09, Chicken died
-
-[Info], 2021-08-19 12:08:09, Chicken produced Egg
-
-[Info], 2021-08-19 12:08:09, Chicken produced Egg
-
-[Info], 2021-08-19 12:08:09, Egg got expired
-
-[Info], 2021-08-19 12:08:09, Chicken produced Egg
-
-[Info], 2021-08-19 12:08:18, Flour got picked up
-
-[Info], 2021-09-19 12:09:36, login successful
-
-[Info], 2021-09-19 12:09:42, Chicken has been bought
-
-[Info], 2021-09-19 12:09:47, Chicken has been bought
-
-[Info], 2021-09-19 12:09:53, Factory was built successfully
-
-[Info], 2021-10-19 12:10:00, Chicken produced Egg
-
-[Info], 2021-10-19 12:10:00, Chicken produced Egg
-
-[Info], 2021-10-19 12:10:17, Egg got picked up
-
-[Info], 2021-10-19 12:10:22, Egg got picked up
-
-[Info], 2021-10-19 12:10:50, Chicken produced Egg
-
-[Info], 2021-10-19 12:10:50, Chicken produced Egg
-
-[Info], 2021-10-19 12:10:50, Chicken produced Egg
-
-[Info], 2021-10-19 12:10:50, Chicken produced Egg
-
-[Info], 2021-11-19 12:11:01, Flour got picked up
-
-[Info], 2021-11-19 12:11:10, Egg got expired
-
-[Info], 2021-11-19 12:11:10, Egg got expired
-
-[Info], 2021-11-19 12:11:10, Chicken produced Egg
-
-[Info], 2021-11-19 12:11:10, Chicken produced Egg
-
-[Info], 2021-11-19 12:11:10, Egg got expired
-
-[Info], 2021-11-19 12:11:10, Egg got expired
-
-[Info], 2021-11-19 12:11:10, Egg got expired
-
-[Info], 2021-11-19 12:11:10, Egg got expired
-
-[Info], 2021-10-19 01:10:11, login successful
-
-[Info], 2021-10-19 01:10:22, Chicken has been bought
-
-[Info], 2021-10-19 01:10:27, Chicken has been bought
-
-[Info], 2021-10-19 01:10:30, Chicken produced Egg
-
-[Info], 2021-10-19 01:10:30, Chicken produced Egg
-
-[Info], 2021-10-19 01:10:30, Chicken died
-
-[Info], 2021-10-19 01:10:30, Chicken produced Egg
-
-[Info], 2021-10-19 01:10:47, Bear got caged
-
-[Info], 2021-10-19 01:10:55, Egg got picked up
-
-[Info], 2021-11-19 01:11:01, Egg got picked up
-
-[Info], 2021-11-19 01:11:07, Factory was built successfully
-
-[Info], 2021-11-19 01:11:59, Chicken produced Egg
-
-[Info], 2021-11-19 01:11:59, Egg got expired
-
-[Info], 2021-11-19 01:11:59, Chicken produced Egg
-
-[Info], 2021-12-19 01:12:05, Flour got picked up
-
-[Info], 2021-23-19 01:23:10, login successful
-
-[Info], 2021-23-19 01:23:21, Chicken has been bought
-
-[Info], 2021-23-19 01:23:25, Chicken has been bought
-
-[Info], 2021-23-19 01:23:28, Chicken produced Egg
-
-[Info], 2021-23-19 01:23:28, Chicken produced Egg
-
-[Info], 2021-23-19 01:23:29, Chicken produced Egg
-
-[Info], 2021-23-19 01:23:29, Chicken produced Egg
-
-[Error], 2021-23-19 01:23:34, product not found
-
-[Info], 2021-23-19 01:23:47, Egg got picked up
-
-[Info], 2021-23-19 01:23:55, Factory was built successfully
-
-[Info], 2021-24-19 01:24:21, Egg got expired
-
-[Info], 2021-24-19 01:24:21, Chicken produced Egg
-
-[Info], 2021-24-19 01:24:21, Chicken produced Egg
-
-[Info], 2021-24-19 01:24:21, Egg got expired
-
-[Info], 2021-24-19 01:24:21, Egg got expired
-
-[Info], 2021-24-19 01:24:21, Chicken produced Egg
-
-[Info], 2021-24-19 01:24:21, Chicken produced Egg
-
-[Info], 2021-25-19 01:25:30, Egg got expired
-
-[Info], 2021-25-19 01:25:30, Egg got expired
-
-[Info], 2021-25-19 01:25:47, Flour got picked up
-
-[Info], 2021-38-19 01:38:44, login successful
-
-[Info], 2021-38-19 01:38:50, Chicken has been bought
-
-[Info], 2021-38-19 01:38:54, Chicken has been bought
-
-[Info], 2021-38-19 01:38:57, Chicken died
-
-[Info], 2021-38-19 01:38:57, Chicken produced Egg
-
-[Info], 2021-38-19 01:38:57, Chicken died
-
-[Info], 2021-39-19 01:39:09, Egg got picked up
-
-[Info], 2021-42-19 01:42:53, login successful
-
-[Info], 2021-43-19 01:43:02, Chicken has been bought
-
-[Info], 2021-43-19 01:43:05, Chicken has been bought
-
-[Info], 2021-43-19 01:43:10, Chicken produced Egg
-
-[Info], 2021-43-19 01:43:10, Chicken produced Egg
-
-[Info], 2021-43-19 01:43:10, Chicken produced Egg
-
-[Info], 2021-43-19 01:43:10, Chicken produced Egg
-
-[Info], 2021-43-19 01:43:18, Egg got picked up
-
-[Info], 2021-43-19 01:43:25, Egg got picked up
-
-[Info], 2021-43-19 01:43:33, Egg got picked up
-
-[Info], 2021-43-19 01:43:39, Factory was built successfully
-
-[Info], 2021-46-19 01:46:19, Chicken produced Egg
-
-[Info], 2021-46-19 01:46:19, Chicken produced Egg
-
-[Info], 2021-46-19 01:46:22, Egg got expired
-
-[Info], 2021-46-19 01:46:22, Chicken produced Egg
-
-[Info], 2021-46-19 01:46:22, Chicken produced Egg
-
-[Info], 2021-46-19 01:46:24, Egg got expired
-
-[Info], 2021-46-19 01:46:24, Egg got expired
-
-[Info], 2021-46-19 01:46:54, Egg got expired
-
-[Info], 2021-46-19 01:46:54, Egg got expired
-
-[Info], 2021-47-19 01:47:13, Flour got picked up
-
-[Info], 2021-07-19 02:07:47, login successful
-
-[Info], 2021-07-19 02:07:55, Chicken has been bought
-
-[Info], 2021-08-19 02:08:50, login successful
-
-[Info], 2021-09-19 02:09:01, Chicken has been bought
-
-[Info], 2021-11-19 02:11:43, login successful
-
-[Info], 2021-11-19 02:11:52, chicken has been bought
-
-[Info], 2021-13-19 02:13:08, chicken produced Egg
-
-[Info], 2021-13-19 02:13:08, chicken produced Egg
-
-[Info], 2021-13-19 02:13:08, Egg got expired
-
-[Info], 2021-13-19 02:13:08, chicken produced Egg
-
-[Info], 2021-13-19 02:13:08, Egg got expired
-
-[Info], 2021-13-19 02:13:08, chicken produced Egg
-
-[Info], 2021-13-19 02:13:08, Egg got expired
-
-[Info], 2021-13-19 02:13:08, Egg got expired
-
-[Info], 2021-15-19 02:15:33, login successful
-
-[Info], 2021-15-19 02:15:42, chicken has been bought
-
-[Info], 2021-28-19 04:28:50, login successful
-
-[Info], 2021-29-19 04:29:00, chicken has been bought
-
-[Info], 2021-29-19 04:29:05, chicken has been bought
-
-[Info], 2021-29-19 04:29:10, chicken produced Egg
-
-[Info], 2021-29-19 04:29:10, chicken produced Egg
-
-[Info], 2021-29-19 04:29:10, chicken produced Egg
-
-[Info], 2021-29-19 04:29:10, chicken produced Egg
-
-[Info], 2021-29-19 04:29:10, Egg got expired
-
-[Info], 2021-29-19 04:29:10, Egg got expired
-
-[Info], 2021-29-19 04:29:10, chicken produced Egg
-
-[Info], 2021-29-19 04:29:10, chicken produced Egg
-
-[Info], 2021-29-19 04:29:19, Egg got picked up
-
-[Info], 2021-29-19 04:29:30, Egg got picked up
-
-[Info], 2021-29-19 04:29:38, Egg got picked up
-
-[Info], 2021-29-19 04:29:46, Egg got picked up
-
-[Info], 2021-29-19 04:29:57, Factory was built successfully
-
-[Info], 2021-31-19 04:31:44, chicken produced Egg
-
-[Info], 2021-31-19 04:31:44, chicken produced Egg
-
-[Info], 2021-31-19 04:31:51, Egg got expired
-
-[Info], 2021-31-19 04:31:51, Egg got expired
-
-[Info], 2021-32-19 04:32:01, Flour got picked up
-
-[Info], 2021-38-19 04:38:15, login successful
-
-[Info], 2021-38-19 04:38:24, chicken has been bought
-
-[Info], 2021-38-19 04:38:28, chicken produced Egg
-
-[Info], 2021-38-19 04:38:28, chicken produced Egg
-
-[Info], 2021-38-19 04:38:37, Egg got picked up
-
-[Info], 2021-38-19 04:38:44, Egg got picked up
-
-[Info], 2021-38-19 04:38:49, Factory was built successfully
-
-[Info], 2021-39-19 04:39:16, chicken produced Egg
-
-[Info], 2021-39-19 04:39:16, chicken produced Egg
-
-[Info], 2021-39-19 04:39:29, Egg got expired
-
-[Info], 2021-39-19 04:39:37, Flour got picked up
-
-[Info], 2021-06-19 05:28:10, login successful
-
-[Info], 2021-06-19 05:29:23, login successful
-
-[Info], 2021-06-19 05:29:51, bear got caged
-
-[Info], 2021-06-19 05:31:32, tiger got caged
+[Error], 2021-06-20 05:40:18, Factory name is invalid

@@ -1,8 +1,10 @@
 import java.util.ArrayList;
+import java.util.Set;
 
 public class Wild extends Animal{
 
     static ArrayList<Wild> list = new ArrayList<>();
+    public static final Set<String> nameList=Set.of("bear","tiger","lion");
 
     int cages;
     int leftCages;
@@ -70,9 +72,9 @@ public class Wild extends Animal{
                 x++;
             else if((d==1)&&(y<6))
                 y++;
-            else if((d==2)&&(x>0))
+            else if((d==2)&&(x>1))
                 x--;
-            else if((d==3)&&(y>0))
+            else if((d==3)&&(y>1))
                 y--;
             /*
             if(x>6)
@@ -131,9 +133,12 @@ public class Wild extends Animal{
                 if(wild.leftCages<=0)
                 {
                     Logger.write('i',Wild.list.get(i).type+" got caged");
-                    Task.claim(wild.type);
+                    Product newProduct = new Product(wild.type);
+                    newProduct.x = wild.x;
+                    newProduct.y = wild.y;
+                    newProduct.collected = false;
+                    Product.list.add(newProduct);
                     Wild.list.remove(wild);
-                    Product.list.add(new Product(wild.type));
                 }
                 return;
             }

@@ -1,12 +1,12 @@
 import java.util.*;
 
 public class Product {
-    public static final Set<String> nameList=Set.of("Egg", "Feather", "Milk", "Flour", "Fabric", "Packet Milk", "Bread", "Shirt", "Ice Cream", "Lion", "Bear", "Tiger");
+    public static final Set<String> nameList=Set.of("egg", "feather", "milk", "flour", "fabric", "packet milk", "bread", "shirt", "ice cream", "lion", "bear", "tiger");
     static ArrayList<Product> list = new ArrayList<>();
     String type;
     String previousType;//possibly be omitted
     int price;
-    int expirationTime;
+    int expirationTime=-3;
     int x;
     int y;
     boolean collected = false;
@@ -14,92 +14,89 @@ public class Product {
     Product(String name)
     {
         type = name;
-        if(name.equals("Egg"))
+        if(name.equals("egg"))
         {
             previousType = "";
             price = 15;
             expirationTime = 4;
             space = 1;
         }
-        else if(name.equals("Feather"))
+        else if(name.equals("feather"))
         {
             previousType = "";
             price = 20;
             expirationTime = 4;
             space = 1;
         }
-        else if(name.equals("Milk"))
+        else if(name.equals("milk"))
         {
             previousType = "";
             price = 25;
             expirationTime = 4;
             space = 1;
         }
-        else if(name.equals("Flour"))
+        else if(name.equals("flour"))
         {
-            previousType = "Egg";
+            previousType = "egg";
             price = 40;
             expirationTime = 5;
             space = 2;
         }
-        else if(name.equals("ّFabric"))
+        else if(name.equals("ّfabric"))
         {
-            previousType = "Feather";
+            previousType = "feather";
             price = 50;
             expirationTime = 5;
             space = 2;
         }
-        else if(name.equals("Packet Milk"))
+        else if(name.equals("packet milk"))
         {
-            previousType = "Milk";
+            previousType = "milk";
             price = 60;
             expirationTime = 5;
             space = 2;
         }
-        else if(name.equals("Bread"))
+        else if(name.equals("bread"))
         {
-            previousType = "Flour";
+            previousType = "flour";
             price = 80;
             expirationTime = 6;
             space = 4;
         }
-        else if(name.equals("Shirt"))
+        else if(name.equals("shirt"))
         {
-            previousType = "Fabric";
+            previousType = "fabric";
             price = 100;
             expirationTime = 6;
             space = 4;
         }
-        else if(name.equals("Ice Cream"))
+        else if(name.equals("ice cream"))
         {
-            previousType = "Packet Milk";
+            previousType = "packet milk";
             price = 120;
             expirationTime = 6;
             space = 4;
         }
-        else if(name.equals("Lion"))
+        else if(name.equals("lion"))
         {
             previousType = "";
             price = 300;
             expirationTime = 5;
             space = 15;
-            collected = true;
         }
-        else if(name.equals("Bear"))
+        else if(name.equals("bear"))
         {
             previousType = "";
             price = 400;
             expirationTime = 5;
             space = 15;
-            collected = true;
         }
-        else if(name.equals("Tiger"))
+        else if(name.equals("tiger"))
         {
             previousType = "";
             price = 500;
             expirationTime = 5;
             space = 15;
-            collected = true;
         }
     }
 
@@ -112,8 +109,8 @@ public class Product {
             {
                 if (Warehouse.getInstance().add(p)) {
                     p.collected = true;
-                    Task.claim(Product.list.get(i).type);
-                    Logger.write('i', Product.list.get(i).type + " got picked up");
+                    Task.claim(p.type);
+                    Logger.write('i', p.type + " got picked up");
                     list.remove(p);//proposed
                 }
                 else {
@@ -130,7 +127,7 @@ public class Product {
     {
         for(int i=0; i<Product.list.size(); i++)
         {
-            if(!Product.list.get(i).collected)
+            if(!Product.list.get(i).collected)// && Product.list.get(i).expirationTime!=-3
             Product.list.get(i).expirationTime--;
         }
 
@@ -141,7 +138,7 @@ public class Product {
 
             for(int i=0; i<Product.list.size(); i++)
             {
-                if(Product.list.get(i).expirationTime<=0)
+                if(Product.list.get(i).expirationTime<=0)// && Product.list.get(i).expirationTime!=-3
                 {
                     Logger.write('i',Product.list.get(i).type+" got expired");
                     Product.list.remove(i);//proposed

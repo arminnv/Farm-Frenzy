@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class InputProcessor {
@@ -25,19 +26,19 @@ public class InputProcessor {
         if (input.matches(exit))
             return;
         if (input.matches(truckLoad))
-            Truck.getInstance().TruckLoad(a[2]);
+            Truck.getInstance().TruckLoad(a[2].toLowerCase(Locale.ROOT));
         else if (input.matches(truckUnLoad))
-            Truck.getInstance().TruckUnload(a[2]);
+            Truck.getInstance().TruckUnload(a[2].toLowerCase(Locale.ROOT));
         else if (input.matches(truckGo))
             Truck.getInstance().confirm();
         else if (input.matches(well)){
             Well.getInstance().fill();
         }
         else if (input.matches(work)){
-            Factory.produce(a[1],1);
+            Factory.produce(a[1].toLowerCase(Locale.ROOT),1);
         }
         else if (input.matches(workNumber)){
-            Factory.produce(a[1],Integer.parseInt(a[2]));
+            Factory.produce(a[1].toLowerCase(Locale.ROOT),Integer.parseInt(a[2]));
         }
         else if (input.matches(cage)){
             Wild.cage(Integer.parseInt(a[1]),Integer.parseInt(a[2]));
@@ -61,10 +62,10 @@ public class InputProcessor {
             Output.show();
         }
         else if (input.matches(buildFactory)){
-            Factory.build(a[1]);
+            Factory.build(a[1].toLowerCase(Locale.ROOT));
         }
         else if (input.matches(upgradeFactory)){
-            Factory.upgrade(a[1]);
+            Factory.upgrade(a[1].toLowerCase(Locale.ROOT));
         }
         else {
             System.out.println("Invalid command. Enter command again");

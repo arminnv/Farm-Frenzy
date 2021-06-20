@@ -1,5 +1,5 @@
 public class Weaver extends Factory{
     Weaver(boolean addToMap){
-        super("Weaver","Feather","Fabric",250,5,addToMap);
+        super("weaver","feather","fabric",250,5,addToMap);
     }
 }

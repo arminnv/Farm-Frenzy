@@ -23,17 +23,6 @@ public abstract class Animal {
     {
         return rand.nextInt(4);
     }
-    public void randomStep(){
-        int d = randomDirection();
-        if((d==0)&&(x+1<=6))
-            x++;
-        else if((d==1)&&(y+1<=6))
-            y++;
-        else if((d==2)&&(x-1>=1))
-            x--;
-        else if((d==3)&&(y-1>=1))
-            y--;
-    }
     public void addToMap(){//important note: add chickens 1-3 then remove them. next chicken ID:1
         if (animalCount.containsKey(this.type)){
             animalIDNumHashMap.put(this.type, animalIDNumHashMap.get(this.type)+1);

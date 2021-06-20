@@ -151,7 +151,7 @@ public class User {
 
         try
         {
-            FileWriter writer = new FileWriter("users.txt");
+            FileWriter writer = new FileWriter("users.txt");//append??
             String json = new Gson().toJson(user);
             writer.write(st + json + "*\n");
             writer.close();

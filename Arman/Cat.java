@@ -24,6 +24,7 @@ public class Cat extends Animal{
         Cat newCat = new Cat(false);
         if(newCat.price <= Game.getCoins())
         {
+            newCat=new Cat(true);
             Game.addCoins(-newCat.price);
             Cat.list.add(newCat);
             Task.claim("cat");
@@ -105,8 +106,8 @@ public class Cat extends Animal{
         Product closest = null;
         for (int i=0; i<Product.list.size(); i++)
         {
-            Product product = Product.list.get(i);
-            if((!product.collected) && (!product.type.equals("Tiger")) && (!product.type.equals("Bear")) && (!product.type.equals("Lion")) )
+            Product product = Product.list.get(i);//cats do not collect caged wild animals
+            if((!product.collected) && (!product.type.equals("tiger")) && (!product.type.equals("bear")) && (!product.type.equals("lion")) )
             {
                 if(Math.abs(product.x-x) + Math.abs(product.y-y) < min)
                 {
