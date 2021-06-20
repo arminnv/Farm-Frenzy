@@ -149,7 +149,7 @@ public class User {
 
         try
         {
-            FileWriter writer = new FileWriter("users.txt");
+            FileWriter writer = new FileWriter("users.txt");//append??
             String json = new Gson().toJson(user);
             writer.write(st + json + "*\n");
             writer.close();
@@ -161,7 +161,5 @@ public class User {
             System.out.println("error");
             Logger.write('e',"error");
         }
-        System.out.println("signup successful");
-        Logger.write('i', "signup successful");
     }
 }

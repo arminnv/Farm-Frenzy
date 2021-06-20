@@ -35,14 +35,17 @@ public class Truck {
             return;
         }
         if (Product.nameList.contains(item))
-            Truck.getInstance().loadProduct(item);
+            loadProduct(item);
         else{
-            if (item.equals("Cat"))
-                loadAnimal(item,"Cat");
-            else if (item.equals("Hound"))
-                loadAnimal(item,"Hound");
+            loadAnimal(item);
+            /*
+            if (item.equals("cat"))
+                loadAnimal(item,"cat");
+            else if (item.equals("hound"))
+                loadAnimal(item,"hound");
             else
                 loadAnimal(item,"Domestic");//wild animal problem
+             */
         }
     }
     private void loadProduct(String type){
@@ -50,30 +53,61 @@ public class Truck {
             Product p=new Product(type);
             if (capacity+p.space<=MAX_CAPACITY) {
                 capacity+=p.space;
-                Logger.write('i',p.type + " loaded");
                 if (productIntegerHashMap.containsKey(type))
                     productIntegerHashMap.put(type, productIntegerHashMap.get(type)+1);
                 else
                     productIntegerHashMap.put(type, 1);
+                Logger.write('i',p.type + " loaded");
+            }
+            else
+            {
+                System.out.println("not enough space in truck");
+                Logger.write('e',"not enough space in truck");
             }
         }
     }
-
-    private void loadAnimal(String name, String generalType){
-        HashMap<String,Integer> map=Animal.animalIDNumHashMap;
+    private void loadAnimal(String name){
+        HashMap<String,Integer> map=Animal.animalCount;
         if (map.containsKey(name)){
             Animal animal=new Domestic(name,false);
-            if (generalType.equals("Cat"))
+            if (name.equals("cat"))
                 animal=new Cat(false);
-            else if (generalType.equals("Hound"))
+            else if (name.equals("hound"))
+                animal=new Hound();
+            else if (!Domestic.nameList.contains(name)) {
+                Logger.write('e',"Invalid item for loading");
+                System.out.println("Invalid item for loading");
+                return;
+            }
+            if ( (map.get(name)>0)&&(capacity+animal.space<=MAX_CAPACITY)) {
+                capacity+=animal.space;
+                if (!animalIntegerHashMap.containsKey(animal.type))
+                    animalIntegerHashMap.put(animal.type, 0);
+                animalIntegerHashMap.put(animal.type, animalIntegerHashMap.get(animal.type)+1);
+                Logger.write('i',animal.type + " loaded");
+            }
+            else
+            {
+                System.out.println("not enough space in truck");
+                Logger.write('e',"not enough space in truck");
+            }
+        }
+    }
+    private void loadAnimal(String name, String generalType){
+        HashMap<String,Integer> map=Animal.animalCount;
+        if (map.containsKey(name)){
+            Animal animal=new Domestic(name,false);
+            if (generalType.equals("cat"))
+                animal=new Cat(false);
+            else if (generalType.equals("hound"))
                 animal=new Hound();
             else if (!generalType.equals("Domestic"))
                 return;
 
             if ( (map.get(name)>0)&&(capacity+animal.space<=MAX_CAPACITY)) {
                 capacity+=animal.space;
-                if(animalIntegerHashMap.get(animal.type) == null)
-                    animalIntegerHashMap.put(animal.type,0);
+                if (!animalIntegerHashMap.containsKey(animal.type))
+                    animalIntegerHashMap.put(animal.type, 0);
                 animalIntegerHashMap.put(animal.type, animalIntegerHashMap.get(animal.type)+1);
                 Logger.write('i',animal.type + " loaded");
             }
@@ -95,9 +129,9 @@ public class Truck {
         HashMap<String,Integer> map=animalIntegerHashMap;
         if (map.containsKey(name)){
             Animal animal=new Domestic(name,false);
-            if (name.equals("Cat"))
+            if (name.equals("cat"))
                 animal=new Cat(false);
-            else if (name.equals("Hound"))
+            else if (name.equals("hound"))
                 animal=new Hound();
             if ( map.get(name)>0 ) { //&&(capacity+animal.space<=MAX_CAPACITY) ??????
                 capacity-=animal.space;
@@ -107,6 +141,11 @@ public class Truck {
         }
     }
     public void confirm(){
+        if (productIntegerHashMap.isEmpty()&&animalIntegerHashMap.isEmpty()){
+            Logger.write('e',"Empty truck cannot leave");
+            System.out.println("Empty truck cannot leave");
+            return;
+        }
         for (String type:productIntegerHashMap.keySet()) {
             Product p=new Product(type);
             Warehouse.getInstance().remove(p,productIntegerHashMap.get(type));
@@ -114,21 +153,19 @@ public class Truck {
         }
         for (String name: animalIntegerHashMap.keySet()) {
             Animal animal=new Domestic(name,false);
-            if (name.equals("Cat"))
+            if (name.equals("cat"))
                 animal=new Cat(false);
-            else if (name.equals("Hound"))
+            else if (name.equals("hound"))
                 animal=new Hound();
             for (int i = 0; i < animalIntegerHashMap.get(name); i++) {
-                if(name.equals("Cat"))
+                Animal.removeFromMap(name);
+                if(name.equals("cat"))
                     Cat.list.remove(0);
-                else if(name.equals("Hound"))
+                else if(name.equals("hound"))
                     Hound.list.remove(0);
-                else
-                {
-                    for (int j=0; j<Domestic.list.size(); j++)
-                    {
-                        if(Domestic.list.get(j).type.equals(name))
-                        {
+                else {
+                    for (int j=0; j<Domestic.list.size(); j++) {
+                        if(Domestic.list.get(j).type.equals(name)) {
                             Domestic.list.remove(j);
                             break;
                         }
@@ -142,6 +179,7 @@ public class Truck {
         productIntegerHashMap.clear();
         capacity=0;
         Logger.write('i', "truck left");
+        System.out.println("Truck left");
     }
     public void update(){
         if (timeLeft==0){

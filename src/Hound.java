@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class Hound extends Animal{
@@ -6,24 +7,24 @@ public class Hound extends Animal{
 
     Hound()
     {
-        type = "Hound";
+        type = "hound";
         price = 100;
         step = 1;
         x = random();
         y = random();
         space=1;
         this.addToMap();
-        number= animalIDNumHashMap.get("Hound");
+        number= animalIDNumHashMap.get("hound");
     }
 
     static void buy()
     {
         Hound newHound = new Hound();
-        if(newHound.price <= Game.getCoins())
+        if(newHound.price <= Game.coins)
         {
             Game.addCoins(-newHound.price);
             Hound.list.add(newHound);
-            Task.claim("Hound");
+            Task.claim("hound");
             Logger.write('i',"hound has been bought");
         }
         else

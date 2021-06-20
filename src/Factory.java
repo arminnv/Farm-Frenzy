@@ -2,8 +2,8 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Factory {
-    public static final String[] nameList={"Mill","Weaver","Sewing factory","Milk packaging factory","Ice cream factory","Bakery"};
+public abstract class Factory {
+    public static final String[] nameList={"mill","weaver","sewing factory","milk packaging factory","ice cream factory","bakery"};
     static ArrayList<Factory> factories=new ArrayList<>();
     static Random r=new Random();
     int level;
@@ -32,17 +32,17 @@ public class Factory {
     }
     private static Factory createFactory(String name,boolean addToList){
         Factory factory=null;
-        if (name.equals("Mill"))
+        if (name.equals("mill"))
             factory=new Mill(addToList);
-        else if (name.equals("Weaver"))
+        else if (name.equals("weaver"))
             factory=new Weaver(addToList);
-        else if (name.equals("Sewing factory"))
+        else if (name.equals("sewing factory"))
             factory=new SewingFactory(addToList);
-        else if (name.equals("Milk packaging factory"))
+        else if (name.equals("milk packaging factory"))
             factory=new MilkPackagingFactory(addToList);
-        else if (name.equals("Ice cream factory"))
+        else if (name.equals("ice cream factory"))
             factory=new IceCreamFactory(addToList);
-        else if (name.equals("Bakery"))
+        else if (name.equals("bakery"))
             factory=new Bakery(addToList);
         return factory;
     }
@@ -57,7 +57,7 @@ public class Factory {
         Logger.write('e',"Product cannot be produced");
     }
     private void upgrade(){
-        if ( (Game.getCoins()>upgradeCost)&&(level+1<=maxAllowedLevel) ){
+        if ( (Game.coins>upgradeCost)&&(level+1<=maxAllowedLevel) ){
             Game.addCoins(-upgradeCost);
             level++;
             Logger.write('i',"Factory"+name+"was upgraded to level "+level);
@@ -77,7 +77,6 @@ public class Factory {
                 product.x=r.nextInt(6)+1;
                 product.y=r.nextInt(6)+1;
                 Product.list.add(product);
-                Logger.write('i',this.name+ " produced "+product.type);
                 int a=1;//debug
             }
             underProduction=0;
@@ -95,12 +94,13 @@ public class Factory {
     }
     public static void produce(String factoryName,int number){
         for (Factory factory:factories){
-            if (factory.name.equals(factoryName))
-            {
+            if (factory.name.equals(factoryName)) {
                 factory.produce(number);
-                Logger.write('i',factoryName + " started working");
+                return;
             }
         }
+        System.out.println("Factory was not found");
+        Logger.write('e',"Factory was not found");
     }
     public static void build(String name){
         for (String name1:nameList){
@@ -114,7 +114,7 @@ public class Factory {
                 }
                 Factory f=createFactory(name,false);
                 if (f!=null){//name is always valid so this is always true
-                    if (f.buildingCost<=Game.getCoins()){
+                    if (f.buildingCost<=Game.coins){
                         createFactory(name,true);
                         Game.addCoins(-f.buildingCost);
                         System.out.println("Factory was built successfully");

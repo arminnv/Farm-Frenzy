@@ -1,8 +1,10 @@
 import java.util.ArrayList;
+import java.util.Set;
 
 public class Domestic extends Animal{
 
     static ArrayList<Domestic> list = new ArrayList<>();
+    public static final Set<String> nameList=Set.of("chicken","turkey","buffalo");
     String productType;
     int health = 100;
     int productionTime;
@@ -16,7 +18,7 @@ public class Domestic extends Animal{
         {
             type = "chicken";
             productionTime = 2;
-            productType = "Egg";
+            productType = "egg";
             price = 100;
             step = 1;
             space = 1;
@@ -32,7 +34,7 @@ public class Domestic extends Animal{
         {
             type = "turkey";
             productionTime = 3;
-            productType = "Feather";
+            productType = "feather";
             price = 200;
             step = 1;
             space = 1;
@@ -48,7 +50,7 @@ public class Domestic extends Animal{
         {
             type = "buffalo";
             productionTime = 5;
-            productType = "Milk";
+            productType = "milk";
             price = 400;
             step = 1;
             space = 1;
@@ -84,7 +86,7 @@ public class Domestic extends Animal{
             return;
         }
 
-        if(newDomestic.price <= Game.getCoins())
+        if(newDomestic.price <= Game.coins)
         {
             Game.addCoins(-newDomestic.price);
             Domestic.list.add(newDomestic);

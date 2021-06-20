@@ -30,7 +30,6 @@ public class Well {
     public void fill(){
         if (capacity==0) {
             process=true;
-            Logger.write('i',"well is filling");
             return;
         }
         //not empty
@@ -44,7 +43,6 @@ public class Well {
             capacity = 5;
             process = false;
             counter=0;
-            Logger.write('i',"well is filled");
         }
     }
 }

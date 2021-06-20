@@ -71,7 +71,8 @@ public class Menu {
             }
             else if(st.equals("settings"))
             {
-
+                System.out.println("⚙ settings ⚙\n" +
+                        "VOLUME   - ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒ +");
             }
         }
     }

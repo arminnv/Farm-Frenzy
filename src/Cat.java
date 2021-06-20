@@ -6,7 +6,7 @@ public class Cat extends Animal{
 
     Cat(boolean addToMap)
     {
-        type = "Cat";
+        type = "cat";
         price = 100;
         step = 1;
         x = random();
@@ -15,18 +15,19 @@ public class Cat extends Animal{
 
         if (addToMap) {
             this.addToMap();
-            number = animalIDNumHashMap.get("Cat");
+            number = animalIDNumHashMap.get("cat");
         }
     }
 
     static void buy()
     {
         Cat newCat = new Cat(false);
-        if(newCat.price <= Game.getCoins())
+        if(newCat.price <= Game.coins)
         {
+            newCat=new Cat(true);
             Game.addCoins(-newCat.price);
             Cat.list.add(newCat);
-            Task.claim("Cat");
+            Task.claim("cat");
             Logger.write('i', "cat has been bought");
         }
         else
@@ -105,8 +106,8 @@ public class Cat extends Animal{
         Product closest = null;
         for (int i=0; i<Product.list.size(); i++)
         {
-            Product product = Product.list.get(i);
-            if((!product.collected) && (!product.type.equals("Tiger")) && (!product.type.equals("Bear")) && (!product.type.equals("Lion")) )
+            Product product = Product.list.get(i);//cats do not collect caged wild animals
+            if((!product.collected) && (!product.type.equals("tiger")) && (!product.type.equals("bear")) && (!product.type.equals("lion")) )
             {
                 if(Math.abs(product.x-x) + Math.abs(product.y-y) < min)
                 {
