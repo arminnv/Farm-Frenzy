@@ -28,12 +28,6 @@ public class Time {
 
     static void walk()
     {
-        //proposed
-        /*
-        for (Animal animal:Animal.animals){
-            animal.walk
-        }
-         */
         for(int i=0; i<Domestic.list.size(); i++)
         {
             Domestic domestic = Domestic.list.get(i);

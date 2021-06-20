@@ -76,16 +76,7 @@ public class Wild extends Animal{
                 x--;
             else if((d==3)&&(y>1))
                 y--;
-            /*
-            if(x>6)
-                x=6;
-            if(x<1)
-                x=1;
-            if(y>6)
-                y=6;
-            if(y<1)
-                y=1;
-            */
+
             for(int j=0; j<Hound.list.size(); j++)
             {
                 Hound hound = Hound.list.get(j);

@@ -64,7 +64,6 @@ public class InputProcessor {
             Output.show();
         else if (input.matches(turn)){
             Time.turn(Integer.parseInt(a[1]));
-            Output.show();
         }
         else if (input.matches(buildFactory)){
             input=input.replaceAll("(?i)build ","");

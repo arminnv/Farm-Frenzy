@@ -119,7 +119,7 @@ public class Mission {
         ArrayList<Task> tasks2 = new ArrayList<>();
         HashMap<Integer, Integer> bonus2 = new HashMap<>();
         HashMap<Integer, String> wilds2 = new HashMap<>();
-        tasks2.add(new Task("Coins", 60000));
+        tasks2.add(new Task("coins", 60000));
         tasks2.add(new Task("bread", 4));
         tasks2.add(new Task("milk", 5));
         tasks2.add(new Task("egg", 6));
@@ -173,15 +173,6 @@ public class Mission {
         bonus5.put(6,10000);
         bonus5.put(7,0);
         Mission mission5=new Mission(level,coins,tasks5,wilds5,maxTime,bonus5,reward);
-
-
-
-
-
-
-
-
-
 
 
         Mission.save();

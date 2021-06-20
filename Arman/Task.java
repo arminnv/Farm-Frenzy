@@ -25,7 +25,7 @@ public class Task {
         for (int i=0; i<list.size(); i++)
         {
             if(st.equals(list.get(i).name) && !list.get(i).complete){
-                if (list.get(i).name.equals("Coins"))
+                if (list.get(i).name.equals("coins"))
                     list.get(i).claimed=Game.getCoins();
                 else
                     list.get(i).claimed++;

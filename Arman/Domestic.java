@@ -10,7 +10,6 @@ public class Domestic extends Animal{
     int productionTime;
     int timePassed = 0;
     int lifeReduction = 10;
-    boolean hungry = false;
 
     Domestic(String name, boolean addToMap)
     {
@@ -141,7 +140,6 @@ public class Domestic extends Animal{
         find(closest);
         if(health > 50 || closest[0] == 0)
         {
-            //randomStep()
             int d = randomDirection();
             if(d==0)
                 x += step;

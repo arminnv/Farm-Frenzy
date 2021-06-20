@@ -1,4 +1,3 @@
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -51,17 +50,19 @@ public abstract class Factory {
             productionDuration= (int)Math.ceil(productionDefaultDuration*number*1.0/level);
             Warehouse.getInstance().remove(new Product(validType),number);
             underProduction=number;//Class.forName(outputType.getTypeName()).getDeclaredConstructor().newInstance()
-            System.out.println(outputType);///omit later
+            System.out.println("Product is getting produced");
+            Logger.write('i',"Product is getting produced");
             return;
         }
+        System.out.println("Product cannot be produced");
         Logger.write('e',"Product cannot be produced");
     }
     private void upgrade(){
         if ( (Game.getCoins()>upgradeCost)&&(level+1<=maxAllowedLevel) ){
             Game.addCoins(-upgradeCost);
             level++;
-            Logger.write('i',"Factory"+name+"was upgraded to level "+level);
-            System.out.println("Factory"+name+"was upgraded to level "+level);
+            Logger.write('i',"Factory "+name+" was upgraded to level "+level);
+            System.out.println("Factory "+name+" was upgraded to level "+level);
             return;
         }
         System.out.println("Insufficient money or max level error");
@@ -77,7 +78,7 @@ public abstract class Factory {
                 product.x=r.nextInt(6)+1;
                 product.y=r.nextInt(6)+1;
                 Product.list.add(product);
-                int a=1;//debug
+                Logger.write('i',this.name+ " produced "+product.type);
             }
             underProduction=0;
         }
