@@ -94,8 +94,8 @@ public class Cat extends Animal{
         Product closest = null;
         for (int i=0; i<Product.list.size(); i++)
         {
-            Product product = Product.list.get(i);//cats do not collect caged wild animals
-            if((!product.collected) && (!product.type.equals("tiger")) && (!product.type.equals("bear")) && (!product.type.equals("lion")) )
+            Product product = Product.list.get(i);//cats collect caged wild animals
+            if(!product.collected)
             {
                 if(Math.abs(product.x-x) + Math.abs(product.y-y) < min)
                 {
