@@ -32,17 +32,17 @@ public abstract class Factory {
     }
     private static Factory createFactory(String name,boolean addToList){
         Factory factory=null;
-        if (name.equals("Mill"))
+        if (name.equals("mill"))
             factory=new Mill(addToList);
-        else if (name.equals("Weaver"))
+        else if (name.equals("weaver"))
             factory=new Weaver(addToList);
-        else if (name.equals("Sewing factory"))
+        else if (name.equals("sewing factory"))
             factory=new SewingFactory(addToList);
-        else if (name.equals("Milk packaging factory"))
+        else if (name.equals("milk packaging factory"))
             factory=new MilkPackagingFactory(addToList);
-        else if (name.equals("Ice cream factory"))
+        else if (name.equals("ice cream factory"))
             factory=new IceCreamFactory(addToList);
-        else if (name.equals("Bakery"))
+        else if (name.equals("bakery"))
             factory=new Bakery(addToList);
         return factory;
     }
@@ -94,9 +94,13 @@ public abstract class Factory {
     }
     public static void produce(String factoryName,int number){
         for (Factory factory:factories){
-            if (factory.name.equals(factoryName))
+            if (factory.name.equals(factoryName)) {
                 factory.produce(number);
+                return;
+            }
         }
+        System.out.println("Factory was not found");
+        Logger.write('e',"Factory was not found");
     }
     public static void build(String name){
         for (String name1:nameList){

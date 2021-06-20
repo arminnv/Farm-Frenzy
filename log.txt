@@ -1,6 +1,6 @@
 2021-06-19 00:05:46.396156
 Latest change by :arman
-2021-06-20 17:40:18
+2021-06-20 19:03:36
 [Info], 2021-06-20 04:17:08, login successful
 
 [Info], 2021-06-20 04:17:22, chicken has been bought
@@ -84,3 +84,87 @@ Latest change by :arman
 [Error], 2021-06-20 05:40:01, Factory name is invalid
 
 [Error], 2021-06-20 05:40:18, Factory name is invalid
+
+[Info], 2021-06-20 05:55:14, login successful
+
+[Info], 2021-06-20 05:56:36, login successful
+
+[Info], 2021-06-20 05:56:41, Factory was built successfully
+
+[Info], 2021-06-20 05:56:45, Factory was built successfully
+
+[Info], 2021-06-20 05:56:50, Factory was built successfully
+
+[Info], 2021-06-20 05:58:53, login successful
+
+[Info], 2021-06-20 05:59:47, Factory was built successfully
+
+[Info], 2021-06-20 06:00:34, Factory was built successfully
+
+[Info], 2021-06-20 06:01:00, login successful
+
+[Info], 2021-06-20 06:01:06, Factory was built successfully
+
+[Error], 2021-06-20 06:01:12, Factory already exists
+
+[Error], 2021-06-20 06:01:18, Factory already exists
+
+[Error], 2021-06-20 06:01:51, Factory name is invalid
+
+[Info], 2021-06-20 06:01:58, Factory was built successfully
+
+[Error], 2021-06-20 06:02:04, Factory name is invalid
+
+[Error], 2021-06-20 06:02:11, Factory already exists
+
+[Info], 2021-06-20 06:03:22, login successful
+
+[Error], 2021-06-20 06:03:54, Factory name is invalid
+
+[Info], 2021-06-20 06:22:03, login successful
+
+[Info], 2021-06-20 06:22:58, login successful
+
+[Error], 2021-06-20 06:23:11, Factory name is invalid
+
+[Info], 2021-06-20 06:23:44, login successful
+
+[Info], 2021-06-20 06:26:32, login successful
+
+[Info], 2021-06-20 06:29:47, login successful
+
+[Info], 2021-06-20 06:31:11, login successful
+
+[Info], 2021-06-20 06:33:23, login successful
+
+[Info], 2021-06-20 06:35:35, login successful
+
+[Info], 2021-06-20 07:00:52, login successful
+
+[Error], 2021-06-20 07:01:05, Factory name is invalid
+
+[Info], 2021-06-20 07:01:44, login successful
+
+[Info], 2021-06-20 07:01:53, Factory was built successfully
+
+[Error], 2021-06-20 07:02:07, Factory already exists
+
+[Info], 2021-06-20 07:02:47, login successful
+
+[Info], 2021-06-20 07:02:54, Factory was built successfully
+
+[Info], 2021-06-20 07:03:03, Factoryice cream factorywas upgraded to level 2
+
+[Info], 2021-06-20 07:03:27, buffalo has been bought
+
+[Alarm], 2021-06-20 07:03:36, No grass
+
+[Alarm], 2021-06-20 07:03:36, No grass
+
+[Alarm], 2021-06-20 07:03:36, No grass
+
+[Alarm], 2021-06-20 07:03:36, No grass
+
+[Info], 2021-06-20 07:03:36, buffalo died
+
+[Alarm], 2021-06-20 07:03:36, No grass
