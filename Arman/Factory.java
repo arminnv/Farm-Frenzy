@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public abstract class Factory {
-    public static final String[] nameList={"mill","weaver","sewing factory","milk packaging factory","ice cream factory","bakery"};
+    public static final String[] nameList={"mill","weaver","sewing factory","milk packaging factory","ice cream factory","bakery","hen incubator"};
     static ArrayList<Factory> factories=new ArrayList<>();
     static Random r=new Random();
     int level;
@@ -43,12 +43,14 @@ public abstract class Factory {
             factory=new IceCreamFactory(addToList);
         else if (name.equals("bakery"))
             factory=new Bakery(addToList);
+        else if (name.equals("hen incubator"))
+            factory=new HenIncubator(addToList);
         return factory;
     }
-    private void produce(int number) {
+    protected void produce(int number) {
         if ((number!=0)&&Warehouse.getInstance().inquiry(validType,number)){
             productionDuration= (int)Math.ceil(productionDefaultDuration*number*1.0/level);
-            Warehouse.getInstance().remove(new Product(validType),number);
+            Warehouse.getInstance().remove(Product.newProduct(validType),number);
             underProduction=number;//Class.forName(outputType.getTypeName()).getDeclaredConstructor().newInstance()
             System.out.println("Product is getting produced");
             Logger.write('i',"Product is getting produced");
@@ -57,7 +59,7 @@ public abstract class Factory {
         System.out.println("Product cannot be produced");
         Logger.write('e',"Product cannot be produced");
     }
-    private void upgrade(){
+    protected void upgrade(){
         if ( (Game.getCoins()>upgradeCost)&&(level+1<=maxAllowedLevel) ){
             Game.addCoins(-upgradeCost);
             level++;
@@ -74,7 +76,7 @@ public abstract class Factory {
         }
         if (productionDuration==0){
             for(int i=0;i<underProduction;i++){
-                Product product=new Product(outputType);
+                Product product=Product.newProduct(outputType);
                 product.x=r.nextInt(6)+1;
                 product.y=r.nextInt(6)+1;
                 Product.list.add(product);

@@ -41,7 +41,7 @@ public class Truck {
     }
     private void loadProduct(String type){
         if (Warehouse.getInstance().inquiry(type,1)){
-            Product p=new Product(type);
+            Product p=Product.newProduct(type);
             if (capacity+p.space<=MAX_CAPACITY) {
                 capacity+=p.space;
                 if (productIntegerHashMap.containsKey(type))
@@ -59,7 +59,7 @@ public class Truck {
     private void loadAnimal(String name){
         HashMap<String,Integer> map=Animal.animalCount;
         if (map.containsKey(name)){
-            Animal animal=new Domestic(name,false);
+            Animal animal=Domestic.newDomestic(name,false);
             if (name.equals("cat"))
                 animal=new Cat(false);
             else if (name.equals("hound"))
@@ -85,7 +85,7 @@ public class Truck {
 
     private void unloadProduct(String type){
         if (productIntegerHashMap.containsKey(type)){
-            Product p=new Product(type);
+            Product p=Product.newProduct(type);
             if ( productIntegerHashMap.get(type)>0 ) {//&&(capacity+p.space<=MAX_CAPACITY) ??????
                 capacity-=p.space;
                 productIntegerHashMap.put(type, productIntegerHashMap.get(type)-1);
@@ -97,7 +97,7 @@ public class Truck {
     private void unloadAnimal(String name){
         HashMap<String,Integer> map=animalIntegerHashMap;
         if (map.containsKey(name)){
-            Animal animal=new Domestic(name,false);
+            Animal animal=Domestic.newDomestic(name,false);
             if (name.equals("cat"))
                 animal=new Cat(false);
             else if (name.equals("hound"))
@@ -116,12 +116,12 @@ public class Truck {
             return;
         }
         for (String type:productIntegerHashMap.keySet()) {
-            Product p=new Product(type);
+            Product p=Product.newProduct(type);
             Warehouse.getInstance().remove(p,productIntegerHashMap.get(type));
             money+=p.price*productIntegerHashMap.get(type);
         }
         for (String name: animalIntegerHashMap.keySet()) {
-            Animal animal=new Domestic(name,false);
+            Animal animal=Domestic.newDomestic(name,false);
             if (name.equals("cat"))
                 animal=new Cat(false);
             else if (name.equals("hound"))

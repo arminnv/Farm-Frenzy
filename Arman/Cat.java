@@ -6,13 +6,7 @@ public class Cat extends Animal{
 
     Cat(boolean addToMap)
     {
-        type = "cat";
-        price = 100;
-        step = 1;
-        x = random();
-        y = random();
-        space=1;
-
+        super("cat",100,1,1);
         if (addToMap) {
             this.addToMap();
             number = animalIDNumHashMap.get("cat");

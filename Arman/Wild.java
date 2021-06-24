@@ -9,51 +9,28 @@ public class Wild extends Animal{
     int cages;
     int leftCages;
     boolean consecutiveCageOrder;
-
-    Wild(String name)
+    Wild(String name, int price, int step, int space, int cages, int leftCages){
+        super(name,price,step,space);
+        this.cages=cages;
+        this.leftCages=leftCages;
+        this.consecutiveCageOrder=false;
+    }
+    Wild(){}
+    static Wild createWild(String name)
     {
-        consecutiveCageOrder=false;
         name = name.toLowerCase();
         if(name.equals("lion"))
-        {
-            type = "lion";
-            price = 300;
-            step = 1;
-            space =15;
-            cages = 3;
-            leftCages = 3;
-            x = random();
-            y = random();
-        }
-
+            return new Wild("lion",300,1,15,3,3);
         else if(name.equals("bear"))
-        {
-            type = "bear";
-            price = 400;
-            step = 1;
-            space =15;
-            cages = 4;
-            leftCages = 4;
-            x = random();
-            y = random();
-        }
-
+            return new Wild("bear",400,1,15,4,4);
         else if(name.equals("tiger"))
-        {
-            type = "tiger";
-            price = 500;
-            step = 2;
-            space =1;
-            cages = 4;
-            leftCages = 4;
-            x = random();
-            y = random();
-        }
+            return new Wild("bear",500,2,15,4,4);
+        return new Wild();
     }
 
     static void add(String name)
     {
-        Wild.list.add(new Wild(name));
+        Wild.list.add(createWild(name));
     }
 
     void kill()
@@ -124,7 +101,7 @@ public class Wild extends Animal{
                 if(wild.leftCages<=0)
                 {
                     Logger.write('i',Wild.list.get(i).type+" got caged");
-                    Product newProduct = new Product(wild.type);
+                    Product newProduct = Product.newProduct(wild.type);
                     newProduct.x = wild.x;
                     newProduct.y = wild.y;
                     newProduct.collected = false;

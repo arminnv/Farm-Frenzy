@@ -6,12 +6,7 @@ public class Hound extends Animal{
 
     Hound()
     {
-        type = "hound";
-        price = 100;
-        step = 1;
-        x = random();
-        y = random();
-        space=1;
+        super("hound",100,1,1);
         this.addToMap();
         number= animalIDNumHashMap.get("hound");
     }

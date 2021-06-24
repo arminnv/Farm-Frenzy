@@ -1,14 +1,8 @@
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+
 
 public class Main {
     public static void main(String[] args)
     {
-        LocalDateTime d=LocalDateTime.now();
-        d.format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss"));
-        System.out.println(d.toLocalDate());
-        System.out.println(d.toLocalTime());
-        System.out.println(d.toString());
         Mission.write();
         User.load();
         Mission.load();

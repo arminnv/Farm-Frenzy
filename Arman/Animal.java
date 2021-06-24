@@ -13,6 +13,15 @@ public abstract class Animal {
     int price;
     int space;
     static Random rand = new Random();
+    Animal(){}
+    public Animal(String type, int price, int step, int space){
+        this.x=random();
+        this.y=random();
+        this.type=type;
+        this.space=space;
+        this.step=step;
+        this.price=price;
+    }
     static int random()
     {
         return rand.nextInt(6) + 1;

@@ -10,81 +10,42 @@ public class Product {
     int y;
     boolean collected = false;
     int space;
-    Product(String name)
+    Product(){}
+    Product(String name, int price,int expirationTime,int space){
+        this.type=name;
+        this.price=price;
+        this.expirationTime=expirationTime;
+        this.space=space;
+    }
+    static Product newProduct(String name)
     {
-        type = name;
         if(name.equals("egg"))
-        {
-            price = 15;
-            expirationTime = 4;
-            space = 1;
-        }
+            return new Product("egg",15,4,1);
         else if(name.equals("feather"))
-        {
-            price = 20;
-            expirationTime = 4;
-            space = 1;
-        }
+            return new Product("feather",20,4,1);
         else if(name.equals("milk"))
-        {
-            price = 25;
-            expirationTime = 4;
-            space = 1;
-        }
+            return new Product("milk",25,4,1);
         else if(name.equals("flour"))
-        {
-            price = 40;
-            expirationTime = 5;
-            space = 2;
-        }
+            return new Product("flour",40,5,2);
         else if(name.equals("ّfabric"))
-        {
-            price = 50;
-            expirationTime = 5;
-            space = 2;
-        }
+            return new Product("fabric",50,5,2);
         else if(name.equals("packet milk"))
-        {
-            price = 60;
-            expirationTime = 5;
-            space = 2;
-        }
+            return new Product("packet milk",60,5,2);
         else if(name.equals("bread"))
-        {
-            price = 80;
-            expirationTime = 6;
-            space = 4;
-        }
+            return new Product("bread",80,6,4);
         else if(name.equals("shirt"))
-        {
-            price = 100;
-            expirationTime = 6;
-            space = 4;
-        }
+            return new Product("shirt",100,6,4);
         else if(name.equals("ice cream"))
-        {
-            price = 120;
-            expirationTime = 6;
-            space = 4;
-        }
+            return new Product("ice cream",120,6,4);
         else if(name.equals("lion"))
-        {
-            price = 300;
-            expirationTime = 5;
-            space = 15;
-        }
+            return new Product("lion",300,5,15);
         else if(name.equals("bear"))
-        {
-            price = 400;
-            expirationTime = 5;
-            space = 15;
-        }
+            return new Product("bear",400,5,15);
         else if(name.equals("tiger"))
-        {
-            price = 500;
-            expirationTime = 5;
-            space = 15;
-        }
+            return new Product("tiger",500,5,15);
+        Product p=new Product();
+        p.type=name;
+        return p;
     }
 
     static void pickup(int x, int y)
