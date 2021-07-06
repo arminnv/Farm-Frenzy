@@ -4,100 +4,48 @@ public class Product {
     public static final Set<String> nameList=Set.of("egg", "feather", "milk", "flour", "fabric", "packet milk", "bread", "shirt", "ice cream", "lion", "bear", "tiger");
     static ArrayList<Product> list = new ArrayList<>();
     String type;
-    String previousType;//possibly be omitted
     int price;
-    int expirationTime=-3;
+    int expirationTime;
     int x;
     int y;
     boolean collected = false;
     int space;
-    Product(String name)
+    Product(){}
+    Product(String name, int price,int expirationTime,int space){
+        this.type=name;
+        this.price=price;
+        this.expirationTime=expirationTime;
+        this.space=space;
+    }
+    static Product newProduct(String name)
     {
-        type = name;
         if(name.equals("egg"))
-        {
-            previousType = "";
-            price = 15;
-            expirationTime = 4;
-            space = 1;
-        }
+            return new Product("egg",15,4,1);
         else if(name.equals("feather"))
-        {
-            previousType = "";
-            price = 20;
-            expirationTime = 4;
-            space = 1;
-        }
+            return new Product("feather",20,4,1);
         else if(name.equals("milk"))
-        {
-            previousType = "";
-            price = 25;
-            expirationTime = 4;
-            space = 1;
-        }
+            return new Product("milk",25,4,1);
         else if(name.equals("flour"))
-        {
-            previousType = "egg";
-            price = 40;
-            expirationTime = 5;
-            space = 2;
-        }
+            return new Product("flour",40,5,2);
         else if(name.equals("ّfabric"))
-        {
-            previousType = "feather";
-            price = 50;
-            expirationTime = 5;
-            space = 2;
-        }
+            return new Product("fabric",50,5,2);
         else if(name.equals("packet milk"))
-        {
-            previousType = "milk";
-            price = 60;
-            expirationTime = 5;
-            space = 2;
-        }
+            return new Product("packet milk",60,5,2);
         else if(name.equals("bread"))
-        {
-            previousType = "flour";
-            price = 80;
-            expirationTime = 6;
-            space = 4;
-        }
+            return new Product("bread",80,6,4);
         else if(name.equals("shirt"))
-        {
-            previousType = "fabric";
-            price = 100;
-            expirationTime = 6;
-            space = 4;
-        }
+            return new Product("shirt",100,6,4);
         else if(name.equals("ice cream"))
-        {
-            previousType = "packet milk";
-            price = 120;
-            expirationTime = 6;
-            space = 4;
-        }
+            return new Product("ice cream",120,6,4);
         else if(name.equals("lion"))
-        {
-            previousType = "";
-            price = 300;
-            expirationTime = 5;
-            space = 15;
-        }
+            return new Product("lion",300,5,15);
         else if(name.equals("bear"))
-        {
-            previousType = "";
-            price = 400;
-            expirationTime = 5;
-            space = 15;
-        }
+            return new Product("bear",400,5,15);
         else if(name.equals("tiger"))
-        {
-            previousType = "";
-            price = 500;
-            expirationTime = 5;
-            space = 15;
-        }
+            return new Product("tiger",500,5,15);
+        Product p=new Product();
+        p.type=name;
+        return p;
     }
 
     static void pickup(int x, int y)
@@ -114,7 +62,6 @@ public class Product {
                     list.remove(p);//proposed
                 }
                 else {
-                    System.out.println("not enough space in warehouse");
                     Logger.write('e', "Warehouse did not have enough space");
                 }
                 return;
@@ -128,7 +75,7 @@ public class Product {
     {
         for(int i=0; i<Product.list.size(); i++)
         {
-            if(!Product.list.get(i).collected)// && Product.list.get(i).expirationTime!=-3
+            if(!Product.list.get(i).collected)
                 Product.list.get(i).expirationTime--;
         }
 
@@ -139,7 +86,7 @@ public class Product {
 
             for(int i=0; i<Product.list.size(); i++)
             {
-                if(Product.list.get(i).expirationTime<=0)// && Product.list.get(i).expirationTime!=-3
+                if(Product.list.get(i).expirationTime<=0)
                 {
                     Logger.write('i',Product.list.get(i).type+" got expired");
                     Product.list.remove(i);//proposed

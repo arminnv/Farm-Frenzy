@@ -19,6 +19,7 @@ public class Warehouse {
 
     public boolean add(Product product){
         if (occupied+product.space<capacity) {
+            //Product.list.remove(product);
             occupied += product.space;
             for (Product product1 : products) {
                 if (product1.type.equals(product.type)) {
@@ -41,7 +42,7 @@ public class Warehouse {
                 if (num-number==0) {
                     productIntegerHashMap.remove(product1.type);
                     products.remove(product1);
-                    return true;//note:products with number 0 in the hashmap still exist in the arraylist
+                    return true;
                 }
             }
         }

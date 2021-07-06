@@ -25,23 +25,12 @@ public class Task {
         for (int i=0; i<list.size(); i++)
         {
             if(st.equals(list.get(i).name) && !list.get(i).complete){
-                list.get(i).claimed++;
+                if (list.get(i).name.equals("coins"))
+                    list.get(i).claimed=Game.getCoins();
+                else
+                    list.get(i).claimed++;
             }
             if (list.get(i).claimed >= list.get(i).goal) {
-                list.get(i).complete = true;
-                list.get(i).claimed = list.get(i).goal;
-            }
-        }
-    }
-
-    static void claim(int coins)
-    {
-        for (int i=0; i<list.size(); i++)
-        {
-            if(list.get(i).name.equals("coins") && !list.get(i).complete)
-                list.get(i).claimed += coins;
-            if (list.get(i).claimed >= list.get(i).goal)
-            {
                 list.get(i).complete = true;
                 list.get(i).claimed = list.get(i).goal;
             }

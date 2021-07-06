@@ -1,5 +1,3 @@
-import com.google.gson.Gson;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -71,15 +69,9 @@ public class Logger {
         }
     }
 
-    static String getDate()
-    {
+    static String getDate() {
         Date date = Calendar.getInstance().getTime();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        String strDate = dateFormat.format(date);
-        return  strDate;
-    }
-
-    static void delete() {
-        logFile.delete();
+        return dateFormat.format(date);
     }
 }

@@ -32,7 +32,6 @@ public class Well {
             process=true;
             return;
         }
-        //not empty
         Logger.write('e',"Error: Well is not empty and cannot be filled");
         System.out.println("Error: Well is not empty and cannot be filled");
     }

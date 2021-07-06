@@ -1,6 +1,6 @@
 public class Game {
 
-    static int coins = 4000;
+    private static int coins = 4000;
     static Mission mission;
     static void run(Mission mission)
     {
@@ -15,11 +15,10 @@ public class Game {
 
     public static void addCoins(int coins) {
         Game.coins += coins;
-        if(coins > 0)
-            Task.claim(coins);
+        Task.claim("Coins");
     }
 
-    /*public static int getCoins() {
+    public static int getCoins() {
         return coins;
-    }*/
+    }
 }

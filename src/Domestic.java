@@ -10,57 +10,43 @@ public class Domestic extends Animal{
     int productionTime;
     int timePassed = 0;
     int lifeReduction = 10;
-    boolean hungry = false;
-
-    Domestic(String name, boolean addToMap)
+    Domestic(){}
+    static Domestic newDomestic(String name, boolean addToMap)
     {
+        Domestic d=new Domestic();
         if(name.equals("chicken"))
         {
-            type = "chicken";
-            productionTime = 2;
-            productType = "egg";
-            price = 100;
-            step = 1;
-            space = 1;
-            x = random();
-            y = random();
+            d=new Domestic("chicken", 100,1,1,2,"egg");
             if (addToMap) {
-                this.addToMap();
-                number = animalIDNumHashMap.get("chicken");
+                d.addToMap();
+                d.number = animalIDNumHashMap.get("chicken");
             }
         }
 
         else if(name.equals("turkey"))
         {
-            type = "turkey";
-            productionTime = 3;
-            productType = "feather";
-            price = 200;
-            step = 1;
-            space = 1;
-            x = random();
-            y = random();
+            d=new Domestic("turkey", 200,1,1,3,"feather");
             if (addToMap) {
-                this.addToMap();
-                number = animalIDNumHashMap.get("turkey");
+                d.addToMap();
+                d.number = animalIDNumHashMap.get("turkey");
             }
         }
 
         else if(name.equals("buffalo"))
         {
-            type = "buffalo";
-            productionTime = 5;
-            productType = "milk";
-            price = 400;
-            step = 1;
-            space = 1;
-            x = random();
-            y = random();
+            d=new Domestic("buffalo", 400,1,1,5,"milk");
             if (addToMap) {
-                this.addToMap();
-                number = animalIDNumHashMap.get("buffalo");
+                d.addToMap();
+                d.number = animalIDNumHashMap.get("buffalo");
             }
         }
+        return d;
+    }
+    Domestic(String type, int price, int step, int space, int productionTime, String productType){
+        super(type,price,step,space);
+        this.productionTime=productionTime;
+        this.productType=productType;
+
     }
 
     static void buy(String name)
@@ -78,7 +64,7 @@ public class Domestic extends Animal{
             return;
         }
 
-        Domestic newDomestic = new Domestic(name,true);
+        Domestic newDomestic = newDomestic(name,true);
         if(newDomestic.type.equals(""))
         {
             System.out.println("animal type not found");
@@ -86,7 +72,7 @@ public class Domestic extends Animal{
             return;
         }
 
-        if(newDomestic.price <= Game.coins)
+        if(newDomestic.price <= Game.getCoins())
         {
             Game.addCoins(-newDomestic.price);
             Domestic.list.add(newDomestic);
@@ -120,7 +106,7 @@ public class Domestic extends Animal{
         if(timePassed >= productionTime)
         {
             timePassed = 0;
-            Product newProduct = new Product(productType);
+            Product newProduct = Product.newProduct(productType);
             newProduct.x = x;
             newProduct.y = y;
             Product.list.add(newProduct);
@@ -141,7 +127,6 @@ public class Domestic extends Animal{
         find(closest);
         if(health > 50 || closest[0] == 0)
         {
-            //randomStep()
             int d = randomDirection();
             if(d==0)
                 x += step;
@@ -210,9 +195,5 @@ public class Domestic extends Animal{
             }
         }
     }
-
-
-
-
 
 }

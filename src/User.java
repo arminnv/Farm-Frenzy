@@ -132,8 +132,7 @@ public class User {
                 user.points+=map.get(time);
             }
         }
-        try
-        {
+        try {
             FileReader reader = new FileReader("users.txt");
             Scanner sc = new Scanner(reader);
             while (sc.hasNextLine())
@@ -149,7 +148,7 @@ public class User {
 
         try
         {
-            FileWriter writer = new FileWriter("users.txt");//append??
+            FileWriter writer = new FileWriter("users.txt");
             String json = new Gson().toJson(user);
             writer.write(st + json + "*\n");
             writer.close();

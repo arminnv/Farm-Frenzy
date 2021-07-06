@@ -102,15 +102,16 @@ public class Mission {
         bonus1.put(10,200);
         bonus1.put(20,20);
         bonus1.put(30,0);
-        tasks1.add(new Task("coins", 200));
-        tasks1.add(new Task("bread", 2));
-        tasks1.add(new Task("milk", 2));
+        //tasks1.add(new Task("Coins", 60000));
+        //tasks1.add(new Task("Bread", 4));
+        //tasks1.add(new Task("Milk", 5));
         tasks1.add(new Task("egg", 6));
         wilds1.put(2, "tiger");
         wilds1.put(1, "bear");
         maxTime = 500;
         Mission mission1 = new Mission(level, coins, tasks1, wilds1, maxTime, bonus1,reward);
         Mission.list.add(mission1);
+
 
         //mission 2
         level = 2;
@@ -161,7 +162,6 @@ public class Mission {
         bonus4.put(60,0);
         Mission mission4=new Mission(level,coins,tasks4,wilds4,maxTime,bonus4,reward);
         Mission.list.add(mission4);
-
         //mission 5
         level=5;
         coins=5000;
@@ -173,7 +173,6 @@ public class Mission {
         bonus5.put(6,10000);
         bonus5.put(7,0);
         Mission mission5=new Mission(level,coins,tasks5,wilds5,maxTime,bonus5,reward);
-        Mission.list.add(mission5);
 
 
         Mission.save();
