@@ -5,9 +5,9 @@ public class Product {
     static ArrayList<Product> list = new ArrayList<>();
     String type;
     int price;
-    int expirationTime;
-    int x;
-    int y;
+    double expirationTime;
+    double x;
+    double y;
     boolean collected = false;
     int space;
     Product(){}
@@ -53,7 +53,7 @@ public class Product {
         for(int i=0; i<Product.list.size(); i++)
         {
             Product p=Product.list.get(i);
-            if(p.x == x && p.y == y)
+            if(Math.abs(x-p.x)<1 && Math.abs(y-p.y)<1)
             {
                 if (Warehouse.getInstance().add(p)) {
                     p.collected = true;
@@ -76,7 +76,7 @@ public class Product {
         for(int i=0; i<Product.list.size(); i++)
         {
             if(!Product.list.get(i).collected)
-                Product.list.get(i).expirationTime--;
+                Product.list.get(i).expirationTime-=Time.dt;
         }
 
         boolean b = true;

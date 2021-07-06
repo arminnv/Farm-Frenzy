@@ -42,26 +42,26 @@ public class Cat extends Animal{
     {
         if(this.find() == null) {
             int d = randomDirection();
-            if((d==0)&&(x+step<=6))
-                x += step;
-            else if((d==1)&&(y+step<=6))
-                y += step;
-            else if((d==2)&&(x-step>=1))
-                x -= step;
-            else if((d==3)&&(y-step>=1))
-                y -= step;
+            if((d==0)&&(x+dx<=6))
+                x += dx;
+            else if((d==1)&&(y+dx<=6))
+                y += dx;
+            else if((d==2)&&(x-dx>=1))
+                x -= dx;
+            else if((d==3)&&(y-dx>=1))
+                y -= dx;
         }
         else
         {
             Product target = this.find();
             if(target.x > x)
-                x++;
+                x+=dx;
             else if(target.x < x)
-                x--;
+                x-=dx;
             else if(target.y > y)
-                y++;
+                y+=dx;
             else if(target.y < y)
-                y--;
+                y-=dx;
         }
     }
 
@@ -72,7 +72,7 @@ public class Cat extends Animal{
             Product product = Product.list.get(i);
             if(!product.collected)
             {
-                if( (product.x == x && product.y == y) && ( Warehouse.getInstance().add(product) ) ) {
+                if( (this.intRange(product.x,product.y)) && ( Warehouse.getInstance().add(product) ) ) {
                     product.collected = true;///
                     Product.list.remove(product);//proposed
                     Task.claim(product.type);
@@ -84,7 +84,7 @@ public class Cat extends Animal{
 
     Product find()
     {
-        int min = 20;
+        double min = 20;
         Product closest = null;
         for (int i=0; i<Product.list.size(); i++)
         {

@@ -1,6 +1,7 @@
 public class Time {
 
-    static int time = 0;
+    static double time = 0;
+    static double dt;
 
     static void turn(int n) {
         for(int i=0; i<n; i++) {

@@ -9,8 +9,8 @@ public abstract class Factory {
     int maxAllowedLevel;
     int buildingCost;
     int upgradeCost;
-    int productionDefaultDuration;
-    int productionDuration;
+    double productionDefaultDuration;
+    double productionDuration;
     String name;
     String validType;
     String outputType;
@@ -72,13 +72,13 @@ public abstract class Factory {
     }
     public void update(){
         if (productionDuration>0){
-            productionDuration--;
+            productionDuration-=Time.dt;
         }
         if (productionDuration==0){
             for(int i=0;i<underProduction;i++){
                 Product product=Product.newProduct(outputType);
-                product.x=r.nextInt(6)+1;
-                product.y=r.nextInt(6)+1;
+                product.x=(double) (r.nextInt(6))+0.5;
+                product.y=(double) (r.nextInt(6))+0.5;
                 Product.list.add(product);
                 Logger.write('i',this.name+ " produced "+product.type);
             }

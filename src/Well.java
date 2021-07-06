@@ -14,9 +14,9 @@ public class Well {
             w=new Well();
         return w;
     }
-    public void water(int x, int y){
+    public void water(double x, double y){
         if (capacity>0){
-            Plant.num[x-1][y-1]++;
+            Plant.num[(int)x][(int)y]++;
             capacity--;
             Logger.write('i',"planted successfully");
             System.out.println("planted successfully");

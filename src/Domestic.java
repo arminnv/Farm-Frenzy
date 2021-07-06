@@ -6,10 +6,11 @@ public class Domestic extends Animal{
     static ArrayList<Domestic> list = new ArrayList<>();
     public static final Set<String> nameList=Set.of("chicken","turkey","buffalo");
     String productType;
-    int health = 100;
+    double health = 100;
     int productionTime;
-    int timePassed = 0;
+    double timePassed = 0;
     int lifeReduction = 10;
+    double dl = health * Time.dt;
     Domestic(){}
     static Domestic newDomestic(String name, boolean addToMap)
     {
@@ -92,9 +93,9 @@ public class Domestic extends Animal{
     {
         if(health>50)
             return;
-        if(Plant.num[x-1][y-1]>0)
+        if(Plant.num[(int)x][(int)y]>0)
         {
-            Plant.num[x-1][y-1]--;
+            Plant.num[(int)x][(int)y]--;
             health = 100;
             Logger.write('i', type+ " ate");
         }
@@ -123,19 +124,19 @@ public class Domestic extends Animal{
 
     void walk()
     {
-        int[] closest = {0,0};
+        double[] closest = {0,0};
         find(closest);
         if(health > 50 || closest[0] == 0)
         {
             int d = randomDirection();
             if(d==0)
-                x += step;
+                x += dx;
             else if(d==1)
-                y += step;
+                y += dx;
             else if(d==2)
-                x -= step;
+                x -= dx;
             else if(d==3)
-                y -= step;
+                y -= dx;
 
             if(x>6)
                 x=6;
@@ -148,16 +149,16 @@ public class Domestic extends Animal{
         }
         else
         {
-            int x0 = closest[0];
-            int y0 = closest[1];
+            double x0 = closest[0];
+            double y0 = closest[1];
             if(x0 > x)
-                x++;
+                x+=dx;
             else if(x0 < x)
-                x--;
+                x-=dx;
             else if(y0 > y)
-                y++;
+                y+=dx;
             else if(y0 < y)
-                y--;
+                y-=dx;
         }
 
     }
@@ -165,7 +166,7 @@ public class Domestic extends Animal{
     static void reduce()
     {
         for(int i=0; i<Domestic.list.size(); i++) {
-            Domestic.list.get(i).health -= Domestic.list.get(i).lifeReduction;
+            Domestic.list.get(i).health -= Domestic.list.get(i).dl;
         }
         for(int i=0; i<Domestic.list.size(); i++) {
             if(Domestic.list.get(i).health<=0) {
@@ -176,9 +177,9 @@ public class Domestic extends Animal{
 
     }
 
-    void find(int[] closest)
+    void find(double[] closest)
     {
-        int min = 20;
+        double min = 20;
         for (int i=0; i<6; i++)
         {
             for(int j=0; j<6; j++)

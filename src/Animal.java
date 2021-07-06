@@ -7,8 +7,9 @@ public abstract class Animal {
 
     String type = "";
     int number;
-    int x;
-    int y;
+    double x;
+    double y;
+    double dx;
     int step;
     int price;
     int space;
@@ -21,10 +22,11 @@ public abstract class Animal {
         this.space=space;
         this.step=step;
         this.price=price;
+        this.dx = (double) (step) * Time.dt;
     }
-    static int random()
+    static double random()
     {
-        return rand.nextInt(6) + 1;
+        return (double)(rand.nextInt(6)) + 0.5;
     }
 
     static int randomDirection()
@@ -48,6 +50,15 @@ public abstract class Animal {
                 animalCount.remove(type);
         }
     }
+
+    boolean intRange(double X, double Y)
+    {
+        if( Math.abs(x-X)<1 && Math.abs(y-Y)<1 )
+            return true;
+        else
+            return false;
+    }
+
     abstract void walk();
     abstract void kill();
 }

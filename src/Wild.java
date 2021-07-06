@@ -46,18 +46,18 @@ public class Wild extends Animal{
         {
 
             if((d==0)&&(x<6))
-                x++;
+                x+=dx;
             else if((d==1)&&(y<6))
-                y++;
+                y+=dx;
             else if((d==2)&&(x>1))
-                x--;
+                x-=dx;
             else if((d==3)&&(y>1))
-                y--;
+                y-=dx;
 
             for(int j=0; j<Hound.list.size(); j++)
             {
                 Hound hound = Hound.list.get(j);
-                if(hound.x == x && hound.y == y)
+                if(this.intRange(hound.x,hound.y))
                 {
                     hound.kill();
                     kill();
@@ -68,7 +68,7 @@ public class Wild extends Animal{
             for(int j=0; j<Domestic.list.size(); j++)
             {
                 Domestic domestic = Domestic.list.get(j);
-                if(domestic.x == x && domestic.y == y)
+                if(this.intRange(domestic.x,domestic.y))
                 {
                     domestic.kill();
                     break;
@@ -78,7 +78,7 @@ public class Wild extends Animal{
             for(int j=0; j<Cat.list.size(); j++)
             {
                 Cat cat = Cat.list.get(j);
-                if(cat.x == x && cat.y == y)
+                if(this.intRange(cat.x,cat.y))
                 {
                     cat.kill();
                     break;
@@ -89,7 +89,7 @@ public class Wild extends Animal{
         }
     }
 
-    static void cage(int x, int y)
+    static void cage(double x, double y)
     {
         for (int i=0; i<Wild.list.size(); i++)
         {

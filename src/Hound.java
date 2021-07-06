@@ -39,13 +39,13 @@ public class Hound extends Animal{
     {
         int d = randomDirection();
         if(d==0)
-            x += step;
+            x += dx;
         else if(d==1)
-            y += step;
+            y += dx;
         else if(d==2)
-            x -= step;
+            x -= dx;
         else if(d==3)
-            y -= step;
+            y -= dx;
 
         if(x>6)
             x=6;
