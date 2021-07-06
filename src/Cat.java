@@ -43,25 +43,49 @@ public class Cat extends Animal{
         if(this.find() == null) {
             int d = randomDirection();
             if((d==0)&&(x+dx<=6))
+            {
                 x += dx;
+                state = 1;
+            }
             else if((d==1)&&(y+dx<=6))
+            {
                 y += dx;
+                state = 4;
+            }
             else if((d==2)&&(x-dx>=1))
+            {
                 x -= dx;
+                state = 3;
+            }
             else if((d==3)&&(y-dx>=1))
+            {
                 y -= dx;
+                state = 2;
+            }
         }
         else
         {
             Product target = this.find();
             if(target.x > x)
+            {
                 x+=dx;
+                state = 1;
+            }
             else if(target.x < x)
+            {
                 x-=dx;
+                state = 3;
+            }
             else if(target.y > y)
+            {
                 y+=dx;
+                state = 4;
+            }
             else if(target.y < y)
+            {
                 y-=dx;
+                state = 2;
+            }
         }
     }
 

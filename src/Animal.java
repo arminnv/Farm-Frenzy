@@ -13,6 +13,9 @@ public abstract class Animal {
     int step;
     int price;
     int space;
+    int state;
+    int w;
+    int h;
     static Random rand = new Random();
     Animal(){}
     public Animal(String type, int price, int step, int space){
@@ -57,6 +60,18 @@ public abstract class Animal {
             return true;
         else
             return false;
+    }
+
+    int xScale()
+    {
+        int x = 0;
+        return x;
+    }
+
+    int yScale()
+    {
+        int y = 0;
+        return y;
     }
 
     abstract void walk();

@@ -44,15 +44,35 @@ public class Wild extends Animal{
         int d = randomDirection();
         for(int k=1; k<=step; k++)
         {
+            if(d==0)
+            {
+                x += dx;
+                state = 1;
+            }
+            else if(d==1)
+            {
+                y += dx;
+                state = 4;
+            }
+            else if(d==2)
+            {
+                x -= dx;
+                state = 3;
+            }
+            else if(d==3)
+            {
+                y -= dx;
+                state = 2;
+            }
 
-            if((d==0)&&(x<6))
-                x+=dx;
-            else if((d==1)&&(y<6))
-                y+=dx;
-            else if((d==2)&&(x>1))
-                x-=dx;
-            else if((d==3)&&(y>1))
-                y-=dx;
+            if(x>6)
+                x=6;
+            if(x<1)
+                x=1;
+            if(y>6)
+                y=6;
+            if(y<1)
+                y=1;
 
             for(int j=0; j<Hound.list.size(); j++)
             {

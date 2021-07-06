@@ -10,6 +10,8 @@ public class Product {
     double y;
     boolean collected = false;
     int space;
+    int w;
+    int h;
     Product(){}
     Product(String name, int price,int expirationTime,int space){
         this.type=name;
@@ -95,6 +97,18 @@ public class Product {
                 }
             }
         }
+    }
+
+    int xScale()
+    {
+        int x = 0;
+        return x;
+    }
+
+    int yScale()
+    {
+        int y = 0;
+        return y;
     }
 
 }

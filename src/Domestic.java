@@ -130,13 +130,25 @@ public class Domestic extends Animal{
         {
             int d = randomDirection();
             if(d==0)
+            {
                 x += dx;
+                state = 1;
+            }
             else if(d==1)
+            {
                 y += dx;
+                state = 4;
+            }
             else if(d==2)
+            {
                 x -= dx;
+                state = 3;
+            }
             else if(d==3)
+            {
                 y -= dx;
+                state = 2;
+            }
 
             if(x>6)
                 x=6;
@@ -152,13 +164,25 @@ public class Domestic extends Animal{
             double x0 = closest[0];
             double y0 = closest[1];
             if(x0 > x)
-                x+=dx;
+            {
+                x += dx;
+                state = 1;
+            }
             else if(x0 < x)
-                x-=dx;
+            {
+                x -= dx;
+                state = 3;
+            }
             else if(y0 > y)
-                y+=dx;
+            {
+                y += dx;
+                state = 4;
+            }
             else if(y0 < y)
-                y-=dx;
+            {
+                y -= dx;
+                state = 2;
+            }
         }
 
     }
