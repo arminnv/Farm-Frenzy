@@ -6,7 +6,7 @@ public class Time {
     static void turn(int n) {
         for(int i=0; i<n; i++) {
             update();
-            Time.time++;
+            Time.time+=dt;
         }
     }
 
