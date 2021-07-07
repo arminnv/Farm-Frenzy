@@ -1,7 +1,5 @@
 public class Plant {
-
     static int[][] num = new int[6][6];
-
     public static void warn(){
         int a=0;
         for (int i=0;i<6;i++){

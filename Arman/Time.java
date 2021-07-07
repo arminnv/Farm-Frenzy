@@ -7,6 +7,7 @@ public class Time {
             update();
             Time.time++;
         }
+        Game.myClock.getLocalTime();
     }
 
     static void update() {
