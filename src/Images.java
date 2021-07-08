@@ -1,136 +1,101 @@
    // static java.awt.Image image;
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 
-public class Images {
+   public class Images {
 
-    static  File[] cowF = new File[7];
-    static  File[] turkeyF = new File[7];
-    static  File[] buffaloF = new File[7];
-    static  File[] catF = new File[6];
-    static  File[] houndF = new File[6];
-    static  File[] lionF = new File[6];
-    static  File[] bearF = new File[6];
-    static  File[] tigerF = new File[6];
+       int w;
+       int h;
 
-    static  File eggF = new File("product/egg.png");
-    static  File featherF = new File("product/feather.png");
-    static  File milkF = new File("product/milk.png");
+    static BufferedImage[] chicken = new BufferedImage[6];
+    static BufferedImage[] turkey = new BufferedImage[6];
+    static BufferedImage[] buffalo = new BufferedImage[6];
+    static BufferedImage[] cat = new BufferedImage[5];
+    static BufferedImage[] hound = new BufferedImage[5];
+    static BufferedImage[] lion = new BufferedImage[5];
+    static BufferedImage[] bear = new BufferedImage[5];
+    static BufferedImage[] tiger = new BufferedImage[5];
 
-    static  File grassF = new File("grass.png");
-    static  File wellF = new File("well.png");
-    static  File landF = new File("land.png");
+    static BufferedImage egg;
+    static BufferedImage feather;
+    static BufferedImage milk;
+    static BufferedImage flour;
+    static BufferedImage fabric;
+    static BufferedImage packetMilk;
+    static BufferedImage bread;
+    static BufferedImage shirt;
+    static BufferedImage iceCream;
+    static BufferedImage cagedLion;
+    static BufferedImage cagedBear;
+    static BufferedImage cagedTiger;
 
-
-    static Image[] cow = new Image[7];
-    static Image[] turkey = new Image[7];
-    static Image[] buffalo = new Image[7];
-    static Image[] cat = new Image[6];
-    static Image[] hound = new Image[6];
-    static Image[] lion = new Image[6];
-    static Image[] bear = new Image[6];
-    static Image[] tiger = new Image[6];
-
-    static Image egg;
-    static Image feather;
-    static Image milk;
-
-    static Image grass;
-    static Image well;
-    static Image land;
+    static BufferedImage grass;
+    static BufferedImage well;
+    static BufferedImage land;
 
     static void load()
     {
         try
         {
-            for(int i=0; i<7; i++)
-            {
-                cow[i] = ImageIO.read(cowF[i]);
-                turkey[i] = ImageIO.read(turkeyF[i]);
-                buffalo[i] = ImageIO.read(buffaloF[i]);
-            }
-            for(int i=0; i<6; i++)
-            {
-                cat[i] = ImageIO.read(catF[i]);
-                hound[i] = ImageIO.read(houndF[i]);
-                lion[i] = ImageIO.read(lionF[i]);
-                bear[i] = ImageIO.read(bearF[i]);
-                tiger[i] = ImageIO.read(tigerF[i]);
-            }
+            //chicken[0] = ImageIO.read(new File("domestic/chicken/eat.png"));
+            chicken[1] = ImageIO.read(new File("domestic/chicken/right.png"));
+            chicken[2] = ImageIO.read(new File("domestic/chicken/down.png"));
+            chicken[3] = ImageIO.read(new File("domestic/chicken/left.png"));
+            chicken[4] = ImageIO.read(new File("domestic/chicken/up.png"));
+            //chicken[5] = ImageIO.read(new File("domestic/chicken/dead.png"));
 
-            egg = ImageIO.read(eggF);
-            feather = ImageIO.read(featherF);
-            milk = ImageIO.read(milkF);
+            //turkey[0] = ImageIO.read(new File("domestic/turkey/eat.png"));
+            turkey[1] = ImageIO.read(new File("domestic/turkey/right.png"));
+            turkey[2] = ImageIO.read(new File("domestic/turkey/down.png"));
+            turkey[3] = ImageIO.read(new File("domestic/turkey/left.png"));
+            turkey[4] = ImageIO.read(new File("domestic/turkey/up.png"));
+            //turkey[5] = ImageIO.read(new File("domestic/turkey/dead.png"));
 
-            grass = ImageIO.read(grassF);
-            well = ImageIO.read(wellF);
-            land = ImageIO.read(landF);
+            //buffalo[0] = ImageIO.read(new File("domestic/buffalo/eat.png"));
+            buffalo[1] = ImageIO.read(new File("domestic/buffalo/right.png"));
+            buffalo[2] = ImageIO.read(new File("domestic/buffalo/down.png"));
+            buffalo[3] = ImageIO.read(new File("domestic/buffalo/left.png"));
+            buffalo[4] = ImageIO.read(new File("domestic/buffalo/up.png"));
+            //buffalo[5] = ImageIO.read(new File("domestic/buffalo/dead.png"));
+
+            cat[1] = ImageIO.read(new File("cat/right.png"));
+            cat[2] = ImageIO.read(new File("cat/down.png"));
+            cat[3] = ImageIO.read(new File("cat/left.png"));
+            cat[4] = ImageIO.read(new File("cat/up.png"));
+
+            hound[1] = ImageIO.read(new File("hound/right.png"));
+            hound[2] = ImageIO.read(new File("hound/down.png"));
+            hound[3] = ImageIO.read(new File("hound/left.png"));
+            hound[4] = ImageIO.read(new File("hound/up.png"));
+
+            lion[1] = ImageIO.read(new File("wild/lion/right.png"));
+            lion[2] = ImageIO.read(new File("wild/lion/down.png"));
+            lion[3] = ImageIO.read(new File("wild/lion/left.png"));
+            lion[4] = ImageIO.read(new File("wild/lion/up.png"));
+
+            bear[1] = ImageIO.read(new File("wild/bear/right.png"));
+            bear[2] = ImageIO.read(new File("wild/bear/down.png"));
+            bear[3] = ImageIO.read(new File("wild/bear/left.png"));
+            bear[4] = ImageIO.read(new File("wild/bear/up.png"));
+
+            tiger[1] = ImageIO.read(new File("wild/tiger/right.png"));
+            tiger[2] = ImageIO.read(new File("wild/tiger/down.png"));
+            tiger[3] = ImageIO.read(new File("wild/tiger/left.png"));
+            tiger[4] = ImageIO.read(new File("wild/tiger/up.png"));
+
+            egg = ImageIO.read(new File("product/egg.png"));
+            feather = ImageIO.read(new File("product/feather.png"));
+            milk = ImageIO.read(new File("product/milk.png"));
+
+            grass = ImageIO.read(new File("grass.png"));
+            //well = ImageIO.read(new File("well.png"));
+            land = ImageIO.read(new File("land.png"));
         }
-        catch (Exception e){
+        catch (IOException e){
             System.out.println("error loading images");
         }
-    }
-
-    static void initialize()
-    {
-        cowF[0] = new File("domestic/cow/steady.png");
-        cowF[1] = new File("domestic/cow/right.png");
-        cowF[2] = new File("domestic/cow/down.png");
-        cowF[3] = new File("domestic/cow/left.png");
-        cowF[4] = new File("domestic/cow/up.png");
-        cowF[5] = new File("domestic/cow/eat.png");
-        cowF[6] = new File("domestic/cow/dead.png");
-
-        turkeyF[0] = new File("domestic/turkey/steady.png");
-        turkeyF[1] = new File("domestic/turkey/right.png");
-        turkeyF[2] = new File("domestic/turkey/down.png");
-        turkeyF[3] = new File("domestic/turkey/left.png");
-        turkeyF[4] = new File("domestic/turkey/up.png");
-        turkeyF[5] = new File("domestic/turkey/eat.png");
-        turkeyF[6] = new File("domestic/turkey/dead.png");
-
-        buffaloF[0] = new File("domestic/buffalo/steady.png");
-        buffaloF[1] = new File("domestic/buffalo/right.png");
-        buffaloF[2] = new File("domestic/buffalo/down.png");
-        buffaloF[3] = new File("domestic/buffalo/left.png");
-        buffaloF[4] = new File("domestic/buffalo/up.png");
-        buffaloF[5] = new File("domestic/buffalo/eat.png");
-        buffaloF[6] = new File("domestic/buffalo/dead.png");
-
-        catF[0] = new File("cat/steady.png");
-        catF[1] = new File("cat/right.png");
-        catF[2] = new File("cat/down.png");
-        catF[3] = new File("cat/left.png");
-        catF[4] = new File("cat/up.png");
-        catF[5] = new File("cat/pick.png");
-
-        houndF[0] = new File("hound/steady.png");
-        houndF[1] = new File("hound/right.png");
-        houndF[2] = new File("hound/down.png");
-        houndF[3] = new File("hound/left.png");
-        houndF[4] = new File("hound/up.png");
-        houndF[5] = new File("hound/attack.png");
-
-        lionF[0] = new File("wild/lion/steady.png");
-        lionF[1] = new File("wild/lion/right.png");
-        lionF[2] = new File("wild/lion/down.png");
-        lionF[3] = new File("wild/lion/left.png");
-        lionF[4] = new File("wild/lion/up.png");
-        lionF[5] = new File("wild/lion/attack.png");
-
-        bearF[0] = new File("wild/bear/steady.png");
-        bearF[1] = new File("wild/bear/right.png");
-        bearF[2] = new File("wild/bear/down.png");
-        bearF[3] = new File("wild/bear/left.png");
-        bearF[4] = new File("wild/bear/up.png");
-        bearF[5] = new File("wild/bear/attack.png");
-
-        tigerF[0] = new File("wild/tiger/steady.png");
-        tigerF[1] = new File("wild/tiger/right.png");
-        tigerF[2] = new File("wild/tiger/down.png");
-        tigerF[3] = new File("wild/tiger/left.png");
-        tigerF[4] = new File("wild/tiger/up.png");
-        tigerF[5] = new File("wild/tiger/attack.png");
     }
 }

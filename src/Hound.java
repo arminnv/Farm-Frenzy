@@ -37,35 +37,39 @@ public class Hound extends Animal{
 
     void walk()
     {
-        int d = randomDirection();
-        if(d==0)
+        t-=Time.dt;
+        if(t<0)
+        {
+            d = randomDirection();
+            t=1;
+        }
+        if(d==1)
         {
             x += dx;
             state = 1;
         }
-        else if(d==1)
-        {
-            y += dx;
-            state = 4;
-        }
         else if(d==2)
-        {
-            x -= dx;
-            state = 3;
-        }
-        else if(d==3)
         {
             y -= dx;
             state = 2;
         }
-
+        else if(d==3)
+        {
+            x -= dx;
+            state = 3;
+        }
+        else if(d==4)
+        {
+            y += dx;
+            state = 4;
+        }
         if(x>6)
-            x=6;
-        if(x<1)
-            x=1;
+        {x=6; t=1; d = randomD(d);}
+        if(x<0)
+        {x=0; t=1; d = randomD(d);}
         if(y>6)
-            y=6;
-        if(y<1)
-            y=1;
+        {y=6; t=1; d = randomD(d);}
+        if(y<0)
+        {y=0; t=1; d = randomD(d);}
     }
 }

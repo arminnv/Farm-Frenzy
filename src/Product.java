@@ -1,3 +1,4 @@
+import java.awt.image.BufferedImage;
 import java.util.*;
 
 public class Product {
@@ -18,6 +19,8 @@ public class Product {
         this.price=price;
         this.expirationTime=expirationTime;
         this.space=space;
+        h = 30;
+        w = 30;
     }
     static Product newProduct(String name)
     {
@@ -55,7 +58,7 @@ public class Product {
         for(int i=0; i<Product.list.size(); i++)
         {
             Product p=Product.list.get(i);
-            if(Math.abs(x-p.x)<1 && Math.abs(y-p.y)<1)
+            if(Math.abs(x-p.x)<=1 && Math.abs(y-p.y)<=1)
             {
                 if (Warehouse.getInstance().add(p)) {
                     p.collected = true;
@@ -101,14 +104,22 @@ public class Product {
 
     int xScale()
     {
-        int x = 0;
-        return x;
+        int X = (int)(Canvas.w/2 + Canvas.landW*(this.x/6-0.5) - this.w/2 );
+        return X;
     }
 
     int yScale()
     {
-        int y = 0;
-        return y;
+        int Y = (int)( Canvas.h - (Canvas.h/2 + Canvas.landH*(this.y/6-0.5)  -40) - this.h/2);
+        return Y;
+    }
+
+    boolean intRange(double X, double Y)
+    {
+        if( Math.abs(x-X)<1 && Math.abs(y-Y)<1 )
+            return true;
+        else
+            return false;
     }
 
 }

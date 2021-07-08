@@ -10,8 +10,8 @@ public class Plant {
             }
         }
         if (a==0) {
-            System.out.println("Warning: no grass");
-            Logger.write('a', "No grass");
+            //System.out.println("Warning: no grass");
+            //Logger.write('a', "No grass");
         }
     }
 }

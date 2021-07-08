@@ -10,11 +10,12 @@ public class Domestic extends Animal{
     int productionTime;
     double timePassed = 0;
     int lifeReduction = 10;
-    double dl = health * Time.dt;
+    double dl = health * Time.dt * 0.2;
     Domestic(){}
     static Domestic newDomestic(String name, boolean addToMap)
     {
         Domestic d=new Domestic();
+        d.h = 40;
         if(name.equals("chicken"))
         {
             d=new Domestic("chicken", 100,1,1,2,"egg");
@@ -93,6 +94,10 @@ public class Domestic extends Animal{
     {
         if(health>50)
             return;
+        if(x==6)
+            x=5;
+        if(y==6)
+            y=5;
         if(Plant.num[(int)x][(int)y]>0)
         {
             Plant.num[(int)x][(int)y]--;
@@ -103,7 +108,7 @@ public class Domestic extends Animal{
 
     void produce()
     {
-        timePassed++;
+        timePassed+=Time.dt;
         if(timePassed >= productionTime)
         {
             timePassed = 0;
@@ -128,57 +133,61 @@ public class Domestic extends Animal{
         find(closest);
         if(health > 50 || closest[0] == 0)
         {
-            int d = randomDirection();
-            if(d==0)
+            t-=Time.dt;
+            if(t<0)
+            {
+                d = randomDirection();
+                t=1;
+            }
+            if(d==1)
             {
                 x += dx;
                 state = 1;
             }
-            else if(d==1)
-            {
-                y += dx;
-                state = 4;
-            }
             else if(d==2)
-            {
-                x -= dx;
-                state = 3;
-            }
-            else if(d==3)
             {
                 y -= dx;
                 state = 2;
             }
-
+            else if(d==3)
+            {
+                x -= dx;
+                state = 3;
+            }
+            else if(d==4)
+            {
+                y += dx;
+                state = 4;
+            }
             if(x>6)
-                x=6;
-            if(x<1)
-                x=1;
+            {x=6; t=1; d = randomD(d);}
+            if(x<0)
+            {x=0; t=1; d = randomD(d);}
             if(y>6)
-                y=6;
-            if(y<1)
-                y=1;
+            {y=6; t=1; d = randomD(d);}
+            if(y<0)
+            {y=0; t=1; d = randomD(d);}
         }
         else
         {
             double x0 = closest[0];
             double y0 = closest[1];
-            if(x0 > x)
+            if(x0 > x && !this.intRange(x0,y))
             {
                 x += dx;
                 state = 1;
             }
-            else if(x0 < x)
+            else if(x0 < x && !this.intRange(x0,y))
             {
                 x -= dx;
                 state = 3;
             }
-            else if(y0 > y)
+            else if(y0 > y && !this.intRange(y0,x))
             {
                 y += dx;
                 state = 4;
             }
-            else if(y0 < y)
+            else if(y0 < y && !this.intRange(y0,x))
             {
                 y -= dx;
                 state = 2;
@@ -194,6 +203,8 @@ public class Domestic extends Animal{
         }
         for(int i=0; i<Domestic.list.size(); i++) {
             if(Domestic.list.get(i).health<=0) {
+                Logger.write('i', Domestic.list.get(i).type + " died");
+                System.out.println(Domestic.list.get(i).type + " died");
                 Domestic.list.remove(i);
                 i--;
             }
@@ -210,11 +221,11 @@ public class Domestic extends Animal{
             {
                 if(Plant.num[i][j] > 0)
                 {
-                    if(Math.abs(i+1-x) + Math.abs(j+1-y) < min)
+                    if(Math.abs((double) (i)+0.5-x) + Math.abs((double) (j)+0.5-y) < min)
                     {
-                        closest[0] = i+1;
-                        closest[1] = j+1;
-                        min = Math.abs(i+1-x) + Math.abs(j+1-y);
+                        closest[0] = (double) i+0.5;
+                        closest[1] = (double)j+0.5;
+                        min = Math.abs((double)i+0.5-x) + Math.abs((double)j+0.5-y);
                     }
                 }
             }

@@ -41,49 +41,63 @@ public class Cat extends Animal{
     void walk()
     {
         if(this.find() == null) {
-            int d = randomDirection();
-            if((d==0)&&(x+dx<=6))
+
+            t-=Time.dt;
+            if(t<0)
+            {
+                d = randomDirection();
+                t=1;
+            }
+            if(d==1)
             {
                 x += dx;
                 state = 1;
             }
-            else if((d==1)&&(y+dx<=6))
-            {
-                y += dx;
-                state = 4;
-            }
-            else if((d==2)&&(x-dx>=1))
-            {
-                x -= dx;
-                state = 3;
-            }
-            else if((d==3)&&(y-dx>=1))
+            else if(d==2)
             {
                 y -= dx;
                 state = 2;
             }
+            else if(d==3)
+            {
+                x -= dx;
+                state = 3;
+            }
+            else if(d==4)
+            {
+                y += dx;
+                state = 4;
+            }
+            if(x>6)
+            {x=6; t=1; d = randomD(d);}
+            if(x<0)
+            {x=0; t=1; d = randomD(d);}
+            if(y>6)
+            {y=6; t=1; d = randomD(d);}
+            if(y<0)
+            {y=0; t=1; d = randomD(d);}
         }
         else
         {
             Product target = this.find();
-            if(target.x > x)
+            if(target.x > x && !this.intRange(target.x,y))
             {
-                x+=dx;
+                x += dx;
                 state = 1;
             }
-            else if(target.x < x)
+            else if(target.x < x && !this.intRange(target.x,y))
             {
-                x-=dx;
+                x -= dx;
                 state = 3;
             }
-            else if(target.y > y)
+            else if(target.y > y && !this.intRange(target.y,x))
             {
-                y+=dx;
+                y += dx;
                 state = 4;
             }
-            else if(target.y < y)
+            else if(target.y < y && !this.intRange(target.y,x))
             {
-                y-=dx;
+                y -= dx;
                 state = 2;
             }
         }

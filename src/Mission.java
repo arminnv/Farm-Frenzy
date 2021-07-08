@@ -105,7 +105,7 @@ public class Mission {
         //tasks1.add(new Task("Coins", 60000));
         //tasks1.add(new Task("Bread", 4));
         //tasks1.add(new Task("Milk", 5));
-        tasks1.add(new Task("egg", 6));
+        tasks1.add(new Task("egg", 1000));
         wilds1.put(2, "tiger");
         wilds1.put(1, "bear");
         maxTime = 500;

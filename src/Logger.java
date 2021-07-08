@@ -28,7 +28,7 @@ public class Logger {
             tag = "[Info], ";
 
         st = tag + getDate() + ", " + st;
-        try
+        /*try
         {
             FileReader reader = new FileReader(logFile);
             Scanner sc = new Scanner(reader);
@@ -66,8 +66,21 @@ public class Logger {
         catch (IOException e)
         {
             System.out.println("error");
-        }
+        }*/
     }
+
+    /*static void write(char ch, String st)
+    {
+    Thread animationThread = new Thread(new Runnable() {
+        public void run() {
+            while (true) {
+                Logger.writeF(ch,st);
+                try {Thread.sleep(10);} catch (Exception ex) {}
+            }
+        }
+    });
+    }*/
+
 
     static String getDate() {
         Date date = Calendar.getInstance().getTime();

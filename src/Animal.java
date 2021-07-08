@@ -1,3 +1,4 @@
+import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -16,6 +17,8 @@ public abstract class Animal {
     int state;
     int w;
     int h;
+    double t = 1;
+    int d = Animal.randomDirection();
     static Random rand = new Random();
     Animal(){}
     public Animal(String type, int price, int step, int space){
@@ -26,6 +29,8 @@ public abstract class Animal {
         this.step=step;
         this.price=price;
         this.dx = (double) (step) * Time.dt;
+        h = 40;
+        w = 40;
     }
     static double random()
     {
@@ -34,7 +39,7 @@ public abstract class Animal {
 
     static int randomDirection()
     {
-        return rand.nextInt(4);
+        return rand.nextInt(4)+1;
     }
     public void addToMap(){//important note: add chickens 1-3 then remove them. next chicken ID:1
         if (animalCount.containsKey(this.type)){
@@ -56,7 +61,7 @@ public abstract class Animal {
 
     boolean intRange(double X, double Y)
     {
-        if( Math.abs(x-X)<1 && Math.abs(y-Y)<1 )
+        if( Math.abs(x-X)<0.25 && Math.abs(y-Y)<0.25 )
             return true;
         else
             return false;
@@ -64,14 +69,24 @@ public abstract class Animal {
 
     int xScale()
     {
-        int x = 0;
-        return x;
+        int X = (int)(Canvas.w/2 + Canvas.landW*(this.x/6-0.5) - this.w/2 );
+        return X;
     }
 
     int yScale()
     {
-        int y = 0;
-        return y;
+        int Y = (int)( Canvas.h - (Canvas.h/2 + Canvas.landH*(this.y/6-0.5) -40 ) - this.h/2  );
+        return Y;
+    }
+
+    int randomD(int d)
+    {
+        int r = d;
+        while(r==d)
+        {
+        r= Animal.randomDirection();
+        }
+        return r;
     }
 
     abstract void walk();
