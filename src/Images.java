@@ -19,6 +19,8 @@ import java.io.IOException;
     static BufferedImage[] bear = new BufferedImage[5];
     static BufferedImage[] tiger = new BufferedImage[5];
 
+    static BufferedImage[] cage = new BufferedImage[4];
+
     static BufferedImage egg;
     static BufferedImage feather;
     static BufferedImage milk;
@@ -32,8 +34,17 @@ import java.io.IOException;
     static BufferedImage cagedBear;
     static BufferedImage cagedTiger;
 
+    static BufferedImage mill;
+    static BufferedImage weaver;
+    static BufferedImage sewing;
+    static BufferedImage milkPacking;
+    static BufferedImage iceCreamFactory;
+    static BufferedImage bakery;
+    static BufferedImage incubator;
+
     static BufferedImage grass;
     static BufferedImage well;
+    static BufferedImage truck;
     static BufferedImage land;
 
     static void load()
@@ -86,12 +97,36 @@ import java.io.IOException;
             tiger[3] = ImageIO.read(new File("wild/tiger/left.png"));
             tiger[4] = ImageIO.read(new File("wild/tiger/up.png"));
 
+            cage[0] = ImageIO.read(new File("cage/0.png"));
+            cage[1] = ImageIO.read(new File("cage/1.png"));
+            cage[2] = ImageIO.read(new File("cage/2.png"));
+            cage[3] = ImageIO.read(new File("cage/3.png"));
+
             egg = ImageIO.read(new File("product/egg.png"));
             feather = ImageIO.read(new File("product/feather.png"));
             milk = ImageIO.read(new File("product/milk.png"));
+            flour = ImageIO.read(new File("product/flour.png"));
+            fabric = ImageIO.read(new File("product/fabric.png"));
+            packetMilk = ImageIO.read(new File("product/packet milk.png"));
+            bread = ImageIO.read(new File("product/bread.png"));
+            shirt = ImageIO.read(new File("product/shirt.png"));
+            iceCream = ImageIO.read(new File("product/ice cream.png"));
+            cagedLion = ImageIO.read(new File("product/lion.png"));
+            cagedBear = ImageIO.read(new File("product/bear.png"));
+            cagedTiger = ImageIO.read(new File("product/tiger.png"));
+
+            mill = ImageIO.read(new File("factory/mill.png"));
+            weaver = ImageIO.read(new File("factory/weaver.png"));
+            sewing = ImageIO.read(new File("factory/sewing.png"));
+            milkPacking = ImageIO.read(new File("factory/milk.png"));
+            iceCreamFactory = ImageIO.read(new File("factory/ice cream.png"));
+            bakery = ImageIO.read(new File("factory/bakery.png"));
+            incubator = ImageIO.read(new File("factory/incubator.png"));
+
 
             grass = ImageIO.read(new File("grass.png"));
-            //well = ImageIO.read(new File("well.png"));
+            well = ImageIO.read(new File("well.png"));
+            truck = ImageIO.read(new File("truck.png"));
             land = ImageIO.read(new File("land.png"));
         }
         catch (IOException e){

@@ -6,11 +6,11 @@ public class Time {
     static void turn(int n) {
         for(int i=0; i<n; i++) {
             update();
-            Time.time+=dt;
         }
     }
 
     static void update() {
+        Time.time+=dt;
         appear();
         eat();
         Domestic.reduce();
@@ -24,7 +24,7 @@ public class Time {
         removeCage();
         Well.getInstance().fillingProcess();
         Plant.warn();
-        //Output.show();
+        Output.show();
     }
 
     static void walk()
@@ -102,9 +102,11 @@ public class Time {
 
     static void appear()
     {
-        if(Game.mission.wilds.get(time) != null)
+        int t = (int) time;
+        if(Game.mission.wilds.get(t) != null)
         {
-            Wild.add(Game.mission.wilds.get(time));
+            Wild.add(Game.mission.wilds.get(t));
+            Game.mission.wilds.put(t, null);
         }
     }
     static void factoryUpdate(){

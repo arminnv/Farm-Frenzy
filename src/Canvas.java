@@ -6,9 +6,11 @@ import java.io.File;
 
 public class Canvas extends JComponent{
     static int h = 800;
-    static int w = 800;
+    static int w = 1000;
     static int landW = 400;
     static int landH = 400;
+    //static int y0 = -40;
+    static int y0 ;
     JFrame frame = new JFrame("Farm Frenzy");
 
     void setFrame()
@@ -44,17 +46,23 @@ public class Canvas extends JComponent{
 
             paintLand(gg);
             paintGrass(gg);
+            paintProducts(gg);
             paintDomestics(gg);
             paintWilds(gg);
             paintCats(gg);
             paintHounds(gg);
+
         }
 
     }
 
     static void paintLand(Graphics2D gg)
     {
-        //gg.setColor(Color.RED);
+        gg.setColor(Color.RED);
+        gg.drawImage(Images.land,0,0,w,getH(Images.land,w),null);
+        int lh = getH(Images.land,w);
+        y0 = (int)(h/2 - (double)(lh)/20 - lh/2);
+
         Product p = new Product();
         p.x = 6;
         p.y = 6;
@@ -68,7 +76,6 @@ public class Canvas extends JComponent{
         p.x = 6;
         p.y = 0;
         gg.drawOval(p.xScale()-10,p.yScale()-10,20,20);
-        gg.drawImage(Images.land,0,0,w,h,null);
     }
 
     static void paintDomestics(Graphics2D gg)
@@ -91,8 +98,6 @@ public class Canvas extends JComponent{
             {
                 image = Images.buffalo[domestic.state];
             }
-            domestic.w = 30;
-            domestic.h = 30;
             gg.drawImage(image,domestic.xScale(),domestic.yScale(),domestic.w,domestic.h,null);
             //gg.drawImage(image,(int)(100*domestic.x),(int)(100*domestic.y),domestic.w,domestic.h,null);
         }
@@ -116,8 +121,6 @@ public class Canvas extends JComponent{
             {
                 image = Images.tiger[wild.state];
             }
-            wild.h=40;
-            wild.w=40;
             gg.drawImage(image,wild.xScale(),wild.yScale(),wild.w,wild.h,null);
         }
     }
@@ -176,15 +179,20 @@ public class Canvas extends JComponent{
             {
                 for (int k=0; k<Plant.num[i][j]; k++)
                 {
-                    gg.drawImage(image,xScale(i+0.5,30),yScale(j+0.5,30),getW(image,40),40,null);
+                    gg.drawImage(image,xScale(i+0.5,30),yScale(j+0.5,30),40,40,null);
                 }
             }
         }
     }
 
-    static int getW(BufferedImage image, int w)
+    static int getH(BufferedImage image, int w)
     {
         return (int) ((double)image.getHeight()/(double)image.getWidth() * w );
+    }
+
+    static int getW(BufferedImage image, int h)
+    {
+        return (int) ((double)image.getWidth()/(double)image.getHeight() * h );
     }
 
     static int xScale(double x, int w)
@@ -195,7 +203,7 @@ public class Canvas extends JComponent{
 
     static int yScale(double y, int h)
     {
-        int Y = (int)( Canvas.h - (Canvas.h/2 + Canvas.landH*(y/6-0.5) -40 ) - h/2  );
+        int Y = (int)( Canvas.h - (Canvas.h/2 + Canvas.landH*(y/6-0.5) +y0 ) - h/2  );
         return Y;
     }
 

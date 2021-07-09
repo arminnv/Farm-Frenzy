@@ -110,7 +110,7 @@ public class Product {
 
     int yScale()
     {
-        int Y = (int)( Canvas.h - (Canvas.h/2 + Canvas.landH*(this.y/6-0.5)  -40) - this.h/2);
+        int Y = (int)( Canvas.h - (Canvas.h/2 + Canvas.landH*(this.y/6-0.5)  +Canvas.y0) - this.h/2);
         return Y;
     }
 

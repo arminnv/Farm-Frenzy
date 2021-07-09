@@ -8,6 +8,8 @@ public class Hound extends Animal{
     {
         super("hound",100,1,1);
         this.addToMap();
+        w = 60;
+        h = w;
         number= animalIDNumHashMap.get("hound");
     }
 

@@ -16,18 +16,38 @@ public class Wild extends Animal{
         this.leftCages=leftCages;
         this.consecutiveCageOrder=false;
         t = 1;
-        h = 40;
+        if(name.equals("lion"))
+        {
+            h = 80;
+        }
+        else if(name.equals("bear"))
+        {
+            h = 90;
+        }
+        if(name.equals("tiger"))
+        {
+            h = 60;
+        }
+        h = w;
     }
     Wild(){}
     static Wild createWild(String name)
     {
         name = name.toLowerCase();
         if(name.equals("lion"))
+        {
             return new Wild("lion",300,1,15,3,3);
+        }
         else if(name.equals("bear"))
+        {
+
             return new Wild("bear",400,1,15,4,4);
+        }
         else if(name.equals("tiger"))
+        {
             return new Wild("tiger",500,2,15,4,4);
+
+        }
         return new Wild();
     }
 
@@ -160,5 +180,14 @@ public class Wild extends Animal{
             Product.list.add(newProduct);
             Wild.list.remove(wild);
         }
+    }
+
+    @Override
+    boolean intRange(double X, double Y)
+    {
+        if( Math.abs(x-X)<0.5 && Math.abs(y-Y)<0.5 )
+            return true;
+        else
+            return false;
     }
 }

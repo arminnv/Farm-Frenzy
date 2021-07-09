@@ -15,10 +15,10 @@ public class Domestic extends Animal{
     static Domestic newDomestic(String name, boolean addToMap)
     {
         Domestic d=new Domestic();
-        d.h = 40;
         if(name.equals("chicken"))
         {
             d=new Domestic("chicken", 100,1,1,2,"egg");
+            d.w = 50;
             if (addToMap) {
                 d.addToMap();
                 d.number = animalIDNumHashMap.get("chicken");
@@ -28,6 +28,7 @@ public class Domestic extends Animal{
         else if(name.equals("turkey"))
         {
             d=new Domestic("turkey", 200,1,1,3,"feather");
+            d.w = 50;
             if (addToMap) {
                 d.addToMap();
                 d.number = animalIDNumHashMap.get("turkey");
@@ -37,11 +38,13 @@ public class Domestic extends Animal{
         else if(name.equals("buffalo"))
         {
             d=new Domestic("buffalo", 400,1,1,5,"milk");
+            d.w = 60;
             if (addToMap) {
                 d.addToMap();
                 d.number = animalIDNumHashMap.get("buffalo");
             }
         }
+        d.h = d.w;
         return d;
     }
     Domestic(String type, int price, int step, int space, int productionTime, String productType){
