@@ -1,5 +1,7 @@
 public class Plant {
+
     static int[][] num = new int[6][6];
+
     public static void warn(){
         int a=0;
         for (int i=0;i<6;i++){
@@ -8,8 +10,8 @@ public class Plant {
             }
         }
         if (a==0) {
-            System.out.println("Warning: no grass");
-            Logger.write('a', "No grass");
+            //System.out.println("Warning: no grass");
+            //Logger.write('a', "No grass");
         }
     }
 }

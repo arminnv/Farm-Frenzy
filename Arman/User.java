@@ -91,7 +91,6 @@ public class User {
         /*
         try
         {
-
             FileReader reader = new FileReader("users.txt");
             Scanner sc = new Scanner(reader);
             while (sc.hasNextLine())
@@ -103,7 +102,6 @@ public class User {
         catch (IOException e)
         {}
         //omit end
-
          */
         try
         {

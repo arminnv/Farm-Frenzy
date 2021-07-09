@@ -4,7 +4,7 @@ public abstract class Incubator extends Factory{
     }
     public void update(){
         if (productionDuration>0){
-            productionDuration--;
+            productionDuration-=Time.dt;
         }
         if (productionDuration==0){
             for(int i=0;i<underProduction;i++){

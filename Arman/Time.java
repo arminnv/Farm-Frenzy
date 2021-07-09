@@ -1,11 +1,12 @@
 public class Time {
 
-    static int time = 0;
+    static double time = 0;
+    static double dt = 0.005;
 
     static void turn(int n) {
         for(int i=0; i<n; i++) {
             update();
-            Time.time++;
+            Time.time+=dt;
         }
         Game.myClock.getLocalTime();
     }
@@ -24,7 +25,7 @@ public class Time {
         removeCage();
         Well.getInstance().fillingProcess();
         Plant.warn();
-        Output.show();
+        //Output.show();
     }
 
     static void walk()
@@ -75,8 +76,19 @@ public class Time {
         for(int i=0; i<Wild.list.size(); i++)
         {
             Wild wild = Wild.list.get(i);
-            if( (wild.leftCages < wild.cages)&&(!wild.consecutiveCageOrder) )
+            if( (wild.leftCages < wild.cages)&&(!wild.consecutiveCageOrder)  )
+            {
+                if(wild.t<0)
+                {
                 wild.leftCages++;
+                wild.t=1;
+                }
+                else
+                {
+                    wild.t -= dt;
+                }
+
+            }
             wild.consecutiveCageOrder=false;
         }
     }

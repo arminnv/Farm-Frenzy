@@ -8,12 +8,15 @@ public class Wild extends Animal{
 
     int cages;
     int leftCages;
+    double t = 1;
     boolean consecutiveCageOrder;
     Wild(String name, int price, int step, int space, int cages, int leftCages){
         super(name,price,step,space);
         this.cages=cages;
         this.leftCages=leftCages;
         this.consecutiveCageOrder=false;
+        t = 1;
+        h = 40;
     }
     Wild(){}
     static Wild createWild(String name)
@@ -24,7 +27,7 @@ public class Wild extends Animal{
         else if(name.equals("bear"))
             return new Wild("bear",400,1,15,4,4);
         else if(name.equals("tiger"))
-            return new Wild("bear",500,2,15,4,4);
+            return new Wild("tiger",500,2,15,4,4);
         return new Wild();
     }
 
@@ -41,23 +44,52 @@ public class Wild extends Animal{
 
     void walk()
     {
-        int d = randomDirection();
+        t-=Time.dt;
+        if(t<0)
+        {
+            if(type.equals("tiger"))
+                d= randomD(d);
+            else
+            d = randomDirection();
+            t=1;
+        }
+
+
         for(int k=1; k<=step; k++)
         {
-
-            if((d==0)&&(x<6))
-                x++;
-            else if((d==1)&&(y<6))
-                y++;
-            else if((d==2)&&(x>1))
-                x--;
-            else if((d==3)&&(y>1))
-                y--;
+            if(d==1)
+            {
+                x += dx;
+                state = 1;
+            }
+            else if(d==2)
+            {
+                y -= dx;
+                state = 2;
+            }
+            else if(d==3)
+            {
+                x -= dx;
+                state = 3;
+            }
+            else if(d==4)
+            {
+                y += dx;
+                state = 4;
+            }
+            if(x>6)
+            {x=6; t=1; d = randomD(d);}
+            if(x<0)
+            {x=0; t=1; d = randomD(d);}
+            if(y>6)
+            {y=6; t=1; d = randomD(d);}
+            if(y<0)
+            {y=0; t=1; d = randomD(d);}
 
             for(int j=0; j<Hound.list.size(); j++)
             {
                 Hound hound = Hound.list.get(j);
-                if(hound.x == x && hound.y == y)
+                if(this.intRange(hound.x,hound.y))
                 {
                     hound.kill();
                     kill();
@@ -68,7 +100,7 @@ public class Wild extends Animal{
             for(int j=0; j<Domestic.list.size(); j++)
             {
                 Domestic domestic = Domestic.list.get(j);
-                if(domestic.x == x && domestic.y == y)
+                if(this.intRange(domestic.x,domestic.y))
                 {
                     domestic.kill();
                     break;
@@ -78,7 +110,7 @@ public class Wild extends Animal{
             for(int j=0; j<Cat.list.size(); j++)
             {
                 Cat cat = Cat.list.get(j);
-                if(cat.x == x && cat.y == y)
+                if(this.intRange(cat.x,cat.y))
                 {
                     cat.kill();
                     break;
@@ -89,7 +121,7 @@ public class Wild extends Animal{
         }
     }
 
-    static void cage(int x, int y)
+    static void cage(double x, double y)
     {
         for (int i=0; i<Wild.list.size(); i++)
         {
@@ -110,6 +142,23 @@ public class Wild extends Animal{
                 }
                 return;
             }
+        }
+    }
+
+    void cage()
+    {
+        Wild wild = this;
+        wild.consecutiveCageOrder=true;
+        wild.leftCages--;
+        if(wild.leftCages<=0)
+        {
+            Logger.write('i',wild.type+" got caged");
+            Product newProduct = Product.newProduct(wild.type);
+            newProduct.x = wild.x;
+            newProduct.y = wild.y;
+            newProduct.collected = false;
+            Product.list.add(newProduct);
+            Wild.list.remove(wild);
         }
     }
 }

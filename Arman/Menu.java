@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Menu {
+
+    static boolean game = false;
+
     static void enter()
     {
         Scanner sc = new Scanner(System.in);
@@ -51,6 +54,7 @@ public class Menu {
                 int level = sc.nextInt();
                 if(user.unlockedLevels >= level)
                 {
+                    game = true;
                     Game.run(Mission.list.get(level-1));
                 }
                 else

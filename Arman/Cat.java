@@ -41,27 +41,65 @@ public class Cat extends Animal{
     void walk()
     {
         if(this.find() == null) {
-            int d = randomDirection();
-            if((d==0)&&(x+step<=6))
-                x += step;
-            else if((d==1)&&(y+step<=6))
-                y += step;
-            else if((d==2)&&(x-step>=1))
-                x -= step;
-            else if((d==3)&&(y-step>=1))
-                y -= step;
+
+            t-=Time.dt;
+            if(t<0)
+            {
+                d = randomDirection();
+                t=1;
+            }
+            if(d==1)
+            {
+                x += dx;
+                state = 1;
+            }
+            else if(d==2)
+            {
+                y -= dx;
+                state = 2;
+            }
+            else if(d==3)
+            {
+                x -= dx;
+                state = 3;
+            }
+            else if(d==4)
+            {
+                y += dx;
+                state = 4;
+            }
+            if(x>6)
+            {x=6; t=1; d = randomD(d);}
+            if(x<0)
+            {x=0; t=1; d = randomD(d);}
+            if(y>6)
+            {y=6; t=1; d = randomD(d);}
+            if(y<0)
+            {y=0; t=1; d = randomD(d);}
         }
         else
         {
             Product target = this.find();
-            if(target.x > x)
-                x++;
-            else if(target.x < x)
-                x--;
-            else if(target.y > y)
-                y++;
-            else if(target.y < y)
-                y--;
+            if(target.x > x && !this.intRange(target.x,y))
+            {
+                x += dx;
+                state = 1;
+            }
+            else if(target.x < x && !this.intRange(target.x,y))
+            {
+                x -= dx;
+                state = 3;
+            }
+            else if(target.y > y && !this.intRange(target.y,x))
+            {
+                y += dx;
+                state = 4;
+            }
+            else if(target.y < y && !this.intRange(target.y,x))
+            {
+                y -= dx;
+                state = 2;
+            }
         }
     }
 
@@ -72,7 +110,7 @@ public class Cat extends Animal{
             Product product = Product.list.get(i);
             if(!product.collected)
             {
-                if( (product.x == x && product.y == y) && ( Warehouse.getInstance().add(product) ) ) {
+                if( (this.intRange(product.x,product.y)) && ( Warehouse.getInstance().add(product) ) ) {
                     product.collected = true;///
                     Product.list.remove(product);//proposed
                     Task.claim(product.type);
@@ -84,7 +122,7 @@ public class Cat extends Animal{
 
     Product find()
     {
-        int min = 20;
+        double min = 20;
         Product closest = null;
         for (int i=0; i<Product.list.size(); i++)
         {

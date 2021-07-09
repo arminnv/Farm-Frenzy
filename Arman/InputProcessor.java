@@ -77,4 +77,41 @@ public class InputProcessor {
             System.out.println("Invalid command. Enter command again");
         }
     }
+
+    static void search(int X, int Y)
+    {
+        double x = xScale(X);
+        double y = yScale(Y);
+
+        for(int i=0; i<Product.list.size(); i++)
+        {
+            Product p = Product.list.get(i);
+            if(p.intRange(x,y))
+            {
+                Product.pickup((int)p.x,(int)p.y);
+                return;
+            }
+        }
+        for(int i=0; i<Wild.list.size(); i++)
+        {
+            Wild w = Wild.list.get(i);
+            if(w.intRange(x,y))
+            {
+                w.cage();
+                return;
+            }
+        }
+        Well.getInstance().water(x,y);
+    }
+
+    static double xScale(int X)
+    {
+        return  (((double)X-(double)Canvas.w/2)/(double)Canvas.landW + 0.5)*6;
+    }
+
+    static double yScale(int Y)
+    {
+        return (((double)Canvas.h/2-(double)Y+40)/(double)Canvas.landH + 0.5)*6;
+    }
+
 }

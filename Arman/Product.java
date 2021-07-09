@@ -1,3 +1,4 @@
+import java.awt.image.BufferedImage;
 import java.util.*;
 
 public class Product {
@@ -5,17 +6,21 @@ public class Product {
     static ArrayList<Product> list = new ArrayList<>();
     String type;
     int price;
-    int expirationTime;
-    int x;
-    int y;
+    double expirationTime;
+    double x;
+    double y;
     boolean collected = false;
     int space;
+    int w;
+    int h;
     Product(){}
     Product(String name, int price,int expirationTime,int space){
         this.type=name;
         this.price=price;
         this.expirationTime=expirationTime;
         this.space=space;
+        h = 30;
+        w = 30;
     }
     static Product newProduct(String name)
     {
@@ -53,7 +58,7 @@ public class Product {
         for(int i=0; i<Product.list.size(); i++)
         {
             Product p=Product.list.get(i);
-            if(p.x == x && p.y == y)
+            if(Math.abs(x-p.x)<=1 && Math.abs(y-p.y)<=1)
             {
                 if (Warehouse.getInstance().add(p)) {
                     p.collected = true;
@@ -76,7 +81,7 @@ public class Product {
         for(int i=0; i<Product.list.size(); i++)
         {
             if(!Product.list.get(i).collected)
-            Product.list.get(i).expirationTime--;
+                Product.list.get(i).expirationTime-=Time.dt;
         }
 
         boolean b = true;
@@ -95,6 +100,26 @@ public class Product {
                 }
             }
         }
+    }
+
+    int xScale()
+    {
+        int X = (int)(Canvas.w/2 + Canvas.landW*(this.x/6-0.5) - this.w/2 );
+        return X;
+    }
+
+    int yScale()
+    {
+        int Y = (int)( Canvas.h - (Canvas.h/2 + Canvas.landH*(this.y/6-0.5)  -40) - this.h/2);
+        return Y;
+    }
+
+    boolean intRange(double X, double Y)
+    {
+        if( Math.abs(x-X)<1 && Math.abs(y-Y)<1 )
+            return true;
+        else
+            return false;
     }
 
 }
