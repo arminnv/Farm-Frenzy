@@ -29,8 +29,8 @@ public abstract class Animal {
         this.step=step;
         this.price=price;
         this.dx = (double) (step) * Time.dt;
-        h = 40;
-        w = 40;
+        w = 60;
+        h = w;
     }
     static double random()
     {
@@ -75,7 +75,7 @@ public abstract class Animal {
 
     int yScale()
     {
-        int Y = (int)( Canvas.h - (Canvas.h/2 + Canvas.landH*(this.y/6-0.5) -40 ) - this.h/2  );
+        int Y = (int)( Canvas.h - (Canvas.h/2 + Canvas.landH*(this.y/6-0.5) +Canvas.y0 ) - this.h/2  );
         return Y;
     }
 

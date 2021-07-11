@@ -132,4 +132,7 @@ public abstract class Factory {
         System.out.println("Factory name is invalid");
         Logger.write('e',"Factory name is invalid");
     }
+    private static void createJpanel(){
+
+    }
 }
