@@ -6,9 +6,7 @@ public class Cat extends Animal{
 
     Cat(boolean addToMap)
     {
-        super("cat",100,1,1);
-        w = 60;
-        h = w;
+        super("cat",100,1,1,60,60);
         if (addToMap) {
             this.addToMap();
             number = animalIDNumHashMap.get("cat");

@@ -173,6 +173,7 @@ public class Mission {
         bonus5.put(6,10000);
         bonus5.put(7,0);
         Mission mission5=new Mission(level,coins,tasks5,wilds5,maxTime,bonus5,reward);
+        Mission.list.add(mission5);
 
 
         Mission.save();

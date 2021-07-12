@@ -19,6 +19,10 @@ public class Game {
             Well.getInstance().water(3,3);
             Well.getInstance().water(3,3);
             Well.getInstance().water(3,3);
+        Menu.game=true;
+        Canvas canvas = new Canvas();
+        canvas.setFrame();
+        System.out.println(Menu.game);
         myClock.start();
         while (!Task.check(mission.level)) {
             //InputProcessor.process();
@@ -31,13 +35,8 @@ public class Game {
             {
 
             }
-
-
-
-
-
         }
-        Menu.main(User.current);
+        //Menu.getMainMenuInstance().setVisible(true);
     }
 
     public static void addCoins(int coins) {

@@ -15,40 +15,33 @@ public class Domestic extends Animal{
     static Domestic newDomestic(String name, boolean addToMap)
     {
         Domestic d=new Domestic();
-        if(name.equals("chicken"))
-        {
-            d.w = 50;
-            d=new Domestic("chicken", 100,1,1,2,"egg");
+        if(name.equals("chicken")) {
+            d=new Domestic("chicken", 100,1,1,2,"egg",50,50);
             if (addToMap) {
                 d.addToMap();
                 d.number = animalIDNumHashMap.get("chicken");
             }
         }
 
-        else if(name.equals("turkey"))
-        {
-            d.w = 50;
-            d=new Domestic("turkey", 200,1,1,3,"feather");
+        else if(name.equals("turkey")) {
+            d=new Domestic("turkey", 200,1,1,3,"feather",50,50);
             if (addToMap) {
                 d.addToMap();
                 d.number = animalIDNumHashMap.get("turkey");
             }
         }
 
-        else if(name.equals("buffalo"))
-        {
-            d.w = 60;
-            d=new Domestic("buffalo", 400,1,1,5,"milk");
+        else if(name.equals("buffalo")) {
+            d=new Domestic("buffalo", 400,1,1,5,"milk",60,60);
             if (addToMap) {
                 d.addToMap();
                 d.number = animalIDNumHashMap.get("buffalo");
             }
         }
-        d.h = d.w;
         return d;
     }
-    Domestic(String type, int price, int step, int space, int productionTime, String productType){
-        super(type,price,step,space);
+    private Domestic(String type, int price, int step, int space, int productionTime, String productType, int h,int w){
+        super(type,price,step,space,h,w);
         this.productionTime=productionTime;
         this.productType=productType;
 

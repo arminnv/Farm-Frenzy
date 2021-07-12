@@ -9,7 +9,8 @@ public class Main {
         //Menu.game = true;
         //User.current = User.list.get(0);
         //Game.run(Mission.list.get(0));
-        Menu.enter();
+        //TODO
+        Menu.getLoginMenuInstance().setVisible(true);
 
     }
 }

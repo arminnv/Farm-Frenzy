@@ -25,7 +25,7 @@ public class Time {
         removeCage();
         Well.getInstance().fillingProcess();
         Plant.warn();
-        Output.show();
+        //Output.show();
     }
 
     static void walk()
