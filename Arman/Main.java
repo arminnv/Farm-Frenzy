@@ -3,6 +3,7 @@ public class Main {
     {
         //Canvas canvas = new Canvas();
         //canvas.setFrame();
+        Images.load();
         Mission.write();
         User.load();
         Mission.load();
@@ -10,7 +11,8 @@ public class Main {
         //User.current = User.list.get(0);
         //Game.run(Mission.list.get(0));
         //TODO
-        Menu.getLoginMenuInstance().setVisible(true);
+        TruckMenu.getMenuInstance().setVisible(true);
+        //Menu.getLoginMenuInstance().setVisible(true);
 
     }
 }

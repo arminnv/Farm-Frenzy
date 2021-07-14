@@ -27,7 +27,7 @@ public class Menu {
             JButton login=new JButton("Login");
             JButton exit=new JButton("Exit");
 
-
+            //login.setIcon( FactoryWellGraphics.resizeIcon(new ImageIcon(Images.bakery),100,50) );
             signup.setBounds(10,10,100,50);
             login.setBounds(160,10,100,50);
             exit.setBounds(310,10,100,50);
@@ -87,6 +87,9 @@ public class Menu {
             container.add(signup);
             container.add(login);
             container.add(exit);
+            //TODO
+            Well.getInstance().wellGraphics.jProgressBar.setValue(10);
+            container.add(Well.getInstance().wellGraphics.jPanel);
         }
         return loginMenu;
     }
@@ -117,6 +120,7 @@ public class Menu {
                             mainMenu.setVisible(false);
                             //TODO
                             Menu.game=true;
+                            System.out.println("hi"+level);
                             Game.run(Mission.list.get(level-1));
                         }
                         else

@@ -25,6 +25,7 @@ public class Time {
         removeCage();
         Well.getInstance().fillingProcess();
         Plant.warn();
+        Game.myClock.setTimeLabel();
         //Output.show();
     }
 

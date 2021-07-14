@@ -3,8 +3,10 @@ public class Well {
     private int capacity;
     private boolean process;
     private int counter;
+    FactoryWellGraphics wellGraphics;
     public static final int FILL_TURN=3;
     private Well(){
+        wellGraphics=new FactoryWellGraphics(3.0,400,50,false,Images.well,FactoryWellGraphics.RIGHT_ALIGNMENT);
         counter=0;
         process=false;
         capacity=5;

@@ -60,4 +60,8 @@ public class Warehouse {
             System.out.println(product.type+" "+productIntegerHashMap.get(product.type));
         }
     }
+
+    public HashMap<String, Integer> getProductIntegerHashMap() {
+        return productIntegerHashMap;
+    }
 }
