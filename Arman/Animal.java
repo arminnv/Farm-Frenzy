@@ -1,7 +1,6 @@
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Random;
-
 public abstract class Animal {
     static HashMap<String,Integer> animalIDNumHashMap =new HashMap<>();//non wild
     static HashMap<String,Integer> animalCount =new HashMap<>();//non wild

@@ -1,15 +1,27 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 public class Well {
     private static Well w;
     private int capacity;
     private boolean process;
     private int counter;
     FactoryWellGraphics wellGraphics;
-    public static final int FILL_TURN=3;
+    public static final int FILL_TURN=5;
     private Well(){
-        wellGraphics=new FactoryWellGraphics(3.0,400,50,false,Images.well,FactoryWellGraphics.RIGHT_ALIGNMENT);
+        wellGraphics=new FactoryWellGraphics(3.0,390,90,false,Images.well,FactoryWellGraphics.RIGHT_ALIGNMENT);
         counter=0;
         process=false;
         capacity=5;
+        wellGraphics.jProgressBar.setMaximum(capacity);
+        wellGraphics.jProgressBar.setValue(capacity);
+        //capacity=0;//omit later
+        wellGraphics.mainButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Well.getInstance().fill();
+            }
+        });
     }
     public static Well getInstance() {
         if (w==null)
@@ -38,8 +50,10 @@ public class Well {
         System.out.println("Error: Well is not empty and cannot be filled");
     }
     public void fillingProcess(){
-        if ((process)&&(counter<FILL_TURN))
+        if ((process)&&(counter<FILL_TURN)) {
             counter++;
+            wellGraphics.jProgressBar.setValue(counter);
+        }
         if (counter==FILL_TURN) {
             capacity = 5;
             process = false;

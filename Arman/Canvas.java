@@ -25,9 +25,9 @@ public class Canvas extends JComponent{
         Container container=frame.getContentPane();
         frame.setLayout(new GroupLayout(container));
 
+        JButton jButton=Truck.getInstance().jButton;
 
-        JButton jButton=new JButton("truck");
-        jButton.setBounds(50,700,100,50);
+
         Game.myClock.timeLabel.setBounds(850,670,130,40);
         container.add(jButton);
         container.add(Game.myClock.timeLabel);
@@ -59,13 +59,15 @@ public class Canvas extends JComponent{
         {
 
             paintLand(gg);
+            Well.getInstance().wellGraphics.jPanel.repaint();
+            Truck.getInstance().jButton.repaint();
             paintGrass(gg);
             paintDomestics(gg);
             paintProducts(gg);
             paintWilds(gg);
             paintCats(gg);
             paintHounds(gg);
-            Well.getInstance().wellGraphics.jPanel.repaint();
+
             //frame.repaint();
         }
 
@@ -73,7 +75,7 @@ public class Canvas extends JComponent{
 
     static void paintLand(Graphics2D gg)
     {
-        /*
+
         gg.setColor(Color.RED);
         gg.drawImage(Images.land,0,0,w,getH(Images.land,w),null);
         int lh = getH(Images.land,w);
@@ -92,7 +94,7 @@ public class Canvas extends JComponent{
         p.y = 0;
         gg.drawOval(p.xScale()-10,p.yScale()-10,20,20);
         Well.getInstance().wellGraphics.jPanel.repaint();
-        */
+
     }
 
     static void paintDomestics(Graphics2D gg)

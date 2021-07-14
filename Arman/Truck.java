@@ -1,3 +1,5 @@
+import javax.swing.*;
+import java.awt.*;
 import java.util.HashMap;
 
 public class Truck {
@@ -10,11 +12,18 @@ public class Truck {
     int money;
     HashMap<String,Integer> productIntegerHashMap=new HashMap<>();
     HashMap<String,Integer> animalIntegerHashMap=new HashMap<>();
-    Truck(){
+    JButton jButton;
+    private Truck(){
         capacity=0;
         loaded=false;
         money=0;
         timeLeft=0;
+        jButton=new JButton();
+        jButton.setBounds(180,640,120,100);
+        jButton.setOpaque(true);
+        jButton.setContentAreaFilled(true);
+        //jButton.setBackground(new Color(0,0,0,1));
+        jButton.setIcon(FactoryWellGraphics.resizeIcon(new ImageIcon(Images.truck),120,100));
     }
     public static Truck getInstance() {
         if (t==null)

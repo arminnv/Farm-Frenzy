@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -25,6 +26,7 @@ public class Game {
 
         Menu.game=true;
         Canvas canvas = new Canvas();
+        canvas.frame.setBackground(Color.green);
         canvas.setFrame();
         //GFrame gframe=new GFrame();
         //gframe.setFrame(canvas);
@@ -44,7 +46,7 @@ public class Game {
             Time.update();
             System.out.println("time.update");
             try {
-            Thread.sleep(10);
+            Thread.sleep(30);
 
             }
             catch (Exception e)

@@ -26,6 +26,7 @@ public class Time {
         Well.getInstance().fillingProcess();
         Plant.warn();
         Game.myClock.setTimeLabel();
+        Well.getInstance().wellGraphics.jPanel.repaint();
         //Output.show();
     }
 

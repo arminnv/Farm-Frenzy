@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.colorchooser.ColorChooserComponentFactory;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
@@ -26,6 +27,7 @@ public class FactoryWellGraphics {
         this.image=image;
         jPanel=new JPanel();
         jPanel.setOpaque(false);
+        jPanel.setBackground(new Color(1,0,0,0));
         jPanel.setLayout(new GroupLayout(jPanel));
         jPanel.setVisible(true);
         if (upgradable){
@@ -59,6 +61,8 @@ public class FactoryWellGraphics {
         jPanel.add(mainButton);
         jPanel.add(jProgressBar);
         jPanel.setBounds(x,y,(int)scale*X_SCALE,(int)scale*Y_SCALE);
+        jProgressBar.setOpaque(true);
+        jPanel.setOpaque(true);
     }
     public static Icon resizeIcon(ImageIcon icon, int resizedWidth, int resizedHeight) {
         Image img = icon.getImage();

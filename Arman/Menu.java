@@ -88,8 +88,8 @@ public class Menu {
             container.add(login);
             container.add(exit);
             //TODO
-            Well.getInstance().wellGraphics.jProgressBar.setValue(10);
-            container.add(Well.getInstance().wellGraphics.jPanel);
+            //Well.getInstance().wellGraphics.jProgressBar.setValue(10);
+            //container.add(Well.getInstance().wellGraphics.jPanel);
         }
         return loginMenu;
     }
@@ -121,6 +121,7 @@ public class Menu {
                             //TODO
                             Menu.game=true;
                             System.out.println("hi"+level);
+                            System.out.println(User.current.userName+" "+User.current.password);
                             Game.run(Mission.list.get(level-1));
                         }
                         else

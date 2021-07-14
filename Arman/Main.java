@@ -8,10 +8,10 @@ public class Main {
         User.load();
         Mission.load();
         //Menu.game = true;
-        //User.current = User.list.get(0);
-        //Game.run(Mission.list.get(0));
+        User.current = User.list.get(0);
+        Game.run(Mission.list.get(0));
         //TODO
-        TruckMenu.getMenuInstance().setVisible(true);
+        //TruckMenu.getMenuInstance().setVisible(true);
         //Menu.getLoginMenuInstance().setVisible(true);
 
     }
