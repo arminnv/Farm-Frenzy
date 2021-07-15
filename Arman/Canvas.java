@@ -33,7 +33,7 @@ public class Canvas extends JComponent{
         //TODO
         //to check the panel dimensions, uncomment these lines
         mousePanel.setOpaque(true);
-        //mousePanel.setVisible(true);
+        mousePanel.setVisible(true);
         //
         Product p1= new Product();
         Product p2= new Product();
@@ -98,7 +98,7 @@ public class Canvas extends JComponent{
             Game.myClock.setTimeLabel();
             //TODO
             //uncomment to see jpanel
-            //mousePanel.repaint();
+            mousePanel.repaint();
 
             //frame.repaint();
         }

@@ -133,7 +133,7 @@ public class Menu {
                             });
 
                              */
-                            Game.run(Mission.list.get(level-1));
+                            Main.ifRun=true;
                         }
                         else
                             Menu.showMessage('e',"Level " + level + " is locked");

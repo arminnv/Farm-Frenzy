@@ -89,7 +89,7 @@ public class InputProcessor {
         double x = xScale(X+p1.xScale());//jpanel x0
         double y = yScale(Y+p1.yScale());//jpanel y0
         System.out.println(X+" "+Y);
-        System.out.println(x+" "+y);
+        System.out.println("scaled event "+x+" "+y);
         if (true) {// (x>=p2.x)&&(x<=p1.x)&&(y>=p2.y)&&(y<= p1.y)
             for (int i = 0; i < Wild.list.size(); i++) {
                 Wild w = Wild.list.get(i);
@@ -102,6 +102,9 @@ public class InputProcessor {
             }
             for (int i = 0; i < Product.list.size(); i++) {
                 Product p = Product.list.get(i);
+                System.out.println("Product");
+                System.out.println(p.x+" "+p.y);
+                System.out.println("scaled "+p.xScale()+" "+p.yScale());
                 if (p.mouseIntRange(x, y)) {
                     Product.pickup( (int)p.x,(int)  p.y);
                     return;

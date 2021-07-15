@@ -45,6 +45,7 @@ public class Game {
         service.scheduleAtFixedRate(myClock, 0, 5, TimeUnit.MILLISECONDS);
         //for game clock end
         //SwingUtilities.invokeLater();
+        /*
         try {
             Thread.sleep(10);
         } catch (InterruptedException e) {
@@ -56,11 +57,10 @@ public class Game {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+         */
         while (!Task.check(mission.level)) {
             //InputProcessor.process();
             Time.update();
-            //System.out.println("time.update");
 
             try {
             Thread.sleep(30);
@@ -70,14 +70,9 @@ public class Game {
             {
                 e.printStackTrace();
             }
-
         }
-        //Menu.getMainMenuInstance().setVisible(true);
-
-
-
-
-
+        Main.ifRun=false;
+        Menu.getMainMenuInstance().setVisible(true);
     }
 
     public static void addCoins(int coins) {
