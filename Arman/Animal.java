@@ -20,7 +20,7 @@ public abstract class Animal {
     int d = Animal.randomDirection();
     static Random rand = new Random();
     Animal(){}
-    public Animal(String type, int price, int step, int space, int h, int w){
+    protected Animal(String type, int price, int step, int space, int h, int w){
         this.x=random();
         this.y=random();
         this.type=type;

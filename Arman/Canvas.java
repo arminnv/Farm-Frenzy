@@ -33,19 +33,19 @@ public class Canvas extends JComponent{
         //TODO
         //to check the panel dimensions, uncomment these lines
         mousePanel.setOpaque(true);
-        mousePanel.setVisible(true);
+        //mousePanel.setVisible(true);
         //
         Product p1= new Product();
         Product p2= new Product();
-        p2.x = 6;
-        p2.y = 6;
         p1.x = 0;
-        p1.y = 0;
+        p1.y = 6;
+        p2.x = 6;
+        p2.y = 0;
         System.out.println(p1.xScale());
         System.out.println(p1.yScale());
         System.out.println(p2.xScale());
         System.out.println(p2.yScale());
-        mousePanel.setBounds(200,200,520,400);
+        mousePanel.setBounds(p1.xScale(),p1.yScale(),p2.xScale()-p1.xScale(),p2.yScale()-p1.yScale());
         mousePanel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -98,7 +98,7 @@ public class Canvas extends JComponent{
             Game.myClock.setTimeLabel();
             //TODO
             //uncomment to see jpanel
-            mousePanel.repaint();
+            //mousePanel.repaint();
 
             //frame.repaint();
         }
@@ -213,8 +213,8 @@ public class Canvas extends JComponent{
             for(int j=0; j<6; j++)
             {
                 for (int k=0; k<Plant.num[i][j]; k++)
-                {
-                    gg.drawImage(image,xScale(i+0.5,30),yScale(j+0.5,30),40,40,null);
+                {//40
+                    gg.drawImage(image,xScale(i+0.5,30),yScale(j+0.5,30),66,66,null);
                 }
             }
         }

@@ -29,7 +29,8 @@ public class Well {
         return w;
     }
     public void water(double x, double y){
-        if (capacity>0){
+        System.out.println(x+" "+y);
+        if ((capacity>0)&&(x>0)&&(x<6) &&(y>0)&&(y<6)){
             Plant.num[(int)x][(int)y]++;
             capacity--;
             Logger.write('i',"planted successfully");

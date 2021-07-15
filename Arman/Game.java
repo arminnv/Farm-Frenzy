@@ -29,6 +29,7 @@ public class Game {
         Menu.game=true;
         Canvas canvas = new Canvas();
         canvas.frame.setBackground(Color.green);
+        myClock=new MyClock();
         canvas.setFrame();
     }
     static void run(Mission mission) {
@@ -39,6 +40,7 @@ public class Game {
         System.out.println("setframe");
         //System.out.println(Menu.game);
         //for game clock start
+
         ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
         service.scheduleAtFixedRate(myClock, 0, 5, TimeUnit.MILLISECONDS);
         //for game clock end

@@ -1,6 +1,6 @@
 2021-06-19 00:05:46.396156
 Latest change by :arman
-2021-07-15 16:10:05
+2021-07-15 20:18:52
 [Info], 2021-06-20 04:17:08, login successful
 
 [Info], 2021-06-20 04:17:22, chicken has been bought
@@ -7766,3 +7766,1031 @@ Latest change by :arman
 [Info], 2021-07-15 04:10:05, chicken ate
 
 [Info], 2021-07-15 04:10:05, chicken ate
+
+[Info], 2021-07-15 06:55:00, chicken has been bought
+
+[Info], 2021-07-15 06:55:00, chicken has been bought
+
+[Info], 2021-07-15 06:55:00, chicken has been bought
+
+[Info], 2021-07-15 06:55:00, chicken has been bought
+
+[Info], 2021-07-15 06:55:00, cat has been bought
+
+[Info], 2021-07-15 06:55:00, hound has been bought
+
+[Info], 2021-07-15 06:55:01, planted successfully
+
+[Info], 2021-07-15 06:55:01, planted successfully
+
+[Info], 2021-07-15 06:55:01, planted successfully
+
+[Info], 2021-07-15 06:55:01, planted successfully
+
+[Info], 2021-07-15 06:55:27, chicken has been bought
+
+[Info], 2021-07-15 06:55:28, chicken has been bought
+
+[Info], 2021-07-15 06:55:28, chicken has been bought
+
+[Info], 2021-07-15 06:55:28, chicken has been bought
+
+[Info], 2021-07-15 06:55:28, cat has been bought
+
+[Info], 2021-07-15 06:55:28, hound has been bought
+
+[Info], 2021-07-15 06:55:28, planted successfully
+
+[Info], 2021-07-15 06:55:28, planted successfully
+
+[Info], 2021-07-15 06:55:28, planted successfully
+
+[Info], 2021-07-15 06:55:28, planted successfully
+
+[Info], 2021-07-15 06:55:52, chicken has been bought
+
+[Info], 2021-07-15 06:55:52, chicken has been bought
+
+[Info], 2021-07-15 06:55:52, chicken has been bought
+
+[Info], 2021-07-15 06:55:52, chicken has been bought
+
+[Info], 2021-07-15 06:55:52, cat has been bought
+
+[Info], 2021-07-15 06:55:52, hound has been bought
+
+[Info], 2021-07-15 06:55:52, planted successfully
+
+[Info], 2021-07-15 06:55:53, planted successfully
+
+[Info], 2021-07-15 06:55:53, planted successfully
+
+[Info], 2021-07-15 06:55:53, planted successfully
+
+[Info], 2021-07-15 06:56:46, chicken has been bought
+
+[Info], 2021-07-15 06:56:46, chicken has been bought
+
+[Info], 2021-07-15 06:56:47, chicken has been bought
+
+[Info], 2021-07-15 06:56:47, chicken has been bought
+
+[Info], 2021-07-15 06:56:47, cat has been bought
+
+[Info], 2021-07-15 06:56:47, hound has been bought
+
+[Info], 2021-07-15 06:56:47, planted successfully
+
+[Info], 2021-07-15 06:56:47, planted successfully
+
+[Info], 2021-07-15 06:56:47, planted successfully
+
+[Info], 2021-07-15 06:56:47, planted successfully
+
+[Info], 2021-07-15 06:57:07, chicken died
+
+[Info], 2021-07-15 06:57:11, hound got killed
+
+[Info], 2021-07-15 06:57:11, tiger got killed
+
+[Info], 2021-07-15 06:57:11, chicken produced egg
+
+[Info], 2021-07-15 06:57:11, chicken produced egg
+
+[Info], 2021-07-15 06:57:11, chicken produced egg
+
+[Info], 2021-07-15 06:58:24, chicken has been bought
+
+[Info], 2021-07-15 06:58:24, chicken has been bought
+
+[Info], 2021-07-15 06:58:24, chicken has been bought
+
+[Info], 2021-07-15 06:58:24, chicken has been bought
+
+[Info], 2021-07-15 06:58:24, cat has been bought
+
+[Info], 2021-07-15 06:58:24, hound has been bought
+
+[Info], 2021-07-15 06:58:24, planted successfully
+
+[Info], 2021-07-15 06:58:24, planted successfully
+
+[Info], 2021-07-15 06:58:25, planted successfully
+
+[Info], 2021-07-15 06:58:25, planted successfully
+
+[Info], 2021-07-15 06:58:28, planted successfully
+
+[Error], 2021-07-15 06:58:31, Error: not enough water in the well
+
+[Info], 2021-07-15 06:58:35, hound got killed
+
+[Info], 2021-07-15 06:58:35, lion got killed
+
+[Info], 2021-07-15 06:58:37, planted successfully
+
+[Info], 2021-07-15 06:58:39, planted successfully
+
+[Info], 2021-07-15 06:58:40, planted successfully
+
+[Info], 2021-07-15 06:58:42, planted successfully
+
+[Info], 2021-07-15 06:58:44, planted successfully
+
+[Error], 2021-07-15 06:58:46, Error: not enough water in the well
+
+[Info], 2021-07-15 06:58:48, chicken produced egg
+
+[Info], 2021-07-15 06:58:48, chicken produced egg
+
+[Info], 2021-07-15 06:58:48, chicken produced egg
+
+[Info], 2021-07-15 06:58:49, chicken produced egg
+
+[Info], 2021-07-15 06:58:49, cat collected egg
+
+[Error], 2021-07-15 06:58:49, Error: not enough water in the well
+
+[Info], 2021-07-15 06:58:52, chicken ate
+
+[Info], 2021-07-15 06:58:55, chicken ate
+
+[Error], 2021-07-15 06:58:56, Error: not enough water in the well
+
+[Info], 2021-07-15 06:58:57, chicken ate
+
+[Info], 2021-07-15 06:59:32, chicken has been bought
+
+[Info], 2021-07-15 06:59:32, chicken has been bought
+
+[Info], 2021-07-15 06:59:32, chicken has been bought
+
+[Info], 2021-07-15 06:59:33, chicken has been bought
+
+[Info], 2021-07-15 06:59:33, cat has been bought
+
+[Info], 2021-07-15 06:59:33, hound has been bought
+
+[Info], 2021-07-15 06:59:33, planted successfully
+
+[Info], 2021-07-15 06:59:33, planted successfully
+
+[Info], 2021-07-15 06:59:33, planted successfully
+
+[Info], 2021-07-15 06:59:33, planted successfully
+
+[Info], 2021-07-15 06:59:35, planted successfully
+
+[Error], 2021-07-15 06:59:46, Error: not enough water in the well
+
+[Info], 2021-07-15 06:59:49, planted successfully
+
+[Info], 2021-07-15 06:59:52, planted successfully
+
+[Info], 2021-07-15 06:59:55, planted successfully
+
+[Info], 2021-07-15 06:59:56, chicken produced egg
+
+[Info], 2021-07-15 06:59:57, chicken produced egg
+
+[Info], 2021-07-15 06:59:57, chicken produced egg
+
+[Info], 2021-07-15 06:59:57, chicken produced egg
+
+[Info], 2021-07-15 07:00:00, chicken ate
+
+[Info], 2021-07-15 07:00:00, chicken ate
+
+[Info], 2021-07-15 07:00:02, planted successfully
+
+[Info], 2021-07-15 07:00:03, chicken ate
+
+[Info], 2021-07-15 07:00:04, egg got picked up
+
+[Info], 2021-07-15 07:00:05, chicken ate
+
+[Info], 2021-07-15 07:00:09, chicken died
+
+[Info], 2021-07-15 07:00:09, planted successfully
+
+[Error], 2021-07-15 07:00:10, Error: not enough water in the well
+
+[Info], 2021-07-15 07:00:10, chicken produced egg
+
+[Info], 2021-07-15 07:00:10, chicken produced egg
+
+[Info], 2021-07-15 07:00:11, chicken produced egg
+
+[Info], 2021-07-15 07:00:11, egg got picked up
+
+[Info], 2021-07-15 07:00:12, egg got picked up
+
+[Info], 2021-07-15 07:00:15, egg got picked up
+
+[Info], 2021-07-15 07:00:17, egg got picked up
+
+[Info], 2021-07-15 07:00:20, chicken ate
+
+[Info], 2021-07-15 07:00:22, cat got killed
+
+[Info], 2021-07-15 07:00:30, egg got expired
+
+[Info], 2021-07-15 07:00:30, chicken produced egg
+
+[Info], 2021-07-15 07:00:30, chicken produced egg
+
+[Info], 2021-07-15 07:00:30, chicken produced egg
+
+[Info], 2021-07-15 07:00:44, planted successfully
+
+[Info], 2021-07-15 07:00:45, planted successfully
+
+[Info], 2021-07-15 07:00:45, planted successfully
+
+[Info], 2021-07-15 07:00:46, planted successfully
+
+[Info], 2021-07-15 07:00:46, chicken ate
+
+[Info], 2021-07-15 07:00:46, planted successfully
+
+[Error], 2021-07-15 07:00:48, Error: not enough water in the well
+
+[Info], 2021-07-15 07:00:49, chicken died
+
+[Info], 2021-07-15 07:01:41, chicken has been bought
+
+[Info], 2021-07-15 07:01:41, chicken has been bought
+
+[Info], 2021-07-15 07:01:42, chicken has been bought
+
+[Info], 2021-07-15 07:01:42, chicken has been bought
+
+[Info], 2021-07-15 07:01:42, cat has been bought
+
+[Info], 2021-07-15 07:01:42, hound has been bought
+
+[Info], 2021-07-15 07:01:42, planted successfully
+
+[Info], 2021-07-15 07:01:42, planted successfully
+
+[Info], 2021-07-15 07:01:42, planted successfully
+
+[Info], 2021-07-15 07:01:42, planted successfully
+
+[Info], 2021-07-15 07:01:59, hound got killed
+
+[Info], 2021-07-15 07:01:59, bear got killed
+
+[Info], 2021-07-15 07:02:06, chicken died
+
+[Info], 2021-07-15 07:02:06, chicken produced egg
+
+[Info], 2021-07-15 07:02:06, chicken produced egg
+
+[Info], 2021-07-15 07:02:06, chicken produced egg
+
+[Info], 2021-07-15 07:02:07, chicken died
+
+[Info], 2021-07-15 07:02:19, chicken produced egg
+
+[Info], 2021-07-15 07:02:19, chicken produced egg
+
+[Info], 2021-07-15 07:02:21, cat collected egg
+
+[Info], 2021-07-15 07:02:23, chicken ate
+
+[Info], 2021-07-15 07:02:25, cat collected egg
+
+[Info], 2021-07-15 07:02:26, chicken died
+
+[Info], 2021-07-15 07:02:28, cat got killed
+
+[Info], 2021-07-15 07:03:46, chicken has been bought
+
+[Info], 2021-07-15 07:03:47, chicken has been bought
+
+[Info], 2021-07-15 07:03:47, chicken has been bought
+
+[Info], 2021-07-15 07:03:47, chicken has been bought
+
+[Info], 2021-07-15 07:03:47, cat has been bought
+
+[Info], 2021-07-15 07:03:47, hound has been bought
+
+[Info], 2021-07-15 07:03:47, planted successfully
+
+[Info], 2021-07-15 07:03:47, planted successfully
+
+[Info], 2021-07-15 07:03:48, planted successfully
+
+[Info], 2021-07-15 07:03:48, planted successfully
+
+[Info], 2021-07-15 07:03:51, planted successfully
+
+[Info], 2021-07-15 07:03:59, planted successfully
+
+[Info], 2021-07-15 07:04:00, planted successfully
+
+[Info], 2021-07-15 07:04:01, planted successfully
+
+[Info], 2021-07-15 07:04:03, planted successfully
+
+[Info], 2021-07-15 07:04:11, chicken produced egg
+
+[Info], 2021-07-15 07:04:11, chicken produced egg
+
+[Info], 2021-07-15 07:04:11, chicken produced egg
+
+[Info], 2021-07-15 07:04:11, chicken produced egg
+
+[Info], 2021-07-15 07:04:15, chicken ate
+
+[Info], 2021-07-15 07:04:19, chicken ate
+
+[Info], 2021-07-15 07:04:21, chicken ate
+
+[Info], 2021-07-15 07:04:21, cat collected egg
+
+[Info], 2021-07-15 07:04:25, chicken produced egg
+
+[Info], 2021-07-15 07:04:25, chicken produced egg
+
+[Info], 2021-07-15 07:04:25, chicken produced egg
+
+[Info], 2021-07-15 07:04:25, chicken produced egg
+
+[Info], 2021-07-15 07:04:26, chicken died
+
+[Info], 2021-07-15 07:04:28, cat collected egg
+
+[Info], 2021-07-15 07:06:04, chicken has been bought
+
+[Info], 2021-07-15 07:06:04, chicken has been bought
+
+[Info], 2021-07-15 07:06:04, chicken has been bought
+
+[Info], 2021-07-15 07:06:04, chicken has been bought
+
+[Info], 2021-07-15 07:06:04, cat has been bought
+
+[Info], 2021-07-15 07:06:04, hound has been bought
+
+[Info], 2021-07-15 07:06:04, planted successfully
+
+[Info], 2021-07-15 07:06:05, planted successfully
+
+[Info], 2021-07-15 07:06:05, planted successfully
+
+[Info], 2021-07-15 07:06:05, planted successfully
+
+[Error], 2021-07-15 07:06:19, Error: not enough water in the well
+
+[Error], 2021-07-15 07:06:22, Error: not enough water in the well
+
+[Info], 2021-07-15 07:06:22, chicken died
+
+[Error], 2021-07-15 07:06:25, Error: Well is not empty and cannot be filled
+
+[Error], 2021-07-15 07:06:26, Error: not enough water in the well
+
+[Info], 2021-07-15 07:06:27, planted successfully
+
+[Info], 2021-07-15 07:06:28, chicken produced egg
+
+[Info], 2021-07-15 07:06:28, chicken produced egg
+
+[Info], 2021-07-15 07:06:29, chicken produced egg
+
+[Info], 2021-07-15 07:06:29, cat collected egg
+
+[Info], 2021-07-15 07:06:32, egg got picked up
+
+[Error], 2021-07-15 07:06:33, Error: not enough water in the well
+
+[Error], 2021-07-15 07:06:35, Error: not enough water in the well
+
+[Error], 2021-07-15 07:06:35, Error: not enough water in the well
+
+[Info], 2021-07-15 07:06:37, chicken ate
+
+[Info], 2021-07-15 07:06:38, lion got caged
+
+[Error], 2021-07-15 07:06:39, Error: not enough water in the well
+
+[Error], 2021-07-15 07:06:40, Error: not enough water in the well
+
+[Error], 2021-07-15 07:06:42, Error: not enough water in the well
+
+[Info], 2021-07-15 07:06:42, chicken produced egg
+
+[Info], 2021-07-15 07:06:42, chicken produced egg
+
+[Info], 2021-07-15 07:06:42, chicken produced egg
+
+[Info], 2021-07-15 07:06:42, cat collected egg
+
+[Info], 2021-07-15 07:06:43, planted successfully
+
+[Info], 2021-07-15 07:06:45, planted successfully
+
+[Info], 2021-07-15 07:06:46, planted successfully
+
+[Info], 2021-07-15 07:06:48, egg got picked up
+
+[Info], 2021-07-15 07:06:49, chicken died
+
+[Info], 2021-07-15 07:06:49, chicken died
+
+[Error], 2021-07-15 07:06:49, Error: not enough water in the well
+
+[Error], 2021-07-15 07:06:50, Error: not enough water in the well
+
+[Info], 2021-07-15 07:06:51, planted successfully
+
+[Info], 2021-07-15 07:06:52, planted successfully
+
+[Info], 2021-07-15 07:06:52, cat collected egg
+
+[Error], 2021-07-15 07:06:54, Error: not enough water in the well
+
+[Error], 2021-07-15 07:06:55, Error: not enough water in the well
+
+[Info], 2021-07-15 07:06:56, egg got expired
+
+[Error], 2021-07-15 07:06:56, Error: not enough water in the well
+
+[Info], 2021-07-15 07:06:56, chicken produced egg
+
+[Error], 2021-07-15 07:06:57, Error: not enough water in the well
+
+[Error], 2021-07-15 07:06:59, Error: not enough water in the well
+
+[Info], 2021-07-15 07:06:59, hound got killed
+
+[Info], 2021-07-15 07:06:59, tiger got killed
+
+[Error], 2021-07-15 07:06:59, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:00, Error: not enough water in the well
+
+[Info], 2021-07-15 07:07:03, planted successfully
+
+[Info], 2021-07-15 07:07:03, planted successfully
+
+[Info], 2021-07-15 07:07:04, planted successfully
+
+[Info], 2021-07-15 07:07:05, planted successfully
+
+[Info], 2021-07-15 07:07:07, chicken ate
+
+[Info], 2021-07-15 07:07:09, chicken produced egg
+
+[Error], 2021-07-15 07:07:09, Error: not enough water in the well
+
+[Info], 2021-07-15 07:07:11, planted successfully
+
+[Info], 2021-07-15 07:07:12, lion got expired
+
+[Info], 2021-07-15 07:07:15, planted successfully
+
+[Info], 2021-07-15 07:07:16, planted successfully
+
+[Info], 2021-07-15 07:07:17, planted successfully
+
+[Error], 2021-07-15 07:07:21, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:22, Error: Well is not empty and cannot be filled
+
+[Info], 2021-07-15 07:07:22, egg got expired
+
+[Info], 2021-07-15 07:07:22, chicken produced egg
+
+[Info], 2021-07-15 07:07:23, planted successfully
+
+[Info], 2021-07-15 07:07:24, chicken ate
+
+[Info], 2021-07-15 07:07:25, planted successfully
+
+[Error], 2021-07-15 07:07:27, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:28, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:29, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:30, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:31, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:32, Error: not enough water in the well
+
+[Info], 2021-07-15 07:07:33, planted successfully
+
+[Info], 2021-07-15 07:07:35, egg got expired
+
+[Info], 2021-07-15 07:07:35, chicken produced egg
+
+[Info], 2021-07-15 07:07:36, planted successfully
+
+[Error], 2021-07-15 07:07:40, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:41, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:41, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:41, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:42, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:42, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:43, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:43, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:44, Error: not enough water in the well
+
+[Info], 2021-07-15 07:07:44, cat collected egg
+
+[Error], 2021-07-15 07:07:44, Error: not enough water in the well
+
+[Error], 2021-07-15 07:07:45, Error: not enough water in the well
+
+[Info], 2021-07-15 07:07:47, chicken ate
+
+[Info], 2021-07-15 07:07:49, chicken produced egg
+
+[Info], 2021-07-15 07:56:20, chicken has been bought
+
+[Info], 2021-07-15 07:56:20, chicken has been bought
+
+[Info], 2021-07-15 07:56:20, chicken has been bought
+
+[Info], 2021-07-15 07:56:21, chicken has been bought
+
+[Info], 2021-07-15 07:56:21, cat has been bought
+
+[Info], 2021-07-15 07:56:21, hound has been bought
+
+[Info], 2021-07-15 07:56:21, planted successfully
+
+[Info], 2021-07-15 07:56:22, planted successfully
+
+[Info], 2021-07-15 07:56:22, planted successfully
+
+[Info], 2021-07-15 07:56:22, planted successfully
+
+[Error], 2021-07-15 07:56:42, Error: not enough water in the well
+
+[Info], 2021-07-15 07:56:48, chicken died
+
+[Info], 2021-07-15 07:56:48, chicken produced egg
+
+[Info], 2021-07-15 07:56:48, chicken produced egg
+
+[Info], 2021-07-15 07:56:48, chicken produced egg
+
+[Info], 2021-07-15 07:56:57, chicken ate
+
+[Info], 2021-07-15 07:57:03, hound got killed
+
+[Info], 2021-07-15 07:57:03, bear got killed
+
+[Info], 2021-07-15 07:57:03, chicken produced egg
+
+[Info], 2021-07-15 07:57:04, chicken produced egg
+
+[Info], 2021-07-15 07:57:04, chicken produced egg
+
+[Info], 2021-07-15 07:57:06, chicken ate
+
+[Info], 2021-07-15 07:57:07, cat got killed
+
+[Info], 2021-07-15 07:57:12, chicken died
+
+[Info], 2021-07-15 07:57:19, egg got expired
+
+[Info], 2021-07-15 07:57:20, egg got expired
+
+[Info], 2021-07-15 07:57:20, egg got expired
+
+[Info], 2021-07-15 07:57:20, chicken produced egg
+
+[Info], 2021-07-15 07:57:20, chicken produced egg
+
+[Info], 2021-07-15 07:57:29, chicken ate
+
+[Info], 2021-07-15 07:57:35, egg got expired
+
+[Info], 2021-07-15 07:57:35, egg got expired
+
+[Info], 2021-07-15 07:57:36, egg got expired
+
+[Info], 2021-07-15 07:57:36, chicken produced egg
+
+[Info], 2021-07-15 07:57:36, chicken produced egg
+
+[Info], 2021-07-15 07:57:45, chicken ate
+
+[Info], 2021-07-15 07:57:49, chicken died
+
+[Info], 2021-07-15 07:57:51, egg got expired
+
+[Info], 2021-07-15 07:57:51, egg got expired
+
+[Info], 2021-07-15 07:57:52, chicken produced egg
+
+[Info], 2021-07-15 07:58:04, chicken died
+
+[Info], 2021-07-15 07:58:07, egg got expired
+
+[Info], 2021-07-15 07:58:07, egg got expired
+
+[Error], 2021-07-15 07:58:08, Error: not enough water in the well
+
+[Error], 2021-07-15 07:58:11, Error: not enough water in the well
+
+[Info], 2021-07-15 07:58:12, planted successfully
+
+[Info], 2021-07-15 07:58:16, planted successfully
+
+[Info], 2021-07-15 07:58:17, planted successfully
+
+[Info], 2021-07-15 07:58:21, egg got expired
+
+[Info], 2021-07-15 07:58:22, planted successfully
+
+[Info], 2021-07-15 07:58:24, planted successfully
+
+[Error], 2021-07-15 07:58:34, Error: not enough water in the well
+
+[Info], 2021-07-15 07:59:55, chicken has been bought
+
+[Info], 2021-07-15 07:59:56, chicken has been bought
+
+[Info], 2021-07-15 07:59:56, chicken has been bought
+
+[Info], 2021-07-15 07:59:56, chicken has been bought
+
+[Info], 2021-07-15 07:59:57, cat has been bought
+
+[Info], 2021-07-15 07:59:57, hound has been bought
+
+[Info], 2021-07-15 07:59:57, planted successfully
+
+[Info], 2021-07-15 07:59:57, planted successfully
+
+[Info], 2021-07-15 07:59:58, planted successfully
+
+[Info], 2021-07-15 07:59:58, planted successfully
+
+[Info], 2021-07-15 08:00:10, planted successfully
+
+[Error], 2021-07-15 08:00:13, Error: not enough water in the well
+
+[Info], 2021-07-15 08:00:16, planted successfully
+
+[Info], 2021-07-15 08:00:19, planted successfully
+
+[Info], 2021-07-15 08:00:20, planted successfully
+
+[Info], 2021-07-15 08:00:21, planted successfully
+
+[Info], 2021-07-15 08:00:22, planted successfully
+
+[Error], 2021-07-15 08:00:23, Error: not enough water in the well
+
+[Info], 2021-07-15 08:00:23, chicken produced egg
+
+[Info], 2021-07-15 08:00:23, chicken produced egg
+
+[Info], 2021-07-15 08:00:24, chicken produced egg
+
+[Info], 2021-07-15 08:00:24, chicken produced egg
+
+[Info], 2021-07-15 08:00:28, chicken ate
+
+[Info], 2021-07-15 08:00:28, chicken ate
+
+[Info], 2021-07-15 08:00:28, planted successfully
+
+[Info], 2021-07-15 08:00:28, cat collected egg
+
+[Info], 2021-07-15 08:00:29, planted successfully
+
+[Info], 2021-07-15 08:00:29, chicken died
+
+[Info], 2021-07-15 08:00:32, planted successfully
+
+[Info], 2021-07-15 08:00:36, chicken died
+
+[Info], 2021-07-15 08:00:39, chicken produced egg
+
+[Info], 2021-07-15 08:00:40, chicken produced egg
+
+[Info], 2021-07-15 08:00:42, lion got caged
+
+[Info], 2021-07-15 08:00:43, cat collected egg
+
+[Info], 2021-07-15 08:00:46, planted successfully
+
+[Info], 2021-07-15 08:00:47, chicken died
+
+[Info], 2021-07-15 08:00:48, planted successfully
+
+[Info], 2021-07-15 08:00:48, chicken ate
+
+[Error], 2021-07-15 08:00:50, Error: not enough water in the well
+
+[Info], 2021-07-15 08:00:51, egg got picked up
+
+[Info], 2021-07-15 08:02:11, chicken has been bought
+
+[Info], 2021-07-15 08:02:12, chicken has been bought
+
+[Info], 2021-07-15 08:02:12, chicken has been bought
+
+[Info], 2021-07-15 08:02:13, chicken has been bought
+
+[Info], 2021-07-15 08:02:13, cat has been bought
+
+[Info], 2021-07-15 08:02:13, hound has been bought
+
+[Info], 2021-07-15 08:02:13, planted successfully
+
+[Info], 2021-07-15 08:02:13, planted successfully
+
+[Info], 2021-07-15 08:02:14, planted successfully
+
+[Info], 2021-07-15 08:02:14, planted successfully
+
+[Info], 2021-07-15 08:07:04, chicken has been bought
+
+[Info], 2021-07-15 08:07:05, chicken has been bought
+
+[Info], 2021-07-15 08:07:05, chicken has been bought
+
+[Info], 2021-07-15 08:07:05, chicken has been bought
+
+[Info], 2021-07-15 08:07:06, cat has been bought
+
+[Info], 2021-07-15 08:07:06, hound has been bought
+
+[Info], 2021-07-15 08:07:06, planted successfully
+
+[Info], 2021-07-15 08:07:06, planted successfully
+
+[Info], 2021-07-15 08:07:07, planted successfully
+
+[Info], 2021-07-15 08:07:07, planted successfully
+
+[Info], 2021-07-15 08:07:30, chicken has been bought
+
+[Info], 2021-07-15 08:07:31, chicken has been bought
+
+[Info], 2021-07-15 08:07:31, chicken has been bought
+
+[Info], 2021-07-15 08:07:31, chicken has been bought
+
+[Info], 2021-07-15 08:07:31, cat has been bought
+
+[Info], 2021-07-15 08:07:32, hound has been bought
+
+[Info], 2021-07-15 08:07:32, planted successfully
+
+[Info], 2021-07-15 08:07:32, planted successfully
+
+[Info], 2021-07-15 08:07:32, planted successfully
+
+[Info], 2021-07-15 08:07:32, planted successfully
+
+[Info], 2021-07-15 08:07:43, chicken died
+
+[Info], 2021-07-15 08:08:00, chicken has been bought
+
+[Info], 2021-07-15 08:08:01, chicken has been bought
+
+[Info], 2021-07-15 08:08:01, chicken has been bought
+
+[Info], 2021-07-15 08:08:01, chicken has been bought
+
+[Info], 2021-07-15 08:08:01, cat has been bought
+
+[Info], 2021-07-15 08:08:01, hound has been bought
+
+[Info], 2021-07-15 08:08:02, planted successfully
+
+[Info], 2021-07-15 08:08:02, planted successfully
+
+[Info], 2021-07-15 08:08:02, planted successfully
+
+[Info], 2021-07-15 08:08:02, planted successfully
+
+[Info], 2021-07-15 08:08:35, chicken has been bought
+
+[Info], 2021-07-15 08:08:35, chicken has been bought
+
+[Info], 2021-07-15 08:08:35, chicken has been bought
+
+[Info], 2021-07-15 08:08:36, chicken has been bought
+
+[Info], 2021-07-15 08:08:36, cat has been bought
+
+[Info], 2021-07-15 08:08:36, hound has been bought
+
+[Info], 2021-07-15 08:08:37, planted successfully
+
+[Info], 2021-07-15 08:08:37, planted successfully
+
+[Info], 2021-07-15 08:08:37, planted successfully
+
+[Info], 2021-07-15 08:08:37, planted successfully
+
+[Info], 2021-07-15 08:09:30, chicken has been bought
+
+[Info], 2021-07-15 08:09:30, chicken has been bought
+
+[Info], 2021-07-15 08:09:30, chicken has been bought
+
+[Info], 2021-07-15 08:09:31, chicken has been bought
+
+[Info], 2021-07-15 08:09:31, cat has been bought
+
+[Info], 2021-07-15 08:09:31, hound has been bought
+
+[Info], 2021-07-15 08:09:31, planted successfully
+
+[Info], 2021-07-15 08:09:32, planted successfully
+
+[Info], 2021-07-15 08:09:32, planted successfully
+
+[Info], 2021-07-15 08:09:32, planted successfully
+
+[Info], 2021-07-15 08:10:46, chicken has been bought
+
+[Info], 2021-07-15 08:10:46, chicken has been bought
+
+[Info], 2021-07-15 08:10:46, chicken has been bought
+
+[Info], 2021-07-15 08:10:47, chicken has been bought
+
+[Info], 2021-07-15 08:10:47, cat has been bought
+
+[Info], 2021-07-15 08:10:47, hound has been bought
+
+[Info], 2021-07-15 08:10:47, planted successfully
+
+[Info], 2021-07-15 08:10:48, planted successfully
+
+[Info], 2021-07-15 08:10:48, planted successfully
+
+[Info], 2021-07-15 08:10:48, planted successfully
+
+[Info], 2021-07-15 08:11:46, chicken has been bought
+
+[Info], 2021-07-15 08:11:46, chicken has been bought
+
+[Info], 2021-07-15 08:11:47, chicken has been bought
+
+[Info], 2021-07-15 08:11:47, chicken has been bought
+
+[Info], 2021-07-15 08:11:47, cat has been bought
+
+[Info], 2021-07-15 08:11:47, hound has been bought
+
+[Info], 2021-07-15 08:11:48, planted successfully
+
+[Info], 2021-07-15 08:11:48, planted successfully
+
+[Info], 2021-07-15 08:11:48, planted successfully
+
+[Info], 2021-07-15 08:11:48, planted successfully
+
+[Info], 2021-07-15 08:11:58, chicken has been bought
+
+[Info], 2021-07-15 08:11:59, chicken has been bought
+
+[Info], 2021-07-15 08:11:59, chicken has been bought
+
+[Info], 2021-07-15 08:11:59, chicken has been bought
+
+[Info], 2021-07-15 08:11:59, cat has been bought
+
+[Info], 2021-07-15 08:12:00, hound has been bought
+
+[Info], 2021-07-15 08:12:00, planted successfully
+
+[Info], 2021-07-15 08:12:00, planted successfully
+
+[Info], 2021-07-15 08:12:00, planted successfully
+
+[Info], 2021-07-15 08:12:01, planted successfully
+
+[Info], 2021-07-15 08:12:23, chicken has been bought
+
+[Info], 2021-07-15 08:12:23, chicken has been bought
+
+[Info], 2021-07-15 08:12:23, chicken has been bought
+
+[Info], 2021-07-15 08:12:24, chicken has been bought
+
+[Info], 2021-07-15 08:12:24, cat has been bought
+
+[Info], 2021-07-15 08:12:24, hound has been bought
+
+[Info], 2021-07-15 08:12:24, planted successfully
+
+[Info], 2021-07-15 08:12:25, planted successfully
+
+[Info], 2021-07-15 08:12:25, planted successfully
+
+[Info], 2021-07-15 08:12:25, planted successfully
+
+[Info], 2021-07-15 08:12:37, chicken died
+
+[Info], 2021-07-15 08:12:43, chicken died
+
+[Info], 2021-07-15 08:12:51, cat got killed
+
+[Info], 2021-07-15 08:12:51, chicken produced egg
+
+[Info], 2021-07-15 08:12:51, chicken produced egg
+
+[Info], 2021-07-15 08:12:55, chicken ate
+
+[Info], 2021-07-15 08:13:06, chicken produced egg
+
+[Info], 2021-07-15 08:13:07, chicken produced egg
+
+[Info], 2021-07-15 08:13:09, chicken ate
+
+[Info], 2021-07-15 08:13:22, egg got expired
+
+[Info], 2021-07-15 08:13:22, egg got expired
+
+[Info], 2021-07-15 08:13:22, chicken produced egg
+
+[Info], 2021-07-15 08:13:22, chicken produced egg
+
+[Info], 2021-07-15 08:13:26, chicken ate
+
+[Info], 2021-07-15 08:13:36, chicken ate
+
+[Info], 2021-07-15 08:13:38, egg got expired
+
+[Info], 2021-07-15 08:13:38, egg got expired
+
+[Info], 2021-07-15 08:13:38, chicken produced egg
+
+[Info], 2021-07-15 08:13:38, chicken produced egg
+
+[Info], 2021-07-15 08:13:53, hound got killed
+
+[Info], 2021-07-15 08:13:53, lion got killed
+
+[Info], 2021-07-15 08:13:54, egg got expired
+
+[Info], 2021-07-15 08:13:54, egg got expired
+
+[Info], 2021-07-15 08:13:54, chicken produced egg
+
+[Info], 2021-07-15 08:13:54, chicken produced egg
+
+[Info], 2021-07-15 08:14:05, chicken died
+
+[Info], 2021-07-15 08:14:09, egg got expired
+
+[Info], 2021-07-15 08:14:09, egg got expired
+
+[Info], 2021-07-15 08:14:10, chicken produced egg
+
+[Info], 2021-07-15 08:14:15, chicken died
+
+[Info], 2021-07-15 08:14:25, egg got expired
+
+[Info], 2021-07-15 08:14:25, egg got expired
+
+[Info], 2021-07-15 08:14:40, egg got expired
+
+[Info], 2021-07-15 08:18:25, planted successfully
+
+[Error], 2021-07-15 08:18:29, Error: not enough water in the well
+
+[Info], 2021-07-15 08:18:34, planted successfully
+
+[Info], 2021-07-15 08:18:35, planted successfully
+
+[Info], 2021-07-15 08:18:36, planted successfully
+
+[Info], 2021-07-15 08:18:36, planted successfully
+
+[Info], 2021-07-15 08:18:37, planted successfully
+
+[Info], 2021-07-15 08:18:40, planted successfully
+
+[Info], 2021-07-15 08:18:50, planted successfully
+
+[Info], 2021-07-15 08:18:50, planted successfully
+
+[Info], 2021-07-15 08:18:51, planted successfully
+
+[Info], 2021-07-15 08:18:52, planted successfully

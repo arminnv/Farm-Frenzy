@@ -149,6 +149,7 @@ public class TruckMenu {
                     money.setText(String.valueOf(Truck.getInstance().money));
                     //TODO
                     Game.myClock.setPaused(false);
+                    Time.setIsPaused(false);
                     truckMenu.setVisible(false);
                 }
             });
@@ -157,6 +158,7 @@ public class TruckMenu {
                 public void actionPerformed(ActionEvent e) {
                     Game.myClock.setPaused(false);
                     truckMenu.setVisible(false);
+                    Time.setIsPaused(false);
                 }
             });
 

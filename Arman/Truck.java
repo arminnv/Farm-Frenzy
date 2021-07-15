@@ -30,6 +30,7 @@ public class Truck {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Game.myClock.setPaused(true);
+                Time.setIsPaused(true);
                 TruckMenu.getMenuInstance().setVisible(true);
             }
         });

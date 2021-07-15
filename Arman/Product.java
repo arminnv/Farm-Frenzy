@@ -132,10 +132,7 @@ public class Product {
         double a=0.3;
         if (wildNameList.contains(this.type))
             a=0.5;
-        if( Math.abs(x-X)<a && Math.abs(y-Y)<a )
-            return true;
-        else
-            return false;
+        return Math.abs(x - X) < a && Math.abs(y - Y) < a;
     }
 
 }

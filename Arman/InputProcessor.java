@@ -82,13 +82,14 @@ public class InputProcessor {
     static void search(int X, int Y) {
         Product p1= new Product();
         Product p2= new Product();
-        p1.x = 6;
+        p1.x = 0;
         p1.y = 6;
-        p2.x = 0;
+        p2.x = 6;
         p2.y = 0;
-        double x = xScale(X+200);//jpanel x0
-        double y = yScale(Y+200);//jpanel y0
+        double x = xScale(X+p1.xScale());//jpanel x0
+        double y = yScale(Y+p1.yScale());//jpanel y0
         System.out.println(X+" "+Y);
+        System.out.println(x+" "+y);
         if (true) {// (x>=p2.x)&&(x<=p1.x)&&(y>=p2.y)&&(y<= p1.y)
             for (int i = 0; i < Wild.list.size(); i++) {
                 Wild w = Wild.list.get(i);
@@ -102,7 +103,7 @@ public class InputProcessor {
             for (int i = 0; i < Product.list.size(); i++) {
                 Product p = Product.list.get(i);
                 if (p.mouseIntRange(x, y)) {
-                    Product.pickup((int) p.x, (int) p.y);
+                    Product.pickup( (int)p.x,(int)  p.y);
                     return;
                 }
             }
