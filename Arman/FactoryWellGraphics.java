@@ -27,7 +27,7 @@ public class FactoryWellGraphics {
         this.image=image;
         jPanel=new JPanel();
         jPanel.setOpaque(false);
-        jPanel.setBackground(new Color(1,0,0,0));
+        //jPanel.setBackground(new Color(1,0,0,0));
         jPanel.setLayout(new GroupLayout(jPanel));
         jPanel.setVisible(true);
         if (upgradable){

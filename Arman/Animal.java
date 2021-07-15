@@ -30,6 +30,7 @@ public abstract class Animal {
         this.dx = (double) (step) * Time.dt;
         this.w = w;
         this.h = h;
+        state=1;
     }
     static double random()
     {

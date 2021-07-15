@@ -40,6 +40,8 @@ public class Menu {
                     if(user != null) {
                         User.current = user;
                         loginMenu.setVisible(false);
+
+
                         getMainMenuInstance().setVisible(true);
                     }
                 }
@@ -122,6 +124,15 @@ public class Menu {
                             Menu.game=true;
                             System.out.println("hi"+level);
                             System.out.println(User.current.userName+" "+User.current.password);
+                            /*
+                            SwingUtilities.invokeLater(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Game.run(Mission.list.get(level-1));
+                                }
+                            });
+
+                             */
                             Game.run(Mission.list.get(level-1));
                         }
                         else

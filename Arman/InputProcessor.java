@@ -79,30 +79,37 @@ public class InputProcessor {
         }
     }
 
-    static void search(int X, int Y)
-    {
-        double x = xScale(X);
-        double y = yScale(Y);
-
-        for(int i=0; i<Product.list.size(); i++)
-        {
-            Product p = Product.list.get(i);
-            if(p.intRange(x,y))
-            {
-                Product.pickup((int)p.x,(int)p.y);
-                return;
+    static void search(int X, int Y) {
+        Product p1= new Product();
+        Product p2= new Product();
+        p1.x = 6;
+        p1.y = 6;
+        p2.x = 0;
+        p2.y = 0;
+        double x = xScale(X+200);//jpanel x0
+        double y = yScale(Y+200);//jpanel y0
+        System.out.println(X+" "+Y);
+        if (true) {// (x>=p2.x)&&(x<=p1.x)&&(y>=p2.y)&&(y<= p1.y)
+            for (int i = 0; i < Wild.list.size(); i++) {
+                Wild w = Wild.list.get(i);
+                if (w.mouseIntRange(x, y)) {
+                    System.out.println(w.type+" "+w.leftCages);
+                    w.cage();
+                    System.out.println(w.type+" "+w.leftCages);
+                    return;
+                }
             }
-        }
-        for(int i=0; i<Wild.list.size(); i++)
-        {
-            Wild w = Wild.list.get(i);
-            if(w.intRange(x,y))
-            {
-                w.cage();
-                return;
+            for (int i = 0; i < Product.list.size(); i++) {
+                Product p = Product.list.get(i);
+                if (p.mouseIntRange(x, y)) {
+                    Product.pickup((int) p.x, (int) p.y);
+                    return;
+                }
             }
+            Well.getInstance().water(x, y);
+            return;
         }
-        Well.getInstance().water(x,y);
+        System.out.println("error");
     }
 
     static double xScale(int X)

@@ -1,6 +1,7 @@
 import com.google.gson.Gson;
 
 import java.io.*;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -8,19 +9,46 @@ import java.util.Scanner;
 public class User {
 
     public static ArrayList<User> list = new ArrayList<>();
-
     static User current;
+
     String userName;
     String password;
-    int unlockedLevels = 1;
+    int unlockedLevels;
     int points;
 
-    User(String name, String pass)
-    {
+    User(String name, String pass) {
         userName = name;
         password = pass;
         points=0;
+        unlockedLevels = 1;
     }
+    User(String name, String pass, int unlockedLevels,int points) {
+        userName = name;
+        password = pass;
+        this.points=points;
+        this.unlockedLevels = unlockedLevels;
+    }
+/*
+    static void sqlLoad(){
+
+        try {
+            Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","#Wh@tgoes9163");
+            Statement statement=connection.createStatement();
+            ResultSet resultSet=statement.executeQuery("select * from mydb.users");//TODO
+            statement.
+            while (resultSet.next()){
+                String n=resultSet.getString();
+                String p=resultSet.getString();
+                int p1=resultSet.getInt();
+                int ul=resultSet.getInt();
+                System.out.println(n+" "+p+" "+ul+" "+p1);
+                User user=new User(n,p,ul,p1);
+                User.list.add(user);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }    }
+*/
 
     static void load()
     {
@@ -65,7 +93,6 @@ public class User {
                 else
                 {
                     Menu.showMessage('e',"Incorrect password");
-                    System.out.println("wrong password");
                     Logger.write('e',"wrong password");
                     return null;
                 }

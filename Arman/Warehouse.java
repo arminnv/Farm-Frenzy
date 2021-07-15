@@ -6,7 +6,7 @@ public class Warehouse {
     int capacity;
     int occupied;
     ArrayList<Product> products=new ArrayList<>();
-    private HashMap<String,Integer> productIntegerHashMap=new HashMap<>();
+    public HashMap<String,Integer> productIntegerHashMap=new HashMap<>();
     Warehouse(){
         capacity=30;
     }
@@ -18,7 +18,7 @@ public class Warehouse {
     }
 
     public boolean add(Product product){
-        if (occupied+product.space<capacity) {
+        if (occupied+product.space<=capacity) {
             //Product.list.remove(product);
             occupied += product.space;
             for (Product product1 : products) {

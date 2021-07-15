@@ -34,6 +34,7 @@ public class Well {
             capacity--;
             Logger.write('i',"planted successfully");
             System.out.println("planted successfully");
+            wellGraphics.jProgressBar.setValue(capacity);
         }
         else {
             Logger.write('e',"Error: not enough water in the well");

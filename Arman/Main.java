@@ -9,10 +9,10 @@ public class Main {
         Mission.load();
         //Menu.game = true;
         User.current = User.list.get(0);
-        Game.run(Mission.list.get(0));
+        //Game.run(Mission.list.get(0));
         //TODO
         //TruckMenu.getMenuInstance().setVisible(true);
         //Menu.getLoginMenuInstance().setVisible(true);
-
+        Game.run(Mission.list.get(0));
     }
 }

@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.HashMap;
 
 public class Truck {
@@ -24,6 +26,13 @@ public class Truck {
         jButton.setContentAreaFilled(true);
         //jButton.setBackground(new Color(0,0,0,1));
         jButton.setIcon(FactoryWellGraphics.resizeIcon(new ImageIcon(Images.truck),120,100));
+        jButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Game.myClock.setPaused(true);
+                TruckMenu.getMenuInstance().setVisible(true);
+            }
+        });
     }
     public static Truck getInstance() {
         if (t==null)
@@ -72,7 +81,7 @@ public class Truck {
             if (name.equals("cat"))
                 animal=new Cat(false);
             else if (name.equals("hound"))
-                animal=new Hound();
+                animal=new Hound(false);
             else if (!Domestic.nameList.contains(name)) {
                 Logger.write('e',"Invalid item for loading");
                 System.out.println("Invalid item for loading");
@@ -110,11 +119,12 @@ public class Truck {
             if (name.equals("cat"))
                 animal=new Cat(false);
             else if (name.equals("hound"))
-                animal=new Hound();
+                animal=new Hound(false);
             if ( map.get(name)>0 ) { //&&(capacity+animal.space<=MAX_CAPACITY) ??????
                 capacity-=animal.space;
                 animalIntegerHashMap.put(animal.type, map.get(animal.type)-1);
                 Logger.write('i',animal.type + " unloaded");
+                System.out.println(animal.type + " unloaded");
             }
         }
     }
@@ -134,7 +144,7 @@ public class Truck {
             if (name.equals("cat"))
                 animal=new Cat(false);
             else if (name.equals("hound"))
-                animal=new Hound();
+                animal=new Hound(false);
             for (int i = 0; i < animalIntegerHashMap.get(name); i++) {
                 Animal.removeFromMap(name);
                 if(name.equals("cat"))

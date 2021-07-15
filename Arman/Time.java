@@ -2,6 +2,7 @@ public class Time {
 
     static double time = 0;
     static double dt = 0.005;
+    static boolean isPaused;
 
     static void turn(int n) {
         for(int i=0; i<n; i++) {
@@ -11,23 +12,28 @@ public class Time {
     }
 
     static void update() {
-        Time.time+=dt;
-        appear();
-        eat();
-        Domestic.reduce();
-        walk();
-        eat();
-        Product.expire();
-        produce();
-        collect();
-        factoryUpdate();
-        Truck.getInstance().update();
-        removeCage();
-        Well.getInstance().fillingProcess();
-        Plant.warn();
-        Game.myClock.setTimeLabel();
-        Well.getInstance().wellGraphics.jPanel.repaint();
-        //Output.show();
+        if (!isPaused) {
+            Time.time += dt;
+
+            appear();
+            eat();
+            Domestic.reduce();
+            walk();
+            eat();
+            Product.expire();
+            produce();
+            collect();
+            factoryUpdate();
+            Truck.getInstance().update();
+            removeCage();
+            Well.getInstance().fillingProcess();
+            Plant.warn();
+            Game.myClock.setTimeLabel();
+            Well.getInstance().wellGraphics.jPanel.repaint();
+            //Output.show();
+
+
+        }
     }
 
     static void walk()
@@ -116,6 +122,9 @@ public class Time {
         for (Factory factory:Factory.factories){
             factory.update();
         }
+    }
+    public static void setIsPaused(boolean isPaused1){
+        isPaused=isPaused1;
     }
 
 }

@@ -1,8 +1,11 @@
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
 public class Canvas extends JComponent{
     static int h = 800;
@@ -10,6 +13,7 @@ public class Canvas extends JComponent{
     static int landW = 400;
     static int landH = 400;
     JFrame frame = new JFrame("Farm Frenzy");
+    JPanel mousePanel=new JPanel();
     static int y0 ;
 
     void setFrame()
@@ -21,15 +25,38 @@ public class Canvas extends JComponent{
         frame.add(this);
         frame.setVisible(true);
         Images.load();
-        System.out.println("setFrame end");
+        System.out.println("setFrame end");//
         Container container=frame.getContentPane();
         frame.setLayout(new GroupLayout(container));
 
         JButton jButton=Truck.getInstance().jButton;
-
+        //TODO
+        //to check the panel dimensions, uncomment these lines
+        mousePanel.setOpaque(true);
+        mousePanel.setVisible(true);
+        //
+        Product p1= new Product();
+        Product p2= new Product();
+        p2.x = 6;
+        p2.y = 6;
+        p1.x = 0;
+        p1.y = 0;
+        System.out.println(p1.xScale());
+        System.out.println(p1.yScale());
+        System.out.println(p2.xScale());
+        System.out.println(p2.yScale());
+        mousePanel.setBounds(200,200,520,400);
+        mousePanel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                InputProcessor.search(e.getX(),e.getY());
+                super.mouseClicked(e);
+            }
+        });
 
         Game.myClock.timeLabel.setBounds(850,670,130,40);
         container.add(jButton);
+        container.add(mousePanel);
         container.add(Game.myClock.timeLabel);
         container.add(Well.getInstance().wellGraphics.jPanel);
     }
@@ -40,6 +67,7 @@ public class Canvas extends JComponent{
             public void run() {
                 while (true) {
                     repaint();
+                    revalidate();
                     Well.getInstance().wellGraphics.jPanel.repaint();
                     try {Thread.sleep(10);} catch (Exception ex) {
                         ex.printStackTrace();
@@ -67,6 +95,10 @@ public class Canvas extends JComponent{
             paintWilds(gg);
             paintCats(gg);
             paintHounds(gg);
+            Game.myClock.setTimeLabel();
+            //TODO
+            //uncomment to see jpanel
+            mousePanel.repaint();
 
             //frame.repaint();
         }
@@ -168,24 +200,8 @@ public class Canvas extends JComponent{
 
     static void paintProducts(Graphics2D gg)
     {
-        for (int i=0; i<Product.list.size(); i++)
-        {
-            Product product = Product.list.get(i);
-            BufferedImage image = null;
-            if(product.type.equals("egg"))
-            {
-                image = Images.egg;
-            }
-            else if(product.type.equals("feather"))
-            {
-                image = Images.feather;
-            }
-            else if(product.type.equals("milk"))
-            {
-                image = Images.milk;
-            }
-
-            gg.drawImage(image,product.xScale(),product.yScale(),product.w,product.h,null);
+        for (Product product:Product.list) {
+            gg.drawImage(product.image, product.xScale(),product.yScale(),product.w,product.h,null);
         }
     }
 

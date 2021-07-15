@@ -4,18 +4,20 @@ public class Hound extends Animal{
 
     static ArrayList<Hound> list = new ArrayList<>();
 
-    Hound()
-    {
+    Hound(boolean addToMap) {
         super("hound",100,1,1,60,60);
-        this.addToMap();
-        number= animalIDNumHashMap.get("hound");
+        if (addToMap) {
+            this.addToMap();
+            number = animalIDNumHashMap.get("hound");
+        }
     }
 
     static void buy()
     {
-        Hound newHound = new Hound();
+        Hound newHound = new Hound(false);
         if(newHound.price <= Game.getCoins())
         {
+            newHound=new Hound(true);
             Game.addCoins(-newHound.price);
             Hound.list.add(newHound);
             Task.claim("hound");
