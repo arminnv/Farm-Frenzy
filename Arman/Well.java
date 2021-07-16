@@ -9,13 +9,14 @@ public class Well {
     FactoryWellGraphics wellGraphics;
     public static final int FILL_TURN=5;
     private Well(){
-        wellGraphics=new FactoryWellGraphics(3.0,390,90,false,Images.well,FactoryWellGraphics.RIGHT_ALIGNMENT);
+        wellGraphics=new FactoryWellGraphics(3.0,false,Images.well,FactoryWellGraphics.RIGHT_ALIGNMENT);
         counter=0;
         process=false;
         capacity=5;
         wellGraphics.jProgressBar.setMaximum(capacity);
         wellGraphics.jProgressBar.setValue(capacity);
         //capacity=0;//omit later
+        wellGraphics.jPanel.setBounds(390,90,(int)(FactoryWellGraphics.X_SCALE*wellGraphics.scale),(int)(FactoryWellGraphics.Y_SCALE* wellGraphics.scale));
         wellGraphics.mainButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

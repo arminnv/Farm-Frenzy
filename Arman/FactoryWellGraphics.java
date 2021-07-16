@@ -22,7 +22,9 @@ public class FactoryWellGraphics {
     JButton mainButton;
     BufferedImage image;
     boolean upgradable;
-    FactoryWellGraphics(double scale,int x, int y,boolean upgradable,BufferedImage image, boolean alignment){
+    double scale;
+    FactoryWellGraphics(double scale,boolean upgradable,BufferedImage image, boolean alignment){
+        this.scale=scale;
         this.upgradable=upgradable;
         this.image=image;
         jPanel=new JPanel();
@@ -45,22 +47,27 @@ public class FactoryWellGraphics {
         //TODO
         mainButton.setBorderPainted(true);
         mainButton.setIcon( resizeIcon(new ImageIcon(image),Scale(scale,IMAGE_SCALE),Scale(scale,IMAGE_SCALE)) );
-        mainButton.setBounds(Scale(scale,X_SCALE-SPACE_SCALE-IMAGE_SCALE),Scale(scale,SPACE_SCALE),Scale(scale,IMAGE_SCALE),Scale(scale,IMAGE_SCALE));
+
 
 
         jProgressBar=new JProgressBar();
         jProgressBar.setOrientation(SwingConstants.VERTICAL);
         jProgressBar.setStringPainted(true);
-        if (alignment==RIGHT_ALIGNMENT)
-            jProgressBar.setBounds(Scale(scale,PROGRESS_XLOC_SCALE),Scale(scale,SPACE_SCALE*2+BUTTON_H_SCALE),
-                    Scale(scale,PROGRESS_X_SCALE),Scale(scale,PROGRESS_Y_SCALE));
-        else
-            jProgressBar.setBounds(Scale(scale,X_SCALE-PROGRESS_XLOC_SCALE-PROGRESS_X_SCALE),
-                    Scale(scale,SPACE_SCALE*2+BUTTON_H_SCALE),
-                    Scale(scale,PROGRESS_X_SCALE),Scale(scale,PROGRESS_Y_SCALE));
+        if (alignment==RIGHT_ALIGNMENT) {
+            jProgressBar.setBounds(Scale(scale, PROGRESS_XLOC_SCALE), Scale(scale, SPACE_SCALE * 2 + BUTTON_H_SCALE),
+                    Scale(scale, PROGRESS_X_SCALE), Scale(scale, PROGRESS_Y_SCALE));
+            mainButton.setBounds(Scale(scale,X_SCALE-SPACE_SCALE-IMAGE_SCALE),Scale(scale,SPACE_SCALE),
+                    Scale(scale,IMAGE_SCALE),Scale(scale,IMAGE_SCALE));
+        }
+        else {
+            jProgressBar.setBounds(Scale(scale, X_SCALE - PROGRESS_XLOC_SCALE - PROGRESS_X_SCALE),
+                    Scale(scale, SPACE_SCALE * 2 + BUTTON_H_SCALE),
+                    Scale(scale, PROGRESS_X_SCALE), Scale(scale, PROGRESS_Y_SCALE));
+            mainButton.setBounds(Scale(scale,SPACE_SCALE),Scale(scale,SPACE_SCALE),
+                    Scale(scale,IMAGE_SCALE),Scale(scale,IMAGE_SCALE));
+        }
         jPanel.add(mainButton);
         jPanel.add(jProgressBar);
-        jPanel.setBounds(x,y,(int)scale*X_SCALE,(int)scale*Y_SCALE);
         jProgressBar.setOpaque(true);
         jPanel.setOpaque(true);
     }
@@ -70,7 +77,7 @@ public class FactoryWellGraphics {
         return new ImageIcon(resizedImage);
     }
     private static int Scale(double scale, int number){
-        return (int)scale*number;
+        return (int)(scale*number);
     }
     public void setUpgrade(boolean upgradable){
         if (upgrade!=null){

@@ -1,9 +1,13 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Random;
 
 public abstract class Factory {
-    public static final String[] nameList={"mill","weaver","sewing factory","milk packaging factory","ice cream factory","bakery","hen incubator"};
+    public static final String[] nameList={"mill","weaver","milk packaging factory","hen incubator","sewing factory","ice cream factory","bakery"};
     static ArrayList<Factory> factories=new ArrayList<>();
     static Random r=new Random();
     int level;
@@ -17,7 +21,7 @@ public abstract class Factory {
     String outputType;
     int underProduction;
     FactoryWellGraphics factoryGraphics;
-    protected Factory(String name, String validType, String outputType, int buildingCost, int productionDefaultDuration, int x, int y, BufferedImage image, boolean alignment,boolean addToList){
+    protected Factory(String name, String validType, String outputType, int buildingCost, int productionDefaultDuration,  BufferedImage image, boolean alignment,boolean addToList){
         this.name=name;
         this.outputType=outputType;
         this.validType=validType;
@@ -28,9 +32,24 @@ public abstract class Factory {
         underProduction=0;
         level=1;
         maxAllowedLevel=2;
-        factoryGraphics=new FactoryWellGraphics(4.0,x,y,true,image,alignment);
-        if (addToList)
+        factoryGraphics=new FactoryWellGraphics(2.7,true,image,alignment);
+        factoryGraphics.jProgressBar.setMaximum(productionDefaultDuration);
+        //TODO
+        factoryGraphics.mainButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Factory.this.produce();
+            }
+        });
+        factoryGraphics.upgrade.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Factory.this.upgrade();
+            }
+        });
+        if (addToList) {
             factories.add(this);
+        }
     }
     private static Factory createFactory(String name,boolean addToList){
         Factory factory=null;
@@ -50,14 +69,16 @@ public abstract class Factory {
             factory=new HenIncubator(addToList);
         return factory;
     }
-    protected void produce(int number) {
-        if ((number!=0)&&Warehouse.getInstance().inquiry(validType,number)){
-            productionDuration= (int)Math.ceil(productionDefaultDuration*number*1.0/level);
-            Warehouse.getInstance().remove(Product.newProduct(validType),number);
-            underProduction=number;//Class.forName(outputType.getTypeName()).getDeclaredConstructor().newInstance()
-            System.out.println("Product is getting produced");
-            Logger.write('i',"Product is getting produced");
-            return;
+    protected void produce() {
+        for (int number=level;number>=1;number--) {
+            if (Warehouse.getInstance().inquiry(validType, number)) {
+                productionDuration = (int) Math.ceil(productionDefaultDuration * number * 1.0 / level);
+                Warehouse.getInstance().remove(Product.newProduct(validType), number);
+                underProduction = number;//Class.forName(outputType.getTypeName()).getDeclaredConstructor().newInstance()
+                System.out.println("Product is getting produced");
+                Logger.write('i', "Product is getting produced");
+                return;
+            }
         }
         System.out.println("Product cannot be produced");
         Logger.write('e',"Product cannot be produced");
@@ -66,6 +87,8 @@ public abstract class Factory {
         if ( (Game.getCoins()>upgradeCost)&&(level+1<=maxAllowedLevel) ){
             Game.addCoins(-upgradeCost);
             level++;
+            if (level==maxAllowedLevel)
+                factoryGraphics.setUpgrade(false);
             Logger.write('i',"Factory "+name+" was upgraded to level "+level);
             System.out.println("Factory "+name+" was upgraded to level "+level);
             return;
@@ -76,8 +99,9 @@ public abstract class Factory {
     public void update(){
         if (productionDuration>0){
             productionDuration-=Time.dt;
+            factoryGraphics.jProgressBar.setValue((int)(productionDefaultDuration-productionDuration));
         }
-        if (productionDuration==0){
+        if (productionDuration<=0){
             for(int i=0;i<underProduction;i++){
                 Product product=Product.newProduct(outputType);
                 product.x=(double) (r.nextInt(6))+0.5;
@@ -86,6 +110,7 @@ public abstract class Factory {
                 Logger.write('i',this.name+ " produced "+product.type);
             }
             underProduction=0;
+            this.factoryGraphics.jProgressBar.setValue(0);
         }
     }
     public static void upgrade(String name){
@@ -98,17 +123,17 @@ public abstract class Factory {
         System.out.println("Factory name is invalid");
         Logger.write('e',"Factory name is invalid");
     }
-    public static void produce(String factoryName,int number){
+    public static void produce(String factoryName){
         for (Factory factory:factories){
             if (factory.name.equals(factoryName)) {
-                factory.produce(number);
+                factory.produce();
                 return;
             }
         }
         System.out.println("Factory was not found");
         Logger.write('e',"Factory was not found");
     }
-    public static void build(String name){
+    public static void build(String name,JFrame jFrame){
         for (String name1:nameList){
             if (name1.equals(name)){
                 for (Factory factory:factories){
@@ -121,8 +146,10 @@ public abstract class Factory {
                 Factory f=createFactory(name,false);
                 if (f!=null){//name is always valid so this is always true
                     if (f.buildingCost<=Game.getCoins()){
-                        createFactory(name,true);
+                        f=createFactory(name,true);
                         Game.addCoins(-f.buildingCost);
+                        Container container=jFrame.getContentPane();
+                        container.add(f.factoryGraphics.jPanel);
                         System.out.println("Factory was built successfully");
                         Logger.write('i',"Factory was built successfully");
                         return;
@@ -134,8 +161,5 @@ public abstract class Factory {
         }
         System.out.println("Factory name is invalid");
         Logger.write('e',"Factory name is invalid");
-    }
-    private static void createJpanel(){
-
     }
 }

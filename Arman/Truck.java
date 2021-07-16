@@ -21,7 +21,7 @@ public class Truck {
         money=0;
         timeLeft=0;
         jButton=new JButton();
-        jButton.setBounds(180,640,120,100);
+        jButton.setBounds(210,640,120,100);
         jButton.setOpaque(true);
         jButton.setContentAreaFilled(true);
         //jButton.setBackground(new Color(0,0,0,1));

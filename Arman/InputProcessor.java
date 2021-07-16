@@ -38,13 +38,13 @@ public class InputProcessor {
         }
         else if (input.matches(work)){
             input=input.replaceAll("(?i)work ","");
-            Factory.produce(input.toLowerCase(Locale.ROOT),1);
+            //Factory.produce(input.toLowerCase(Locale.ROOT),1);
         }
         else if (input.matches(workNumber)){
             input=input.replaceAll("(?i)work ","");
             a=input.split("\\D");
             System.out.println(Arrays.toString(a));
-            Factory.produce(a[1].toLowerCase(Locale.ROOT),Integer.parseInt(a[0]));
+            //Factory.produce(a[1].toLowerCase(Locale.ROOT),Integer.parseInt(a[0]));
         }
         else if (input.matches(cage)){
             Wild.cage(Integer.parseInt(a[1]),Integer.parseInt(a[2]));
@@ -68,7 +68,7 @@ public class InputProcessor {
         }
         else if (input.matches(buildFactory)){
             input=input.replaceAll("(?i)build ","");
-            Factory.build(input.toLowerCase(Locale.ROOT));
+            //Factory.build(input.toLowerCase(Locale.ROOT));
         }
         else if (input.matches(upgradeFactory)){
             input=input.replaceAll("(?i)upgrade ","");

@@ -22,6 +22,7 @@ public abstract class Animal {
     double t = 1;
     int d = Animal.randomDirection();
     static Random rand = new Random();
+
     Animal(){}
     protected Animal(String type, int price, int step, int space, int h, int w){
         this.x=random();

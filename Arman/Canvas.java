@@ -15,10 +15,11 @@ public class Canvas extends JComponent{
     static int w = 1000;
     static int landW = 400;
     static int landH = 400;
-    JFrame frame = new JFrame("Farm Frenzy");
+    static JFrame frame = new JFrame("Farm Frenzy");
     JPanel mousePanel=new JPanel();
     static int y0 ;
     ArrayList<JButton> jButtons=new ArrayList<>();
+    ArrayList<JButton> factoryButtons=new ArrayList<>();
     void setFrame()
     {
 
@@ -75,6 +76,36 @@ public class Canvas extends JComponent{
             jButtons.add(b);
             container.add(b);
         }
+        factoryButtons=new ArrayList<>();
+        for (int i=0;i<Factory.nameList.length;i++){
+            String s=Factory.nameList[i];
+            JButton b=new JButton(s);
+            b.setName(s);
+            b.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    Factory.build(b.getName(),Canvas.frame);
+                    FactoryWellGraphics graphics;
+                    if (!Factory.factories.isEmpty()) {
+                        graphics= Factory.factories.get(Factory.factories.size()-1).factoryGraphics;
+                        System.out.println(graphics.scale);
+                        System.out.println(FactoryWellGraphics.X_SCALE*graphics.scale);
+                        graphics.jPanel.setBounds(b.getX(), b.getY(), (int)(FactoryWellGraphics.X_SCALE*graphics.scale),(int)(FactoryWellGraphics.Y_SCALE*graphics.scale));
+                    }
+                    Container container1=Canvas.frame.getContentPane();
+                    container1.remove(b);
+                }
+            });
+            int x=30;
+            if (i>3)
+                x=800;
+            int y=100+i*160;
+            if (i>3)
+                y=170+(i-4)*160;
+            b.setBounds(x,y,50,50);
+            factoryButtons.add(b);
+            container.add(b);
+        }
 
 
 
@@ -127,6 +158,12 @@ public class Canvas extends JComponent{
             //mousePanel.repaint();
             for (JButton jButton:jButtons){
                 jButton.repaint();
+            }
+            for (JButton jButton:factoryButtons){
+                jButton.repaint();
+            }
+            for (Factory factory:Factory.factories){
+                factory.factoryGraphics.jPanel.repaint();
             }
             //frame.repaint();
         }
