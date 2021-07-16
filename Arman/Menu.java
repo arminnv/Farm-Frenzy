@@ -90,8 +90,6 @@ public class Menu {
             container.add(login);
             container.add(exit);
             //TODO
-            //Well.getInstance().wellGraphics.jProgressBar.setValue(10);
-            //container.add(Well.getInstance().wellGraphics.jPanel);
         }
         return loginMenu;
     }
@@ -122,17 +120,6 @@ public class Menu {
                             mainMenu.setVisible(false);
                             //TODO
                             Menu.game=true;
-                            System.out.println("hi"+level);
-                            System.out.println(User.current.userName+" "+User.current.password);
-                            /*
-                            SwingUtilities.invokeLater(new Runnable() {
-                                @Override
-                                public void run() {
-                                    Game.run(Mission.list.get(level-1));
-                                }
-                            });
-
-                             */
                             Main.ifRun=true;
                         }
                         else

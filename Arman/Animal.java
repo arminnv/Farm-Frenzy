@@ -1,10 +1,13 @@
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
+import java.util.Set;
+
 public abstract class Animal {
     static HashMap<String,Integer> animalIDNumHashMap =new HashMap<>();//non wild
     static HashMap<String,Integer> animalCount =new HashMap<>();//non wild
-
+    static final String[] purchasable={"chicken","turkey","buffalo","cat","hound"};
     String type = "";
     int number;
     double x;

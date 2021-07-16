@@ -1,10 +1,13 @@
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class Canvas extends JComponent{
@@ -15,7 +18,7 @@ public class Canvas extends JComponent{
     JFrame frame = new JFrame("Farm Frenzy");
     JPanel mousePanel=new JPanel();
     static int y0 ;
-
+    ArrayList<JButton> jButtons=new ArrayList<>();
     void setFrame()
     {
 
@@ -55,6 +58,31 @@ public class Canvas extends JComponent{
         });
 
         Game.myClock.timeLabel.setBounds(850,670,130,40);
+
+        jButtons=new ArrayList<>();
+        for (int i=0;i<Animal.purchasable.length;i++){
+            String s=Animal.purchasable[i];
+            JButton b=new JButton(s);
+            b.setName(s);
+            b.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    Domestic.buy(b.getName());
+                }
+            });
+            //TODO
+            b.setBounds(10+100*i,10,100,50);
+            jButtons.add(b);
+            container.add(b);
+        }
+
+
+
+
+
+
+
+
         container.add(jButton);
         container.add(mousePanel);
         container.add(Game.myClock.timeLabel);
@@ -83,9 +111,7 @@ public class Canvas extends JComponent{
         Graphics2D gg = (Graphics2D) g;
 
 
-        if(Menu.game)
-        {
-
+        if(Menu.game) {
             paintLand(gg);
             Well.getInstance().wellGraphics.jPanel.repaint();
             Truck.getInstance().jButton.repaint();
@@ -98,8 +124,10 @@ public class Canvas extends JComponent{
             Game.myClock.setTimeLabel();
             //TODO
             //uncomment to see jpanel
-            mousePanel.repaint();
-
+            //mousePanel.repaint();
+            for (JButton jButton:jButtons){
+                jButton.repaint();
+            }
             //frame.repaint();
         }
 
