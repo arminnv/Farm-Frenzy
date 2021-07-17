@@ -112,7 +112,7 @@ public class Truck {
     public void confirm(){
         if (productIntegerHashMap.isEmpty()&&animalIntegerHashMap.isEmpty()){
             Logger.write('e',"Empty truck cannot leave");
-            System.out.println("Empty truck cannot leave");
+            Menu.showMessage('e',"Empty truck cannot leave");
             return;
         }
         for (String type:productIntegerHashMap.keySet()) {
@@ -148,7 +148,15 @@ public class Truck {
         productIntegerHashMap.clear();
         capacity=0;
         Logger.write('i', "truck left");
-        System.out.println("Truck left");
+        //Menu.showMessage('i', "truck left");
+    }
+    public void unLoadAll(){
+        for (String string:animalIntegerHashMap.keySet()){
+            this.unloadAnimal(string);
+        }
+        for (String string:productIntegerHashMap.keySet()){
+            this.unloadProduct(string);
+        }
     }
     public void update(){
         if (timeLeft==0){

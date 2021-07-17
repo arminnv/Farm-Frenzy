@@ -9,18 +9,29 @@ public class Canvas extends JComponent{
     static int w = 1000;
     static int landW = 400;
     static int landH = 400;
-    //static int y0 = -40;
-    static int y0 ;
     JFrame frame = new JFrame("Farm Frenzy");
+    static int y0 ;
 
     void setFrame()
     {
+
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(w, h);
         frame.setLocationRelativeTo(null);
-        frame.add(new Canvas());
+        frame.add(this);
         frame.setVisible(true);
         Images.load();
+        System.out.println("setFrame end");
+        Container container=frame.getContentPane();
+        frame.setLayout(new GroupLayout(container));
+
+
+        JButton jButton=new JButton("truck");
+        jButton.setBounds(50,700,100,50);
+        Game.myClock.timeLabel.setBounds(850,670,130,40);
+        container.add(jButton);
+        container.add(Game.myClock.timeLabel);
+        container.add(Well.getInstance().wellGraphics.jPanel);
     }
 
     Canvas()
@@ -29,7 +40,10 @@ public class Canvas extends JComponent{
             public void run() {
                 while (true) {
                     repaint();
-                    try {Thread.sleep(10);} catch (Exception ex) {}
+                    Well.getInstance().wellGraphics.jPanel.repaint();
+                    try {Thread.sleep(10);} catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
         });
@@ -46,23 +60,24 @@ public class Canvas extends JComponent{
 
             paintLand(gg);
             paintGrass(gg);
-            paintProducts(gg);
             paintDomestics(gg);
+            paintProducts(gg);
             paintWilds(gg);
             paintCats(gg);
             paintHounds(gg);
-
+            Well.getInstance().wellGraphics.jPanel.repaint();
+            //frame.repaint();
         }
 
     }
 
     static void paintLand(Graphics2D gg)
     {
+        /*
         gg.setColor(Color.RED);
         gg.drawImage(Images.land,0,0,w,getH(Images.land,w),null);
         int lh = getH(Images.land,w);
         y0 = (int)(h/2 - (double)(lh)/20 - lh/2);
-
         Product p = new Product();
         p.x = 6;
         p.y = 6;
@@ -76,6 +91,8 @@ public class Canvas extends JComponent{
         p.x = 6;
         p.y = 0;
         gg.drawOval(p.xScale()-10,p.yScale()-10,20,20);
+        Well.getInstance().wellGraphics.jPanel.repaint();
+        */
     }
 
     static void paintDomestics(Graphics2D gg)
@@ -189,7 +206,6 @@ public class Canvas extends JComponent{
     {
         return (int) ((double)image.getHeight()/(double)image.getWidth() * w );
     }
-
     static int getW(BufferedImage image, int h)
     {
         return (int) ((double)image.getWidth()/(double)image.getHeight() * h );

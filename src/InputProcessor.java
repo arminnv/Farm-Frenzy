@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
@@ -113,5 +114,4 @@ public class InputProcessor {
     {
         return (((double)Canvas.h/2-(double)Y+40)/(double)Canvas.landH + 0.5)*6;
     }
-
 }

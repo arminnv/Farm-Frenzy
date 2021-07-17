@@ -10,44 +10,23 @@ public class Wild extends Animal{
     int leftCages;
     double t = 1;
     boolean consecutiveCageOrder;
-    Wild(String name, int price, int step, int space, int cages, int leftCages){
-        super(name,price,step,space);
+    Wild(String name, int price, int step, int space, int cages, int leftCages, int h, int w){
+        super(name,price,step,space,h,w);
         this.cages=cages;
         this.leftCages=leftCages;
         this.consecutiveCageOrder=false;
         t = 1;
-        if(name.equals("lion"))
-        {
-            h = 80;
-        }
-        else if(name.equals("bear"))
-        {
-            h = 90;
-        }
-        if(name.equals("tiger"))
-        {
-            h = 60;
-        }
-        h = w;
     }
     Wild(){}
     static Wild createWild(String name)
     {
         name = name.toLowerCase();
         if(name.equals("lion"))
-        {
-            return new Wild("lion",300,1,15,3,3);
-        }
+            return new Wild("lion",300,1,15,3,3,80,80);
         else if(name.equals("bear"))
-        {
-
-            return new Wild("bear",400,1,15,4,4);
-        }
+            return new Wild("bear",400,1,15,4,4,90,90);
         else if(name.equals("tiger"))
-        {
-            return new Wild("tiger",500,2,15,4,4);
-
-        }
+            return new Wild("tiger",500,2,15,4,4,60,60);
         return new Wild();
     }
 
@@ -70,7 +49,7 @@ public class Wild extends Animal{
             if(type.equals("tiger"))
                 d= randomD(d);
             else
-            d = randomDirection();
+                d = randomDirection();
             t=1;
         }
 
@@ -181,7 +160,6 @@ public class Wild extends Animal{
             Wild.list.remove(wild);
         }
     }
-
     @Override
     boolean intRange(double X, double Y)
     {

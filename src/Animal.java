@@ -21,7 +21,7 @@ public abstract class Animal {
     int d = Animal.randomDirection();
     static Random rand = new Random();
     Animal(){}
-    public Animal(String type, int price, int step, int space){
+    public Animal(String type, int price, int step, int space, int h, int w){
         this.x=random();
         this.y=random();
         this.type=type;
@@ -29,8 +29,8 @@ public abstract class Animal {
         this.step=step;
         this.price=price;
         this.dx = (double) (step) * Time.dt;
-        w = 60;
-        h = w;
+        this.w = w;
+        this.h = h;
     }
     static double random()
     {
@@ -84,7 +84,7 @@ public abstract class Animal {
         int r = d;
         while(r==d)
         {
-        r= Animal.randomDirection();
+            r= Animal.randomDirection();
         }
         return r;
     }

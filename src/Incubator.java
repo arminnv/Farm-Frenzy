@@ -1,6 +1,8 @@
+import java.awt.image.BufferedImage;
+
 public abstract class Incubator extends Factory{
-    Incubator(String name, String validType,String outputType,int buildingCost, int productionDefaultDuration, boolean addToList){
-        super(name, validType, outputType, buildingCost, productionDefaultDuration, addToList);
+    Incubator(String name, String validType, String outputType, int buildingCost, int productionDefaultDuration, int x, int y, BufferedImage image, boolean alignment, boolean addToList){
+        super(name, validType, outputType, buildingCost, productionDefaultDuration, x, y, image, alignment, addToList);
     }
     public void update(){
         if (productionDuration>0){

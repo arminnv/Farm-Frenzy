@@ -6,10 +6,8 @@ public class Hound extends Animal{
 
     Hound()
     {
-        super("hound",100,1,1);
+        super("hound",100,1,1,60,60);
         this.addToMap();
-        w = 60;
-        h = w;
         number= animalIDNumHashMap.get("hound");
     }
 

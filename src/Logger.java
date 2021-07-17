@@ -28,7 +28,7 @@ public class Logger {
             tag = "[Info], ";
 
         st = tag + getDate() + ", " + st;
-        /*try
+        try
         {
             FileReader reader = new FileReader(logFile);
             Scanner sc = new Scanner(reader);
@@ -66,7 +66,7 @@ public class Logger {
         catch (IOException e)
         {
             System.out.println("error");
-        }*/
+        }
     }
 
     /*static void write(char ch, String st)

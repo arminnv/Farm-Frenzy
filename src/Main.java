@@ -1,15 +1,18 @@
 public class Main {
     public static void main(String[] args)
     {
-        Canvas canvas = new Canvas();
-        canvas.setFrame();
+        //Canvas canvas = new Canvas();
+        //canvas.setFrame();
+        Images.load();
         Mission.write();
         User.load();
         Mission.load();
-        Menu.game = true;
-        User.current = User.list.get(0);
-        Game.run(Mission.list.get(0));
-        Menu.enter();
+        //Menu.game = true;
+        //User.current = User.list.get(0);
+        //Game.run(Mission.list.get(0));
+        //TODO
+        TruckMenu.getMenuInstance().setVisible(true);
+        //Menu.getLoginMenuInstance().setVisible(true);
 
     }
 }

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class User {
 
-    static ArrayList<User> list = new ArrayList<>();
+    public static ArrayList<User> list = new ArrayList<>();
 
     static User current;
     String userName;
@@ -58,68 +58,31 @@ public class User {
                 if(User.list.get(i).password.equals(password))
                 {
                     User.current = User.list.get(i);
-                    System.out.println("login successful");
+                    Menu.showMessage('i',"Login was successful");
                     Logger.write('i',"login successful");
                     return User.list.get(i);
                 }
                 else
                 {
+                    Menu.showMessage('e',"Incorrect password");
                     System.out.println("wrong password");
                     Logger.write('e',"wrong password");
                     return null;
                 }
             }
         }
-        System.out.println("username not found");
+        Menu.showMessage('e',"Username was not found");
         Logger.write('e',"username not found");
         return null;
     }
-
-    static User signup(String name, String password)
-    {
-        User newUser = new User(name, password);
-        if(!User.list.contains(newUser))
-            list.add(newUser);
-        else
-        {
-            System.out.println("username already exists");
-            Logger.write('e',"username already exists");
-            return null;
+    public static int indexOf(String username){
+        for (User user:list){
+            if (username.equals(user.userName))
+                return list.indexOf(user);
         }
-        //omit start
-        String st = "";
-        /*
-        try
-        {
-            FileReader reader = new FileReader("users.txt");
-            Scanner sc = new Scanner(reader);
-            while (sc.hasNextLine())
-            {
-                st += sc.nextLine();
-            }
-            reader.close();
-        }
-        catch (IOException e)
-        {}
-        //omit end
-         */
-        try
-        {
-            FileWriter writer = new FileWriter("users.txt",true);//new FileWriter("users.txt",true);
-            String json = new Gson().toJson(newUser);
-            writer.write(st + json + "*\n");
-            writer.close();
-        }
-        catch (IOException e)
-        {
-            System.out.println("error");
-            Logger.write('e',"error");
-        }
-        User.current = newUser;
-        System.out.println("signup successful");
-        Logger.write('i', "signup successful");
-        return newUser;
+        return -1;
     }
+
 
     static void levelUp(User user)
     {

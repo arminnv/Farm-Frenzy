@@ -1,3 +1,4 @@
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -15,7 +16,8 @@ public abstract class Factory {
     String validType;
     String outputType;
     int underProduction;
-    protected Factory(String name, String validType,String outputType,int buildingCost, int productionDefaultDuration, boolean addToList){
+    FactoryWellGraphics factoryGraphics;
+    protected Factory(String name, String validType, String outputType, int buildingCost, int productionDefaultDuration, int x, int y, BufferedImage image, boolean alignment,boolean addToList){
         this.name=name;
         this.outputType=outputType;
         this.validType=validType;
@@ -26,6 +28,7 @@ public abstract class Factory {
         underProduction=0;
         level=1;
         maxAllowedLevel=2;
+        factoryGraphics=new FactoryWellGraphics(4.0,x,y,true,image,alignment);
         if (addToList)
             factories.add(this);
     }
@@ -131,5 +134,8 @@ public abstract class Factory {
         }
         System.out.println("Factory name is invalid");
         Logger.write('e',"Factory name is invalid");
+    }
+    private static void createJpanel(){
+
     }
 }

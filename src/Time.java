@@ -7,6 +7,7 @@ public class Time {
         for(int i=0; i<n; i++) {
             update();
         }
+        Game.myClock.getLocalTime();
     }
 
     static void update() {
@@ -24,7 +25,8 @@ public class Time {
         removeCage();
         Well.getInstance().fillingProcess();
         Plant.warn();
-        Output.show();
+        Game.myClock.setTimeLabel();
+        //Output.show();
     }
 
     static void walk()
@@ -79,8 +81,8 @@ public class Time {
             {
                 if(wild.t<0)
                 {
-                wild.leftCages++;
-                wild.t=1;
+                    wild.leftCages++;
+                    wild.t=1;
                 }
                 else
                 {
