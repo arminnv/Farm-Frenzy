@@ -1,7 +1,7 @@
 import java.awt.image.BufferedImage;
 
 public abstract class Incubator extends Factory{
-    protected Incubator(String name, String validType, String outputType, int buildingCost, int productionDefaultDuration, BufferedImage image, boolean alignment, boolean addToList){
+    protected Incubator(String name, String validType, String outputType, int buildingCost, int productionDefaultDuration, BufferedImage[] image, boolean alignment, boolean addToList){
         super(name, validType, outputType, buildingCost, productionDefaultDuration, image, alignment, addToList);
     }
     public void update(){

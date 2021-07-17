@@ -21,7 +21,7 @@ public abstract class Factory {
     String outputType;
     int underProduction;
     FactoryWellGraphics factoryGraphics;
-    protected Factory(String name, String validType, String outputType, int buildingCost, int productionDefaultDuration,  BufferedImage image, boolean alignment,boolean addToList){
+    protected Factory(String name, String validType, String outputType, int buildingCost, int productionDefaultDuration,  BufferedImage[] image, boolean alignment,boolean addToList){
         this.name=name;
         this.outputType=outputType;
         this.validType=validType;
@@ -87,6 +87,7 @@ public abstract class Factory {
         if ( (Game.getCoins()>upgradeCost)&&(level+1<=maxAllowedLevel) ){
             Game.addCoins(-upgradeCost);
             level++;
+            factoryGraphics.setMainImage(level);
             if (level==maxAllowedLevel)
                 factoryGraphics.setUpgrade(false);
             Logger.write('i',"Factory "+name+" was upgraded to level "+level);

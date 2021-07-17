@@ -17,6 +17,7 @@ public class Canvas extends JComponent{
     static int landH = 400;
     static JFrame frame = new JFrame("Farm Frenzy");
     JPanel mousePanel=new JPanel();
+    JButton pause=new JButton();
     static int y0 ;
     ArrayList<JButton> jButtons=new ArrayList<>();
     ArrayList<JButton> factoryButtons=new ArrayList<>();
@@ -111,9 +112,18 @@ public class Canvas extends JComponent{
 
 
 
+        pause.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Game.myClock.setPaused(true);
+                Time.setIsPaused(true);
+                Menu.getPauseMenuInstance().setVisible(true);
+            }
+        });
 
-
-
+        pause.setBounds(600,700,40,40);
+        container.add(pause);
+        container.add(Warehouse.getInstance().jButton);
         container.add(jButton);
         container.add(mousePanel);
         container.add(Game.myClock.timeLabel);
@@ -144,8 +154,10 @@ public class Canvas extends JComponent{
 
         if(Menu.game) {
             paintLand(gg);
+            this.pause.repaint();
             Well.getInstance().wellGraphics.jPanel.repaint();
             Truck.getInstance().jButton.repaint();
+            Warehouse.getInstance().jButton.repaint();
             paintGrass(gg);
             paintDomestics(gg);
             paintProducts(gg);
@@ -225,19 +237,21 @@ public class Canvas extends JComponent{
         {
             Wild wild = Wild.list.get(i);
             BufferedImage image = null;
-            if(wild.type.equals("lion"))
-            {
+            if(wild.type.equals("lion")) {
                 image = Images.lion[wild.state];
             }
-            else if(wild.type.equals("bear"))
-            {
+            else if(wild.type.equals("bear")) {
                 image = Images.bear[wild.state];
             }
-            else if(wild.type.equals("tiger"))
-            {
+            else if(wild.type.equals("tiger")) {
                 image = Images.tiger[wild.state];
             }
             gg.drawImage(image,wild.xScale(),wild.yScale(),wild.w,wild.h,null);
+            BufferedImage image1;
+            if (wild.leftCages<wild.cages){
+                image1=wild.images[wild.leftCages];
+                gg.drawImage(image1,wild.xScale(),wild.yScale(),wild.w,wild.h,null);
+            }
         }
     }
 

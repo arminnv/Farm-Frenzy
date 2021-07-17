@@ -1,6 +1,6 @@
 public class Main {
     public static boolean ifRun=false;
-    public static int num=0;
+    public static int level=1;
     public static void main(String[] args)
     {
         Images.load();
@@ -13,7 +13,7 @@ public class Main {
             while (!ifRun) {
                 System.out.print("");
             }
-            Game.run(Mission.list.get(0));
+            Game.run(Mission.list.get(level-1));
         }
     }
 }

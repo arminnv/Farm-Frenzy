@@ -13,6 +13,7 @@ public class Menu {
     static boolean game = false;
     public static JDialog loginMenu;
     public static JDialog mainMenu;
+    public static JDialog pauseMenu;
     private static int login;
     public static JDialog getLoginMenuInstance(){
         if (loginMenu==null) {
@@ -104,8 +105,11 @@ public class Menu {
             mainMenu.setLayout(layoutManager);
             JButton exit=new JButton("Exit");
             JButton logout=new JButton("Log out");
-            int menuH=400;
-            int menuW=630;
+            int menuH=800;
+            int menuW=1000;
+            JLabel jLabel=new JLabel();
+            jLabel.setBounds(0,0,menuW,menuH);
+            jLabel.setIcon(FactoryWellGraphics.resizeIcon(new ImageIcon(Images.main_back),1000,800));
             ArrayList<JButton> jButtons=new ArrayList<>();
             for (int i=0;i<Mission.list.size();i++){
                 JButton b=new JButton(String.valueOf(i+1));
@@ -118,7 +122,7 @@ public class Menu {
                         if(User.current.unlockedLevels >= level) {
                             game = true;
                             mainMenu.setVisible(false);
-                            //TODO
+                            Main.level=level;
                             Menu.game=true;
                             Main.ifRun=true;
                         }
@@ -127,8 +131,7 @@ public class Menu {
 
                     }
                 });
-                //TODO
-                b.setBounds(10+50*i,10,50,30);
+                b.setBounds(menuW/7+150*i,menuH/3,100,60);
                 jButtons.add(b);
                 container.add(b);
             }
@@ -148,14 +151,81 @@ public class Menu {
                     loginMenu.setVisible(true);
                 }
             });
-            exit.setBounds(10,60,80,30);
-            logout.setBounds(100,60,80,30);
+            exit.setBounds(menuW/2-250,menuH/2,80,50);
+            logout.setBounds(menuW/2+150,menuH/2,80,50);
 
             container.add(exit);
             container.add(logout);
+            container.add(jLabel);
             mainMenu.setSize(menuW,menuH);
         }
         return mainMenu;
+    }
+    public static JDialog getPauseMenuInstance(){
+        if (pauseMenu==null) {
+            int w=200;
+            int h=550;
+            pauseMenu = new JDialog();
+            pauseMenu.setTitle("");
+            pauseMenu.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+            Container container = pauseMenu.getContentPane();
+            LayoutManager layoutManager = new GroupLayout(container);
+            pauseMenu.setLayout(layoutManager);
+            container.setBackground(Color.orange);
+
+            JButton myContinue=new JButton("Continue");
+            JButton map=new JButton("Map");
+            JButton restart=new JButton("Restart");
+            JButton logout=new JButton("Log out");
+            JButton exit=new JButton("Exit");
+
+            myContinue.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    Game.myClock.setPaused(false);
+                    pauseMenu.setVisible(false);
+                    Time.setIsPaused(false);
+                }
+            });
+            restart.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    //TODO
+                }
+            });
+            map.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    //TODO
+                }
+            });
+            logout.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    //TODO
+                }
+            });
+            exit.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    //TODO
+                    System.exit(0);
+                }
+            });
+            pauseMenu.setSize(w,h);
+            myContinue.setBounds(45,45,100,50);
+            restart.setBounds(45,130,100,50);
+            map.setBounds(45,225,100,50);
+            logout.setBounds(45,320,100,50);
+            exit.setBounds(45,415,100,50);
+
+            container.add(myContinue);
+            container.add(restart);
+            container.add(map);
+            container.add(logout);
+            container.add(exit);
+        }
+        return pauseMenu;
     }
     public static void showMessage(char c,String message){
         String s="";

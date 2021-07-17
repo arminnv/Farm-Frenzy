@@ -20,13 +20,13 @@ public class FactoryWellGraphics {
     JButton upgrade;
     JProgressBar jProgressBar;
     JButton mainButton;
-    BufferedImage image;
+    BufferedImage[] images;
     boolean upgradable;
     double scale;
-    FactoryWellGraphics(double scale,boolean upgradable,BufferedImage image, boolean alignment){
+    FactoryWellGraphics(double scale,boolean upgradable,BufferedImage[] images, boolean alignment){
         this.scale=scale;
         this.upgradable=upgradable;
-        this.image=image;
+        this.images=images;
         jPanel=new JPanel();
         jPanel.setOpaque(false);
         //jPanel.setBackground(new Color(1,0,0,0));
@@ -46,7 +46,7 @@ public class FactoryWellGraphics {
         mainButton.setContentAreaFilled(false);
         //TODO
         mainButton.setBorderPainted(true);
-        mainButton.setIcon( resizeIcon(new ImageIcon(image),Scale(scale,IMAGE_SCALE),Scale(scale,IMAGE_SCALE)) );
+        mainButton.setIcon( resizeIcon(new ImageIcon(images[0]),Scale(scale,IMAGE_SCALE),Scale(scale,IMAGE_SCALE)) );
 
 
 
@@ -89,5 +89,8 @@ public class FactoryWellGraphics {
                 this.jPanel.add(upgrade);
             this.upgradable=upgradable;
         }
+    }
+    public void setMainImage(int level){
+        mainButton.setIcon( resizeIcon(new ImageIcon(images[level-1]),Scale(scale,IMAGE_SCALE),Scale(scale,IMAGE_SCALE)) );
     }
 }

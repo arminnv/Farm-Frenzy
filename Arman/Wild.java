@@ -1,3 +1,4 @@
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -10,9 +11,14 @@ public class Wild extends Animal{
     int leftCages;
     double t = 1;
     boolean consecutiveCageOrder;
+    BufferedImage[] images;
     private Wild(String name, int price, int step, int space, int cages, int leftCages, int h, int w){
         super(name,price,step,space,h,w);
         this.cages=cages;
+        images=new BufferedImage[cages];
+        for (int i=0;(i<cages)&&(i<4);i++){
+            images[i]=Images.cage[i];
+        }
         this.leftCages=leftCages;
         this.consecutiveCageOrder=false;
         t = 1;

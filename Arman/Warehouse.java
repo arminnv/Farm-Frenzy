@@ -1,3 +1,6 @@
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -7,8 +10,23 @@ public class Warehouse {
     int occupied;
     ArrayList<Product> products=new ArrayList<>();
     public HashMap<String,Integer> productIntegerHashMap=new HashMap<>();
+    JButton jButton;
     Warehouse(){
         capacity=30;
+        jButton=new JButton();
+        jButton.setBounds(410,640,120,100);
+        jButton.setOpaque(true);
+        jButton.setContentAreaFilled(true);
+        //jButton.setBackground(new Color(0,0,0,1));
+        jButton.setIcon(FactoryWellGraphics.resizeIcon(new ImageIcon(Images.warehouse),120,100));
+        jButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Game.myClock.setPaused(true);
+                Time.setIsPaused(true);
+                TruckMenu.getMenuInstance().setVisible(true);
+            }
+        });
     }
 
     public static Warehouse getInstance() {
