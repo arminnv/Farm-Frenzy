@@ -73,6 +73,11 @@ public class Canvas extends JComponent{
                 }
             });
             //TODO
+            /*
+            ImageIcon icon=new ImageIcon(Images.getAnimalImage(s));
+            b.setIcon(FactoryWellGraphics.resizeIcon(icon,100,50));
+             */
+            //b.setIcon(new ImageIcon(Images.getAnimalImage(s)));
             b.setBounds(10+100*i,10,100,50);
             jButtons.add(b);
             container.add(b);
@@ -80,7 +85,7 @@ public class Canvas extends JComponent{
         factoryButtons=new ArrayList<>();
         for (int i=0;i<Factory.nameList.length;i++){
             String s=Factory.nameList[i];
-            JButton b=new JButton(s);
+            JButton b=new JButton();
             b.setName(s);
             b.addActionListener(new ActionListener() {
                 @Override
@@ -104,6 +109,9 @@ public class Canvas extends JComponent{
             if (i>3)
                 y=170+(i-4)*160;
             b.setBounds(x,y,50,50);
+            ImageIcon icon=new ImageIcon(Images.getFactoryImage(s));
+            b.setIcon(FactoryWellGraphics.resizeIcon(icon,50,50));
+
             factoryButtons.add(b);
             container.add(b);
         }

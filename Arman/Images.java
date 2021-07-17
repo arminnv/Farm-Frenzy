@@ -19,8 +19,11 @@ import java.io.IOException;
     static BufferedImage[] bear = new BufferedImage[5];
     static BufferedImage[] tiger = new BufferedImage[5];
 
-       static BufferedImage[] cage = new BufferedImage[4];
+    static BufferedImage[] cage = new BufferedImage[4];
+
     static BufferedImage main_back;
+    static BufferedImage login_back;
+
     static BufferedImage egg;
     static BufferedImage feather;
     static BufferedImage milk;
@@ -53,7 +56,10 @@ import java.io.IOException;
         try
         {
             main_back=ImageIO.read(new File("mainb.jpg"));
+            login_back=ImageIO.read(new File("login_back.jpg"));
+
             warehouse=ImageIO.read(new File("warehouse.png"));
+
             //chicken[0] = ImageIO.read(new File("domestic/chicken/eat.png"));
             chicken[1] = ImageIO.read(new File("domestic/chicken/right.png"));
             chicken[2] = ImageIO.read(new File("domestic/chicken/down.png"));
@@ -142,5 +148,27 @@ import java.io.IOException;
         catch (IOException e){
             System.out.println("error loading images");
         }
+    }
+    public static BufferedImage getFactoryImage(String s){
+        return switch (s) {
+            case "weaver" -> weaver[0];
+            case "sewing factory" -> sewing[0];
+            case "bakery" -> bakery[0];
+            case "ice cream factory" -> iceCreamFactory[0];
+            case "hen incubator" -> incubator[0];
+            case "mill" -> mill[0];
+            case "milk packaging factory" -> milkPacking[0];
+            default -> null;
+        };
+    }
+    public static BufferedImage getAnimalImage(String s){
+        return switch (s) {
+            case "chicken" -> chicken[1];
+            case "turkey" -> turkey[1];
+            case "hound" -> hound[1];
+            case "cat" -> cat[1];
+            case "buffalo" -> buffalo[1];
+            default -> null;
+        };
     }
 }

@@ -17,6 +17,8 @@ public class Menu {
     private static int login;
     public static JDialog getLoginMenuInstance(){
         if (loginMenu==null) {
+            int h=510;
+            int w=809;
             loginMenu = new JDialog();
             loginMenu.setTitle("Login");
             loginMenu.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -27,11 +29,15 @@ public class Menu {
             JButton signup=new JButton("Sign up");
             JButton login=new JButton("Login");
             JButton exit=new JButton("Exit");
+            JLabel jLabel=new JLabel();
 
+            jLabel.setIcon(FactoryWellGraphics.resizeIcon(new ImageIcon(Images.login_back),800,400));
+            jLabel.setBounds(0,0,800,400);
+            jLabel.setAlignmentY(0);
             //login.setIcon( FactoryWellGraphics.resizeIcon(new ImageIcon(Images.bakery),100,50) );
-            signup.setBounds(10,10,100,50);
-            login.setBounds(160,10,100,50);
-            exit.setBounds(310,10,100,50);
+            signup.setBounds(w/2-220,410,100,50);
+            login.setBounds(w/2+150-220,410,100,50);
+            exit.setBounds(w/2+300-220,410,100,50);
             login.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -86,10 +92,11 @@ public class Menu {
                     System.exit(0);
                 }
             });
-            loginMenu.setSize(430,110);
+            loginMenu.setSize(w,h);
             container.add(signup);
             container.add(login);
             container.add(exit);
+            container.add(jLabel);
             //TODO
         }
         return loginMenu;

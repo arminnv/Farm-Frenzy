@@ -12,6 +12,7 @@ public abstract class Incubator extends Factory{
         if (productionDuration<=0){
             for(int i=0;i<underProduction;i++){
                 Domestic domestic=Domestic.newDomestic(outputType,true);
+                Domestic.list.add(domestic);
                 Logger.write('i',this.name+ " produced "+domestic.type);
             }
             underProduction=0;

@@ -62,7 +62,7 @@ public class Domestic extends Animal{
             return;
         }
 
-        Domestic newDomestic = newDomestic(name,true);
+        Domestic newDomestic = newDomestic(name,false);
         if(newDomestic.type.equals(""))
         {
             System.out.println("animal type not found");
@@ -72,6 +72,7 @@ public class Domestic extends Animal{
 
         if(newDomestic.price <= Game.getCoins())
         {
+            newDomestic = newDomestic(name,true);
             Game.addCoins(-newDomestic.price);
             Domestic.list.add(newDomestic);
             Task.claim(newDomestic.type);
