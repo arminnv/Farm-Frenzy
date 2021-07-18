@@ -1,6 +1,8 @@
 import com.google.gson.Gson;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumnModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,6 +16,8 @@ public class Menu {
     public static JDialog loginMenu;
     public static JDialog mainMenu;
     public static JDialog pauseMenu;
+    public static JFrame taskMenu;
+    public static JTable tasks;
     private static int login;
     public static JDialog getLoginMenuInstance(){
         if (loginMenu==null) {
@@ -233,6 +237,60 @@ public class Menu {
             container.add(exit);
         }
         return pauseMenu;
+    }
+    public static JFrame getTaskMenuInstance(){
+        int w=1000;
+        int h=300;
+        if (taskMenu==null){
+            taskMenu=new JFrame("Tasks");
+            taskMenu.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+            tasks=new JTable();
+            JScrollPane jScrollPane=new JScrollPane(tasks);
+            tasks.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
+            Container container = taskMenu.getContentPane();
+            LayoutManager layoutManager = new GroupLayout(container);
+            taskMenu.setLayout(layoutManager);
+            container.setBackground(Color.orange);
+            JButton myContinue=new JButton("Continue");
+            myContinue.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    Game.myClock.setPaused(false);
+                    taskMenu.setVisible(false);
+                    Time.setIsPaused(false);
+                }
+            });
+            jScrollPane.setBounds(0,0,w-10,100);
+            myContinue.setBounds(w/2-70,200,100,50);
+            container.add(myContinue);
+            container.add(jScrollPane);
+            taskMenu.setSize(w,h);
+
+
+        }
+        showTasksTable(tasks);
+        return taskMenu;
+    }
+    public static void showTasksTable(JTable jTable){
+
+        jTable.removeAll();
+        jTable.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
+        jTable.setColumnSelectionAllowed(false);
+        jTable.setModel(new DefaultTableModel(0,Task.list.size()+1));
+        DefaultTableModel model=(DefaultTableModel) jTable.getModel();
+        TableColumnModel columnModel=jTable.getColumnModel();
+        Object[] completed=new Object[Task.list.size()+1];
+        Object[] goals=new Object[Task.list.size()+1];
+        completed[0]="Completed";
+        goals[0]="Goal";
+        columnModel.getColumn(0).setHeaderValue("Task name");
+        for (int i=0;i<Task.list.size();i++){
+            columnModel.getColumn(i+1).setHeaderValue(Task.list.get(i).name);
+            completed[i+1]=Task.list.get(i).claimed;
+            goals[i+1]=Task.list.get(i).goal;
+        }
+        model.addRow(completed);
+        model.addRow(goals);
     }
     public static void showMessage(char c,String message){
         String s="";

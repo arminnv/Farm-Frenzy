@@ -18,6 +18,7 @@ public class Canvas extends JComponent{
     static JFrame frame = new JFrame("Farm Frenzy");
     JPanel mousePanel=new JPanel();
     JButton pause=new JButton();
+    JButton tasks=new JButton("Tasks");
     static int y0 ;
     ArrayList<JButton> jButtons=new ArrayList<>();
     ArrayList<JButton> factoryButtons=new ArrayList<>();
@@ -115,8 +116,14 @@ public class Canvas extends JComponent{
             factoryButtons.add(b);
             container.add(b);
         }
-
-
+        tasks.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Game.myClock.setPaused(true);
+                Time.setIsPaused(true);
+                Menu.getTaskMenuInstance().setVisible(true);
+            }
+        });
 
 
 
@@ -128,8 +135,9 @@ public class Canvas extends JComponent{
                 Menu.getPauseMenuInstance().setVisible(true);
             }
         });
-
-        pause.setBounds(600,700,40,40);
+        tasks.setBounds(700,670,100,40);
+        pause.setBounds(600,670,60,60);
+        container.add(tasks);
         container.add(pause);
         container.add(Warehouse.getInstance().jButton);
         container.add(jButton);
@@ -163,6 +171,7 @@ public class Canvas extends JComponent{
         if(Menu.game) {
             paintLand(gg);
             this.pause.repaint();
+            this.tasks.repaint();
             Well.getInstance().wellGraphics.jPanel.repaint();
             Truck.getInstance().jButton.repaint();
             Warehouse.getInstance().jButton.repaint();
