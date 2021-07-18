@@ -1,3 +1,5 @@
+import java.time.Duration;
+
 public class Main {
     public static boolean ifRun=false;
     public static boolean ifMap=false;

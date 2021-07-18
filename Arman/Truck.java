@@ -8,7 +8,8 @@ public class Truck {
     private static Truck t;
     public static final int MAX_CAPACITY=15;
     public static final int TOTAL_DURATION=10;
-    int timeLeft;
+    double timeLeft;
+    double relativeX=0;
     int capacity;
     boolean loaded;
     int money;
@@ -187,6 +188,6 @@ public class Truck {
             money=0;
             return;
         }
-        timeLeft--;
+        timeLeft-=Time.dt;
     }
 }
