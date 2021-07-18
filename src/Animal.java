@@ -1,11 +1,13 @@
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
+import java.util.Set;
 
 public abstract class Animal {
     static HashMap<String,Integer> animalIDNumHashMap =new HashMap<>();//non wild
     static HashMap<String,Integer> animalCount =new HashMap<>();//non wild
-
+    static final String[] purchasable={"chicken","turkey","buffalo","cat","hound"};
     String type = "";
     int number;
     double x;
@@ -18,10 +20,20 @@ public abstract class Animal {
     int w;
     int h;
     double t = 1;
+    double t0 = 0;
+    Frame frame;
     int d = Animal.randomDirection();
     static Random rand = new Random();
+    public static void deleteAnimals(){
+        animalCount=new HashMap<>();
+        animalIDNumHashMap=new HashMap<>();
+        Domestic.list=new ArrayList<>();
+        Wild.list=new ArrayList<>();
+        Hound.list=new ArrayList<>();
+        Cat.list=new ArrayList<>();
+    }
     Animal(){}
-    public Animal(String type, int price, int step, int space, int h, int w){
+    protected Animal(String type, int price, int step, int space, int h, int w){
         this.x=random();
         this.y=random();
         this.type=type;
@@ -31,6 +43,7 @@ public abstract class Animal {
         this.dx = (double) (step) * Time.dt;
         this.w = w;
         this.h = h;
+        state=1;
     }
     static double random()
     {

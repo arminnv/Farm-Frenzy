@@ -38,13 +38,13 @@ public class InputProcessor {
         }
         else if (input.matches(work)){
             input=input.replaceAll("(?i)work ","");
-            Factory.produce(input.toLowerCase(Locale.ROOT),1);
+            //Factory.produce(input.toLowerCase(Locale.ROOT),1);
         }
         else if (input.matches(workNumber)){
             input=input.replaceAll("(?i)work ","");
             a=input.split("\\D");
             System.out.println(Arrays.toString(a));
-            Factory.produce(a[1].toLowerCase(Locale.ROOT),Integer.parseInt(a[0]));
+            //Factory.produce(a[1].toLowerCase(Locale.ROOT),Integer.parseInt(a[0]));
         }
         else if (input.matches(cage)){
             Wild.cage(Integer.parseInt(a[1]),Integer.parseInt(a[2]));
@@ -68,7 +68,7 @@ public class InputProcessor {
         }
         else if (input.matches(buildFactory)){
             input=input.replaceAll("(?i)build ","");
-            Factory.build(input.toLowerCase(Locale.ROOT));
+            //Factory.build(input.toLowerCase(Locale.ROOT));
         }
         else if (input.matches(upgradeFactory)){
             input=input.replaceAll("(?i)upgrade ","");
@@ -79,30 +79,41 @@ public class InputProcessor {
         }
     }
 
-    static void search(int X, int Y)
-    {
-        double x = xScale(X);
-        double y = yScale(Y);
-
-        for(int i=0; i<Product.list.size(); i++)
-        {
-            Product p = Product.list.get(i);
-            if(p.intRange(x,y))
-            {
-                Product.pickup((int)p.x,(int)p.y);
-                return;
+    static void search(int X, int Y) {
+        Product p1= new Product();
+        Product p2= new Product();
+        p1.x = 0;
+        p1.y = 6;
+        p2.x = 6;
+        p2.y = 0;
+        double x = xScale(X+p1.xScale());//jpanel x0
+        double y = yScale(Y+p1.yScale());//jpanel y0
+        System.out.println(X+" "+Y);
+        System.out.println("scaled event "+x+" "+y);
+        if (true) {// (x>=p2.x)&&(x<=p1.x)&&(y>=p2.y)&&(y<= p1.y)
+            for (int i = 0; i < Wild.list.size(); i++) {
+                Wild w = Wild.list.get(i);
+                if (w.mouseIntRange(x, y)) {
+                    System.out.println(w.type+" "+w.leftCages);
+                    w.cage();
+                    System.out.println(w.type+" "+w.leftCages);
+                    return;
+                }
             }
-        }
-        for(int i=0; i<Wild.list.size(); i++)
-        {
-            Wild w = Wild.list.get(i);
-            if(w.intRange(x,y))
-            {
-                w.cage();
-                return;
+            for (int i = 0; i < Product.list.size(); i++) {
+                Product p = Product.list.get(i);
+                System.out.println("Product");
+                System.out.println(p.x+" "+p.y);
+                System.out.println("scaled "+p.xScale()+" "+p.yScale());
+                if (p.mouseIntRange(x, y)) {
+                    Product.pickup( (int)p.x,(int)  p.y);
+                    return;
+                }
             }
+            Well.getInstance().water(x, y);
+            return;
         }
-        Well.getInstance().water(x,y);
+        System.out.println("error");
     }
 
     static double xScale(int X)

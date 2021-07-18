@@ -2,10 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.time.Duration;
 import java.time.LocalTime;
-import javax.swing.*;
-import java.awt.*;
-import java.time.Duration;
-import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
 public class MyClock extends Thread{

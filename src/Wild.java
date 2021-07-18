@@ -1,3 +1,4 @@
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -10,9 +11,14 @@ public class Wild extends Animal{
     int leftCages;
     double t = 1;
     boolean consecutiveCageOrder;
-    Wild(String name, int price, int step, int space, int cages, int leftCages, int h, int w){
+    BufferedImage[] images;
+    private Wild(String name, int price, int step, int space, int cages, int leftCages, int h, int w){
         super(name,price,step,space,h,w);
         this.cages=cages;
+        images=new BufferedImage[cages];
+        for (int i=0;(i<cages)&&(i<4);i++){
+            images[i]=Images.cage[i];
+        }
         this.leftCages=leftCages;
         this.consecutiveCageOrder=false;
         t = 1;
@@ -163,9 +169,10 @@ public class Wild extends Animal{
     @Override
     boolean intRange(double X, double Y)
     {
-        if( Math.abs(x-X)<0.5 && Math.abs(y-Y)<0.5 )
-            return true;
-        else
-            return false;
+        return Math.abs(x - X) < 0.5 && Math.abs(y - Y) < 0.5;
+    }
+    boolean mouseIntRange(double X, double Y)
+    {
+        return Math.abs(x - X) < 0.7 && Math.abs(y - Y) < 0.7;
     }
 }

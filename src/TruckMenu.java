@@ -15,6 +15,7 @@ public class TruckMenu {
     private static JButton addProduct;
     private static JButton Unload;
     private static JButton UnloadAll;
+    private static JButton cancel;
     private static JLabel capacity;
     private static JLabel money;
     private static JDialog truckMenu;
@@ -70,6 +71,7 @@ public class TruckMenu {
             Unload=new JButton("Unload item");
             UnloadAll=new JButton("Unload All");
             confirm=new JButton("Confirm");
+            cancel=new JButton("Cancel");
 
             capacity=new JLabel();
             money=new JLabel();
@@ -146,6 +148,17 @@ public class TruckMenu {
                     capacity.setText(String.valueOf(Truck.getInstance().capacity));
                     money.setText(String.valueOf(Truck.getInstance().money));
                     //TODO
+                    Game.myClock.setPaused(false);
+                    Time.setIsPaused(false);
+                    truckMenu.setVisible(false);
+                }
+            });
+            cancel.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    Game.myClock.setPaused(false);
+                    truckMenu.setVisible(false);
+                    Time.setIsPaused(false);
                 }
             });
 
@@ -159,6 +172,7 @@ public class TruckMenu {
             confirm.setBounds(630,500,130,50);
             capacity.setBounds(790,500,130,50);
             money.setBounds(790,600,130,50);
+            cancel.setBounds(10,600,130,50);
 
             truckMenu.setSize(W,H);
 
@@ -173,13 +187,13 @@ public class TruckMenu {
             container.add(confirm);
             container.add(capacity);
             container.add(money);
-
-
-
-
+            container.add(cancel);
 
 
         }
+        showTable(productTable,PRODUCT);
+        showTable(animalTable,ANIMAL);
+        showTable(orderTable,ORDER);
         return truckMenu;
     }
     public static void showTable(JTable jTable,int state){
@@ -193,22 +207,44 @@ public class TruckMenu {
         columnModel.getColumn(1).setHeaderValue("Quantity");
         columnModel.getColumn(2).setHeaderValue("Price");
         jTable.repaint();
-        if ( (state==PRODUCT) ||(state==ORDER) ) {
-            for (String type : Truck.getInstance().productIntegerHashMap.keySet()) {
+        if (state==PRODUCT){
+            for (String type : Warehouse.getInstance().getProductIntegerHashMap().keySet()) {
                 Product dummy = Product.newProduct(type);
-                int a = Warehouse.getInstance().getProductIntegerHashMap().get(type) - Truck.getInstance().productIntegerHashMap.get(type);
+                int a = Warehouse.getInstance().getProductIntegerHashMap().get(type);
+                if (Truck.getInstance().productIntegerHashMap.containsKey(type))
+                    a-= Truck.getInstance().productIntegerHashMap.get(type);
+                System.out.println("Product "+a);
                 Object[] o = new Object[]{type, a, dummy.price};
                 model.addRow(o);
             }
         }
-        if ( (state==ANIMAL) ||(state==ORDER) ) {
+        else if ( state==ORDER ) {
+            for (String type : Truck.getInstance().productIntegerHashMap.keySet()) {
+                Product dummy = Product.newProduct(type);
+                int a = Truck.getInstance().productIntegerHashMap.get(type);
+                System.out.println("Order "+a);
+                Object[] o = new Object[]{type, a, dummy.price};
+                model.addRow(o);
+            }
+
             for (String name : Truck.getInstance().animalIntegerHashMap.keySet()) {
                 Animal dummy = Domestic.newDomestic(name, false);
                 if (name.equals("cat"))
                     dummy = new Cat(false);
                 else if (name.equals("hound"))
-                    dummy = new Hound();
+                    dummy = new Hound(false);
                 Object[] o = new Object[]{name, Truck.getInstance().animalIntegerHashMap.get(name), dummy.price};
+                model.addRow(o);
+            }
+        }
+        else if (state==ANIMAL){
+            for (String name : Animal.animalCount.keySet()) {
+                Animal dummy = Domestic.newDomestic(name, false);
+                if (name.equals("cat"))
+                    dummy = new Cat(false);
+                else if (name.equals("hound"))
+                    dummy = new Hound(false);
+                Object[] o = new Object[]{name, Animal.animalCount.get(name), dummy.price};
                 model.addRow(o);
             }
         }
