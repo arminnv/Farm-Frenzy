@@ -49,10 +49,11 @@ public class User {
         String url = "jdbc:mysql://localhost:3306/mydb";
         String username = "root";
         String password = "#Wh@tgoes9163";
-            Connection my = DriverManager.getConnection(url, username, password);
-            Statement stmt = my.createStatement();
+            Connection connection = DriverManager.getConnection(url, username, password);
+            Statement statement = connection.createStatement();
+            statement.executeUpdate("DELETE FROM mydb.users");
             for (int i = 0; i < User.list.size(); i++) {
-                stmt.executeUpdate("INSERT IGNORE INTO mydb.users(idusers,password,unlockedlevels,points) VALUES('"
+                statement.executeUpdate("INSERT IGNORE INTO mydb.users(idusers,password,unlockedlevels,points) VALUES('"
                         + User.list.get(i).userName + "','" + User.list.get(i).password + "'," + User.list.get(i).unlockedLevels+","+User.list.get(i).points + ")");
 
             }
@@ -62,20 +63,22 @@ public class User {
             sqlSave();
         }catch (SQLException exception) {
             exception.printStackTrace();
-            StringBuilder json = new StringBuilder();
-            try {
-                FileWriter writer = new FileWriter("users.txt", false);
-                for (User user : User.list) {
-                    json.append(new Gson().toJson(user));
-                    json.append("*\n");
-                }
-                writer.write(String.valueOf(json));
-                writer.close();
-            } catch (IOException exception1) {
-                Menu.showMessage('e', "Error in saving the new user");
-                Logger.write('e', "error");
-            }
+            Menu.showMessage('e',"Error in saving to the database");
         }
+        StringBuilder json = new StringBuilder();
+        try {
+            FileWriter writer = new FileWriter("users.txt", false);
+            for (User user : User.list) {
+                json.append(new Gson().toJson(user));
+                json.append("*\n");
+            }
+            writer.write(String.valueOf(json));
+            writer.close();
+        } catch (IOException exception1) {
+            Menu.showMessage('e', "Error in saving the new user");
+            Logger.write('e', "error");
+        }
+
     }
 
 
