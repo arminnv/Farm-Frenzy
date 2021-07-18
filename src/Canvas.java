@@ -190,8 +190,8 @@ public class Canvas extends JComponent{
             Truck.getInstance().jButton.repaint();
             Warehouse.getInstance().jButton.repaint();
             paintGrass(gg);
-            paintDomestics(gg);
             paintProducts(gg);
+            paintDomestics(gg);
             paintWilds(gg);
             paintCats(gg);
             paintHounds(gg);
@@ -245,19 +245,36 @@ public class Canvas extends JComponent{
         {
             //System.out.println("***********");
             Domestic domestic = Domestic.list.get(i);
-            BufferedImage image;
-            image = Images.land;
+            BufferedImage image = null;
             if(domestic.type.equals("chicken"))
             {
-                image = Images.chicken[domestic.state];
+                domestic.frame = new Frame(24,5);
+                domestic.frame.image = Images.chicken[domestic.state-1];
+                image = domestic.frame.getFrame(domestic);
+                domestic.w = image.getWidth();
+                domestic.h= image.getHeight();
             }
             else if(domestic.type.equals("turkey"))
             {
-                image = Images.turkey[domestic.state];
+                if(domestic.state == 2)
+                    domestic.frame = new Frame(24,6);
+                else
+                    domestic.frame = new Frame(24,4);
+                domestic.frame.image = Images.turkey[domestic.state-1];
+                image = domestic.frame.getFrame(domestic);
+                domestic.w = image.getWidth();
+                domestic.h= image.getHeight();
             }
             else if(domestic.type.equals("buffalo"))
             {
-                image = Images.buffalo[domestic.state];
+                if(domestic.state == 2||domestic.state==4)
+                    domestic.frame = new Frame(24,6);
+                else
+                    domestic.frame = new Frame(24,4);
+                domestic.frame.image = Images.buffalo[domestic.state-1];
+                image = domestic.frame.getFrame(domestic);
+                domestic.w = image.getWidth();
+                domestic.h= image.getHeight();
             }
             gg.drawImage(image,domestic.xScale(),domestic.yScale(),domestic.w,domestic.h,null);
             //gg.drawImage(image,(int)(100*domestic.x),(int)(100*domestic.y),domestic.w,domestic.h,null);
@@ -270,21 +287,39 @@ public class Canvas extends JComponent{
         {
             Wild wild = Wild.list.get(i);
             BufferedImage image = null;
-            if(wild.type.equals("lion")) {
-                image = Images.lion[wild.state];
+            if(wild.type.equals("lion"))
+            {
+                if(wild.state == 2)
+                    wild.frame = new Frame(24,5);
+                else if(wild.state == 4)
+                    wild.frame = new Frame(24,6);
+                else
+                    wild.frame = new Frame(24,3);
+                wild.frame.image = Images.lion[wild.state-1];
+                image = wild.frame.getFrame(wild);
+                wild.w = image.getWidth();
+                wild.h= image.getHeight();
             }
-            else if(wild.type.equals("bear")) {
-                image = Images.bear[wild.state];
+            else if(wild.type.equals("bear"))
+            {
+                wild.frame = new Frame(24,4);
+                wild.frame.image = Images.bear[wild.state-1];
+                image = wild.frame.getFrame(wild);
+                wild.w = image.getWidth();
+                wild.h= image.getHeight();
             }
-            else if(wild.type.equals("tiger")) {
-                image = Images.tiger[wild.state];
+            else if(wild.type.equals("tiger"))
+            {
+                if(wild.state == 2||wild.state==4)
+                    wild.frame = new Frame(24,5);
+                else
+                    wild.frame = new Frame(24,4);
+                wild.frame.image = Images.tiger[wild.state-1];
+                image = wild.frame.getFrame(wild);
+                wild.w = image.getWidth();
+                wild.h= image.getHeight();
             }
             gg.drawImage(image,wild.xScale(),wild.yScale(),wild.w,wild.h,null);
-            BufferedImage image1;
-            if (wild.leftCages<wild.cages){
-                image1=wild.images[wild.leftCages];
-                gg.drawImage(image1,wild.xScale(),wild.yScale(),wild.w,wild.h,null);
-            }
         }
     }
 
@@ -293,8 +328,15 @@ public class Canvas extends JComponent{
         for (int i=0; i<Cat.list.size(); i++)
         {
             Cat cat = Cat.list.get(i);
-            BufferedImage image = Images.cat[cat.state];
-
+            BufferedImage image;
+            if(cat.state == 2||cat.state==4)
+                cat.frame = new Frame(24,6);
+            else
+                cat.frame = new Frame(24,4);
+            cat.frame.image = Images.cat[cat.state-1];
+            image = cat.frame.getFrame(cat);
+            cat.w = image.getWidth();
+            cat.h= image.getHeight();
             gg.drawImage(image,cat.xScale(),cat.yScale(),cat.w,cat.h,null);
         }
     }
@@ -304,8 +346,12 @@ public class Canvas extends JComponent{
         for (int i=0; i<Hound.list.size(); i++)
         {
             Hound hound = Hound.list.get(i);
-            BufferedImage image = Images.hound[hound.state];
-
+            BufferedImage image;
+            hound.frame = new Frame(24,6);
+            hound.frame.image = Images.hound[hound.state-1];
+            image = hound.frame.getFrame(hound);
+            hound.w = image.getWidth();
+            hound.h= image.getHeight();
             gg.drawImage(image,hound.xScale(),hound.yScale(),hound.w,hound.h,null);
         }
     }

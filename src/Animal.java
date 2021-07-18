@@ -16,7 +16,7 @@ public abstract class Animal {
     int step;
     int price;
     int space;
-    int state;
+    int state = 1;
     int w;
     int h;
     double t = 1;
