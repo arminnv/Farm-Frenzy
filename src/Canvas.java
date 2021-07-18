@@ -37,7 +37,7 @@ public class Canvas extends JComponent{
                     repaint();
                     revalidate();
                     Well.getInstance().wellGraphics.jPanel.repaint();
-                    try {Thread.sleep(40);} catch (Exception ex) {
+                    try {Thread.sleep(5);} catch (Exception ex) {
                         ex.printStackTrace();
                     }
                 }
@@ -222,19 +222,6 @@ public class Canvas extends JComponent{
         gg.drawImage(Images.land,0,0,w,getH(Images.land,w),null);
         int lh = getH(Images.land,w);
         y0 = (int)(h/2 - (double)(lh)/20 - lh/2);
-        Product p = new Product();
-        p.x = 6;
-        p.y = 6;
-        gg.drawOval(p.xScale()-10,p.yScale()-10,20,20);
-        p.x = 0;
-        p.y = 0;
-        gg.drawOval(p.xScale()-10,p.yScale()-10,20,20);
-        p.x = 0;
-        p.y = 6;
-        gg.drawOval(p.xScale()-10,p.yScale()-10,20,20);
-        p.x = 6;
-        p.y = 0;
-        gg.drawOval(p.xScale()-10,p.yScale()-10,20,20);
         Well.getInstance().wellGraphics.jPanel.repaint();
 
     }
@@ -318,6 +305,11 @@ public class Canvas extends JComponent{
                 image = wild.frame.getFrame(wild);
                 wild.w = image.getWidth();
                 wild.h= image.getHeight();
+            }
+            BufferedImage image1;
+            if (wild.leftCages<wild.cages){
+                image1=wild.images[wild.leftCages];
+                gg.drawImage(image1,wild.xScale(),wild.yScale(),wild.w,wild.h,null);
             }
             gg.drawImage(image,wild.xScale(),wild.yScale(),wild.w,wild.h,null);
         }

@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 public class Frame {
 
     //double t = 0;
-    double T = 0.8;
+    double T = 0.2;
     double dt = Time.dt;
     BufferedImage image;
     BufferedImage subImage;
