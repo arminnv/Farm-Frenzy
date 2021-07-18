@@ -1,5 +1,5 @@
 public class MilkPackagingFactory extends Factory{
     MilkPackagingFactory(boolean addToMap){
-        super("Milk packaging factory","Milk","Packet Milk",400,6,10 ,600,Images.milkPacking,FactoryWellGraphics.RIGHT_ALIGNMENT,addToMap);
+        super("milk packaging factory","milk","packet milk",400,6,Images.milkPacking,FactoryWellGraphics.LEFT_ALIGNMENT,addToMap);
     }
 }

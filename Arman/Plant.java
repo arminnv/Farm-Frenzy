@@ -14,4 +14,9 @@ public class Plant {
             //Logger.write('a', "No grass");
         }
     }
+    public static void deletePlants(){
+        for (int i=0; i<6; i++)
+            for (int j=0; j<6; j++)
+                Plant.num[i][j] = 0;
+    }
 }

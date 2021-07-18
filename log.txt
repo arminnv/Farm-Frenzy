@@ -1,2626 +1,3340 @@
 2021-06-19 00:05:46.396156
-Latest change by :No user exists
-2021-07-14 11:04:07
-[Info], 2021-06-20 04:17:08, login successful
+Latest change by :arman
+2021-07-18 19:31:01
 
-[Info], 2021-06-20 04:17:22, chicken has been bought
-
-[Info], 2021-06-20 04:17:25, cat has been bought
-
-[Info], 2021-06-20 04:17:30, hound has been bought
-
-[Info], 2021-06-20 04:17:54, cat loaded
-
-[Info], 2021-06-20 04:18:02, hound loaded
-
-[Info], 2021-06-20 04:18:06, truck left
-
-[Info], 2021-06-20 04:18:21, chicken produced Egg
-
-[Info], 2021-06-20 04:18:21, chicken produced Egg
-
-[Info], 2021-06-20 04:18:21, Egg got expired
-
-[Info], 2021-06-20 04:18:21, chicken produced Egg
-
-[Info], 2021-06-20 04:18:21, Egg got expired
-
-[Info], 2021-06-20 04:18:21, chicken produced Egg
-
-[Info], 2021-06-20 04:18:21, Egg got expired
-
-[Info], 2021-06-20 04:18:21, Egg got expired
-
-[Info], 2021-06-20 04:19:25, bear got caged
-
-[Info], 2021-06-20 04:19:30, bear got expired
-
-[Error], 2021-06-20 04:20:06, product not found
-
-[Info], 2021-06-20 04:22:09, login successful
-
-[Info], 2021-06-20 04:22:34, bear got caged
-
-[Info], 2021-06-20 04:22:39, bear got picked up
-
-[Info], 2021-06-20 04:22:59, truck left
-
-[Info], 2021-06-20 05:31:13, login successful
-
-[Info], 2021-06-20 05:31:35, bear got caged
-
-[Info], 2021-06-20 05:31:40, bear got picked up
-
-[Error], 2021-06-20 05:31:54, Empty truck cannot leave
-
-[Info], 2021-06-20 05:32:43, login successful
-
-[Info], 2021-06-20 05:33:03, bear got caged
-
-[Info], 2021-06-20 05:33:54, bear got picked up
-
-[Info], 2021-06-20 05:35:02, login successful
-
-[Info], 2021-06-20 05:35:19, bear got caged
-
-[Info], 2021-06-20 05:35:23, bear got picked up
-
-[Info], 2021-06-20 05:35:40, truck left
-
-[Info], 2021-06-20 05:38:24, login successful
-
-[Info], 2021-06-20 05:38:49, bear got caged
-
-[Info], 2021-06-20 05:38:54, bear got picked up
-
-[Info], 2021-06-20 05:39:10, truck left
-
-[Info], 2021-06-20 05:39:38, tiger got caged
-
-[Info], 2021-06-20 05:39:42, tiger got picked up
-
-[Error], 2021-06-20 05:39:54, Factory name is invalid
-
-[Error], 2021-06-20 05:40:01, Factory name is invalid
-
-[Error], 2021-06-20 05:40:18, Factory name is invalid
-
-[Info], 2021-06-20 05:55:14, login successful
-
-[Info], 2021-06-20 05:56:36, login successful
-
-[Info], 2021-06-20 05:56:41, Factory was built successfully
-
-[Info], 2021-06-20 05:56:45, Factory was built successfully
-
-[Info], 2021-06-20 05:56:50, Factory was built successfully
-
-[Info], 2021-06-20 05:58:53, login successful
-
-[Info], 2021-06-20 05:59:47, Factory was built successfully
-
-[Info], 2021-06-20 06:00:34, Factory was built successfully
-
-[Info], 2021-06-20 06:01:00, login successful
-
-[Info], 2021-06-20 06:01:06, Factory was built successfully
-
-[Error], 2021-06-20 06:01:12, Factory already exists
-
-[Error], 2021-06-20 06:01:18, Factory already exists
-
-[Error], 2021-06-20 06:01:51, Factory name is invalid
-
-[Info], 2021-06-20 06:01:58, Factory was built successfully
-
-[Error], 2021-06-20 06:02:04, Factory name is invalid
-
-[Error], 2021-06-20 06:02:11, Factory already exists
-
-[Info], 2021-06-20 06:03:22, login successful
-
-[Error], 2021-06-20 06:03:54, Factory name is invalid
-
-[Info], 2021-06-20 06:22:03, login successful
-
-[Info], 2021-06-20 06:22:58, login successful
-
-[Error], 2021-06-20 06:23:11, Factory name is invalid
-
-[Info], 2021-06-20 06:23:44, login successful
-
-[Info], 2021-06-20 06:26:32, login successful
-
-[Info], 2021-06-20 06:29:47, login successful
-
-[Info], 2021-06-20 06:31:11, login successful
-
-[Info], 2021-06-20 06:33:23, login successful
-
-[Info], 2021-06-20 06:35:35, login successful
-
-[Info], 2021-06-20 07:00:52, login successful
-
-[Error], 2021-06-20 07:01:05, Factory name is invalid
-
-[Info], 2021-06-20 07:01:44, login successful
-
-[Info], 2021-06-20 07:01:53, Factory was built successfully
-
-[Error], 2021-06-20 07:02:07, Factory already exists
-
-[Info], 2021-06-20 07:02:47, login successful
-
-[Info], 2021-06-20 07:02:54, Factory was built successfully
-
-[Info], 2021-06-20 07:03:03, Factoryice cream factorywas upgraded to level 2
-
-[Info], 2021-06-20 07:03:27, buffalo has been bought
-
-[Alarm], 2021-06-20 07:03:36, No grass
-
-[Alarm], 2021-06-20 07:03:36, No grass
-
-[Alarm], 2021-06-20 07:03:36, No grass
-
-[Alarm], 2021-06-20 07:03:36, No grass
-
-[Info], 2021-06-20 07:03:36, buffalo died
-
-[Alarm], 2021-06-20 07:03:36, No grass
-
-[Error], 2021-07-12 12:36:30, username not found
-
-[Info], 2021-07-12 12:36:51, login successful
-
-[Info], 2021-07-12 03:42:51, login successful
-
-[Info], 2021-07-12 03:44:10, login successful
-
-[Info], 2021-07-12 03:45:08, login successful
-
-[Info], 2021-07-12 03:46:18, login successful
-
-[Info], 2021-07-12 03:46:38, log out successful
-
-[Info], 2021-07-12 03:47:24, login successful
-
-[Info], 2021-07-12 03:47:40, log out successful
-
-[Info], 2021-07-12 03:48:23, login successful
-
-[Info], 2021-07-12 03:49:07, login successful
-
-[Info], 2021-07-12 03:49:48, login successful
-
-[Info], 2021-07-12 03:49:50, chicken has been bought
-
-[Info], 2021-07-12 03:49:50, chicken has been bought
-
-[Info], 2021-07-12 03:49:50, chicken has been bought
-
-[Info], 2021-07-12 03:49:50, chicken has been bought
-
-[Info], 2021-07-12 03:49:50, cat has been bought
-
-[Info], 2021-07-12 03:49:50, hound has been bought
-
-[Info], 2021-07-12 03:49:50, planted successfully
-
-[Info], 2021-07-12 03:49:50, planted successfully
-
-[Info], 2021-07-12 03:49:50, planted successfully
-
-[Info], 2021-07-12 03:49:50, planted successfully
-
-[Info], 2021-07-12 03:49:57, chicken produced egg
-
-[Info], 2021-07-12 03:49:57, chicken produced egg
-
-[Info], 2021-07-12 03:49:57, chicken produced egg
-
-[Info], 2021-07-12 03:49:57, chicken produced egg
-
-[Info], 2021-07-12 03:49:58, chicken died
-
-[Info], 2021-07-12 03:49:58, chicken died
-
-[Info], 2021-07-12 03:50:10, login successful
-
-[Info], 2021-07-12 04:35:05, login successful
-
-[Info], 2021-07-12 04:35:15, chicken has been bought
-
-[Info], 2021-07-12 04:35:15, chicken has been bought
-
-[Info], 2021-07-12 04:35:15, chicken has been bought
-
-[Info], 2021-07-12 04:35:15, chicken has been bought
-
-[Info], 2021-07-12 04:35:15, cat has been bought
-
-[Info], 2021-07-12 04:35:15, hound has been bought
-
-[Info], 2021-07-12 04:35:15, planted successfully
-
-[Info], 2021-07-12 04:35:15, planted successfully
-
-[Info], 2021-07-12 04:35:15, planted successfully
-
-[Info], 2021-07-12 04:35:15, planted successfully
-
-[Info], 2021-07-12 04:35:18, chicken died
-
-[Info], 2021-07-12 04:35:24, chicken produced egg
-
-[Info], 2021-07-12 04:35:24, chicken produced egg
-
-[Info], 2021-07-12 04:35:24, chicken produced egg
-
-[Info], 2021-07-12 04:35:31, chicken produced egg
-
-[Info], 2021-07-12 04:35:31, chicken produced egg
-
-[Info], 2021-07-12 04:35:31, chicken produced egg
-
-[Error], 2021-07-12 04:36:20, wrong password
-
-[Info], 2021-07-12 04:36:25, login successful
-
-[Info], 2021-07-12 04:36:28, chicken has been bought
-
-[Info], 2021-07-12 04:36:28, chicken has been bought
-
-[Info], 2021-07-12 04:36:28, chicken has been bought
-
-[Info], 2021-07-12 04:36:28, chicken has been bought
-
-[Info], 2021-07-12 04:36:28, cat has been bought
-
-[Info], 2021-07-12 04:36:28, hound has been bought
-
-[Info], 2021-07-12 04:36:28, planted successfully
-
-[Info], 2021-07-12 04:36:28, planted successfully
-
-[Info], 2021-07-12 04:36:28, planted successfully
-
-[Info], 2021-07-12 04:36:28, planted successfully
-
-[Info], 2021-07-12 04:36:35, chicken produced egg
-
-[Info], 2021-07-12 04:36:35, chicken produced egg
-
-[Info], 2021-07-12 04:36:35, chicken produced egg
-
-[Info], 2021-07-12 04:36:35, chicken produced egg
-
-[Info], 2021-07-12 04:36:35, cat collected egg
-
-[Info], 2021-07-12 04:36:36, chicken died
-
-[Info], 2021-07-12 04:37:49, login successful
-
-[Info], 2021-07-12 04:37:51, chicken has been bought
-
-[Info], 2021-07-12 04:37:51, chicken has been bought
-
-[Info], 2021-07-12 04:37:51, chicken has been bought
-
-[Info], 2021-07-12 04:37:51, chicken has been bought
-
-[Info], 2021-07-12 04:37:51, cat has been bought
-
-[Info], 2021-07-12 04:37:51, hound has been bought
-
-[Info], 2021-07-12 04:37:51, planted successfully
-
-[Info], 2021-07-12 04:37:51, planted successfully
-
-[Info], 2021-07-12 04:37:51, planted successfully
-
-[Info], 2021-07-12 04:37:51, planted successfully
-
-[Info], 2021-07-12 04:37:51, chicken died
-
-[Info], 2021-07-12 04:40:04, login successful
-
-[Info], 2021-07-12 04:40:06, chicken has been bought
-
-[Info], 2021-07-12 04:40:06, chicken has been bought
-
-[Info], 2021-07-12 04:40:06, chicken has been bought
-
-[Info], 2021-07-12 04:40:06, chicken has been bought
-
-[Info], 2021-07-12 04:40:06, cat has been bought
-
-[Info], 2021-07-12 04:40:06, hound has been bought
-
-[Info], 2021-07-12 04:40:06, planted successfully
-
-[Info], 2021-07-12 04:40:06, planted successfully
-
-[Info], 2021-07-12 04:40:06, planted successfully
-
-[Info], 2021-07-12 04:40:06, planted successfully
-
-[Info], 2021-07-12 04:40:11, chicken died
-
-[Info], 2021-07-12 04:40:39, login successful
-
-[Info], 2021-07-12 04:40:41, chicken has been bought
-
-[Info], 2021-07-12 04:40:41, chicken has been bought
-
-[Info], 2021-07-12 04:40:41, chicken has been bought
-
-[Info], 2021-07-12 04:40:41, chicken has been bought
-
-[Info], 2021-07-12 04:40:41, cat has been bought
-
-[Info], 2021-07-12 04:40:41, hound has been bought
-
-[Info], 2021-07-12 04:40:41, planted successfully
-
-[Info], 2021-07-12 04:40:41, planted successfully
-
-[Info], 2021-07-12 04:40:41, planted successfully
-
-[Info], 2021-07-12 04:40:41, planted successfully
-
-[Info], 2021-07-12 04:41:35, login successful
-
-[Info], 2021-07-12 04:41:37, chicken has been bought
-
-[Info], 2021-07-12 04:41:37, chicken has been bought
-
-[Info], 2021-07-12 04:41:37, chicken has been bought
-
-[Info], 2021-07-12 04:41:37, chicken has been bought
-
-[Info], 2021-07-12 04:41:37, cat has been bought
-
-[Info], 2021-07-12 04:41:37, hound has been bought
-
-[Info], 2021-07-12 04:41:37, planted successfully
-
-[Info], 2021-07-12 04:41:37, planted successfully
-
-[Info], 2021-07-12 04:41:37, planted successfully
-
-[Info], 2021-07-12 04:41:37, planted successfully
-
-[Info], 2021-07-12 04:41:38, chicken died
-
-[Info], 2021-07-12 04:43:25, login successful
-
-[Info], 2021-07-12 04:43:27, chicken has been bought
-
-[Info], 2021-07-12 04:43:27, chicken has been bought
-
-[Info], 2021-07-12 04:43:27, chicken has been bought
-
-[Info], 2021-07-12 04:43:27, chicken has been bought
-
-[Info], 2021-07-12 04:43:27, cat has been bought
-
-[Info], 2021-07-12 04:43:27, hound has been bought
-
-[Info], 2021-07-12 04:43:27, planted successfully
-
-[Info], 2021-07-12 04:43:27, planted successfully
-
-[Info], 2021-07-12 04:43:27, planted successfully
-
-[Info], 2021-07-12 04:43:27, planted successfully
-
-[Info], 2021-07-12 04:44:08, login successful
-
-[Info], 2021-07-12 04:44:11, chicken has been bought
-
-[Info], 2021-07-12 04:44:11, chicken has been bought
-
-[Info], 2021-07-12 04:44:11, chicken has been bought
-
-[Info], 2021-07-12 04:44:11, chicken has been bought
-
-[Info], 2021-07-12 04:44:11, cat has been bought
-
-[Info], 2021-07-12 04:44:11, hound has been bought
-
-[Info], 2021-07-12 04:44:11, planted successfully
-
-[Info], 2021-07-12 04:44:11, planted successfully
-
-[Info], 2021-07-12 04:44:11, planted successfully
-
-[Info], 2021-07-12 04:44:11, planted successfully
-
-[Error], 2021-07-12 04:45:14, username not found
-
-[Info], 2021-07-12 04:45:19, login successful
-
-[Info], 2021-07-12 04:45:21, chicken has been bought
-
-[Info], 2021-07-12 04:45:21, chicken has been bought
-
-[Info], 2021-07-12 04:45:21, chicken has been bought
-
-[Info], 2021-07-12 04:45:21, chicken has been bought
-
-[Info], 2021-07-12 04:45:21, cat has been bought
-
-[Info], 2021-07-12 04:45:21, hound has been bought
-
-[Info], 2021-07-12 04:45:22, planted successfully
-
-[Info], 2021-07-12 04:45:22, planted successfully
-
-[Info], 2021-07-12 04:45:22, planted successfully
-
-[Info], 2021-07-12 04:45:22, planted successfully
-
-[Info], 2021-07-12 04:45:28, chicken died
-
-[Info], 2021-07-12 04:46:57, login successful
-
-[Info], 2021-07-12 04:46:59, chicken has been bought
-
-[Info], 2021-07-12 04:47:00, chicken has been bought
-
-[Info], 2021-07-12 04:47:00, chicken has been bought
-
-[Info], 2021-07-12 04:47:00, chicken has been bought
-
-[Info], 2021-07-12 04:47:00, cat has been bought
-
-[Info], 2021-07-12 04:47:00, hound has been bought
-
-[Info], 2021-07-12 04:47:00, planted successfully
-
-[Info], 2021-07-12 04:47:00, planted successfully
-
-[Info], 2021-07-12 04:47:00, planted successfully
-
-[Info], 2021-07-12 04:47:00, planted successfully
-
-[Info], 2021-07-12 04:55:04, chicken has been bought
-
-[Info], 2021-07-12 04:55:04, chicken has been bought
-
-[Info], 2021-07-12 04:55:04, chicken has been bought
-
-[Info], 2021-07-12 04:55:04, chicken has been bought
-
-[Info], 2021-07-12 04:55:04, cat has been bought
-
-[Info], 2021-07-12 04:55:04, hound has been bought
-
-[Info], 2021-07-12 04:55:04, planted successfully
-
-[Info], 2021-07-12 04:55:04, planted successfully
-
-[Info], 2021-07-12 04:55:04, planted successfully
-
-[Info], 2021-07-12 04:55:04, planted successfully
-
-[Info], 2021-07-12 04:55:11, chicken died
-
-[Info], 2021-07-12 04:55:11, chicken produced egg
-
-[Info], 2021-07-12 04:55:11, chicken produced egg
-
-[Info], 2021-07-12 04:55:11, chicken produced egg
-
-[Info], 2021-07-12 04:55:11, cat got killed
-
-[Info], 2021-07-12 04:55:18, chicken produced egg
-
-[Info], 2021-07-12 04:55:18, chicken produced egg
-
-[Info], 2021-07-12 04:55:18, chicken produced egg
-
-[Info], 2021-07-12 04:55:21, chicken died
-
-[Info], 2021-07-12 04:55:21, chicken died
-
-[Info], 2021-07-12 04:55:21, chicken died
-
-[Info], 2021-07-12 04:55:25, egg got expired
-
-[Info], 2021-07-12 04:55:25, egg got expired
-
-[Info], 2021-07-12 04:55:25, egg got expired
-
-[Info], 2021-07-12 04:55:29, hound got killed
-
-[Info], 2021-07-12 04:55:29, tiger got killed
-
-[Info], 2021-07-12 04:55:32, egg got expired
-
-[Info], 2021-07-12 04:55:32, egg got expired
-
-[Info], 2021-07-12 04:55:32, egg got expired
-
-[Info], 2021-07-12 04:57:00, chicken has been bought
-
-[Info], 2021-07-12 04:57:00, chicken has been bought
-
-[Info], 2021-07-12 04:57:01, chicken has been bought
-
-[Info], 2021-07-12 04:57:01, chicken has been bought
-
-[Info], 2021-07-12 04:57:01, cat has been bought
-
-[Info], 2021-07-12 04:57:01, hound has been bought
-
-[Info], 2021-07-12 04:57:01, planted successfully
-
-[Info], 2021-07-12 04:57:01, planted successfully
-
-[Info], 2021-07-12 04:57:01, planted successfully
-
-[Info], 2021-07-12 04:57:01, planted successfully
-
-[Info], 2021-07-12 04:57:08, chicken produced egg
-
-[Info], 2021-07-12 04:57:08, chicken produced egg
-
-[Info], 2021-07-12 04:57:08, chicken produced egg
-
-[Info], 2021-07-12 04:57:08, chicken produced egg
-
-[Info], 2021-07-12 04:57:13, chicken ate
-
-[Info], 2021-07-12 04:57:13, cat collected egg
-
-[Info], 2021-07-12 04:57:14, chicken died
-
-[Info], 2021-07-12 04:57:15, chicken produced egg
-
-[Info], 2021-07-12 04:57:15, chicken produced egg
-
-[Info], 2021-07-12 04:57:15, chicken produced egg
-
-[Info], 2021-07-12 04:57:16, chicken died
-
-[Info], 2021-07-12 04:57:44, chicken has been bought
-
-[Info], 2021-07-12 04:57:44, chicken has been bought
-
-[Info], 2021-07-12 04:57:44, chicken has been bought
-
-[Info], 2021-07-12 04:57:45, chicken has been bought
-
-[Info], 2021-07-12 04:57:45, cat has been bought
-
-[Info], 2021-07-12 04:57:45, hound has been bought
-
-[Info], 2021-07-12 04:57:45, planted successfully
-
-[Info], 2021-07-12 04:57:45, planted successfully
-
-[Info], 2021-07-12 04:57:45, planted successfully
-
-[Info], 2021-07-12 04:57:45, planted successfully
-
-[Info], 2021-07-12 04:57:45, chicken died
-
-[Info], 2021-07-12 05:01:11, chicken has been bought
-
-[Info], 2021-07-12 05:01:11, chicken has been bought
-
-[Info], 2021-07-12 05:01:11, chicken has been bought
-
-[Info], 2021-07-12 05:01:11, chicken has been bought
-
-[Info], 2021-07-12 05:01:11, cat has been bought
-
-[Info], 2021-07-12 05:01:11, hound has been bought
 
 [Info], 2021-07-12 05:01:11, planted successfully
 
-[Info], 2021-07-12 05:01:11, planted successfully
+[Info], 2021-07-16 09:02:11, login successful
 
-[Info], 2021-07-12 05:01:11, planted successfully
+[Info], 2021-07-16 09:02:13, chicken has been bought
 
-[Info], 2021-07-12 05:01:11, planted successfully
+[Info], 2021-07-16 09:02:13, chicken has been bought
 
-[Info], 2021-07-12 05:01:13, chicken died
+[Info], 2021-07-16 09:02:13, chicken has been bought
 
-[Info], 2021-07-12 05:01:19, chicken died
+[Info], 2021-07-16 09:02:13, chicken has been bought
 
-[Info], 2021-07-12 05:01:19, chicken produced egg
+[Info], 2021-07-16 09:02:13, cat has been bought
 
-[Info], 2021-07-12 05:01:19, chicken produced egg
+[Info], 2021-07-16 09:02:13, hound has been bought
 
-[Info], 2021-07-12 05:01:24, chicken died
+[Info], 2021-07-16 09:02:13, planted successfully
 
-[Info], 2021-07-12 05:01:25, chicken ate
+[Info], 2021-07-16 09:02:13, planted successfully
 
-[Info], 2021-07-12 05:01:26, chicken produced egg
+[Info], 2021-07-16 09:02:13, planted successfully
 
-[Info], 2021-07-12 05:01:27, cat collected egg
+[Info], 2021-07-16 09:02:13, planted successfully
 
-[Info], 2021-07-12 05:01:31, cat collected egg
+[Info], 2021-07-16 09:02:15, Factory was built successfully
 
-[Info], 2021-07-12 05:01:32, chicken produced egg
+[Info], 2021-07-16 09:02:17, Factory was built successfully
 
-[Info], 2021-07-12 05:01:37, chicken ate
+[Info], 2021-07-16 09:02:18, Factory was built successfully
 
-[Info], 2021-07-12 05:01:39, egg got expired
+[Info], 2021-07-16 09:02:19, Factory was built successfully
 
-[Info], 2021-07-12 05:01:39, chicken produced egg
+[Info], 2021-07-16 09:02:35, login successful
 
-[Info], 2021-07-12 05:01:43, cat collected egg
+[Info], 2021-07-16 09:02:36, chicken has been bought
 
-[Info], 2021-07-12 05:01:45, cat collected egg
+[Info], 2021-07-16 09:02:36, chicken has been bought
 
-[Info], 2021-07-12 05:01:46, chicken produced egg
+[Info], 2021-07-16 09:02:36, chicken has been bought
 
-[Info], 2021-07-12 05:01:48, chicken ate
+[Info], 2021-07-16 09:02:36, chicken has been bought
 
-[Info], 2021-07-12 05:01:49, cat collected egg
+[Info], 2021-07-16 09:02:36, cat has been bought
 
-[Info], 2021-07-12 05:01:53, chicken produced egg
+[Info], 2021-07-16 09:02:36, hound has been bought
 
-[Info], 2021-07-12 05:01:56, cat got killed
+[Info], 2021-07-16 09:02:36, planted successfully
 
-[Info], 2021-07-12 05:01:58, chicken died
+[Info], 2021-07-16 09:02:36, planted successfully
 
-[Info], 2021-07-12 05:02:07, egg got expired
+[Info], 2021-07-16 09:02:36, planted successfully
 
-[Info], 2021-07-12 05:02:29, chicken has been bought
+[Info], 2021-07-16 09:02:36, planted successfully
 
-[Info], 2021-07-12 05:02:29, chicken has been bought
+[Info], 2021-07-16 09:02:38, Factory was built successfully
 
-[Info], 2021-07-12 05:02:29, chicken has been bought
+[Info], 2021-07-16 09:02:39, Factory was built successfully
 
-[Info], 2021-07-12 05:02:29, chicken has been bought
+[Info], 2021-07-16 09:02:40, Factory was built successfully
 
-[Info], 2021-07-12 05:02:29, cat has been bought
+[Info], 2021-07-16 09:02:41, Factory was built successfully
 
-[Info], 2021-07-12 05:02:29, hound has been bought
+[Info], 2021-07-16 09:02:42, Factory was built successfully
 
-[Info], 2021-07-12 05:02:29, planted successfully
+[Info], 2021-07-16 09:02:42, Factory was built successfully
 
-[Info], 2021-07-12 05:02:29, planted successfully
+[Info], 2021-07-16 09:02:43, Factory was built successfully
 
-[Info], 2021-07-12 05:02:29, planted successfully
+[Info], 2021-07-16 09:02:49, cat got killed
 
-[Info], 2021-07-12 05:02:29, planted successfully
+[Info], 2021-07-16 09:02:51, chicken produced egg
 
-[Info], 2021-07-12 05:02:30, chicken died
+[Info], 2021-07-16 09:02:51, chicken produced egg
 
-[Info], 2021-07-12 05:02:57, login successful
+[Info], 2021-07-16 09:02:51, chicken produced egg
 
-[Info], 2021-07-12 05:02:59, chicken has been bought
+[Info], 2021-07-16 09:02:51, chicken produced egg
 
-[Info], 2021-07-12 05:02:59, chicken has been bought
+[Info], 2021-07-16 09:03:26, login successful
 
-[Info], 2021-07-12 05:02:59, chicken has been bought
+[Info], 2021-07-16 09:03:28, chicken has been bought
 
-[Info], 2021-07-12 05:02:59, chicken has been bought
+[Info], 2021-07-16 09:03:28, chicken has been bought
 
-[Info], 2021-07-12 05:02:59, cat has been bought
+[Info], 2021-07-16 09:03:28, chicken has been bought
 
-[Info], 2021-07-12 05:02:59, hound has been bought
+[Info], 2021-07-16 09:03:28, chicken has been bought
 
-[Info], 2021-07-12 05:02:59, planted successfully
+[Info], 2021-07-16 09:03:28, cat has been bought
 
-[Info], 2021-07-12 05:03:00, planted successfully
+[Info], 2021-07-16 09:03:28, hound has been bought
 
-[Info], 2021-07-12 05:03:00, planted successfully
+[Info], 2021-07-16 09:03:28, planted successfully
 
-[Info], 2021-07-12 05:03:00, planted successfully
+[Info], 2021-07-16 09:03:28, planted successfully
 
-[Info], 2021-07-12 05:03:07, chicken died
+[Info], 2021-07-16 09:03:28, planted successfully
 
-[Info], 2021-07-12 05:03:07, chicken produced egg
+[Info], 2021-07-16 09:03:28, planted successfully
 
-[Info], 2021-07-12 05:03:07, chicken produced egg
+[Info], 2021-07-16 09:03:29, Factory was built successfully
 
-[Info], 2021-07-12 05:03:07, chicken produced egg
+[Info], 2021-07-16 09:03:30, Factory was built successfully
 
-[Info], 2021-07-12 05:03:10, chicken died
+[Info], 2021-07-16 09:03:31, Factory was built successfully
 
-[Info], 2021-07-12 05:04:05, login successful
+[Info], 2021-07-16 09:03:32, Factory was built successfully
 
-[Info], 2021-07-12 05:04:07, chicken has been bought
+[Info], 2021-07-16 09:03:33, Factory was built successfully
 
-[Info], 2021-07-12 05:04:07, chicken has been bought
+[Info], 2021-07-16 09:03:34, Factory was built successfully
 
-[Info], 2021-07-12 05:04:07, chicken has been bought
+[Info], 2021-07-16 09:03:35, Factory was built successfully
 
-[Info], 2021-07-12 05:04:07, chicken has been bought
+[Info], 2021-07-16 09:03:36, chicken died
 
-[Info], 2021-07-12 05:04:07, cat has been bought
+[Info], 2021-07-16 09:03:39, chicken died
 
-[Info], 2021-07-12 05:04:07, hound has been bought
+[Info], 2021-07-16 09:03:43, chicken produced egg
 
-[Info], 2021-07-12 05:04:07, planted successfully
+[Info], 2021-07-16 09:03:43, chicken produced egg
 
-[Info], 2021-07-12 05:04:07, planted successfully
+[Info], 2021-07-16 09:42:21, login successful
 
-[Info], 2021-07-12 05:04:07, planted successfully
+[Info], 2021-07-16 09:42:22, chicken has been bought
 
-[Info], 2021-07-12 05:04:07, planted successfully
+[Info], 2021-07-16 09:42:22, chicken has been bought
 
-[Info], 2021-07-12 05:06:02, chicken has been bought
+[Info], 2021-07-16 09:42:22, chicken has been bought
 
-[Info], 2021-07-12 05:06:02, chicken has been bought
+[Info], 2021-07-16 09:42:22, chicken has been bought
 
-[Info], 2021-07-12 05:06:03, chicken has been bought
+[Info], 2021-07-16 09:42:22, cat has been bought
 
-[Info], 2021-07-12 05:06:03, chicken has been bought
+[Info], 2021-07-16 09:42:22, hound has been bought
 
-[Info], 2021-07-12 05:06:03, cat has been bought
+[Info], 2021-07-16 09:42:22, planted successfully
 
-[Info], 2021-07-12 05:06:03, hound has been bought
+[Info], 2021-07-16 09:42:22, planted successfully
 
-[Info], 2021-07-12 05:06:03, planted successfully
+[Info], 2021-07-16 09:42:22, planted successfully
 
-[Info], 2021-07-12 05:06:03, planted successfully
+[Info], 2021-07-16 09:42:22, planted successfully
 
-[Info], 2021-07-12 05:06:03, planted successfully
+[Info], 2021-07-16 09:42:24, Factory was built successfully
 
-[Info], 2021-07-12 05:06:03, planted successfully
+[Info], 2021-07-16 09:42:25, Factory was built successfully
 
-[Info], 2021-07-12 05:06:10, chicken died
+[Info], 2021-07-16 09:42:26, Factory was built successfully
 
-[Info], 2021-07-12 05:06:10, chicken produced egg
+[Info], 2021-07-16 09:42:27, Factory was built successfully
 
-[Info], 2021-07-12 05:06:10, chicken produced egg
+[Info], 2021-07-16 09:42:30, Factory was built successfully
 
-[Info], 2021-07-12 05:06:10, chicken produced egg
+[Info], 2021-07-16 09:42:31, Factory was built successfully
 
-[Info], 2021-07-12 05:06:12, chicken ate
+[Info], 2021-07-16 09:42:36, Factory was built successfully
 
-[Info], 2021-07-12 05:06:13, cat collected egg
+[Info], 2021-07-16 09:42:37, chicken produced egg
 
-[Info], 2021-07-12 05:06:13, chicken died
+[Info], 2021-07-16 09:42:37, chicken produced egg
 
-[Info], 2021-07-12 05:06:16, chicken died
+[Info], 2021-07-16 09:42:37, chicken produced egg
 
-[Info], 2021-07-12 05:06:17, cat got killed
+[Info], 2021-07-16 09:42:37, chicken produced egg
 
-[Info], 2021-07-12 05:06:17, chicken produced egg
+[Info], 2021-07-16 09:42:38, chicken has been bought
 
-[Info], 2021-07-12 05:06:20, chicken died
+[Info], 2021-07-16 09:42:40, turkey has been bought
 
-[Info], 2021-07-12 05:06:24, egg got expired
+[Info], 2021-07-16 09:42:41, buffalo has been bought
 
-[Info], 2021-07-12 05:06:24, egg got expired
+[Info], 2021-07-16 09:42:42, cat has been bought
 
-[Info], 2021-07-12 05:06:31, chicken has been bought
+[Info], 2021-07-16 09:42:43, cat collected egg
 
-[Info], 2021-07-12 05:06:31, chicken has been bought
+[Info], 2021-07-16 09:42:44, hound has been bought
 
-[Info], 2021-07-12 05:06:31, chicken has been bought
+[Info], 2021-07-16 09:43:01, login successful
 
-[Info], 2021-07-12 05:06:31, chicken has been bought
+[Info], 2021-07-16 09:43:02, chicken has been bought
 
-[Info], 2021-07-12 05:06:31, cat has been bought
+[Info], 2021-07-16 09:43:02, chicken has been bought
 
-[Info], 2021-07-12 05:06:31, hound has been bought
+[Info], 2021-07-16 09:43:02, chicken has been bought
 
-[Info], 2021-07-12 05:06:31, planted successfully
+[Info], 2021-07-16 09:43:02, chicken has been bought
 
-[Info], 2021-07-12 05:06:31, planted successfully
+[Info], 2021-07-16 09:43:02, cat has been bought
 
-[Info], 2021-07-12 05:06:31, planted successfully
+[Info], 2021-07-16 09:43:02, hound has been bought
 
-[Info], 2021-07-12 05:06:31, planted successfully
+[Info], 2021-07-16 09:43:02, planted successfully
 
-[Info], 2021-07-12 05:06:35, chicken died
+[Info], 2021-07-16 09:43:03, planted successfully
 
-[Info], 2021-07-12 05:06:39, chicken died
+[Info], 2021-07-16 09:43:03, planted successfully
 
-[Info], 2021-07-12 05:06:39, chicken produced egg
+[Info], 2021-07-16 09:43:03, planted successfully
 
-[Info], 2021-07-12 05:06:39, chicken produced egg
+[Info], 2021-07-16 09:43:04, Factory was built successfully
 
-[Info], 2021-07-12 05:06:44, cat collected egg
+[Info], 2021-07-16 09:43:07, Factory was built successfully
 
-[Info], 2021-07-12 05:06:46, chicken produced egg
+[Info], 2021-07-16 09:43:08, Factory was built successfully
 
-[Info], 2021-07-12 05:06:46, chicken produced egg
+[Info], 2021-07-16 09:43:09, Factory was built successfully
 
-[Info], 2021-07-12 05:06:47, chicken ate
+[Info], 2021-07-16 09:43:11, Factory was built successfully
 
-[Info], 2021-07-12 05:06:49, cat got killed
+[Info], 2021-07-16 09:43:11, Factory was built successfully
 
-[Info], 2021-07-12 05:06:49, chicken died
+[Info], 2021-07-16 09:43:12, Factory was built successfully
 
-[Info], 2021-07-12 05:06:53, egg got expired
+[Info], 2021-07-16 09:43:25, login successful
 
-[Info], 2021-07-12 05:06:53, chicken produced egg
+[Info], 2021-07-16 09:43:26, chicken has been bought
 
-[Info], 2021-07-12 05:07:00, egg got expired
+[Info], 2021-07-16 09:43:26, chicken has been bought
 
-[Info], 2021-07-12 05:07:00, egg got expired
+[Info], 2021-07-16 09:43:26, chicken has been bought
 
-[Info], 2021-07-12 05:07:00, chicken produced egg
+[Info], 2021-07-16 09:43:26, chicken has been bought
 
-[Info], 2021-07-12 05:07:04, chicken ate
+[Info], 2021-07-16 09:43:26, cat has been bought
 
-[Info], 2021-07-12 05:07:06, egg got expired
+[Info], 2021-07-16 09:43:26, hound has been bought
 
-[Info], 2021-07-12 05:07:06, chicken produced egg
+[Info], 2021-07-16 09:43:26, planted successfully
 
-[Info], 2021-07-12 05:07:10, hound got killed
+[Info], 2021-07-16 09:43:26, planted successfully
 
-[Info], 2021-07-12 05:07:10, tiger got killed
+[Info], 2021-07-16 09:43:26, planted successfully
 
-[Info], 2021-07-12 05:07:13, egg got expired
+[Info], 2021-07-16 09:43:26, planted successfully
 
-[Info], 2021-07-12 05:07:13, chicken produced egg
+[Info], 2021-07-16 09:43:27, Factory was built successfully
 
-[Info], 2021-07-12 05:07:14, chicken ate
+[Info], 2021-07-16 09:43:42, login successful
 
-[Info], 2021-07-12 05:08:54, chicken has been bought
+[Info], 2021-07-16 09:43:43, chicken has been bought
 
-[Info], 2021-07-12 05:08:54, chicken has been bought
+[Info], 2021-07-16 09:43:43, chicken has been bought
 
-[Info], 2021-07-12 05:08:54, chicken has been bought
+[Info], 2021-07-16 09:43:43, chicken has been bought
 
-[Info], 2021-07-12 05:08:54, chicken has been bought
+[Info], 2021-07-16 09:43:43, chicken has been bought
 
-[Info], 2021-07-12 05:08:54, cat has been bought
+[Info], 2021-07-16 09:43:43, cat has been bought
 
-[Info], 2021-07-12 05:08:54, hound has been bought
+[Info], 2021-07-16 09:43:43, hound has been bought
 
-[Info], 2021-07-12 05:08:54, planted successfully
+[Info], 2021-07-16 09:43:43, planted successfully
 
-[Info], 2021-07-12 05:08:55, planted successfully
+[Info], 2021-07-16 09:43:43, planted successfully
 
-[Info], 2021-07-12 05:08:55, planted successfully
+[Info], 2021-07-16 09:43:43, planted successfully
 
-[Info], 2021-07-12 05:08:55, planted successfully
+[Info], 2021-07-16 09:43:43, planted successfully
 
-[Info], 2021-07-12 05:09:11, login successful
+[Info], 2021-07-16 09:43:44, Factory was built successfully
 
-[Info], 2021-07-12 05:09:14, chicken has been bought
+[Info], 2021-07-16 09:44:25, login successful
 
-[Info], 2021-07-12 05:09:14, chicken has been bought
+[Info], 2021-07-16 09:44:27, chicken has been bought
 
-[Info], 2021-07-12 05:09:14, chicken has been bought
+[Info], 2021-07-16 09:44:27, chicken has been bought
 
-[Info], 2021-07-12 05:09:14, chicken has been bought
+[Info], 2021-07-16 09:44:27, chicken has been bought
 
-[Info], 2021-07-12 05:09:14, cat has been bought
+[Info], 2021-07-16 09:44:27, chicken has been bought
 
-[Info], 2021-07-12 05:09:14, hound has been bought
+[Info], 2021-07-16 09:44:27, cat has been bought
 
-[Info], 2021-07-12 05:09:14, planted successfully
+[Info], 2021-07-16 09:44:27, hound has been bought
 
-[Info], 2021-07-12 05:09:14, planted successfully
+[Info], 2021-07-16 09:44:27, planted successfully
 
-[Info], 2021-07-12 05:09:14, planted successfully
+[Info], 2021-07-16 09:44:27, planted successfully
 
-[Info], 2021-07-12 05:09:14, planted successfully
+[Info], 2021-07-16 09:44:27, planted successfully
 
-[Info], 2021-07-12 09:07:54, chicken has been bought
+[Info], 2021-07-16 09:44:27, planted successfully
 
-[Info], 2021-07-12 09:07:54, chicken has been bought
+[Info], 2021-07-16 09:44:27, hound got killed
 
-[Info], 2021-07-12 09:07:54, chicken has been bought
+[Info], 2021-07-16 09:44:27, lion got killed
 
-[Info], 2021-07-12 09:07:54, chicken has been bought
+[Info], 2021-07-16 09:44:28, Factory was built successfully
 
-[Info], 2021-07-12 09:07:54, cat has been bought
+[Info], 2021-07-16 09:44:30, Factory was built successfully
 
-[Info], 2021-07-12 09:07:54, hound has been bought
+[Info], 2021-07-16 09:44:30, Factory was built successfully
 
-[Info], 2021-07-12 09:07:54, planted successfully
+[Info], 2021-07-16 09:44:31, Factory was built successfully
 
-[Info], 2021-07-12 09:07:54, planted successfully
+[Info], 2021-07-16 09:44:33, Factory was built successfully
 
-[Info], 2021-07-12 09:07:54, planted successfully
+[Info], 2021-07-16 09:44:33, Factory was built successfully
 
-[Info], 2021-07-12 09:07:54, planted successfully
+[Info], 2021-07-16 09:44:34, Factory was built successfully
 
-[Info], 2021-07-12 09:08:12, chicken produced egg
+[Info], 2021-07-16 10:43:14, login successful
 
-[Info], 2021-07-12 09:08:12, chicken produced egg
+[Info], 2021-07-16 10:43:16, chicken has been bought
 
-[Info], 2021-07-12 09:08:12, chicken produced egg
+[Info], 2021-07-16 10:43:16, chicken has been bought
 
-[Info], 2021-07-12 09:08:12, chicken produced egg
+[Info], 2021-07-16 10:43:16, chicken has been bought
 
-[Info], 2021-07-12 09:08:12, cat collected egg
+[Info], 2021-07-16 10:43:16, chicken has been bought
 
-[Info], 2021-07-12 09:08:13, hound got killed
+[Info], 2021-07-16 10:43:16, cat has been bought
 
-[Info], 2021-07-12 09:08:13, tiger got killed
+[Info], 2021-07-16 10:43:16, hound has been bought
 
-[Info], 2021-07-12 09:08:13, chicken died
+[Info], 2021-07-16 10:43:16, planted successfully
 
-[Info], 2021-07-12 09:08:15, chicken died
+[Info], 2021-07-16 10:43:16, planted successfully
 
-[Info], 2021-07-12 09:08:16, cat got killed
+[Info], 2021-07-16 10:43:17, planted successfully
 
-[Info], 2021-07-12 09:08:18, chicken ate
+[Info], 2021-07-16 10:43:17, planted successfully
 
-[Info], 2021-07-12 09:08:18, chicken produced egg
+[Info], 2021-07-16 10:43:28, Factory was built successfully
 
-[Info], 2021-07-12 09:08:18, chicken produced egg
+[Info], 2021-07-16 10:43:29, Factory was built successfully
 
-[Info], 2021-07-12 09:08:22, chicken died
+[Info], 2021-07-16 10:43:30, Factory was built successfully
 
-[Info], 2021-07-12 09:08:25, egg got expired
+[Info], 2021-07-16 10:43:30, chicken produced egg
 
-[Info], 2021-07-12 09:08:25, egg got expired
+[Info], 2021-07-16 10:43:30, chicken produced egg
 
-[Info], 2021-07-12 09:08:25, egg got expired
+[Info], 2021-07-16 10:43:30, chicken produced egg
 
-[Info], 2021-07-12 09:08:25, chicken produced egg
+[Info], 2021-07-16 10:43:30, chicken produced egg
 
-[Info], 2021-07-12 09:08:30, chicken ate
+[Info], 2021-07-16 10:43:31, Factory was built successfully
 
-[Info], 2021-07-12 09:08:32, egg got expired
+[Info], 2021-07-16 10:43:32, Factory was built successfully
 
-[Info], 2021-07-12 09:08:32, egg got expired
+[Info], 2021-07-16 10:43:34, Factory was built successfully
 
-[Info], 2021-07-12 09:08:32, chicken produced egg
+[Info], 2021-07-16 10:43:34, Factory was built successfully
 
-[Info], 2021-07-12 09:08:44, chicken has been bought
+[Info], 2021-07-16 10:43:39, cat got killed
 
-[Info], 2021-07-12 09:08:44, chicken has been bought
+[Info], 2021-07-16 10:43:44, chicken produced egg
 
-[Info], 2021-07-12 09:08:44, chicken has been bought
+[Info], 2021-07-16 10:43:44, chicken produced egg
 
-[Info], 2021-07-12 09:08:44, chicken has been bought
+[Info], 2021-07-16 10:43:44, chicken produced egg
 
-[Info], 2021-07-12 09:08:44, cat has been bought
+[Info], 2021-07-16 10:43:44, chicken produced egg
 
-[Info], 2021-07-12 09:08:44, hound has been bought
+[Info], 2021-07-16 10:43:46, chicken died
 
-[Info], 2021-07-12 09:08:44, planted successfully
+[Info], 2021-07-17 12:18:19, login successful
 
-[Info], 2021-07-12 09:08:44, planted successfully
+[Info], 2021-07-17 12:18:20, chicken has been bought
 
-[Info], 2021-07-12 09:08:44, planted successfully
+[Info], 2021-07-17 12:18:20, chicken has been bought
 
-[Info], 2021-07-12 09:08:44, planted successfully
+[Info], 2021-07-17 12:18:20, chicken has been bought
 
-[Info], 2021-07-12 09:09:47, chicken has been bought
+[Info], 2021-07-17 12:18:20, chicken has been bought
 
-[Info], 2021-07-12 09:09:47, chicken has been bought
+[Info], 2021-07-17 12:18:20, cat has been bought
 
-[Info], 2021-07-12 09:09:47, chicken has been bought
+[Info], 2021-07-17 12:18:20, hound has been bought
 
-[Info], 2021-07-12 09:09:47, chicken has been bought
+[Info], 2021-07-17 12:18:20, planted successfully
 
-[Info], 2021-07-12 09:09:47, cat has been bought
+[Info], 2021-07-17 12:18:20, planted successfully
 
-[Info], 2021-07-12 09:09:47, hound has been bought
+[Info], 2021-07-17 12:18:20, planted successfully
 
-[Info], 2021-07-12 09:09:47, planted successfully
+[Info], 2021-07-17 12:18:20, planted successfully
 
-[Info], 2021-07-12 09:09:47, planted successfully
+[Info], 2021-07-17 12:18:21, hound got killed
 
-[Info], 2021-07-12 09:09:47, planted successfully
+[Info], 2021-07-17 12:18:21, lion got killed
 
-[Info], 2021-07-12 09:09:47, planted successfully
+[Info], 2021-07-17 12:18:23, Factory was built successfully
 
-[Info], 2021-07-12 09:10:04, chicken died
+[Info], 2021-07-17 12:18:26, Factory was built successfully
 
-[Info], 2021-07-12 09:10:04, chicken produced egg
+[Info], 2021-07-17 12:18:28, Factory was built successfully
 
-[Info], 2021-07-12 09:10:04, chicken produced egg
+[Info], 2021-07-17 12:18:31, Factory was built successfully
 
-[Info], 2021-07-12 09:10:04, chicken produced egg
+[Info], 2021-07-17 12:18:33, Factory was built successfully
 
-[Info], 2021-07-12 09:10:04, cat collected egg
+[Info], 2021-07-17 12:18:34, chicken produced egg
 
-[Info], 2021-07-12 09:10:10, chicken died
+[Info], 2021-07-17 12:18:34, chicken produced egg
 
-[Info], 2021-07-12 09:10:11, chicken died
+[Info], 2021-07-17 12:18:34, chicken produced egg
 
-[Info], 2021-07-12 09:10:11, chicken produced egg
+[Info], 2021-07-17 12:18:34, chicken produced egg
 
-[Info], 2021-07-12 09:10:13, cat collected egg
+[Info], 2021-07-17 12:18:35, Factory was built successfully
 
-[Info], 2021-07-12 09:10:59, chicken has been bought
+[Info], 2021-07-17 12:18:36, cat got killed
 
-[Info], 2021-07-12 09:10:59, chicken has been bought
+[Info], 2021-07-17 12:18:37, Factory was built successfully
 
-[Info], 2021-07-12 09:10:59, chicken has been bought
+[Info], 2021-07-17 12:25:05, login successful
 
-[Info], 2021-07-12 09:10:59, chicken has been bought
+[Info], 2021-07-17 12:25:06, chicken has been bought
 
-[Info], 2021-07-12 09:10:59, cat has been bought
+[Info], 2021-07-17 12:25:06, chicken has been bought
 
-[Info], 2021-07-12 09:10:59, hound has been bought
+[Info], 2021-07-17 12:25:06, chicken has been bought
 
-[Info], 2021-07-12 09:10:59, planted successfully
+[Info], 2021-07-17 12:25:06, chicken has been bought
 
-[Info], 2021-07-12 09:10:59, planted successfully
+[Info], 2021-07-17 12:25:06, cat has been bought
 
-[Info], 2021-07-12 09:10:59, planted successfully
+[Info], 2021-07-17 12:25:06, hound has been bought
 
-[Info], 2021-07-12 09:10:59, planted successfully
+[Info], 2021-07-17 12:25:07, planted successfully
 
-[Info], 2021-07-12 10:03:33, chicken has been bought
+[Info], 2021-07-17 12:25:07, planted successfully
 
-[Info], 2021-07-12 10:03:34, chicken has been bought
+[Info], 2021-07-17 12:25:07, planted successfully
 
-[Info], 2021-07-12 10:03:34, chicken has been bought
+[Info], 2021-07-17 12:25:07, planted successfully
 
-[Info], 2021-07-12 10:03:34, chicken has been bought
+[Info], 2021-07-17 12:25:08, Factory was built successfully
 
-[Info], 2021-07-12 10:03:34, cat has been bought
+[Info], 2021-07-17 12:25:09, Factory weaver was upgraded to level 2
 
-[Info], 2021-07-12 10:03:34, hound has been bought
+[Info], 2021-07-17 12:25:11, Factory was built successfully
 
-[Info], 2021-07-12 10:03:34, planted successfully
+[Info], 2021-07-17 12:25:12, Factory mill was upgraded to level 2
 
-[Info], 2021-07-12 10:03:34, planted successfully
+[Info], 2021-07-17 12:25:20, chicken produced egg
 
-[Info], 2021-07-12 10:03:34, planted successfully
+[Info], 2021-07-17 12:25:20, chicken produced egg
 
-[Info], 2021-07-12 10:03:34, planted successfully
+[Info], 2021-07-17 12:25:20, chicken produced egg
 
-[Info], 2021-07-12 10:03:56, chicken has been bought
+[Info], 2021-07-17 12:25:20, chicken produced egg
 
-[Info], 2021-07-12 10:03:56, chicken has been bought
+[Info], 2021-07-17 12:25:21, egg got picked up
 
-[Info], 2021-07-12 10:03:56, chicken has been bought
+[Info], 2021-07-17 12:25:23, chicken ate
 
-[Info], 2021-07-12 10:03:56, chicken has been bought
+[Info], 2021-07-17 12:25:23, chicken died
 
-[Info], 2021-07-12 10:03:56, cat has been bought
+[Info], 2021-07-17 12:25:23, Product is getting produced
 
-[Info], 2021-07-12 10:03:56, hound has been bought
+[Info], 2021-07-17 12:25:25, cat collected egg
 
-[Info], 2021-07-12 10:03:56, planted successfully
+[Info], 2021-07-17 12:25:33, chicken produced egg
 
-[Info], 2021-07-12 10:03:56, planted successfully
+[Info], 2021-07-17 12:25:33, chicken produced egg
 
-[Info], 2021-07-12 10:03:56, planted successfully
+[Info], 2021-07-17 12:25:33, chicken produced egg
 
-[Info], 2021-07-12 10:03:56, planted successfully
+[Info], 2021-07-17 12:25:34, chicken ate
 
-[Info], 2021-07-12 10:04:23, chicken has been bought
+[Info], 2021-07-17 12:25:34, cat collected egg
 
-[Info], 2021-07-12 10:04:23, chicken has been bought
+[Info], 2021-07-17 12:25:36, mill produced flour
 
-[Info], 2021-07-12 10:04:23, chicken has been bought
+[Info], 2021-07-17 12:25:39, cat collected egg
 
-[Info], 2021-07-12 10:04:23, chicken has been bought
+[Info], 2021-07-17 12:25:39, chicken died
 
-[Info], 2021-07-12 10:04:23, cat has been bought
+[Info], 2021-07-17 12:25:39, chicken died
 
-[Info], 2021-07-12 10:04:23, hound has been bought
+[Info], 2021-07-17 12:25:39, flour got picked up
 
-[Info], 2021-07-12 10:04:24, planted successfully
+[Info], 2021-07-17 12:25:44, cat collected egg
 
-[Info], 2021-07-12 10:04:24, planted successfully
+[Info], 2021-07-17 12:25:45, egg got picked up
 
-[Info], 2021-07-12 10:04:24, planted successfully
+[Info], 2021-07-17 12:25:46, egg got expired
 
-[Info], 2021-07-12 10:04:24, planted successfully
+[Info], 2021-07-17 12:25:46, chicken produced egg
 
-[Info], 2021-07-12 10:04:31, chicken produced egg
+[Info], 2021-07-17 12:25:47, Product is getting produced
 
-[Info], 2021-07-12 10:04:31, chicken produced egg
+[Info], 2021-07-17 12:25:47, cat collected egg
 
-[Info], 2021-07-12 10:04:31, chicken produced egg
+[Info], 2021-07-17 12:25:52, cat got killed
 
-[Info], 2021-07-12 10:04:31, chicken produced egg
+[Info], 2021-07-17 12:25:54, chicken died
 
-[Info], 2021-07-12 10:04:33, chicken ate
+[Info], 2021-07-17 12:25:58, hound got killed
 
-[Info], 2021-07-12 10:04:34, chicken died
+[Info], 2021-07-17 12:25:58, tiger got killed
 
-[Info], 2021-07-12 10:19:20, chicken has been bought
+[Info], 2021-07-17 12:26:12, mill produced flour
 
-[Info], 2021-07-12 10:19:20, chicken has been bought
+[Info], 2021-07-17 12:26:12, mill produced flour
 
-[Info], 2021-07-12 10:19:20, chicken has been bought
+[Info], 2021-07-17 12:26:14, flour got picked up
 
-[Info], 2021-07-12 10:19:20, chicken has been bought
+[Info], 2021-07-17 12:26:16, planted successfully
 
-[Info], 2021-07-12 10:19:20, cat has been bought
+[Info], 2021-07-17 12:26:18, flour got picked up
 
-[Info], 2021-07-12 10:19:20, hound has been bought
+[Info], 2021-07-17 12:26:19, planted successfully
 
-[Info], 2021-07-12 10:19:20, planted successfully
+[Info], 2021-07-17 12:26:20, planted successfully
 
-[Info], 2021-07-12 10:19:20, planted successfully
+[Info], 2021-07-17 12:26:21, planted successfully
 
-[Info], 2021-07-12 10:19:20, planted successfully
+[Info], 2021-07-17 12:26:21, planted successfully
 
-[Info], 2021-07-12 10:19:20, planted successfully
+[Info], 2021-07-17 12:26:21, planted successfully
 
-[Info], 2021-07-12 10:19:24, chicken died
+[Info], 2021-07-17 12:26:23, planted successfully
 
-[Info], 2021-07-12 10:19:30, chicken produced egg
+[Info], 2021-07-17 12:26:24, planted successfully
 
-[Info], 2021-07-12 10:19:30, chicken produced egg
+[Info], 2021-07-17 12:26:24, planted successfully
 
-[Info], 2021-07-12 10:19:30, chicken produced egg
+[Info], 2021-07-17 12:26:25, planted successfully
 
-[Info], 2021-07-12 10:19:32, chicken died
+[Info], 2021-07-17 12:26:26, planted successfully
 
-[Info], 2021-07-12 10:19:34, cat got killed
+[Info], 2021-07-17 12:28:03, login successful
 
-[Info], 2021-07-12 10:19:37, chicken produced egg
+[Info], 2021-07-17 12:28:04, chicken has been bought
 
-[Info], 2021-07-12 10:19:37, chicken produced egg
+[Info], 2021-07-17 12:28:04, chicken has been bought
 
-[Info], 2021-07-12 10:19:38, chicken ate
+[Info], 2021-07-17 12:28:04, chicken has been bought
 
-[Info], 2021-07-12 10:19:39, chicken died
+[Info], 2021-07-17 12:28:04, chicken has been bought
 
-[Info], 2021-07-12 10:19:40, chicken died
+[Info], 2021-07-17 12:28:04, cat has been bought
 
-[Info], 2021-07-12 10:19:44, egg got expired
+[Info], 2021-07-17 12:28:04, hound has been bought
 
-[Info], 2021-07-12 10:19:44, egg got expired
+[Info], 2021-07-17 12:28:04, planted successfully
 
-[Info], 2021-07-12 10:19:44, egg got expired
+[Info], 2021-07-17 12:28:04, planted successfully
 
-[Info], 2021-07-12 10:19:51, egg got expired
+[Info], 2021-07-17 12:28:04, planted successfully
 
-[Info], 2021-07-12 10:19:51, egg got expired
+[Info], 2021-07-17 12:28:04, planted successfully
 
-[Info], 2021-07-12 10:21:41, chicken has been bought
+[Info], 2021-07-17 12:28:06, Factory was built successfully
 
-[Info], 2021-07-12 10:21:41, chicken has been bought
+[Info], 2021-07-17 12:28:07, Factory mill was upgraded to level 2
 
-[Info], 2021-07-12 10:21:41, chicken has been bought
+[Info], 2021-07-17 12:28:14, Factory was built successfully
 
-[Info], 2021-07-12 10:21:41, chicken has been bought
+[Info], 2021-07-17 12:28:16, Factory was built successfully
 
-[Info], 2021-07-12 10:21:41, cat has been bought
+[Info], 2021-07-17 12:28:16, Factory was built successfully
 
-[Info], 2021-07-12 10:21:41, hound has been bought
+[Info], 2021-07-17 12:28:18, chicken produced egg
 
-[Info], 2021-07-12 10:21:41, planted successfully
+[Info], 2021-07-17 12:28:18, chicken produced egg
 
-[Info], 2021-07-12 10:21:41, planted successfully
+[Info], 2021-07-17 12:28:18, chicken produced egg
 
-[Info], 2021-07-12 10:21:41, planted successfully
+[Info], 2021-07-17 12:28:18, chicken produced egg
 
-[Info], 2021-07-12 10:21:41, planted successfully
+[Info], 2021-07-17 12:28:18, cat got killed
 
-[Info], 2021-07-12 10:21:46, chicken died
+[Info], 2021-07-17 12:28:19, egg got picked up
 
-[Info], 2021-07-12 10:21:47, chicken died
+[Info], 2021-07-17 12:28:21, Product is getting produced
 
-[Info], 2021-07-12 10:21:50, chicken produced egg
+[Info], 2021-07-17 12:28:24, chicken died
 
-[Info], 2021-07-12 10:21:50, chicken produced egg
+[Info], 2021-07-17 12:28:26, chicken ate
 
-[Info], 2021-07-12 10:22:40, chicken has been bought
+[Info], 2021-07-17 12:28:27, egg got picked up
 
-[Info], 2021-07-12 10:22:40, chicken has been bought
+[Info], 2021-07-17 12:28:31, chicken produced egg
 
-[Info], 2021-07-12 10:22:40, chicken has been bought
+[Info], 2021-07-17 12:28:31, chicken produced egg
 
-[Info], 2021-07-12 10:22:40, chicken has been bought
+[Info], 2021-07-17 12:28:31, chicken produced egg
 
-[Info], 2021-07-12 10:22:40, cat has been bought
+[Info], 2021-07-17 12:28:32, chicken ate
 
-[Info], 2021-07-12 10:22:40, hound has been bought
+[Info], 2021-07-17 12:28:34, mill produced flour
 
-[Info], 2021-07-12 10:22:41, planted successfully
+[Info], 2021-07-17 12:28:36, planted successfully
 
-[Info], 2021-07-12 10:22:41, planted successfully
+[Info], 2021-07-17 12:28:37, chicken died
 
-[Info], 2021-07-12 10:22:41, planted successfully
+[Info], 2021-07-17 12:28:38, egg got picked up
 
-[Info], 2021-07-12 10:22:41, planted successfully
+[Info], 2021-07-17 12:28:43, hound got killed
 
-[Info], 2021-07-12 10:22:46, hound got killed
+[Info], 2021-07-17 12:28:43, tiger got killed
 
-[Info], 2021-07-12 10:22:46, lion got killed
+[Info], 2021-07-17 12:28:44, egg got expired
 
-[Info], 2021-07-12 10:22:49, chicken produced egg
+[Info], 2021-07-17 12:28:44, chicken produced egg
 
-[Info], 2021-07-12 10:22:49, chicken produced egg
+[Info], 2021-07-17 12:28:44, chicken produced egg
 
-[Info], 2021-07-12 10:22:49, chicken produced egg
+[Info], 2021-07-17 12:28:47, flour got picked up
 
-[Info], 2021-07-12 10:22:49, chicken produced egg
+[Info], 2021-07-17 12:28:49, egg got picked up
 
-[Info], 2021-07-12 10:22:51, chicken died
+[Info], 2021-07-17 12:28:50, chicken died
 
-[Info], 2021-07-12 10:22:51, cat got killed
+[Info], 2021-07-17 12:28:50, chicken ate
 
-[Info], 2021-07-12 10:22:53, chicken died
+[Info], 2021-07-17 12:28:51, egg got picked up
 
-[Info], 2021-07-12 10:24:00, chicken has been bought
+[Info], 2021-07-17 12:28:52, Product is getting produced
 
-[Info], 2021-07-12 10:24:00, chicken has been bought
+[Info], 2021-07-17 12:28:55, Product is getting produced
 
-[Info], 2021-07-12 10:24:00, chicken has been bought
+[Info], 2021-07-17 12:28:57, egg got expired
 
-[Info], 2021-07-12 10:24:00, chicken has been bought
+[Info], 2021-07-17 12:28:57, egg got expired
 
-[Info], 2021-07-12 10:24:00, cat has been bought
+[Info], 2021-07-17 12:28:57, chicken produced egg
 
-[Info], 2021-07-12 10:24:00, hound has been bought
+[Info], 2021-07-17 12:29:06, chicken ate
 
-[Info], 2021-07-12 10:24:01, planted successfully
+[Info], 2021-07-17 12:29:09, egg got expired
 
-[Info], 2021-07-12 10:24:01, planted successfully
+[Info], 2021-07-17 12:29:09, chicken produced egg
 
-[Info], 2021-07-12 10:24:01, planted successfully
+[Info], 2021-07-17 12:29:18, mill produced flour
 
-[Info], 2021-07-12 10:24:01, planted successfully
+[Info], 2021-07-17 12:29:18, mill produced flour
 
-[Info], 2021-07-12 10:24:04, chicken died
+[Info], 2021-07-17 12:29:22, egg got expired
 
-[Info], 2021-07-12 10:24:06, chicken died
+[Info], 2021-07-17 12:29:22, chicken produced egg
 
-[Info], 2021-07-12 10:24:07, hound got killed
+[Info], 2021-07-17 12:29:26, flour got picked up
 
-[Info], 2021-07-12 10:24:07, lion got killed
+[Info], 2021-07-17 12:29:27, bakery produced bread
 
-[Info], 2021-07-12 10:24:50, chicken has been bought
+[Info], 2021-07-17 12:29:35, egg got expired
 
-[Info], 2021-07-12 10:24:50, chicken has been bought
+[Info], 2021-07-17 12:29:35, chicken produced egg
 
-[Info], 2021-07-12 10:24:50, chicken has been bought
+[Info], 2021-07-17 12:29:37, chicken ate
 
-[Info], 2021-07-12 10:24:50, chicken has been bought
+[Info], 2021-07-17 12:29:37, lion got caged
 
-[Info], 2021-07-12 10:24:50, cat has been bought
+[Error], 2021-07-17 12:29:42, Error: not enough water in the well
 
-[Info], 2021-07-12 10:24:50, hound has been bought
+[Info], 2021-07-17 12:29:44, bread got picked up
 
-[Info], 2021-07-12 10:24:50, planted successfully
+[Info], 2021-07-17 12:29:47, lion got picked up
 
-[Info], 2021-07-12 10:24:50, planted successfully
+[Error], 2021-07-17 12:29:47, Error: not enough water in the well
 
-[Info], 2021-07-12 10:24:50, planted successfully
+[Info], 2021-07-17 12:29:48, egg got expired
 
-[Info], 2021-07-12 10:24:50, planted successfully
+[Info], 2021-07-17 12:29:48, chicken produced egg
 
-[Info], 2021-07-12 10:26:08, chicken has been bought
+[Info], 2021-07-17 12:29:50, flour got expired
 
-[Info], 2021-07-12 10:26:08, chicken has been bought
+[Info], 2021-07-17 12:45:50, login successful
 
-[Info], 2021-07-12 10:26:09, chicken has been bought
+[Info], 2021-07-17 12:45:57, chicken has been bought
 
-[Info], 2021-07-12 10:26:09, chicken has been bought
+[Info], 2021-07-17 12:45:57, chicken has been bought
 
-[Info], 2021-07-12 10:26:09, cat has been bought
+[Info], 2021-07-17 12:45:57, chicken has been bought
 
-[Info], 2021-07-12 10:26:09, hound has been bought
+[Info], 2021-07-17 12:45:57, chicken has been bought
 
-[Info], 2021-07-12 10:26:09, planted successfully
+[Info], 2021-07-17 12:45:57, cat has been bought
 
-[Info], 2021-07-12 10:26:09, planted successfully
+[Info], 2021-07-17 12:45:57, hound has been bought
 
-[Info], 2021-07-12 10:26:09, planted successfully
+[Info], 2021-07-17 12:45:57, planted successfully
 
-[Info], 2021-07-12 10:26:09, planted successfully
+[Info], 2021-07-17 12:45:57, planted successfully
 
-[Info], 2021-07-12 10:26:13, cat got killed
+[Info], 2021-07-17 12:45:57, planted successfully
 
-[Info], 2021-07-12 10:27:54, chicken has been bought
+[Info], 2021-07-17 12:45:57, planted successfully
 
-[Info], 2021-07-12 10:27:54, chicken has been bought
+[Info], 2021-07-17 03:59:47, login successful
 
-[Info], 2021-07-12 10:27:54, chicken has been bought
+[Info], 2021-07-17 04:00:18, login successful
 
-[Info], 2021-07-12 10:27:54, chicken has been bought
+[Info], 2021-07-17 04:04:10, login successful
 
-[Info], 2021-07-12 10:27:54, cat has been bought
+[Info], 2021-07-17 04:05:30, login successful
 
-[Info], 2021-07-12 10:27:54, hound has been bought
+[Info], 2021-07-17 04:06:13, login successful
 
-[Info], 2021-07-12 10:27:54, planted successfully
+[Info], 2021-07-17 04:08:54, login successful
 
-[Info], 2021-07-12 10:27:54, planted successfully
+[Info], 2021-07-17 04:09:22, login successful
 
-[Info], 2021-07-12 10:27:54, planted successfully
+[Info], 2021-07-17 04:09:54, login successful
 
-[Info], 2021-07-12 10:27:54, planted successfully
+[Error], 2021-07-17 04:10:45, wrong password
 
-[Info], 2021-07-12 10:28:02, chicken produced egg
+[Info], 2021-07-17 04:10:49, login successful
 
-[Info], 2021-07-12 10:28:03, chicken produced egg
+[Info], 2021-07-17 04:11:22, login successful
 
-[Info], 2021-07-12 10:28:03, chicken produced egg
+[Info], 2021-07-17 04:11:35, login successful
 
-[Info], 2021-07-12 10:28:03, chicken produced egg
+[Info], 2021-07-17 04:12:09, login successful
 
-[Info], 2021-07-12 10:28:03, cat collected egg
+[Info], 2021-07-17 04:12:17, chicken has been bought
 
-[Info], 2021-07-12 10:28:05, cat collected egg
+[Info], 2021-07-17 04:12:17, chicken has been bought
 
-[Info], 2021-07-12 10:31:54, chicken has been bought
+[Info], 2021-07-17 04:12:17, chicken has been bought
 
-[Info], 2021-07-12 10:31:54, chicken has been bought
+[Info], 2021-07-17 04:12:17, chicken has been bought
 
-[Info], 2021-07-12 10:31:55, chicken has been bought
+[Info], 2021-07-17 04:12:17, cat has been bought
 
-[Info], 2021-07-12 10:31:55, chicken has been bought
+[Info], 2021-07-17 04:12:17, hound has been bought
 
-[Info], 2021-07-12 10:31:55, cat has been bought
+[Info], 2021-07-17 04:12:17, planted successfully
 
-[Info], 2021-07-12 10:31:55, hound has been bought
+[Info], 2021-07-17 04:12:17, planted successfully
 
-[Info], 2021-07-12 10:31:55, planted successfully
+[Info], 2021-07-17 04:12:17, planted successfully
 
-[Info], 2021-07-12 10:31:55, planted successfully
+[Info], 2021-07-17 04:12:17, planted successfully
 
-[Info], 2021-07-12 10:31:55, planted successfully
+[Info], 2021-07-17 04:12:18, chicken died
 
-[Info], 2021-07-12 10:31:55, planted successfully
+[Info], 2021-07-17 04:12:20, Factory was built successfully
 
-[Info], 2021-07-13 08:55:40, login successful
+[Info], 2021-07-17 04:12:20, Factory was built successfully
 
-[Info], 2021-07-13 08:55:42, chicken has been bought
+[Info], 2021-07-17 04:12:21, Factory was built successfully
 
-[Info], 2021-07-13 08:55:42, chicken has been bought
+[Info], 2021-07-17 04:12:23, Factory was built successfully
 
-[Info], 2021-07-13 08:55:42, chicken has been bought
+[Info], 2021-07-17 04:12:24, Factory was built successfully
 
-[Info], 2021-07-13 08:55:42, chicken has been bought
+[Info], 2021-07-17 04:12:25, Factory was built successfully
 
-[Info], 2021-07-13 08:55:42, cat has been bought
+[Info], 2021-07-17 04:12:25, Factory was built successfully
 
-[Info], 2021-07-13 08:55:42, hound has been bought
+[Info], 2021-07-17 04:16:52, login successful
 
-[Info], 2021-07-13 08:55:42, planted successfully
+[Info], 2021-07-17 04:16:54, chicken has been bought
 
-[Info], 2021-07-13 08:55:42, planted successfully
+[Info], 2021-07-17 04:16:54, chicken has been bought
 
-[Info], 2021-07-13 08:55:42, planted successfully
+[Info], 2021-07-17 04:16:54, chicken has been bought
 
-[Info], 2021-07-13 08:55:42, planted successfully
+[Info], 2021-07-17 04:16:54, chicken has been bought
 
-[Info], 2021-07-13 08:55:47, hound got killed
+[Info], 2021-07-17 04:16:54, cat has been bought
 
-[Info], 2021-07-13 08:55:47, bear got killed
+[Info], 2021-07-17 04:16:54, hound has been bought
 
-[Info], 2021-07-13 08:56:25, login successful
+[Info], 2021-07-17 04:16:54, planted successfully
 
-[Info], 2021-07-13 08:56:27, chicken has been bought
+[Info], 2021-07-17 04:16:54, planted successfully
 
-[Info], 2021-07-13 08:56:27, chicken has been bought
+[Info], 2021-07-17 04:16:54, planted successfully
 
-[Info], 2021-07-13 08:56:27, chicken has been bought
+[Info], 2021-07-17 04:16:54, planted successfully
 
-[Info], 2021-07-13 08:56:27, chicken has been bought
+[Info], 2021-07-17 04:17:07, chicken produced egg
 
-[Info], 2021-07-13 08:56:27, cat has been bought
+[Info], 2021-07-17 04:17:07, chicken produced egg
 
-[Info], 2021-07-13 08:56:27, hound has been bought
+[Info], 2021-07-17 04:17:07, chicken produced egg
 
-[Info], 2021-07-13 08:56:27, planted successfully
+[Info], 2021-07-17 04:17:07, chicken produced egg
 
-[Info], 2021-07-13 08:56:27, planted successfully
+[Info], 2021-07-17 04:17:08, lion got caged
 
-[Info], 2021-07-13 08:56:27, planted successfully
+[Info], 2021-07-17 04:17:10, bear got caged
 
-[Info], 2021-07-13 08:56:27, planted successfully
+[Info], 2021-07-17 04:17:13, planted successfully
 
-[Info], 2021-07-13 08:56:32, chicken died
+[Info], 2021-07-17 04:17:16, tiger got caged
 
-[Info], 2021-07-13 08:56:35, chicken died
+[Info], 2021-07-17 04:17:16, cat collected egg
 
-[Info], 2021-07-13 08:56:35, chicken produced egg
+[Info], 2021-07-17 06:39:31, login successful
 
-[Info], 2021-07-13 08:56:35, chicken produced egg
+[Info], 2021-07-17 06:39:33, chicken has been bought
 
-[Info], 2021-07-13 08:56:39, chicken ate
+[Info], 2021-07-17 06:39:33, chicken has been bought
 
-[Info], 2021-07-13 08:56:39, cat got killed
+[Info], 2021-07-17 06:39:33, chicken has been bought
 
-[Info], 2021-07-13 08:56:39, hound got killed
+[Info], 2021-07-17 06:39:33, chicken has been bought
 
-[Info], 2021-07-13 08:56:39, tiger got killed
+[Info], 2021-07-17 06:39:33, cat has been bought
 
-[Info], 2021-07-13 08:57:21, chicken has been bought
+[Info], 2021-07-17 06:39:33, hound has been bought
 
-[Info], 2021-07-13 08:57:21, chicken has been bought
+[Info], 2021-07-17 06:39:33, planted successfully
 
-[Info], 2021-07-13 08:57:21, chicken has been bought
+[Info], 2021-07-17 06:39:33, planted successfully
 
-[Info], 2021-07-13 08:57:21, chicken has been bought
+[Info], 2021-07-17 06:39:33, planted successfully
 
-[Info], 2021-07-13 08:57:22, cat has been bought
+[Info], 2021-07-17 06:39:33, planted successfully
 
-[Info], 2021-07-13 08:57:22, hound has been bought
+[Info], 2021-07-17 06:39:36, lion got caged
 
-[Info], 2021-07-13 08:57:22, planted successfully
+[Info], 2021-07-17 06:39:42, bear got caged
 
-[Info], 2021-07-13 08:57:22, planted successfully
+[Info], 2021-07-17 06:49:52, login successful
 
-[Info], 2021-07-13 08:57:22, planted successfully
+[Info], 2021-07-17 06:49:53, chicken has been bought
 
-[Info], 2021-07-13 08:57:22, planted successfully
+[Info], 2021-07-17 06:49:53, chicken has been bought
 
-[Info], 2021-07-13 08:57:33, chicken died
+[Info], 2021-07-17 06:49:53, chicken has been bought
 
-[Info], 2021-07-13 08:57:33, chicken died
+[Info], 2021-07-17 06:49:53, chicken has been bought
 
-[Info], 2021-07-13 08:57:52, login successful
+[Info], 2021-07-17 06:49:53, cat has been bought
 
-[Info], 2021-07-13 08:57:53, chicken has been bought
+[Info], 2021-07-17 06:49:53, hound has been bought
 
-[Info], 2021-07-13 08:57:53, chicken has been bought
+[Info], 2021-07-17 06:49:53, planted successfully
 
-[Info], 2021-07-13 08:57:53, chicken has been bought
+[Info], 2021-07-17 06:49:53, planted successfully
 
-[Info], 2021-07-13 08:57:53, chicken has been bought
+[Info], 2021-07-17 06:49:53, planted successfully
 
-[Info], 2021-07-13 08:57:53, cat has been bought
+[Info], 2021-07-17 06:49:54, planted successfully
 
-[Info], 2021-07-13 08:57:53, hound has been bought
+[Info], 2021-07-17 06:50:33, login successful
 
-[Info], 2021-07-13 08:57:53, planted successfully
+[Info], 2021-07-17 06:50:35, chicken has been bought
 
-[Info], 2021-07-13 08:57:54, planted successfully
+[Info], 2021-07-17 06:50:35, chicken has been bought
 
-[Info], 2021-07-13 08:57:54, planted successfully
+[Info], 2021-07-17 06:50:35, chicken has been bought
 
-[Info], 2021-07-13 08:57:54, planted successfully
+[Info], 2021-07-17 06:50:35, chicken has been bought
 
-[Info], 2021-07-13 09:41:50, login successful
+[Info], 2021-07-17 06:50:35, cat has been bought
 
-[Info], 2021-07-13 09:41:51, chicken has been bought
+[Info], 2021-07-17 06:50:35, hound has been bought
 
-[Info], 2021-07-13 09:41:51, chicken has been bought
+[Info], 2021-07-17 06:50:35, planted successfully
 
-[Info], 2021-07-13 09:41:51, chicken has been bought
+[Info], 2021-07-17 06:50:35, planted successfully
 
-[Info], 2021-07-13 09:41:51, chicken has been bought
+[Info], 2021-07-17 06:50:35, planted successfully
 
-[Info], 2021-07-13 09:41:51, cat has been bought
+[Info], 2021-07-17 06:50:35, planted successfully
 
-[Info], 2021-07-13 09:41:51, hound has been bought
+[Info], 2021-07-17 06:51:04, login successful
 
-[Info], 2021-07-13 09:41:51, planted successfully
+[Info], 2021-07-17 06:51:06, chicken has been bought
 
-[Info], 2021-07-13 09:41:51, planted successfully
+[Info], 2021-07-17 06:51:06, chicken has been bought
 
-[Info], 2021-07-13 09:41:51, planted successfully
+[Info], 2021-07-17 06:51:06, chicken has been bought
 
-[Info], 2021-07-13 09:41:51, planted successfully
+[Info], 2021-07-17 06:51:06, chicken has been bought
 
-[Info], 2021-07-13 09:42:09, chicken produced egg
+[Info], 2021-07-17 06:51:06, cat has been bought
 
-[Info], 2021-07-13 09:42:09, chicken produced egg
+[Info], 2021-07-17 06:51:06, hound has been bought
 
-[Info], 2021-07-13 09:42:09, chicken produced egg
+[Info], 2021-07-17 06:51:06, planted successfully
 
-[Info], 2021-07-13 09:42:09, chicken produced egg
+[Info], 2021-07-17 06:51:06, planted successfully
 
-[Info], 2021-07-13 09:42:14, cat collected egg
+[Info], 2021-07-17 06:51:06, planted successfully
 
-[Info], 2021-07-13 09:42:14, chicken ate
+[Info], 2021-07-17 06:51:06, planted successfully
 
-[Info], 2021-07-13 09:42:16, chicken produced egg
+[Info], 2021-07-17 06:51:11, Factory was built successfully
 
-[Info], 2021-07-13 09:42:16, chicken produced egg
+[Info], 2021-07-17 06:51:12, Factory was built successfully
 
-[Info], 2021-07-13 09:42:16, chicken produced egg
+[Info], 2021-07-17 06:51:13, Factory was built successfully
 
-[Info], 2021-07-13 09:42:16, chicken produced egg
+[Info], 2021-07-17 06:51:14, Factory was built successfully
 
-[Info], 2021-07-13 09:42:16, cat collected egg
+[Info], 2021-07-17 06:51:14, cat got killed
 
-[Info], 2021-07-13 09:42:16, cat collected egg
+[Info], 2021-07-17 06:51:15, Factory was built successfully
 
-[Info], 2021-07-13 09:44:36, login successful
+[Info], 2021-07-17 06:51:16, Factory was built successfully
 
-[Info], 2021-07-13 09:44:38, chicken has been bought
+[Info], 2021-07-17 06:51:18, Factory was built successfully
 
-[Info], 2021-07-13 09:44:38, chicken has been bought
+[Info], 2021-07-17 06:51:19, chicken produced egg
 
-[Info], 2021-07-13 09:44:38, chicken has been bought
+[Info], 2021-07-17 06:51:19, chicken produced egg
 
-[Info], 2021-07-13 09:44:38, chicken has been bought
+[Info], 2021-07-17 06:51:19, chicken produced egg
 
-[Info], 2021-07-13 09:44:38, cat has been bought
+[Info], 2021-07-17 06:51:19, chicken produced egg
 
-[Info], 2021-07-13 09:44:38, hound has been bought
+[Info], 2021-07-17 06:51:29, chicken ate
 
-[Info], 2021-07-13 09:44:38, planted successfully
+[Info], 2021-07-17 06:51:48, chicken died
 
-[Info], 2021-07-13 09:44:38, planted successfully
+[Info], 2021-07-17 06:51:48, chicken produced egg
 
-[Info], 2021-07-13 09:44:38, planted successfully
+[Info], 2021-07-17 06:51:48, chicken produced egg
 
-[Info], 2021-07-13 09:44:38, planted successfully
+[Info], 2021-07-17 06:51:48, chicken produced egg
 
-[Info], 2021-07-13 09:45:15, login successful
+[Info], 2021-07-17 08:29:49, login successful
 
-[Info], 2021-07-13 09:45:17, chicken has been bought
+[Info], 2021-07-17 08:29:51, chicken has been bought
 
-[Info], 2021-07-13 09:45:17, chicken has been bought
+[Info], 2021-07-17 08:29:51, chicken has been bought
 
-[Info], 2021-07-13 09:45:17, chicken has been bought
+[Info], 2021-07-17 08:29:51, chicken has been bought
 
-[Info], 2021-07-13 09:45:17, chicken has been bought
+[Info], 2021-07-17 08:29:51, chicken has been bought
 
-[Info], 2021-07-13 09:45:17, cat has been bought
+[Info], 2021-07-17 08:29:51, cat has been bought
 
-[Info], 2021-07-13 09:45:17, hound has been bought
+[Info], 2021-07-17 08:29:51, hound has been bought
 
-[Info], 2021-07-13 09:45:17, planted successfully
+[Info], 2021-07-17 08:29:51, planted successfully
 
-[Info], 2021-07-13 09:45:17, planted successfully
+[Info], 2021-07-17 08:29:51, planted successfully
 
-[Info], 2021-07-13 09:45:17, planted successfully
+[Info], 2021-07-17 08:29:51, planted successfully
 
-[Info], 2021-07-13 09:45:17, planted successfully
+[Info], 2021-07-17 08:29:51, planted successfully
 
-[Info], 2021-07-13 09:46:03, chicken has been bought
+[Info], 2021-07-17 0
 
-[Info], 2021-07-13 09:46:03, chicken has been bought
+[Info], 2021-07-18 04:31:48, Product is getting producedicken has been bought
 
-[Info], 2021-07-13 09:46:03, chicken has been bought
+[Info], 2021-07-17 08:30:40, chicken has been bought
 
-[Info], 2021-07-13 09:46:03, chicken has been bought
+[Info], 2021-07-17 08:30:40, chicken has been bought
 
-[Info], 2021-07-13 09:46:03, cat has been bought
+[Info], 2021-07-17 08:30:40, chicken has been bought
 
-[Info], 2021-07-13 09:46:03, hound has been bought
+[Info], 2021-07-17 08:30:41, cat has been bought
 
-[Info], 2021-07-13 09:46:03, planted successfully
+[Info], 2021-07-17 08:30:41, hound has been bought
 
-[Info], 2021-07-13 09:46:03, planted successfully
+[Info], 2021-07-17 08:30:41, planted successfully
 
-[Info], 2021-07-13 09:46:03, planted successfully
+[Info], 2021-07-17 08:30:41, planted successfully
 
-[Info], 2021-07-13 09:46:03, planted successfully
+[Info], 2021-07-17 08:30:41, planted successfully
 
-[Info], 2021-07-13 09:46:20, chicken produced egg
+[Info], 2021-07-17 08:30:41, planted successfully
 
-[Info], 2021-07-13 09:46:20, chicken produced egg
+[Info], 2021-07-17 08:30:41, chicken died
 
-[Info], 2021-07-13 09:46:20, chicken produced egg
+[Info], 2021-07-17 08:31:00, login successful
 
-[Info], 2021-07-13 09:46:20, chicken produced egg
+[Info], 2021-07-17 08:31:01, chicken has been bought
 
-[Info], 2021-07-13 09:46:22, chicken ate
+[Info], 2021-07-17 08:31:01, chicken has been bought
 
-[Info], 2021-07-13 09:46:22, chicken ate
+[Info], 2021-07-17 08:31:01, chicken has been bought
 
-[Info], 2021-07-13 09:46:23, cat collected egg
+[Info], 2021-07-17 08:31:01, chicken has been bought
 
-[Info], 2021-07-13 09:46:24, chicken died
+[Info], 2021-07-17 08:31:01, cat has been bought
 
-[Info], 2021-07-13 09:46:25, chicken died
+[Info], 2021-07-17 08:31:01, hound has been bought
 
-[Info], 2021-07-13 09:46:26, cat collected egg
+[Info], 2021-07-17 08:31:01, planted successfully
 
-[Info], 2021-07-13 09:46:26, chicken died
+[Info], 2021-07-17 08:31:01, planted successfully
 
-[Info], 2021-07-13 09:47:19, chicken has been bought
+[Info], 2021-07-17 08:31:01, planted successfully
 
-[Info], 2021-07-13 09:47:19, chicken has been bought
+[Info], 2021-07-17 08:31:01, planted successfully
 
-[Info], 2021-07-13 09:47:19, chicken has been bought
+[Error], 2021-07-17 08:41:51, wrong password
 
-[Info], 2021-07-13 09:47:19, chicken has been bought
+[Info], 2021-07-17 08:41:56, login successful
 
-[Info], 2021-07-13 09:47:19, cat has been bought
+[Info], 2021-07-17 08:41:58, chicken has been bought
 
-[Info], 2021-07-13 09:47:19, hound has been bought
+[Info], 2021-07-17 08:41:58, chicken has been bought
 
-[Info], 2021-07-13 09:47:19, planted successfully
+[Info], 2021-07-17 08:41:58, chicken has been bought
 
-[Info], 2021-07-13 09:47:19, planted successfully
+[Info], 2021-07-17 08:41:58, chicken has been bought
 
-[Info], 2021-07-13 09:47:19, planted successfully
+[Info], 2021-07-17 08:41:58, cat has been bought
 
-[Info], 2021-07-13 09:47:19, planted successfully
+[Info], 2021-07-17 08:41:58, hound has been bought
 
-[Info], 2021-07-13 09:47:52, chicken has been bought
+[Info], 2021-07-17 08:41:58, planted successfully
 
-[Info], 2021-07-13 09:47:52, chicken has been bought
+[Info], 2021-07-17 08:41:58, planted successfully
 
-[Info], 2021-07-13 09:47:52, chicken has been bought
+[Info], 2021-07-17 08:41:58, planted successfully
 
-[Info], 2021-07-13 09:47:52, chicken has been bought
+[Info], 2021-07-17 08:41:58, planted successfully
 
-[Info], 2021-07-13 09:47:52, cat has been bought
+[Info], 2021-07-17 08:41:58, hound got killed
 
-[Info], 2021-07-13 09:47:53, hound has been bought
+[Info], 2021-07-17 08:41:58, lion got killed
 
-[Info], 2021-07-13 09:47:53, planted successfully
+[Info], 2021-07-17 08:42:43, login successful
 
-[Info], 2021-07-13 09:47:53, planted successfully
+[Info], 2021-07-17 08:42:45, chicken has been bought
 
-[Info], 2021-07-13 09:47:53, planted successfully
+[Info], 2021-07-17 08:42:45, chicken has been bought
 
-[Info], 2021-07-13 09:47:53, planted successfully
+[Info], 2021-07-17 08:42:45, chicken has been bought
 
-[Info], 2021-07-13 09:48:27, chicken has been bought
+[Info], 2021-07-17 08:42:45, chicken has been bought
 
-[Info], 2021-07-13 09:48:27, chicken has been bought
+[Info], 2021-07-17 08:42:45, cat has been bought
 
-[Info], 2021-07-13 09:48:28, chicken has been bought
+[Info], 2021-07-17 08:42:45, hound has been bought
 
-[Info], 2021-07-13 09:48:28, chicken has been bought
+[Info], 2021-07-17 08:42:45, planted successfully
 
-[Info], 2021-07-13 09:48:28, cat has been bought
+[Info], 2021-07-17 08:42:45, planted successfully
 
-[Info], 2021-07-13 09:48:28, hound has been bought
+[Info], 2021-07-17 08:42:45, planted successfully
 
-[Info], 2021-07-13 09:48:28, planted successfully
+[Info], 2021-07-17 08:42:45, planted successfully
 
-[Info], 2021-07-13 09:48:28, planted successfully
+[Info], 2021-07-17 08:43:23, login successful
 
-[Info], 2021-07-13 09:48:28, planted successfully
+[Info], 2021-07-17 08:43:24, chicken has been bought
 
-[Info], 2021-07-13 09:48:28, planted successfully
+[Info], 2021-07-17 08:43:24, chicken has been bought
 
-[Info], 2021-07-13 09:48:44, chicken died
+[Info], 2021-07-17 08:43:24, chicken has been bought
 
-[Info], 2021-07-13 09:48:45, chicken produced egg
+[Info], 2021-07-17 08:43:24, chicken has been bought
 
-[Info], 2021-07-13 09:48:45, chicken produced egg
+[Info], 2021-07-17 08:43:24, cat has been bought
 
-[Info], 2021-07-13 09:48:45, chicken produced egg
+[Info], 2021-07-17 08:43:24, hound has been bought
 
-[Info], 2021-07-13 09:48:48, chicken died
+[Info], 2021-07-17 08:43:24, planted successfully
 
-[Info], 2021-07-13 09:48:52, chicken produced egg
+[Info], 2021-07-17 08:43:24, planted successfully
 
-[Info], 2021-07-13 09:48:52, chicken produced egg
+[Info], 2021-07-17 08:43:24, planted successfully
 
-[Info], 2021-07-13 09:49:06, chicken has been bought
+[Info], 2021-07-17 08:43:24, planted successfully
 
-[Info], 2021-07-13 09:49:06, chicken has been bought
+[Info], 2021-07-17 08:45:18, login successful
 
-[Info], 2021-07-13 09:49:06, chicken has been bought
+[Info], 2021-07-17 08:45:20, chicken has been bought
 
-[Info], 2021-07-13 09:49:06, chicken has been bought
+[Info], 2021-07-17 08:45:20, chicken has been bought
 
-[Info], 2021-07-13 09:49:06, cat has been bought
+[Info], 2021-07-17 08:45:20, chicken has been bought
 
-[Info], 2021-07-13 09:49:06, hound has been bought
+[Info], 2021-07-17 08:45:20, chicken has been bought
 
-[Info], 2021-07-13 09:49:07, planted successfully
+[Info], 2021-07-17 08:45:20, cat has been bought
 
-[Info], 2021-07-13 09:49:07, planted successfully
+[Info], 2021-07-17 08:45:20, hound has been bought
 
-[Info], 2021-07-13 09:49:07, planted successfully
+[Info], 2021-07-17 08:45:20, planted successfully
 
-[Info], 2021-07-13 09:49:07, planted successfully
+[Info], 2021-07-17 08:45:20, planted successfully
 
-[Info], 2021-07-13 09:49:16, chicken has been bought
+[Info], 2021-07-17 08:45:20, planted successfully
 
-[Info], 2021-07-13 09:49:16, chicken has been bought
+[Info], 2021-07-17 08:45:20, planted successfully
 
-[Info], 2021-07-13 09:49:16, chicken has been bought
+[Info], 2021-07-17 08:45:51, login successful
 
-[Info], 2021-07-13 09:49:17, chicken has been bought
+[Info], 2021-07-17 08:45:53, chicken has been bought
 
-[Info], 2021-07-13 09:49:17, cat has been bought
+[Info], 2021-07-17 08:45:53, chicken has been bought
 
-[Info], 2021-07-13 09:49:17, hound has been bought
+[Info], 2021-07-17 08:45:53, chicken has been bought
 
-[Info], 2021-07-13 09:49:17, planted successfully
+[Info], 2021-07-17 08:45:53, chicken has been bought
 
-[Info], 2021-07-13 09:49:17, planted successfully
+[Info], 2021-07-17 08:45:53, cat has been bought
 
-[Info], 2021-07-13 09:49:17, planted successfully
+[Info], 2021-07-17 08:45:53, hound has been bought
 
-[Info], 2021-07-13 09:49:17, planted successfully
+[Info], 2021-07-17 08:45:53, planted successfully
 
-[Info], 2021-07-13 09:49:25, chicken has been bought
+[Info], 2021-07-17 08:45:53, planted successfully
 
-[Info], 2021-07-13 09:49:25, chicken has been bought
+[Info], 2021-07-17 08:45:53, planted successfully
 
-[Info], 2021-07-13 09:49:25, chicken has been bought
+[Info], 2021-07-17 08:45:53, planted successfully
 
-[Info], 2021-07-13 09:49:25, chicken has been bought
+[Info], 2021-07-17 08:46:09, login successful
 
-[Info], 2021-07-13 09:49:25, cat has been bought
+[Info], 2021-07-17 08:46:11, chicken has been bought
 
-[Info], 2021-07-13 09:49:25, hound has been bought
+[Info], 2021-07-17 08:46:11, chicken has been bought
 
-[Info], 2021-07-13 09:49:25, planted successfully
+[Info], 2021-07-17 08:46:11, chicken has been bought
 
-[Info], 2021-07-13 09:49:25, planted successfully
+[Info], 2021-07-17 08:46:11, chicken has been bought
 
-[Info], 2021-07-13 09:49:25, planted successfully
+[Info], 2021-07-17 08:46:11, cat has been bought
 
-[Info], 2021-07-13 09:49:25, planted successfully
+[Info], 2021-07-17 08:46:11, hound has been bought
 
-[Info], 2021-07-13 09:50:25, chicken has been bought
+[Info], 2021-07-17 08:46:11, planted successfully
 
-[Info], 2021-07-13 09:50:25, chicken has been bought
+[Info], 2021-07-17 08:46:11, planted successfully
 
-[Info], 2021-07-13 09:50:25, chicken has been bought
+[Info], 2021-07-17 08:46:11, planted successfully
 
-[Info], 2021-07-13 09:50:25, chicken has been bought
+[Info], 2021-07-17 08:46:11, planted successfully
 
-[Info], 2021-07-13 09:50:25, cat has been bought
+[Info], 2021-07-17 09:00:53, login successful
 
-[Info], 2021-07-13 09:50:25, hound has been bought
+[Info], 2021-07-17 09:01:45, login successful
 
-[Info], 2021-07-13 09:50:25, planted successfully
+[Info], 2021-07-17 09:05:31, login successful
 
-[Info], 2021-07-13 09:50:25, planted successfully
+[Info], 2021-07-17 09:05:33, chicken has been bought
 
-[Info], 2021-07-13 09:50:25, planted successfully
+[Info], 2021-07-17 09:05:33, chicken has been bought
 
-[Info], 2021-07-13 09:50:25, planted successfully
+[Info], 2021-07-17 09:05:33, chicken has been bought
 
-[Info], 2021-07-13 09:50:38, cat got killed
+[Info], 2021-07-17 09:05:33, chicken has been bought
 
-[Info], 2021-07-13 09:50:42, chicken died
+[Info], 2021-07-17 09:05:33, cat has been bought
 
-[Info], 2021-07-13 09:50:42, chicken produced egg
+[Info], 2021-07-17 09:05:33, hound has been bought
 
-[Info], 2021-07-13 09:50:42, chicken produced egg
+[Info], 2021-07-17 09:05:33, planted successfully
 
-[Info], 2021-07-13 09:50:42, chicken produced egg
+[Info], 2021-07-17 09:05:33, planted successfully
 
-[Info], 2021-07-13 09:51:59, chicken has been bought
+[Info], 2021-07-17 09:05:33, planted successfully
 
-[Info], 2021-07-13 09:51:59, chicken has been bought
+[Info], 2021-07-17 09:05:33, planted successfully
 
-[Info], 2021-07-13 09:51:59, chicken has been bought
+[Info], 2021-07-17 09:05:35, Factory was built successfully
 
-[Info], 2021-07-13 09:51:59, chicken has been bought
+[Info], 2021-07-17 09:05:37, Factory was built successfully
 
-[Info], 2021-07-13 09:51:59, cat has been bought
+[Info], 2021-07-17 09:05:38, Factory was built successfully
 
-[Info], 2021-07-13 09:51:59, hound has been bought
+[Info], 2021-07-17 09:05:38, Factory was built successfully
 
-[Info], 2021-07-13 09:51:59, planted successfully
+[Info], 2021-07-17 09:05:40, Factory was built successfully
 
-[Info], 2021-07-13 09:51:59, planted successfully
+[Info], 2021-07-17 09:05:41, Factory was built successfully
 
-[Info], 2021-07-13 09:51:59, planted successfully
+[Info], 2021-07-17 09:05:42, Factory was built successfully
 
-[Info], 2021-07-13 09:51:59, planted successfully
+[Info], 2021-07-17 09:22:38, login successful
 
-[Info], 2021-07-13 09:52:21, chicken has been bought
+[Info], 2021-07-17 09:22:40, chicken has been bought
 
-[Info], 2021-07-13 09:52:22, chicken has been bought
+[Info], 2021-07-17 09:22:40, chicken has been bought
 
-[Info], 2021-07-13 09:52:22, chicken has been bought
+[Info], 2021-07-17 09:22:40, chicken has been bought
 
-[Info], 2021-07-13 09:52:22, chicken has been bought
+[Info], 2021-07-17 09:22:40, chicken has been bought
 
-[Info], 2021-07-13 09:52:22, cat has been bought
+[Info], 2021-07-17 09:22:40, cat has been bought
 
-[Info], 2021-07-13 09:52:22, hound has been bought
+[Info], 2021-07-17 09:22:40, hound has been bought
 
-[Info], 2021-07-13 09:52:22, planted successfully
+[Info], 2021-07-17 09:22:40, planted successfully
 
-[Info], 2021-07-13 09:52:22, planted successfully
+[Info], 2021-07-17 09:22:40, planted successfully
 
-[Info], 2021-07-13 09:52:22, planted successfully
+[Info], 2021-07-17 09:22:40, planted successfully
 
-[Info], 2021-07-13 09:52:22, planted successfully
+[Info], 2021-07-17 09:22:40, planted successfully
 
-[Info], 2021-07-13 09:53:08, chicken has been bought
+[Info], 2021-07-17 09:22:40, chicken died
 
-[Info], 2021-07-13 09:53:08, chicken has been bought
+[Info], 2021-07-17 09:22:41, Factory was built successfully
 
-[Info], 2021-07-13 09:53:08, chicken has been bought
+[Info], 2021-07-17 09:22:42, Factory mill was upgraded to level 2
 
-[Info], 2021-07-13 09:53:08, chicken has been bought
+[Info], 2021-07-17 09:22:43, Factory was built successfully
 
-[Info], 2021-07-13 09:53:08, cat has been bought
+[Info], 2021-07-17 09:22:44, Factory weaver was upgraded to level 2
 
-[Info], 2021-07-13 09:53:08, hound has been bought
+[Info], 2021-07-17 09:47:05, login successful
 
-[Info], 2021-07-13 09:53:09, planted successfully
+[Info], 2021-07-17 09:47:06, chicken has been bought
 
-[Info], 2021-07-13 09:53:09, planted successfully
+[Info], 2021-07-17 09:47:06, chicken has been bought
 
-[Info], 2021-07-13 09:53:09, planted successfully
+[Info], 2021-07-17 09:47:06, chicken has been bought
 
-[Info], 2021-07-13 09:53:09, planted successfully
+[Info], 2021-07-17 09:47:06, chicken has been bought
 
-[Info], 2021-07-13 09:57:39, chicken has been bought
+[Info], 2021-07-17 09:47:06, cat has been bought
 
-[Info], 2021-07-13 09:57:39, chicken has been bought
+[Info], 2021-07-17 09:47:06, hound has been bought
 
-[Info], 2021-07-13 09:57:39, chicken has been bought
+[Info], 2021-07-17 09:47:06, planted successfully
 
-[Info], 2021-07-13 09:57:39, chicken has been bought
+[Info], 2021-07-17 09:47:06, planted successfully
 
-[Info], 2021-07-13 09:57:39, cat has been bought
+[Info], 2021-07-17 09:47:06, planted successfully
 
-[Info], 2021-07-13 09:57:39, hound has been bought
+[Info], 2021-07-17 09:47:06, planted successfully
 
-[Info], 2021-07-13 09:57:39, planted successfully
+[Info], 2021-07-17 09:47:09, Factory was built successfully
 
-[Info], 2021-07-13 09:57:39, planted successfully
+[Info], 2021-07-17 09:47:10, Factory was built successfully
 
-[Info], 2021-07-13 09:57:39, planted successfully
+[Info], 2021-07-17 09:47:11, Factory was built successfully
 
-[Info], 2021-07-13 09:57:39, planted successfully
+[Info], 2021-07-17 09:47:12, Factory was built successfully
 
-[Info], 2021-07-13 09:58:19, chicken has been bought
+[Info], 2021-07-17 09:47:13, Factory was built successfully
 
-[Info], 2021-07-13 09:58:19, chicken has been bought
+[Info], 2021-07-17 09:47:13, Factory was built successfully
 
-[Info], 2021-07-13 09:58:19, chicken has been bought
+[Info], 2021-07-17 09:47:14, Factory was built successfully
 
-[Info], 2021-07-13 09:58:19, chicken has been bought
+[Info], 2021-07-17 09:52:41, login successful
 
-[Info], 2021-07-13 09:58:19, cat has been bought
+[Info], 2021-07-17 09:52:42, chicken has been bought
 
-[Info], 2021-07-13 09:58:19, hound has been bought
+[Info], 2021-07-17 09:52:42, chicken has been bought
 
-[Info], 2021-07-13 09:58:19, planted successfully
+[Info], 2021-07-17 09:52:42, chicken has been bought
 
-[Info], 2021-07-13 09:58:19, planted successfully
+[Info], 2021-07-17 09:52:42, chicken has been bought
 
-[Info], 2021-07-13 09:58:20, planted successfully
+[Info], 2021-07-17 09:52:42, cat has been bought
 
-[Info], 2021-07-13 09:58:20, planted successfully
+[Info], 2021-07-17 09:52:42, hound has been bought
 
-[Info], 2021-07-13 09:58:37, chicken produced egg
+[Info], 2021-07-17 09:52:42, planted successfully
 
-[Info], 2021-07-13 09:58:37, chicken produced egg
+[Info], 2021-07-17 09:52:42, planted successfully
 
-[Info], 2021-07-13 09:58:37, chicken produced egg
+[Info], 2021-07-17 09:52:42, planted successfully
 
-[Info], 2021-07-13 09:58:37, chicken produced egg
+[Info], 2021-07-17 09:52:42, planted successfully
 
-[Info], 2021-07-13 09:58:38, cat got killed
+[Info], 2021-07-17 09:53:32, login successful
 
-[Info], 2021-07-13 10:00:04, chicken has been bought
+[Info], 2021-07-17 09:53:33, chicken has been bought
 
-[Info], 2021-07-13 10:00:04, chicken has been bought
+[Info], 2021-07-17 09:53:33, chicken has been bought
 
-[Info], 2021-07-13 10:00:04, chicken has been bought
+[Info], 2021-07-17 09:53:33, chicken has been bought
 
-[Info], 2021-07-13 10:00:04, chicken has been bought
+[Info], 2021-07-17 09:53:33, chicken has been bought
 
-[Info], 2021-07-13 10:00:04, cat has been bought
+[Info], 2021-07-17 09:53:33, cat has been bought
 
-[Info], 2021-07-13 10:00:04, hound has been bought
+[Info], 2021-07-17 09:53:33, hound has been bought
 
-[Info], 2021-07-13 10:00:04, planted successfully
+[Info], 2021-07-17 09:53:33, planted successfully
 
-[Info], 2021-07-13 10:00:04, planted successfully
+[Info], 2021-07-17 09:53:33, planted successfully
 
-[Info], 2021-07-13 10:00:04, planted successfully
+[Info], 2021-07-17 09:53:33, planted successfully
 
-[Info], 2021-07-13 10:00:04, planted successfully
+[Info], 2021-07-17 09:53:33, planted successfully
 
-[Info], 2021-07-13 10:00:21, chicken produced egg
+[Info], 2021-07-17 09:54:33, login successful
 
-[Info], 2021-07-13 10:00:21, chicken produced egg
+[Info], 2021-07-17 09:54:34, chicken has been bought
 
-[Info], 2021-07-13 10:00:22, chicken produced egg
+[Info], 2021-07-17 09:54:34, chicken has been bought
 
-[Info], 2021-07-13 10:00:22, chicken produced egg
+[Info], 2021-07-17 09:54:34, chicken has been bought
 
-[Info], 2021-07-13 10:00:22, cat collected egg
+[Info], 2021-07-17 09:54:34, chicken has been bought
 
-[Info], 2021-07-13 10:00:22, cat got killed
+[Info], 2021-07-17 09:54:34, cat has been bought
 
-[Info], 2021-07-13 10:00:22, chicken died
+[Info], 2021-07-17 09:54:34, hound has been bought
 
-[Info], 2021-07-13 10:09:59, chicken has been bought
+[Info], 2021-07-17 09:54:34, planted successfully
 
-[Info], 2021-07-13 10:09:59, chicken has been bought
+[Info], 2021-07-17 09:54:34, planted successfully
 
-[Info], 2021-07-13 10:09:59, chicken has been bought
+[Info], 2021-07-17 09:54:34, planted successfully
 
-[Info], 2021-07-13 10:09:59, chicken has been bought
+[Info], 2021-07-17 09:54:34, planted successfully
 
-[Info], 2021-07-13 10:09:59, cat has been bought
+[Info], 2021-07-17 09:54:41, chicken died
 
-[Info], 2021-07-13 10:09:59, hound has been bought
+[Info], 2021-07-17 09:54:41, cat got killed
 
-[Info], 2021-07-13 10:09:59, planted successfully
+[Info], 2021-07-17 09:55:42, login successful
 
-[Info], 2021-07-13 10:09:59, planted successfully
+[Info], 2021-07-17 09:55:44, chicken has been bought
 
-[Info], 2021-07-13 10:09:59, planted successfully
+[Info], 2021-07-17 09:55:44, chicken has been bought
 
-[Info], 2021-07-13 10:09:59, planted successfully
+[Info], 2021-07-17 09:55:44, chicken has been bought
 
-[Info], 2021-07-13 10:10:11, chicken has been bought
+[Info], 2021-07-17 09:55:44, chicken has been bought
 
-[Info], 2021-07-13 10:10:12, chicken has been bought
+[Info], 2021-07-17 09:55:44, cat has been bought
 
-[Info], 2021-07-13 10:10:12, chicken has been bought
+[Info], 2021-07-17 09:55:44, hound has been bought
 
-[Info], 2021-07-13 10:10:12, chicken has been bought
+[Info], 2021-07-17 09:55:44, planted successfully
 
-[Info], 2021-07-13 10:10:12, cat has been bought
+[Info], 2021-07-17 09:55:44, planted successfully
 
-[Info], 2021-07-13 10:10:12, hound has been bought
+[Info], 2021-07-17 09:55:44, planted successfully
 
-[Info], 2021-07-13 10:10:12, planted successfully
+[Info], 2021-07-17 09:55:44, planted successfully
 
-[Info], 2021-07-13 10:10:12, planted successfully
+[Info], 2021-07-17 09:55:47, chicken died
 
-[Info], 2021-07-13 10:10:12, planted successfully
+[Info], 2021-07-17 10:42:10, login successful
 
-[Info], 2021-07-13 10:10:12, planted successfully
+[Info], 2021-07-17 10:42:12, chicken has been bought
 
-[Info], 2021-07-13 10:10:25, chicken died
+[Info], 2021-07-17 10:42:12, chicken has been bought
 
-[Info], 2021-07-13 10:12:33, chicken has been bought
+[Info], 2021-07-17 10:42:12, chicken has been bought
 
-[Info], 2021-07-13 10:12:34, chicken has been bought
+[Info], 2021-07-17 10:42:12, chicken has been bought
 
-[Info], 2021-07-13 10:12:34, chicken has been bought
+[Info], 2021-07-17 10:42:12, cat has been bought
 
-[Info], 2021-07-13 10:12:34, chicken has been bought
+[Info], 2021-07-17 10:42:12, hound has been bought
 
-[Info], 2021-07-13 10:12:34, cat has been bought
+[Info], 2021-07-17 10:42:12, planted successfully
 
-[Info], 2021-07-13 10:12:34, hound has been bought
+[Info], 2021-07-17 10:42:12, planted successfully
 
-[Info], 2021-07-13 10:12:34, planted successfully
+[Info], 2021-07-17 10:42:12, planted successfully
 
-[Info], 2021-07-13 10:12:34, planted successfully
+[Info], 2021-07-17 10:42:12, planted successfully
 
-[Info], 2021-07-13 10:12:34, planted successfully
+[Info], 2021-07-17 10:42:14, Factory was built successfully
 
-[Info], 2021-07-13 10:12:34, planted successfully
+[Info], 2021-07-17 10:42:18, hound got killed
 
-[Info], 2021-07-13 10:12:52, chicken has been bought
+[Info], 2021-07-17 10:42:18, bear got killed
 
-[Info], 2021-07-13 10:12:52, chicken has been bought
+[Info], 2021-07-17 10:42:21, lion got caged
 
-[Info], 2021-07-13 10:12:52, chicken has been bought
+[Info], 2021-07-17 10:42:25, chicken died
 
-[Info], 2021-07-13 10:12:52, chicken has been bought
+[Info], 2021-07-17 10:42:25, chicken produced egg
 
-[Info], 2021-07-13 10:12:52, cat has been bought
+[Info], 2021-07-17 10:42:25, chicken produced egg
 
-[Info], 2021-07-13 10:12:52, hound has been bought
+[Info], 2021-07-17 10:42:25, chicken produced egg
 
-[Info], 2021-07-13 10:12:52, planted successfully
+[Info], 2021-07-17 10:42:33, chicken ate
 
-[Info], 2021-07-13 10:12:52, planted successfully
+[Info], 2021-07-17 10:42:36, cat collected egg
 
-[Info], 2021-07-13 10:12:52, planted successfully
+[Info], 2021-07-17 10:42:38, chicken produced egg
 
-[Info], 2021-07-13 10:12:52, planted successfully
+[Info], 2021-07-17 10:42:38, chicken produced egg
 
-[Info], 2021-07-13 10:41:16, chicken has been bought
+[Info], 2021-07-17 10:42:38, chicken produced egg
 
-[Info], 2021-07-13 10:41:16, chicken has been bought
+[Info], 2021-07-17 10:42:41, tiger got caged
 
-[Info], 2021-07-13 10:41:16, chicken has been bought
+[Info], 2021-07-17 10:42:43, egg got picked up
 
-[Info], 2021-07-13 10:41:16, chicken has been bought
+[Info], 2021-07-17 10:42:44, chicken died
 
-[Info], 2021-07-13 10:41:16, cat has been bought
+[Info], 2021-07-17 10:42:44, chicken died
 
-[Info], 2021-07-13 10:41:16, hound has been bought
+[Info], 2021-07-17 10:42:45, Product is getting produced
 
-[Info], 2021-07-13 10:41:16, planted successfully
+[Info], 2021-07-17 10:42:45, cat collected egg
 
-[Info], 2021-07-13 10:41:16, planted successfully
+[Info], 2021-07-17 10:42:50, egg got expired
 
-[Info], 2021-07-13 10:41:16, planted successfully
+[Info], 2021-07-17 10:42:50, egg got expired
 
-[Info], 2021-07-13 10:41:16, planted successfully
+[Info], 2021-07-17 10:42:50, chicken produced egg
 
-[Info], 2021-07-13 10:41:31, cat got killed
+[Info], 2021-07-17 10:42:53, lion got expired
 
-[Info], 2021-07-13 10:41:33, chicken produced egg
+[Info], 2021-07-17 10:42:58, chicken ate
 
-[Info], 2021-07-13 10:41:33, chicken produced egg
+[Info], 2021-07-17 10:43:03, egg got expired
 
-[Info], 2021-07-13 10:41:33, chicken produced egg
+[Info], 2021-07-17 10:43:03, chicken produced egg
 
-[Info], 2021-07-13 10:41:33, chicken produced egg
+[Info], 2021-07-17 10:43:04, hen incubator produced chicken
 
-[Info], 2021-07-13 10:41:33, chicken died
+[Info], 2021-07-17 10:43:08, egg got picked up
 
-[Info], 2021-07-13 10:41:39, chicken died
+[Info], 2021-07-17 10:43:09, egg got picked up
 
-[Info], 2021-07-13 10:41:39, chicken produced egg
+[Info], 2021-07-17 10:43:10, Product is getting produced
 
-[Info], 2021-07-13 10:41:39, chicken produced egg
+[Info], 2021-07-17 10:43:13, tiger got expired
 
-[Info], 2021-07-13 10:41:42, chicken died
+[Info], 2021-07-17 10:43:16, chicken produced egg
 
-[Info], 2021-07-13 10:41:42, chicken died
+[Info], 2021-07-17 10:43:27, chicken ate
 
-[Info], 2021-07-13 10:41:46, egg got expired
+[Info], 2021-07-17 10:43:29, chicken produced egg
 
-[Info], 2021-07-13 10:41:46, egg got expired
+[Info], 2021-07-17 10:43:30, hen incubator produced chicken
 
-[Info], 2021-07-13 10:41:46, egg got expired
+[Info], 2021-07-17 10:43:30, cat collected egg
 
-[Info], 2021-07-13 10:41:46, egg got expired
+[Info], 2021-07-17 10:44:07, login successful
 
-[Info], 2021-07-13 10:42:54, chicken has been bought
+[Info], 2021-07-17 10:44:08, chicken has been bought
 
-[Info], 2021-07-13 10:42:54, chicken has been bought
+[Info], 2021-07-17 10:44:08, chicken has been bought
 
-[Info], 2021-07-13 10:42:54, chicken has been bought
+[Info], 2021-07-17 10:44:08, chicken has been bought
 
-[Info], 2021-07-13 10:42:54, chicken has been bought
+[Info], 2021-07-17 10:44:08, chicken has been bought
 
-[Info], 2021-07-13 10:42:54, cat has been bought
+[Info], 2021-07-17 10:44:08, cat has been bought
 
-[Info], 2021-07-13 10:42:54, hound has been bought
+[Info], 2021-07-17 10:44:08, hound has been bought
 
-[Info], 2021-07-13 10:42:54, planted successfully
+[Info], 2021-07-17 10:44:08, planted successfully
 
-[Info], 2021-07-13 10:42:54, planted successfully
+[Info], 2021-07-17 10:44:08, planted successfully
 
-[Info], 2021-07-13 10:42:54, planted successfully
+[Info], 2021-07-17 10:44:08, planted successfully
 
-[Info], 2021-07-13 10:42:54, planted successfully
+[Info], 2021-07-17 10:44:08, planted successfully
 
-[Info], 2021-07-13 10:43:11, chicken produced egg
+[Info], 2021-07-17 10:44:11, lion got caged
 
-[Info], 2021-07-13 10:43:11, chicken produced egg
+[Info], 2021-07-17 10:44:18, bear got caged
 
-[Info], 2021-07-13 10:43:11, chicken produced egg
+[Info], 2021-07-17 10:44:21, Factory was built successfully
 
-[Info], 2021-07-13 10:43:11, chicken produced egg
+[Info], 2021-07-17 10:44:21, chicken produced egg
 
-[Info], 2021-07-13 10:43:13, hound got killed
+[Info], 2021-07-17 10:44:21, chicken produced egg
 
-[Info], 2021-07-13 10:43:13, tiger got killed
+[Info], 2021-07-17 10:44:21, chicken produced egg
 
-[Info], 2021-07-13 10:43:13, chicken ate
+[Info], 2021-07-17 10:44:21, chicken produced egg
 
-[Info], 2021-07-13 10:43:14, chicken ate
+[Info], 2021-07-17 10:44:24, egg got picked up
 
-[Info], 2021-07-13 10:43:15, chicken ate
+[Info], 2021-07-17 10:44:24, chicken ate
 
-[Info], 2021-07-13 10:44:18, chicken has been bought
+[Info], 2021-07-17 10:44:25, Product is getting produced
 
-[Info], 2021-07-13 10:44:18, chicken has been bought
+[Info], 2021-07-17 10:44:27, cat collected lion
 
-[Info], 2021-07-13 10:44:18, chicken has been bought
+[Info], 2021-07-17 10:44:29, tiger got caged
 
-[Info], 2021-07-13 10:44:18, chicken has been bought
+[Info], 2021-07-17 10:44:34, chicken produced egg
 
-[Info], 2021-07-13 10:44:18, cat has been bought
+[Info], 2021-07-17 10:44:34, chicken produced egg
 
-[Info], 2021-07-13 10:44:18, hound has been bought
+[Info], 2021-07-17 10:44:34, chicken produced egg
 
-[Info], 2021-07-13 10:44:18, planted successfully
+[Info], 2021-07-17 10:44:34, chicken produced egg
 
-[Info], 2021-07-13 10:44:18, planted successfully
+[Info], 2021-07-17 10:44:36, chicken ate
 
-[Info], 2021-07-13 10:44:18, planted successfully
+[Info], 2021-07-17 10:44:40, chicken died
 
-[Info], 2021-07-13 10:44:18, planted successfully
+[Info], 2021-07-17 10:44:40, chicken died
 
-[Info], 2021-07-13 10:44:35, chicken produced egg
+[Info], 2021-07-17 10:44:44, cat collected tiger
 
-[Info], 2021-07-13 10:44:35, chicken produced egg
+[Info], 2021-07-17 10:44:45, hen incubator produced chicken
 
-[Info], 2021-07-13 10:44:35, chicken produced egg
+[Info], 2021-07-17 10:44:47, egg got expired
 
-[Info], 2021-07-13 10:44:35, chicken produced egg
+[Info], 2021-07-17 10:44:47, egg got expired
 
-[Info], 2021-07-13 10:44:39, chicken ate
+[Info], 2021-07-17 10:44:47, egg got expired
 
-[Info], 2021-07-13 10:48:38, chicken has been bought
+[Info], 2021-07-17 10:44:47, chicken produced egg
 
-[Info], 2021-07-13 10:48:38, chicken has been bought
+[Info], 2021-07-17 10:44:47, chicken produced egg
 
-[Info], 2021-07-13 10:48:38, chicken has been bought
+[Info], 2021-07-17 10:44:48, chicken ate
 
-[Info], 2021-07-13 10:48:38, chicken has been bought
+[Info], 2021-07-17 10:44:50, bear got expired
 
-[Info], 2021-07-13 10:48:38, cat has been bought
+[Info], 2021-07-17 10:44:52, chicken ate
 
-[Info], 2021-07-13 10:48:38, hound has been bought
+[Info], 2021-07-17 10:45:00, egg got expired
 
-[Info], 2021-07-13 10:48:38, planted successfully
+[Info], 2021-07-17 10:45:00, egg got expired
 
-[Info], 2021-07-13 10:48:38, planted successfully
+[Info], 2021-07-17 10:45:00, egg got expired
 
-[Info], 2021-07-13 10:48:38, planted successfully
+[Info], 2021-07-17 10:45:00, egg got expired
 
-[Info], 2021-07-13 10:48:38, planted successfully
+[Info], 2021-07-17 10:45:00, chicken produced egg
 
-[Info], 2021-07-13 10:48:55, chicken produced egg
+[Info], 2021-07-17 10:45:00, chicken produced egg
 
-[Info], 2021-07-13 10:48:55, chicken produced egg
+[Info], 2021-07-17 10:47:15, login successful
 
-[Info], 2021-07-13 10:48:55, chicken produced egg
+[Info], 2021-07-17 10:47:16, chicken has been bought
 
-[Info], 2021-07-13 10:48:55, chicken produced egg
+[Info], 2021-07-17 10:47:16, chicken has been bought
 
-[Info], 2021-07-13 10:48:56, chicken died
+[Info], 2021-07-17 10:47:16, chicken has been bought
 
-[Info], 2021-07-13 10:48:57, cat collected egg
+[Info], 2021-07-17 10:47:16, chicken has been bought
 
-[Info], 2021-07-13 10:49:00, cat collected egg
+[Info], 2021-07-17 10:47:16, cat has been bought
 
-[Info], 2021-07-13 10:49:29, chicken has been bought
+[Info], 2021-07-17 10:47:16, hound has been bought
 
-[Info], 2021-07-13 10:49:29, chicken has been bought
+[Info], 2021-07-17 10:47:16, planted successfully
 
-[Info], 2021-07-13 10:49:29, chicken has been bought
+[Info], 2021-07-17 10:47:16, planted successfully
 
-[Info], 2021-07-13 10:49:29, chicken has been bought
+[Info], 2021-07-17 10:47:16, planted successfully
 
-[Info], 2021-07-13 10:49:29, cat has been bought
+[Info], 2021-07-17 10:47:16, planted successfully
 
-[Info], 2021-07-13 10:49:29, hound has been bought
+[Info], 2021-07-17 10:47:19, Factory was built successfully
 
-[Info], 2021-07-13 10:49:29, planted successfully
+[Info], 2021-07-17 10:47:21, lion got caged
 
-[Info], 2021-07-13 10:49:29, planted successfully
+[Info], 2021-07-17 10:47:26, bear got caged
 
-[Info], 2021-07-13 10:49:29, planted successfully
+[Info], 2021-07-17 10:47:29, chicken produced egg
 
-[Info], 2021-07-13 10:49:29, planted successfully
+[Info], 2021-07-17 10:47:29, chicken produced egg
 
-[Info], 2021-07-13 10:49:46, chicken produced egg
+[Info], 2021-07-17 10:47:29, chicken produced egg
 
-[Info], 2021-07-13 10:49:46, chicken produced egg
+[Info], 2021-07-17 10:47:30, chicken produced egg
 
-[Info], 2021-07-13 10:49:46, chicken produced egg
+[Info], 2021-07-17 10:47:31, egg got picked up
 
-[Info], 2021-07-13 10:49:46, chicken produced egg
+[Info], 2021-07-17 10:47:34, Product is getting produced
 
-[Info], 2021-07-13 10:49:47, hound got killed
+[Info], 2021-07-17 10:47:35, cat collected lion
 
-[Info], 2021-07-13 10:49:47, tiger got killed
+[Info], 2021-07-17 10:47:36, cat collected bear
 
-[Info], 2021-07-13 10:50:27, chicken has been bought
+[Info], 2021-07-17 10:47:42, chicken ate
 
-[Info], 2021-07-13 10:50:27, chicken has been bought
+[Info], 2021-07-17 10:47:42, chicken produced egg
 
-[Info], 2021-07-13 10:50:27, chicken has been bought
+[Info], 2021-07-17 10:47:42, chicken produced egg
 
-[Info], 2021-07-13 10:50:27, chicken has been bought
+[Info], 2021-07-17 10:47:42, chicken produced egg
 
-[Info], 2021-07-13 10:50:27, cat has been bought
+[Info], 2021-07-17 10:47:42, chicken produced egg
 
-[Info], 2021-07-13 10:50:27, hound has been bought
+[Info], 2021-07-17 10:47:44, chicken ate
 
-[Info], 2021-07-13 10:50:27, planted successfully
+[Info], 2021-07-17 10:47:49, chicken died
 
-[Info], 2021-07-13 10:50:27, planted successfully
+[Info], 2021-07-17 10:47:49, chicken died
 
-[Info], 2021-07-13 10:50:27, planted successfully
+[Info], 2021-07-17 10:47:53, hen incubator produced chicken
 
-[Info], 2021-07-13 10:50:27, planted successfully
+[Info], 2021-07-17 10:47:55, egg got expired
 
-[Info], 2021-07-13 11:26:48, chicken has been bought
+[Info], 2021-07-17 10:47:55, egg got expired
 
-[Info], 2021-07-13 11:26:48, chicken has been bought
+[Info], 2021-07-17 10:47:55, egg got expired
 
-[Info], 2021-07-13 11:26:48, chicken has been bought
+[Info], 2021-07-17 10:47:55, chicken produced egg
 
-[Info], 2021-07-13 11:26:48, chicken has been bought
+[Info], 2021-07-17 10:47:55, chicken produced egg
 
-[Info], 2021-07-13 11:26:48, cat has been bought
+[Info], 2021-07-17 10:47:56, chicken died
 
-[Info], 2021-07-13 11:26:48, hound has been bought
+[Info], 2021-07-17 10:48:02, hound got killed
 
-[Info], 2021-07-13 11:26:48, planted successfully
+[Info], 2021-07-17 10:48:02, tiger got killed
 
-[Info], 2021-07-13 11:26:48, planted successfully
+[Info], 2021-07-17 10:48:40, login successful
 
-[Info], 2021-07-13 11:26:48, planted successfully
+[Info], 2021-07-17 10:48:42, chicken has been bought
 
-[Info], 2021-07-13 11:26:48, planted successfully
+[Info], 2021-07-17 10:48:42, chicken has been bought
 
-[Info], 2021-07-13 11:27:02, chicken died
+[Info], 2021-07-17 10:48:42, chicken has been bought
 
-[Info], 2021-07-13 11:27:02, chicken died
+[Info], 2021-07-17 10:48:42, chicken has been bought
 
-[Info], 2021-07-13 11:27:05, chicken produced egg
+[Info], 2021-07-17 10:48:42, cat has been bought
 
-[Info], 2021-07-13 11:27:05, chicken produced egg
+[Info], 2021-07-17 10:48:42, hound has been bought
 
-[Info], 2021-07-13 11:27:22, chicken has been bought
+[Info], 2021-07-17 10:48:42, planted successfully
 
-[Info], 2021-07-13 11:27:22, chicken has been bought
+[Info], 2021-07-17 10:48:42, planted successfully
 
-[Info], 2021-07-13 11:27:22, chicken has been bought
+[Info], 2021-07-17 10:48:42, planted successfully
 
-[Info], 2021-07-13 11:27:22, chicken has been bought
+[Info], 2021-07-17 10:48:42, planted successfully
 
-[Info], 2021-07-13 11:27:22, cat has been bought
+[Info], 2021-07-17 10:48:44, Factory was built successfully
 
-[Info], 2021-07-13 11:27:22, hound has been bought
+[Info], 2021-07-17 10:48:44, chicken died
 
-[Info], 2021-07-13 11:27:22, planted successfully
+[Info], 2021-07-17 10:48:55, chicken produced egg
 
-[Info], 2021-07-13 11:27:23, planted successfully
+[Info], 2021-07-17 10:48:55, chicken produced egg
 
-[Info], 2021-07-13 11:27:23, planted successfully
+[Info], 2021-07-17 10:48:55, chicken produced egg
 
-[Info], 2021-07-13 11:27:23, planted successfully
+[Info], 2021-07-17 10:48:57, egg got picked up
 
-[Info], 2021-07-13 11:27:52, chicken has been bought
+[Info], 2021-07-17 10:48:57, chicken died
 
-[Info], 2021-07-13 11:27:52, chicken has been bought
+[Info], 2021-07-17 10:48:58, hound got killed
 
-[Info], 2021-07-13 11:27:52, chicken has been bought
+[Info], 2021-07-17 10:48:58, tiger got killed
 
-[Info], 2021-07-13 11:27:52, chicken has been bought
+[Info], 2021-07-17 10:49:00, cat collected egg
 
-[Info], 2021-07-13 11:27:52, cat has been bought
+[Info], 2021-07-17 10:49:03, chicken ate
 
-[Info], 2021-07-13 11:27:52, hound has been bought
+[Info], 2021-07-17 10:49:08, chicken produced egg
 
-[Info], 2021-07-13 11:27:52, planted successfully
+[Info], 2021-07-17 10:49:08, chicken produced egg
 
-[Info], 2021-07-13 11:27:52, planted successfully
+[Info], 2021-07-17 10:49:09, cat collected egg
 
-[Info], 2021-07-13 11:27:52, planted successfully
+[Info], 2021-07-17 10:49:09, Product is getting produced
 
-[Info], 2021-07-13 11:27:52, planted successfully
+[Info], 2021-07-17 10:49:14, chicken died
 
-[Info], 2021-07-13 11:28:05, chicken died
+[Info], 2021-07-17 10:49:14, cat collected egg
 
-[Info], 2021-07-13 11:28:45, chicken has been bought
+[Info], 2021-07-17 10:49:20, chicken produced egg
 
-[Info], 2021-07-13 11:28:46, chicken has been bought
+[Info], 2021-07-17 10:49:21, bear got caged
 
-[Info], 2021-07-13 11:28:46, chicken has been bought
+[Info], 2021-07-17 10:49:22, lion got caged
 
-[Info], 2021-07-13 11:28:46, chicken has been bought
+[Info], 2021-07-17 10:49:23, lion got picked up
 
-[Info], 2021-07-13 11:28:46, cat has been bought
+[Info], 2021-07-17 10:49:29, hen incubator produced chicken
 
-[Info], 2021-07-13 11:28:46, hound has been bought
+[Info], 2021-07-17 11:12:48, login successful
 
-[Info], 2021-07-13 11:28:46, planted successfully
+[Info], 2021-07-17 11:12:50, chicken has been bought
 
-[Info], 2021-07-13 11:28:46, planted successfully
+[Info], 2021-07-17 11:12:50, chicken has been bought
 
-[Info], 2021-07-13 11:28:46, planted successfully
+[Info], 2021-07-17 11:12:50, chicken has been bought
 
-[Info], 2021-07-13 11:28:46, planted successfully
+[Info], 2021-07-17 11:12:50, chicken has been bought
 
-[Info], 2021-07-13 11:28:56, cat got killed
+[Info], 2021-07-17 11:12:50, cat has been bought
 
-[Info], 2021-07-13 11:29:03, chicken produced egg
+[Info], 2021-07-17 11:12:50, hound has been bought
 
-[Info], 2021-07-13 11:29:03, chicken produced egg
+[Info], 2021-07-17 11:12:50, planted successfully
 
-[Info], 2021-07-13 11:29:03, chicken produced egg
+[Info], 2021-07-17 11:12:50, planted successfully
 
-[Info], 2021-07-13 11:29:03, chicken produced egg
+[Info], 2021-07-17 11:12:50, planted successfully
 
-[Info], 2021-07-13 11:29:04, hound got killed
+[Info], 2021-07-17 11:12:50, planted successfully
 
-[Info], 2021-07-13 11:29:04, tiger got killed
+[Info], 2021-07-17 11:12:53, Factory was built successfully
 
-[Info], 2021-07-13 11:29:40, chicken has been bought
+[Info], 2021-07-17 11:12:54, Factory weaver was upgraded to level 2
 
-[Info], 2021-07-13 11:29:40, chicken has been bought
+[Info], 2021-07-17 11:12:55, Factory was built successfully
 
-[Info], 2021-07-13 11:29:40, chicken has been bought
+[Info], 2021-07-17 11:12:56, Factory milk packaging factory was upgraded to level 2
 
-[Info], 2021-07-13 11:29:41, chicken has been bought
+[Info], 2021-07-17 11:12:58, Factory was built successfully
 
-[Info], 2021-07-13 11:29:41, cat has been bought
+[Info], 2021-07-17 11:12:59, Factory ice cream factory was upgraded to level 2
 
-[Info], 2021-07-13 11:29:41, hound has been bought
+[Info], 2021-07-17 11:13:00, chicken has been bought
 
-[Info], 2021-07-13 11:29:41, planted successfully
+[Info], 2021-07-17 11:13:02, cat has been bought
 
-[Info], 2021-07-13 11:29:41, planted successfully
+[Info], 2021-07-17 11:13:03, chicken produced egg
 
-[Info], 2021-07-13 11:29:41, planted successfully
+[Info], 2021-07-17 11:13:03, chicken produced egg
 
-[Info], 2021-07-13 11:29:41, planted successfully
+[Info], 2021-07-17 11:13:03, chicken produced egg
 
-[Info], 2021-07-13 11:29:54, chicken died
+[Info], 2021-07-17 11:13:03, chicken produced egg
 
-[Info], 2021-07-13 11:29:55, chicken died
+[Info], 2021-07-17 11:13:08, cat collected egg
 
-[Info], 2021-07-13 11:30:38, chicken has been bought
+[Info], 2021-07-18 12:38:39, login successful
 
-[Info], 2021-07-13 11:30:38, chicken has been bought
+[Info], 2021-07-18 12:38:41, chicken has been bought
 
-[Info], 2021-07-13 11:30:38, chicken has been bought
+[Info], 2021-07-18 12:38:41, chicken has been bought
 
-[Info], 2021-07-13 11:30:38, chicken has been bought
+[Info], 2021-07-18 12:38:41, chicken has been bought
 
-[Info], 2021-07-13 11:30:38, cat has been bought
+[Info], 2021-07-18 12:38:41, chicken has been bought
 
-[Info], 2021-07-13 11:30:38, hound has been bought
+[Info], 2021-07-18 12:38:41, cat has been bought
 
-[Info], 2021-07-13 11:30:38, planted successfully
+[Info], 2021-07-18 12:38:41, hound has been bought
 
-[Info], 2021-07-13 11:30:38, planted successfully
+[Info], 2021-07-18 12:38:41, planted successfully
 
-[Info], 2021-07-13 11:30:38, planted successfully
+[Info], 2021-07-18 12:38:41, planted successfully
 
-[Info], 2021-07-13 11:30:38, planted successfully
+[Info], 2021-07-18 12:38:41, planted successfully
 
-[Info], 2021-07-13 11:30:54, chicken has been bought
+[Info], 2021-07-18 12:38:41, planted successfully
 
-[Info], 2021-07-13 11:30:54, chicken has been bought
+[Info], 2021-07-18 12:39:24, login successful
 
-[Info], 2021-07-13 11:30:54, chicken has been bought
+[Info], 2021-07-18 12:39:25, chicken has been bought
 
-[Info], 2021-07-13 11:30:54, chicken has been bought
+[Info], 2021-07-18 12:39:25, chicken has been bought
 
-[Info], 2021-07-13 11:30:54, cat has been bought
+[Info], 2021-07-18 12:39:26, chicken has been bought
 
-[Info], 2021-07-13 11:30:54, hound has been bought
+[Info], 2021-07-18 12:39:26, chicken has been bought
 
-[Info], 2021-07-13 11:30:54, planted successfully
+[Info], 2021-07-18 12:39:26, cat has been bought
 
-[Info], 2021-07-13 11:30:54, planted successfully
+[Info], 2021-07-18 12:39:26, hound has been bought
 
-[Info], 2021-07-13 11:30:54, planted successfully
+[Info], 2021-07-18 12:39:26, planted successfully
 
-[Info], 2021-07-13 11:30:54, planted successfully
+[Info], 2021-07-18 12:39:26, planted successfully
 
-[Info], 2021-07-13 11:31:16, chicken has been bought
+[Info], 2021-07-18 12:39:26, planted successfully
 
-[Info], 2021-07-13 11:31:16, chicken has been bought
+[Info], 2021-07-18 12:39:26, planted successfully
 
-[Info], 2021-07-13 11:31:16, chicken has been bought
+[Info], 2021-07-18 12:46:21, login successful
 
-[Info], 2021-07-13 11:31:16, chicken has been bought
+[Info], 2021-07-18 12:46:23, chicken has been bought
 
-[Info], 2021-07-13 11:31:16, cat has been bought
+[Info], 2021-07-18 12:46:23, chicken has been bought
 
-[Info], 2021-07-13 11:31:17, hound has been bought
+[Info], 2021-07-18 12:46:23, chicken has been bought
 
-[Info], 2021-07-13 11:31:17, planted successfully
+[Info], 2021-07-18 12:46:23, chicken has been bought
 
-[Info], 2021-07-13 11:31:17, planted successfully
+[Info], 2021-07-18 12:46:23, cat has been bought
 
-[Info], 2021-07-13 11:31:17, planted successfully
+[Info], 2021-07-18 12:46:23, hound has been bought
 
-[Info], 2021-07-13 11:31:17, planted successfully
+[Info], 2021-07-18 12:46:23, planted successfully
 
-[Info], 2021-07-14 01:33:27, chicken has been bought
+[Info], 2021-07-18 12:46:23, planted successfully
 
-[Info], 2021-07-14 01:33:28, chicken has been bought
+[Info], 2021-07-18 12:46:23, planted successfully
 
-[Info], 2021-07-14 01:33:28, chicken has been bought
+[Info], 2021-07-18 12:46:23, planted successfully
 
-[Info], 2021-07-14 01:33:28, chicken has been bought
+[Info], 2021-07-18 12:48:17, login successful
 
-[Info], 2021-07-14 01:33:28, cat has been bought
+[Info], 2021-07-18 12:48:18, chicken has been bought
 
-[Info], 2021-07-14 01:33:28, hound has been bought
+[Info], 2021-07-18 12:48:18, chicken has been bought
 
-[Info], 2021-07-14 01:33:28, planted successfully
+[Info], 2021-07-18 12:48:18, chicken has been bought
 
-[Info], 2021-07-14 01:33:28, planted successfully
+[Info], 2021-07-18 12:48:18, chicken has been bought
 
-[Info], 2021-07-14 01:33:28, planted successfully
+[Info], 2021-07-18 12:48:18, cat has been bought
 
-[Info], 2021-07-14 01:33:28, planted successfully
+[Info], 2021-07-18 12:48:18, hound has been bought
 
-[Info], 2021-07-14 01:33:42, cat got killed
+[Info], 2021-07-18 12:48:18, planted successfully
 
-[Info], 2021-07-14 01:33:45, chicken produced egg
+[Info], 2021-07-18 12:48:18, planted successfully
 
-[Info], 2021-07-14 01:33:45, chicken produced egg
+[Info], 2021-07-18 12:48:18, planted successfully
 
-[Info], 2021-07-14 01:33:45, chicken produced egg
+[Info], 2021-07-18 12:48:18, planted successfully
 
-[Info], 2021-07-14 01:33:45, chicken produced egg
+[Info], 2021-07-18 12:48:55, login successful
 
-[Info], 2021-07-14 01:33:47, chicken died
+[Info], 2021-07-18 12:48:56, chicken has been bought
 
-[Info], 2021-07-14 01:33:49, chicken died
+[Info], 2021-07-18 12:48:56, chicken has been bought
 
-[Info], 2021-07-14 01:33:52, chicken produced egg
+[Info], 2021-07-18 12:48:56, chicken has been bought
 
-[Info], 2021-07-14 01:33:52, chicken produced egg
+[Info], 2021-07-18 12:48:56, chicken has been bought
 
-[Info], 2021-07-14 01:33:53, chicken ate
+[Info], 2021-07-18 12:48:56, cat has been bought
 
-[Info], 2021-07-14 01:33:54, chicken ate
+[Info], 2021-07-18 12:48:56, hound has been bought
 
-[Info], 2021-07-14 01:33:59, egg got expired
+[Info], 2021-07-18 12:48:56, planted successfully
 
-[Info], 2021-07-14 01:33:59, egg got expired
+[Info], 2021-07-18 12:48:56, planted successfully
 
-[Info], 2021-07-14 01:33:59, egg got expired
+[Info], 2021-07-18 12:48:56, planted successfully
 
-[Info], 2021-07-14 01:33:59, egg got expired
+[Info], 2021-07-18 12:48:56, planted successfully
 
-[Info], 2021-07-14 01:33:59, chicken produced egg
+[Info], 2021-07-18 12:50:04, login successful
 
-[Info], 2021-07-14 01:33:59, chicken produced egg
+[Info], 2021-07-18 12:50:05, chicken has been bought
 
-[Info], 2021-07-14 01:34:00, chicken died
+[Info], 2021-07-18 12:50:05, chicken has been bought
 
-[Info], 2021-07-14 01:34:03, chicken ate
+[Info], 2021-07-18 12:50:05, chicken has been bought
 
-[Info], 2021-07-14 01:34:06, egg got expired
+[Info], 2021-07-18 12:50:05, chicken has been bought
 
-[Info], 2021-07-14 01:34:06, egg got expired
+[Info], 2021-07-18 12:50:05, cat has been bought
 
-[Info], 2021-07-14 01:34:06, chicken produced egg
+[Info], 2021-07-18 12:50:05, hound has been bought
 
-[Info], 2021-07-14 01:34:13, egg got expired
+[Info], 2021-07-18 12:50:05, planted successfully
 
-[Info], 2021-07-14 01:34:13, egg got expired
+[Info], 2021-07-18 12:50:05, planted successfully
 
-[Info], 2021-07-14 01:34:13, chicken produced egg
+[Info], 2021-07-18 12:50:05, planted successfully
 
-[Info], 2021-07-14 01:34:16, hound got killed
+[Info], 2021-07-18 12:50:05, planted successfully
 
-[Info], 2021-07-14 01:34:16, tiger got killed
+[Info], 2021-07-18 12:50:47, login successful
 
-[Info], 2021-07-14 01:34:17, chicken ate
+[Info], 2021-07-18 12:50:48, chicken has been bought
 
-[Info], 2021-07-14 01:34:20, egg got expired
+[Info], 2021-07-18 12:50:48, chicken has been bought
 
-[Info], 2021-07-14 01:34:20, chicken produced egg
+[Info], 2021-07-18 12:50:48, chicken has been bought
 
-[Info], 2021-07-14 01:34:26, egg got expired
+[Info], 2021-07-18 12:50:48, chicken has been bought
 
-[Info], 2021-07-14 01:34:26, chicken produced egg
+[Info], 2021-07-18 12:50:48, cat has been bought
 
-[Info], 2021-07-14 01:34:33, egg got expired
+[Info], 2021-07-18 12:50:48, hound has been bought
 
-[Info], 2021-07-14 01:34:33, chicken produced egg
+[Info], 2021-07-18 12:50:48, planted successfully
 
-[Info], 2021-07-14 01:34:34, chicken died
+[Info], 2021-07-18 12:50:48, planted successfully
 
-[Info], 2021-07-14 01:34:40, egg got expired
+[Info], 2021-07-18 12:50:48, planted successfully
 
-[Info], 2021-07-14 01:34:47, egg got expired
+[Info], 2021-07-18 12:50:48, planted successfully
 
-[Info], 2021-07-14 01:37:24, chicken has been bought
+[Info], 2021-07-18 12:50:49, chicken died
 
-[Info], 2021-07-14 01:37:25, chicken has been bought
+[Info], 2021-07-18 12:51:01, login successful
 
-[Info], 2021-07-14 01:37:25, chicken has been bought
+[Info], 2021-07-18 12:51:03, chicken has been bought
 
-[Info], 2021-07-14 01:37:25, chicken has been bought
+[Info], 2021-07-18 12:51:03, chicken has been bought
 
-[Info], 2021-07-14 01:37:25, cat has been bought
+[Info], 2021-07-18 12:51:03, chicken has been bought
 
-[Info], 2021-07-14 01:37:25, hound has been bought
+[Info], 2021-07-18 12:51:03, chicken has been bought
 
-[Info], 2021-07-14 01:37:25, planted successfully
+[Info], 2021-07-18 12:51:03, cat has been bought
 
-[Info], 2021-07-14 01:37:25, planted successfully
+[Info], 2021-07-18 12:51:03, hound has been bought
 
-[Info], 2021-07-14 01:37:25, planted successfully
+[Info], 2021-07-18 12:51:03, planted successfully
 
-[Info], 2021-07-14 01:37:25, planted successfully
+[Info], 2021-07-18 12:51:03, planted successfully
 
-[Info], 2021-07-14 01:37:42, chicken produced egg
+[Info], 2021-07-18 12:51:03, planted successfully
 
-[Info], 2021-07-14 01:37:42, chicken produced egg
+[Info], 2021-07-18 12:51:03, planted successfully
 
-[Info], 2021-07-14 01:37:42, chicken produced egg
+[Info], 2021-07-18 12:51:29, login successful
 
-[Info], 2021-07-14 01:37:42, chicken produced egg
+[Info], 2021-07-18 12:51:30, chicken has been bought
 
-[Info], 2021-07-14 01:37:44, chicken died
+[Info], 2021-07-18 12:51:30, chicken has been bought
 
-[Info], 2021-07-14 01:37:47, cat collected egg
+[Info], 2021-07-18 12:51:30, chicken has been bought
 
-[Info], 2021-07-14 01:37:49, chicken produced egg
+[Info], 2021-07-18 12:51:30, chicken has been bought
 
-[Info], 2021-07-14 01:37:49, chicken produced egg
+[Info], 2021-07-18 12:51:30, cat has been bought
 
-[Info], 2021-07-14 01:37:49, chicken produced egg
+[Info], 2021-07-18 12:51:31, hound has been bought
 
-[Info], 2021-07-14 01:37:50, chicken ate
+[Info], 2021-07-18 12:51:31, planted successfully
 
-[Info], 2021-07-14 01:37:51, chicken died
+[Info], 2021-07-18 12:51:31, planted successfully
 
-[Info], 2021-07-14 01:37:51, cat got killed
+[Info], 2021-07-18 12:51:31, planted successfully
 
-[Info], 2021-07-14 01:37:53, chicken died
+[Info], 2021-07-18 12:51:31, planted successfully
 
-[Info], 2021-07-14 01:37:53, chicken died
+[Info], 2021-07-18 12:52:26, login successful
 
-[Info], 2021-07-14 10:42:48, login successful
+[Info], 2021-07-18 12:52:28, chicken has been bought
 
-[Info], 2021-07-14 10:42:50, chicken has been bought
+[Info], 2021-07-18 12:52:28, chicken has been bought
 
-[Info], 2021-07-14 10:42:50, chicken has been bought
+[Info], 2021-07-18 12:52:28, chicken has been bought
 
-[Info], 2021-07-14 10:42:50, chicken has been bought
+[Info], 2021-07-18 12:52:28, chicken has been bought
 
-[Info], 2021-07-14 10:42:50, chicken has been bought
+[Info], 2021-07-18 12:52:28, cat has been bought
 
-[Info], 2021-07-14 10:42:50, cat has been bought
+[Info], 2021-07-18 12:52:28, hound has been bought
 
-[Info], 2021-07-14 10:42:50, hound has been bought
+[Info], 2021-07-18 12:52:28, planted successfully
 
-[Info], 2021-07-14 10:42:50, planted successfully
+[Info], 2021-07-18 12:52:28, planted successfully
 
-[Info], 2021-07-14 10:42:50, planted successfully
+[Info], 2021-07-18 12:52:28, planted successfully
 
-[Info], 2021-07-14 10:42:50, planted successfully
+[Info], 2021-07-18 12:52:28, planted successfully
 
-[Info], 2021-07-14 10:42:50, planted successfully
+[Info], 2021-07-18 12:52:28, chicken died
 
-[Info], 2021-07-14 10:43:06, chicken has been bought
+[Info], 2021-07-18 12:52:48, login successful
 
-[Info], 2021-07-14 10:43:06, chicken has been bought
+[Info], 2021-07-18 12:52:49, chicken has been bought
 
-[Info], 2021-07-14 10:43:06, chicken has been bought
+[Info], 2021-07-18 12:52:49, chicken has been bought
 
-[Info], 2021-07-14 10:43:06, chicken has been bought
+[Info], 2021-07-18 12:52:49, chicken has been bought
 
-[Info], 2021-07-14 10:43:06, cat has been bought
+[Info], 2021-07-18 12:52:49, chicken has been bought
 
-[Info], 2021-07-14 10:43:06, hound has been bought
+[Info], 2021-07-18 12:52:49, cat has been bought
 
-[Info], 2021-07-14 10:43:07, planted successfully
+[Info], 2021-07-18 12:52:49, hound has been bought
 
-[Info], 2021-07-14 10:43:07, planted successfully
+[Info], 2021-07-18 12:52:50, planted successfully
 
-[Info], 2021-07-14 10:43:07, planted successfully
+[Info], 2021-07-18 12:52:50, planted successfully
 
-[Info], 2021-07-14 10:43:07, planted successfully
+[Info], 2021-07-18 12:52:50, planted successfully
 
-[Info], 2021-07-14 10:43:23, chicken produced egg
+[Info], 2021-07-18 12:52:50, planted successfully
 
-[Info], 2021-07-14 10:43:23, chicken produced egg
+[Info], 2021-07-18 12:53:46, login successful
 
-[Info], 2021-07-14 10:43:23, chicken produced egg
+[Info], 2021-07-18 12:53:47, chicken has been bought
 
-[Info], 2021-07-14 10:43:23, chicken produced egg
+[Info], 2021-07-18 12:53:47, chicken has been bought
 
-[Info], 2021-07-14 10:43:25, chicken ate
+[Info], 2021-07-18 12:53:47, chicken has been bought
 
-[Info], 2021-07-14 10:43:25, chicken died
+[Info], 2021-07-18 12:53:47, chicken has been bought
 
-[Info], 2021-07-14 10:43:28, chicken ate
+[Info], 2021-07-18 12:53:48, cat has been bought
 
-[Info], 2021-07-14 10:43:30, chicken produced egg
+[Info], 2021-07-18 12:53:48, hound has been bought
 
-[Info], 2021-07-14 10:43:30, chicken produced egg
+[Info], 2021-07-18 12:53:48, planted successfully
 
-[Info], 2021-07-14 10:43:30, chicken produced egg
+[Info], 2021-07-18 12:53:48, planted successfully
 
-[Info], 2021-07-14 10:43:31, cat got killed
+[Info], 2021-07-18 12:53:48, planted successfully
 
-[Info], 2021-07-14 10:43:33, chicken died
+[Info], 2021-07-18 12:53:48, planted successfully
 
-[Info], 2021-07-14 10:43:33, chicken died
+[Info], 2021-07-18 12:54:29, login successful
 
-[Info], 2021-07-14 10:43:33, chicken died
+[Info], 2021-07-18 12:54:30, chicken has been bought
 
-[Info], 2021-07-14 10:43:36, egg got expired
+[Info], 2021-07-18 12:54:30, chicken has been bought
 
-[Info], 2021-07-14 10:43:36, egg got expired
+[Info], 2021-07-18 12:54:30, chicken has been bought
 
-[Info], 2021-07-14 10:43:36, egg got expired
+[Info], 2021-07-18 12:54:30, chicken has been bought
 
-[Info], 2021-07-14 10:43:36, egg got expired
+[Info], 2021-07-18 12:54:30, cat has been bought
 
-[Info], 2021-07-14 10:43:43, egg got expired
+[Info], 2021-07-18 12:54:30, hound has been bought
 
-[Info], 2021-07-14 10:43:43, egg got expired
+[Info], 2021-07-18 12:54:30, planted successfully
 
-[Info], 2021-07-14 10:43:43, egg got expired
+[Info], 2021-07-18 12:54:30, planted successfully
 
-[Info], 2021-07-14 10:43:59, hound got killed
+[Info], 2021-07-18 12:54:30, planted successfully
 
-[Info], 2021-07-14 10:43:59, tiger got killed
+[Info], 2021-07-18 12:54:30, planted successfully
 
-[Error], 2021-07-14 10:57:00, Empty truck cannot leave
+[Info], 2021-07-18 12:54:46, login successful
 
-[Error], 2021-07-14 10:57:01, Empty truck cannot leave
+[Info], 2021-07-18 12:54:47, chicken has been bought
 
-[Error], 2021-07-14 10:57:02, Empty truck cannot leave
+[Info], 2021-07-18 12:54:47, chicken has been bought
 
-[Error], 2021-07-14 10:57:02, Empty truck cannot leave
+[Info], 2021-07-18 12:54:47, chicken has been bought
 
-[Error], 2021-07-14 10:57:02, Empty truck cannot leave
+[Info], 2021-07-18 12:54:47, chicken has been bought
 
-[Error], 2021-07-14 11:02:51, Empty truck cannot leave
+[Info], 2021-07-18 12:54:47, cat has been bought
 
-[Error], 2021-07-14 11:03:57, Empty truck cannot leave
+[Info], 2021-07-18 12:54:47, hound has been bought
 
-[Error], 2021-07-14 11:04:07, Empty truck cannot leave
+[Info], 2021-07-18 12:54:47, planted successfully
+
+[Info], 2021-07-18 12:54:47, planted successfully
+
+[Info], 2021-07-18 12:54:47, planted successfully
+
+[Info], 2021-07-18 12:54:47, planted successfully
+
+[Info], 2021-07-18 01:21:56, login successful
+
+[Info], 2021-07-18 01:21:57, chicken has been bought
+
+[Info], 2021-07-18 01:21:57, chicken has been bought
+
+[Info], 2021-07-18 01:21:57, chicken has been bought
+
+[Info], 2021-07-18 01:21:58, chicken has been bought
+
+[Info], 2021-07-18 01:21:58, cat has been bought
+
+[Info], 2021-07-18 01:21:58, hound has been bought
+
+[Info], 2021-07-18 01:21:58, planted successfully
+
+[Info], 2021-07-18 01:21:58, planted successfully
+
+[Info], 2021-07-18 01:21:58, planted successfully
+
+[Info], 2021-07-18 01:21:58, planted successfully
+
+[Info], 2021-07-18 01:22:02, Factory was built successfully
+
+[Info], 2021-07-18 01:22:03, Factory was built successfully
+
+[Info], 2021-07-18 01:22:04, Factory was built successfully
+
+[Info], 2021-07-18 01:22:06, Factory was built successfully
+
+[Info], 2021-07-18 01:22:07, Factory was built successfully
+
+[Info], 2021-07-18 01:22:08, Factory was built successfully
+
+[Info], 2021-07-18 01:22:09, Factory was built successfully
+
+[Info], 2021-07-18 01:24:27, login successful
+
+[Info], 2021-07-18 01:24:28, chicken has been bought
+
+[Info], 2021-07-18 01:24:28, chicken has been bought
+
+[Info], 2021-07-18 01:24:28, chicken has been bought
+
+[Info], 2021-07-18 01:24:28, chicken has been bought
+
+[Info], 2021-07-18 01:24:28, cat has been bought
+
+[Info], 2021-07-18 01:24:29, hound has been bought
+
+[Info], 2021-07-18 01:24:29, planted successfully
+
+[Info], 2021-07-18 01:24:29, planted successfully
+
+[Info], 2021-07-18 01:24:29, planted successfully
+
+[Info], 2021-07-18 01:24:29, planted successfully
+
+[Info], 2021-07-18 01:24:31, Factory was built successfully
+
+[Info], 2021-07-18 01:24:36, chicken died
+
+[Info], 2021-07-18 01:24:43, chicken produced egg
+
+[Info], 2021-07-18 01:24:43, chicken produced egg
+
+[Info], 2021-07-18 01:24:43, chicken produced egg
+
+[Info], 2021-07-18 01:24:45, Factory was built successfully
+
+[Info], 2021-07-18 01:24:47, Factory was built successfully
+
+[Info], 2021-07-18 01:24:48, Factory was built successfully
+
+[Info], 2021-07-18 01:24:50, Factory ice cream factory was upgraded to level 2
+
+[Info], 2021-07-18 01:24:50, chicken died
+
+[Info], 2021-07-18 01:24:51, Factory sewing factory was upgraded to level 2
+
+[Info], 2021-07-18 01:24:51, chicken ate
+
+[Info], 2021-07-18 01:24:52, Factory was built successfully
+
+[Error], 2021-07-18 01:24:53, Insufficient money or max level error
+
+[Info], 2021-07-18 01:24:56, chicken produced egg
+
+[Info], 2021-07-18 01:24:56, chicken produced egg
+
+[Info], 2021-07-18 01:24:58, chicken ate
+
+[Info], 2021-07-18 01:25:00, cat collected egg
+
+[Error], 2021-07-18 01:25:01, Insufficient money or max level error
+
+[Info], 2021-07-18 01:25:02, chicken died
+
+[Info], 2021-07-18 01:25:02, Factory mill was upgraded to level 2
+
+[Info], 2021-07-18 01:25:06, cat collected egg
+
+[Info], 2021-07-18 01:25:10, Factory was built successfully
+
+[Info], 2021-07-18 01:25:10, egg got expired
+
+[Info], 2021-07-18 01:25:10, egg got expired
+
+[Info], 2021-07-18 01:25:10, chicken produced egg
+
+[Info], 2021-07-18 01:25:22, login successful
+
+[Info], 2021-07-18 01:25:23, chicken has been bought
+
+[Info], 2021-07-18 01:25:23, chicken has been bought
+
+[Info], 2021-07-18 01:25:23, chicken has been bought
+
+[Info], 2021-07-18 01:25:23, chicken has been bought
+
+[Info], 2021-07-18 01:25:23, cat has been bought
+
+[Info], 2021-07-18 01:25:23, hound has been bought
+
+[Info], 2021-07-18 01:25:23, planted successfully
+
+[Info], 2021-07-18 01:25:23, planted successfully
+
+[Info], 2021-07-18 01:25:23, planted successfully
+
+[Info], 2021-07-18 01:25:23, planted successfully
+
+[Info], 2021-07-18 01:25:25, Factory was built successfully
+
+[Info], 2021-07-18 01:25:27, Factory was built successfully
+
+[Info], 2021-07-18 01:25:29, Factory bakery was upgraded to level 2
+
+[Info], 2021-07-18 01:25:31, Factory milk packaging factory was upgraded to level 2
+
+[Info], 2021-07-18 01:25:32, Factory was built successfully
+
+[Info], 2021-07-18 01:25:34, Factory was built successfully
+
+[Info], 2021-07-18 01:25:35, Factory was built successfully
+
+[Info], 2021-07-18 01:25:37, chicken produced egg
+
+[Info], 2021-07-18 01:25:37, chicken produced egg
+
+[Info], 2021-07-18 01:25:37, chicken produced egg
+
+[Info], 2021-07-18 01:25:37, chicken produced egg
+
+[Info], 2021-07-18 01:25:38, Factory was built successfully
+
+[Info], 2021-07-18 01:25:39, Factory was built successfully
+
+[Info], 2021-07-18 01:25:41, Factory hen incubator was upgraded to level 2
+
+[Error], 2021-07-18 01:25:42, Insufficient money or max level error
+
+[Info], 2021-07-18 01:25:42, cat collected egg
+
+[Error], 2021-07-18 01:25:44, Insufficient money or max level error
+
+[Error], 2021-07-18 01:25:45, Insufficient money or max level error
+
+[Error], 2021-07-18 01:25:46, Insufficient money or max level error
+
+[Info], 2021-07-18 01:25:47, chicken ate
+
+[Info], 2021-07-18 01:25:49, cat collected egg
+
+[Info], 2021-07-18 01:26:00, login successful
+
+[Info], 2021-07-18 01:26:02, chicken has been bought
+
+[Info], 2021-07-18 01:26:02, chicken has been bought
+
+[Info], 2021-07-18 01:26:02, chicken has been bought
+
+[Info], 2021-07-18 01:26:02, chicken has been bought
+
+[Info], 2021-07-18 01:26:02, cat has been bought
+
+[Info], 2021-07-18 01:26:02, hound has been bought
+
+[Info], 2021-07-18 01:26:02, planted successfully
+
+[Info], 2021-07-18 01:26:02, planted successfully
+
+[Info], 2021-07-18 01:26:02, planted successfully
+
+[Info], 2021-07-18 01:26:02, planted successfully
+
+[Info], 2021-07-18 01:26:03, Factory was built successfully
+
+[Info], 2021-07-18 01:26:04, chicken died
+
+[Info], 2021-07-18 01:26:04, Factory was built successfully
+
+[Info], 2021-07-18 01:26:05, Factory was built successfully
+
+[Info], 2021-07-18 01:26:06, Factory ice cream factory was upgraded to level 2
+
+[Info], 2021-07-18 01:26:07, Factory sewing factory was upgraded to level 2
+
+[Info], 2021-07-18 01:26:08, Factory was built successfully
+
+[Info], 2021-07-18 01:26:09, Factory mill was upgraded to level 2
+
+[Info], 2021-07-18 01:26:11, Factory bakery was upgraded to level 2
+
+[Info], 2021-07-18 01:26:12, chicken died
+
+[Info], 2021-07-18 01:26:16, chicken produced egg
+
+[Info], 2021-07-18 01:26:16, chicken produced egg
+
+[Info], 2021-07-18 01:26:20, chicken died
+
+[Info], 2021-07-18 01:26:29, chicken produced egg
+
+[Info], 2021-07-18 01:26:41, login successful
+
+[Info], 2021-07-18 01:26:43, chicken has been bought
+
+[Info], 2021-07-18 01:26:43, chicken has been bought
+
+[Info], 2021-07-18 01:26:43, chicken has been bought
+
+[Info], 2021-07-18 01:26:43, chicken has been bought
+
+[Info], 2021-07-18 01:26:43, cat has been bought
+
+[Info], 2021-07-18 01:26:43, hound has been bought
+
+[Info], 2021-07-18 01:26:43, planted successfully
+
+[Info], 2021-07-18 01:26:43, planted successfully
+
+[Info], 2021-07-18 01:26:43, planted successfully
+
+[Info], 2021-07-18 01:26:43, planted successfully
+
+[Info], 2021-07-18 01:26:45, Factory was built successfully
+
+[Info], 2021-07-18 01:26:46, Factory was built successfully
+
+[Info], 2021-07-18 01:26:48, Factory was built successfully
+
+[Info], 2021-07-18 01:26:49, Factory was built successfully
+
+[Info], 2021-07-18 01:26:50, Factory was built successfully
+
+[Info], 2021-07-18 01:26:52, Factory was built successfully
+
+[Info], 2021-07-18 01:26:53, Factory was built successfully
+
+[Info], 2021-07-18 01:27:07, login successful
+
+[Info], 2021-07-18 01:27:09, chicken has been bought
+
+[Info], 2021-07-18 01:27:09, chicken has been bought
+
+[Info], 2021-07-18 01:27:09, chicken has been bought
+
+[Info], 2021-07-18 01:27:09, chicken has been bought
+
+[Info], 2021-07-18 01:27:09, cat has been bought
+
+[Info], 2021-07-18 01:27:09, hound has been bought
+
+[Info], 2021-07-18 01:27:09, planted successfully
+
+[Info], 2021-07-18 01:27:09, planted successfully
+
+[Info], 2021-07-18 01:27:09, planted successfully
+
+[Info], 2021-07-18 01:27:09, planted successfully
+
+[Info], 2021-07-18 01:27:10, Factory was built successfully
+
+[Info], 2021-07-18 01:27:11, Factory was built successfully
+
+[Info], 2021-07-18 01:27:13, Factory was built successfully
+
+[Info], 2021-07-18 01:27:14, Factory was built successfully
+
+[Info], 2021-07-18 01:27:14, Factory was built successfully
+
+[Info], 2021-07-18 01:27:15, Factory bakery was upgraded to level 2
+
+[Info], 2021-07-18 01:27:16, Factory ice cream factory was upgraded to level 2
+
+[Error], 2021-07-18 01:27:17, Insufficient money or max level error
+
+[Info], 2021-07-18 01:27:19, Factory was built successfully
+
+[Info], 2021-07-18 01:27:22, Factory was built successfully
+
+[Info], 2021-07-18 01:27:23, chicken produced egg
+
+[Info], 2021-07-18 01:27:23, chicken produced egg
+
+[Info], 2021-07-18 01:27:23, chicken produced egg
+
+[Info], 2021-07-18 01:27:23, chicken produced egg
+
+[Error], 2021-07-18 01:27:24, Insufficient money or max level error
+
+[Error], 2021-07-18 01:27:25, Insufficient money or max level error
+
+[Error], 2021-07-18 01:27:26, Insufficient money or max level error
+
+[Info], 2021-07-18 01:27:26, chicken ate
+
+[Error], 2021-07-18 01:27:27, Insufficient money or max level error
+
+[Info], 2021-07-18 01:27:30, chicken ate
+
+[Info], 2021-07-18 01:27:33, chicken died
+
+[Info], 2021-07-18 01:34:27, login successful
+
+[Info], 2021-07-18 01:34:28, chicken has been bought
+
+[Info], 2021-07-18 01:34:28, chicken has been bought
+
+[Info], 2021-07-18 01:34:28, chicken has been bought
+
+[Info], 2021-07-18 01:34:28, chicken has been bought
+
+[Info], 2021-07-18 01:34:28, cat has been bought
+
+[Info], 2021-07-18 01:34:28, hound has been bought
+
+[Info], 2021-07-18 01:34:28, planted successfully
+
+[Info], 2021-07-18 01:34:28, planted successfully
+
+[Info], 2021-07-18 01:34:28, planted successfully
+
+[Info], 2021-07-18 01:34:28, planted successfully
+
+[Info], 2021-07-18 01:35:17, login successful
+
+[Info], 2021-07-18 01:35:18, chicken has been bought
+
+[Info], 2021-07-18 01:35:18, chicken has been bought
+
+[Info], 2021-07-18 01:35:18, chicken has been bought
+
+[Info], 2021-07-18 01:35:18, chicken has been bought
+
+[Info], 2021-07-18 01:35:18, cat has been bought
+
+[Info], 2021-07-18 01:35:18, hound has been bought
+
+[Info], 2021-07-18 01:35:18, planted successfully
+
+[Info], 2021-07-18 01:35:18, planted successfully
+
+[Info], 2021-07-18 01:35:18, planted successfully
+
+[Info], 2021-07-18 01:35:18, planted successfully
+
+[Info], 2021-07-18 01:36:06, login successful
+
+[Info], 2021-07-18 01:36:07, chicken has been bought
+
+[Info], 2021-07-18 01:36:07, chicken has been bought
+
+[Info], 2021-07-18 01:36:07, chicken has been bought
+
+[Info], 2021-07-18 01:36:07, chicken has been bought
+
+[Info], 2021-07-18 01:36:07, cat has been bought
+
+[Info], 2021-07-18 01:36:07, hound has been bought
+
+[Info], 2021-07-18 01:36:07, planted successfully
+
+[Info], 2021-07-18 01:36:07, planted successfully
+
+[Info], 2021-07-18 01:36:07, planted successfully
+
+[Info], 2021-07-18 01:36:07, planted successfully
+
+[Info], 2021-07-18 01:37:05, login successful
+
+[Info], 2021-07-18 01:37:07, chicken has been bought
+
+[Info], 2021-07-18 01:37:07, chicken has been bought
+
+[Info], 2021-07-18 01:37:07, chicken has been bought
+
+[Info], 2021-07-18 01:37:07, chicken has been bought
+
+[Info], 2021-07-18 01:37:07, cat has been bought
+
+[Info], 2021-07-18 01:37:07, hound has been bought
+
+[Info], 2021-07-18 01:37:07, planted successfully
+
+[Info], 2021-07-18 01:37:07, planted successfully
+
+[Info], 2021-07-18 01:37:07, planted successfully
+
+[Info], 2021-07-18 01:37:07, planted successfully
+
+[Info], 2021-07-18 01:37:46, login successful
+
+[Info], 2021-07-18 01:37:48, chicken has been bought
+
+[Info], 2021-07-18 01:37:48, chicken has been bought
+
+[Info], 2021-07-18 01:37:48, chicken has been bought
+
+[Info], 2021-07-18 01:37:48, chicken has been bought
+
+[Info], 2021-07-18 01:37:48, cat has been bought
+
+[Info], 2021-07-18 01:37:48, hound has been bought
+
+[Info], 2021-07-18 01:37:48, planted successfully
+
+[Info], 2021-07-18 01:37:48, planted successfully
+
+[Info], 2021-07-18 01:37:48, planted successfully
+
+[Info], 2021-07-18 01:37:48, planted successfully
+
+[Info], 2021-07-18 01:38:01, login successful
+
+[Info], 2021-07-18 01:38:03, chicken has been bought
+
+[Info], 2021-07-18 01:38:03, chicken has been bought
+
+[Info], 2021-07-18 01:38:03, chicken has been bought
+
+[Info], 2021-07-18 01:38:03, chicken has been bought
+
+[Info], 2021-07-18 01:38:03, cat has been bought
+
+[Info], 2021-07-18 01:38:03, hound has been bought
+
+[Info], 2021-07-18 01:38:03, planted successfully
+
+[Info], 2021-07-18 01:38:03, planted successfully
+
+[Info], 2021-07-18 01:38:03, planted successfully
+
+[Info], 2021-07-18 01:38:03, planted successfully
+
+[Info], 2021-07-18 01:38:09, Factory was built successfully
+
+[Info], 2021-07-18 01:38:11, Factory mill was upgraded to level 2
+
+[Info], 2021-07-18 01:38:12, Factory was built successfully
+
+[Info], 2021-07-18 01:38:14, chicken died
+
+[Info], 2021-07-18 01:38:14, Factory was built successfully
+
+[Info], 2021-07-18 01:38:16, Factory ice cream factory was upgraded to level 2
+
+[Info], 2021-07-18 01:38:16, chicken died
+
+[Info], 2021-07-18 01:38:17, Factory was built successfully
+
+[Info], 2021-07-18 01:38:17, chicken produced egg
+
+[Info], 2021-07-18 01:38:17, chicken produced egg
+
+[Info], 2021-07-18 01:38:18, Factory sewing factory was upgraded to level 2
+
+[Info], 2021-07-18 01:38:20, Factory was built successfully
+
+[Info], 2021-07-18 01:38:20, chicken died
+
+[Error], 2021-07-18 01:38:21, Insufficient money or max level error
+
+[Info], 2021-07-18 01:38:29, cat collected egg
+
+[Info], 2021-07-18 01:38:31, chicken produced egg
+
+[Info], 2021-07-18 01:38:31, cat collected egg
+
+[Info], 2021-07-18 01:38:33, chicken ate
+
+[Info], 2021-07-18 01:38:34, chicken died
+
+[Info], 2021-07-18 01:41:57, login successful
+
+[Info], 2021-07-18 01:41:58, chicken has been bought
+
+[Info], 2021-07-18 01:41:59, chicken has been bought
+
+[Info], 2021-07-18 01:41:59, chicken has been bought
+
+[Info], 2021-07-18 01:41:59, chicken has been bought
+
+[Info], 2021-07-18 01:41:59, cat has been bought
+
+[Info], 2021-07-18 01:41:59, hound has been bought
+
+[Info], 2021-07-18 01:41:59, planted successfully
+
+[Info], 2021-07-18 01:41:59, planted successfully
+
+[Info], 2021-07-18 01:41:59, planted successfully
+
+[Info], 2021-07-18 01:41:59, planted successfully
+
+[Info], 2021-07-18 01:42:00, Factory was built successfully
+
+[Info], 2021-07-18 01:42:01, Factory was built successfully
+
+[Info], 2021-07-18 01:42:02, Factory was built successfully
+
+[Info], 2021-07-18 01:42:02, Factory bakery was upgraded to level 2
+
+[Info], 2021-07-18 01:42:03, Factory ice cream factory was upgraded to level 2
+
+[Info], 2021-07-18 01:42:04, Factory sewing factory was upgraded to level 2
+
+[Info], 2021-07-18 01:42:06, Factory was built successfully
+
+[Info], 2021-07-18 01:42:08, Factory was built successfully
+
+[Info], 2021-07-18 01:42:13, chicken died
+
+[Info], 2021-07-18 01:42:13, chicken produced egg
+
+[Info], 2021-07-18 01:42:13, chicken produced egg
+
+[Info], 2021-07-18 01:42:13, chicken produced egg
+
+[Info], 2021-07-18 01:42:23, chicken died
+
+[Info], 2021-07-18 01:42:26, chicken produced egg
+
+[Info], 2021-07-18 01:42:27, chicken produced egg
+
+[Info], 2021-07-18 01:42:30, chicken died
+
+[Info], 2021-07-18 01:42:33, chicken died
+
+[Info], 2021-07-18 01:42:40, egg got expired
+
+[Info], 2021-07-18 01:42:40, egg got expired
+
+[Info], 2021-07-18 01:42:40, egg got expired
+
+[Info], 2021-07-18 01:46:50, login successful
+
+[Info], 2021-07-18 01:46:51, chicken has been bought
+
+[Info], 2021-07-18 01:46:51, chicken has been bought
+
+[Info], 2021-07-18 01:46:51, chicken has been bought
+
+[Info], 2021-07-18 01:46:51, chicken has been bought
+
+[Info], 2021-07-18 01:46:51, cat has been bought
+
+[Info], 2021-07-18 01:46:51, hound has been bought
+
+[Info], 2021-07-18 01:46:51, planted successfully
+
+[Info], 2021-07-18 01:46:51, planted successfully
+
+[Info], 2021-07-18 01:46:51, planted successfully
+
+[Info], 2021-07-18 01:46:51, planted successfully
+
+[Info], 2021-07-18 01:46:52, Factory was built successfully
+
+[Info], 2021-07-18 01:50:22, login successful
+
+[Info], 2021-07-18 01:50:23, chicken has been bought
+
+[Info], 2021-07-18 01:50:23, chicken has been bought
+
+[Info], 2021-07-18 01:50:23, chicken has been bought
+
+[Info], 2021-07-18 01:50:23, chicken has been bought
+
+[Info], 2021-07-18 01:50:23, cat has been bought
+
+[Info], 2021-07-18 01:50:23, hound has been bought
+
+[Info], 2021-07-18 01:50:23, planted successfully
+
+[Info], 2021-07-18 01:50:23, planted successfully
+
+[Info], 2021-07-18 01:50:23, planted successfully
+
+[Info], 2021-07-18 01:50:23, planted successfully
+
+[Info], 2021-07-18 01:50:25, Factory was built successfully
+
+[Info], 2021-07-18 01:50:25, Factory was built successfully
+
+[Info], 2021-07-18 01:50:26, Factory was built successfully
+
+[Info], 2021-07-18 01:50:27, Factory bakery was upgraded to level 2
+
+[Info], 2021-07-18 01:50:28, Factory ice cream factory was upgraded to level 2
+
+[Info], 2021-07-18 01:50:29, Factory sewing factory was upgraded to level 2
+
+[Info], 2021-07-18 01:50:31, Factory was built successfully
+
+[Info], 2021-07-18 01:50:32, Factory was built successfully
+
+[Info], 2021-07-18 04:27:09, login successful
+
+[Info], 2021-07-18 04:27:11, chicken has been bought
+
+[Info], 2021-07-18 04:27:11, chicken has been bought
+
+[Info], 2021-07-18 04:27:11, chicken has been bought
+
+[Info], 2021-07-18 04:27:11, chicken has been bought
+
+[Info], 2021-07-18 04:27:11, cat has been bought
+
+[Info], 2021-07-18 04:27:11, hound has been bought
+
+[Info], 2021-07-18 04:27:11, planted successfully
+
+[Info], 2021-07-18 04:27:11, planted successfully
+
+[Info], 2021-07-18 04:27:11, planted successfully
+
+[Info], 2021-07-18 04:27:11, planted successfully
+
+[Info], 2021-07-18 04:27:12, Factory was built successfully
+
+[Info], 2021-07-18 04:27:15, lion got caged
+
+[Info], 2021-07-18 04:27:18, hound got killed
+
+[Info], 2021-07-18 04:27:18, bear got killed
+
+[Info], 2021-07-18 04:27:24, chicken produced egg
+
+[Info], 2021-07-18 04:27:24, chicken produced egg
+
+[Info], 2021-07-18 04:27:24, chicken produced egg
+
+[Info], 2021-07-18 04:27:24, chicken produced egg
+
+[Info], 2021-07-18 04:27:26, lion got picked up
+
+[Info], 2021-07-18 04:27:27, egg got picked up
+
+[Info], 2021-07-18 04:27:33, egg got picked up
+
+[Info], 2021-07-18 04:27:33, planted successfully
+
+[Info], 2021-07-18 04:27:35, chicken ate
+
+[Info], 2021-07-18 04:27:36, Product is getting produced
+
+[Info], 2021-07-18 04:27:36, cat got killed
+
+[Info], 2021-07-18 04:27:37, chicken produced egg
+
+[Info], 2021-07-18 04:27:37, chicken produced egg
+
+[Info], 2021-07-18 04:27:37, chicken produced egg
+
+[Info], 2021-07-18 04:27:37, chicken produced egg
+
+[Info], 2021-07-18 04:27:39, chicken died
+
+[Info], 2021-07-18 04:27:43, chicken died
+
+[Info], 2021-07-18 04:27:43, chicken died
+
+[Info], 2021-07-18 04:27:43, chicken died
+
+[Info], 2021-07-18 04:27:50, egg got expired
+
+[Info], 2021-07-18 04:27:50, egg got expired
+
+[Info], 2021-07-18 04:27:56, egg got picked up
+
+[Info], 2021-07-18 04:27:57, Product is getting produced
+
+[Info], 2021-07-18 04:28:03, egg got expired
+
+[Info], 2021-07-18 04:28:03, egg got expired
+
+[Info], 2021-07-18 04:28:03, egg got expired
+
+[Info], 2021-07-18 04:28:52, login successful
+
+[Info], 2021-07-18 04:28:54, chicken has been bought
+
+[Info], 2021-07-18 04:28:54, chicken has been bought
+
+[Info], 2021-07-18 04:28:54, chicken has been bought
+
+[Info], 2021-07-18 04:28:54, chicken has been bought
+
+[Info], 2021-07-18 04:28:54, cat has been bought
+
+[Info], 2021-07-18 04:28:54, hound has been bought
+
+[Info], 2021-07-18 04:28:54, planted successfully
+
+[Info], 2021-07-18 04:28:54, planted successfully
+
+[Info], 2021-07-18 04:28:54, planted successfully
+
+[Info], 2021-07-18 04:28:54, planted successfully
+
+[Info], 2021-07-18 04:28:57, lion got caged
+
+[Info], 2021-07-18 04:28:58, lion got picked up
+
+[Info], 2021-07-18 04:29:07, cat got killed
+
+[Info], 2021-07-18 04:29:07, chicken produced egg
+
+[Info], 2021-07-18 04:29:07, chicken produced egg
+
+[Info], 2021-07-18 04:29:07, chicken produced egg
+
+[Info], 2021-07-18 04:29:07, chicken produced egg
+
+[Info], 2021-07-18 04:29:08, egg got picked up
+
+[Info], 2021-07-18 04:29:11, egg got picked up
+
+[Info], 2021-07-18 04:29:14, Factory was built successfully
+
+[Info], 2021-07-18 04:29:15, Product is getting produced
+
+[Info], 2021-07-18 04:29:17, chicken died
+
+[Info], 2021-07-18 04:29:20, chicken produced egg
+
+[Info], 2021-07-18 04:29:20, chicken produced egg
+
+[Info], 2021-07-18 04:29:20, chicken produced egg
+
+[Info], 2021-07-18 04:29:23, chicken ate
+
+[Info], 2021-07-18 04:29:23, chicken ate
+
+[Info], 2021-07-18 04:29:24, bear got caged
+
+[Info], 2021-07-18 04:29:26, chicken died
+
+[Info], 2021-07-18 04:29:29, tiger got caged
+
+[Info], 2021-07-18 04:29:33, egg got expired
+
+[Info], 2021-07-18 04:29:33, egg got expired
+
+[Info], 2021-07-18 04:29:33, chicken produced egg
+
+[Info], 2021-07-18 04:29:33, chicken produced egg
+
+[Info], 2021-07-18 04:29:40, mill produced flour
+
+[Info], 2021-07-18 04:29:45, flour got picked up
+
+[Info], 2021-07-18 04:29:46, egg got expired
+
+[Info], 2021-07-18 04:29:46, egg got expired
+
+[Info], 2021-07-18 04:29:46, egg got expired
+
+[Info], 2021-07-18 04:29:46, chicken produced egg
+
+[Info], 2021-07-18 04:29:46, chicken produced egg
+
+[Info], 2021-07-18 04:29:47, chicken ate
+
+[Info], 2021-07-18 04:30:51, login successful
+
+[Info], 2021-07-18 04:30:52, chicken has been bought
+
+[Info], 2021-07-18 04:30:52, chicken has been bought
+
+[Info], 2021-07-18 04:30:52, chicken has been bought
+
+[Info], 2021-07-18 04:30:52, chicken has been bought
+
+[Info], 2021-07-18 04:30:52, cat has been bought
+
+[Info], 2021-07-18 04:30:52, hound has been bought
+
+[Info], 2021-07-18 04:30:52, planted successfully
+
+[Info], 2021-07-18 04:30:52, planted successfully
+
+[Info], 2021-07-18 04:30:52, planted successfully
+
+[Info], 2021-07-18 04:30:52, planted successfully
+
+[Info], 2021-07-18 04:30:54, Factory was built successfully
+
+[Info], 2021-07-18 04:30:56, lion got caged
+
+[Info], 2021-07-18 04:31:03, bear got caged
+
+[Info], 2021-07-18 04:31:06, chicken produced egg
+
+[Info], 2021-07-18 04:31:06, chicken produced egg
+
+[Info], 2021-07-18 04:31:06, chicken produced egg
+
+[Info], 2021-07-18 04:31:06, chicken produced egg
+
+[Info], 2021-07-18 04:31:07, egg got picked up
+
+[Info], 2021-07-18 04:31:08, egg got picked up
+
+[Error], 2021-07-18 04:31:09, Product cannot be produced
+
+[Info], 2021-07-18 04:31:12, chicken died
+
+[Error], 2021-07-18 04:31:14, Product cannot be produced
+
+[Info], 2021-07-18 04:31:14, chicken died
+
+[Info], 2021-07-18 04:31:14, chicken died
+
+[Info], 2021-07-18 04:31:30, login successful
+
+[Info], 2021-07-18 04:31:32, chicken has been bought
+
+[Info], 2021-07-18 04:31:32, chicken has been bought
+
+[Info], 2021-07-18 04:31:32, chicken has been bought
+
+[Info], 2021-07-18 04:31:32, chicken has been bought
+
+[Info], 2021-07-18 04:31:32, cat has been bought
+
+[Info], 2021-07-18 04:31:32, hound has been bought
+
+[Info], 2021-07-18 04:31:32, planted successfully
+
+[Info], 2021-07-18 04:31:32, planted successfully
+
+[Info], 2021-07-18 04:31:32, planted successfully
+
+[Info], 2021-07-18 04:31:32, planted successfully
+
+[Info], 2021-07-18 04:31:33, Factory was built successfully
+
+[Info], 2021-07-18 04:31:35, lion got caged
+
+[Info], 2021-07-18 04:31:38, cat got killed
+
+[Info], 2021-07-18 04:31:41, bear got caged
+
+[Info], 2021-07-18 04:31:45, chicken produced egg
+
+[Info], 2021-07-18 04:31:45, chicken produced egg
+
+[Info], 2021-07-18 04:31:45, chicken produced egg
+
+[Info], 2021-07-18 04:31:45, chicken produced egg
+
+[Info], 2021-07-18 04:31:46, planted successfully
+
+[Info], 2021-07-18 04:31:47, egg got picked up
+
+[Info], 2021-07-18 04:31:48, chicken ate
+
+[Info], 2021-07-18 04:31:48, chicken ate
+
+[Info], 2021-07-18 04:31:53, tiger got caged
+
+[Error], 2021-07-18 04:31:54, Product cannot be produced
+
+[Info], 2021-07-18 04:31:58, chicken produced egg
+
+[Info], 2021-07-18 04:31:58, chicken produced egg
+
+[Info], 2021-07-18 04:31:58, chicken produced egg
+
+[Info], 2021-07-18 04:31:58, chicken produced egg
+
+[Info], 2021-07-18 04:31:59, chicken ate
+
+[Info], 2021-07-18 04:32:01, egg got picked up
+
+[Info], 2021-07-18 04:32:02, egg got picked up
+
+[Info], 2021-07-18 04:32:04, chicken died
+
+[Info], 2021-07-18 04:32:07, lion got expired
+
+[Info], 2021-07-18 04:32:08, chicken ate
+
+[Info], 2021-07-18 04:32:11, egg got expired
+
+[Info], 2021-07-18 04:32:11, egg got expired
+
+[Info], 2021-07-18 04:32:11, chicken produced egg
+
+[Info], 2021-07-18 04:32:11, chicken produced egg
+
+[Info], 2021-07-18 04:32:11, chicken produced egg
+
+[Info], 2021-07-18 04:32:13, bear got expired
+
+[Info], 2021-07-18 04:32:14, mill produced flour
+
+[Info], 2021-07-18 04:32:14, chicken ate
+
+[Info], 2021-07-18 04:32:16, Factory mill was upgraded to level 2
+
+[Info], 2021-07-18 04:32:19, egg got picked up
+
+[Info], 2021-07-18 04:32:20, Product is getting produced
+
+[Info], 2021-07-18 04:32:24, egg got expired
+
+[Info], 2021-07-18 04:32:24, egg got expired
+
+[Info], 2021-07-18 04:32:24, chicken produced egg
+
+[Info], 2021-07-18 04:32:24, chicken produced egg
+
+[Info], 2021-07-18 04:32:24, chicken produced egg
+
+[Info], 2021-07-18 04:32:25, tiger got expired
+
+[Info], 2021-07-18 04:32:28, flour got picked up
+
+[Info], 2021-07-18 04:32:32, chicken died
+
+[Info], 2021-07-18 04:32:37, egg got expired
+
+[Info], 2021-07-18 04:32:37, egg got expired
+
+[Info], 2021-07-18 04:32:37, egg got expired
+
+[Info], 2021-07-18 04:32:37, chicken produced egg
+
+[Info], 2021-07-18 04:32:37, chicken produced egg
+
+[Info], 2021-07-18 04:32:40, chicken died
+
+[Info], 2021-07-18 04:32:45, mill produced flour
+
+[Info], 2021-07-18 04:32:45, mill produced flour
+
+[Info], 2021-07-18 04:32:46, chicken died
+
+[Info], 2021-07-18 04:32:49, egg got expired
+
+[Info], 2021-07-18 04:32:49, egg got expired
+
+[Info], 2021-07-18 04:32:49, egg got expired
+
+[Info], 2021-07-18 04:56:17, signup successful
+
+[Info], 2021-07-18 04:57:10, signup successful
+
+[Info], 2021-07-18 05:02:05, signup successful
+
+[Error], 2021-07-18 05:04:13, username not found
+
+[Info], 2021-07-18 05:04:18, signup successful
+
+[Info], 2021-07-18 05:05:03, signup successful
+
+[Info], 2021-07-18 05:06:33, signup successful
+
+[Info], 2021-07-18 05:07:10, signup successful
+
+[Info], 2021-07-18 05:08:34, signup successful
+
+[Info], 2021-07-18 05:12:43, signup successful
+
+[Info], 2021-07-18 05:13:19, signup successful
+
+[Info], 2021-07-18 05:27:39, signup successful
+
+[Info], 2021-07-18 05:36:38, signup successful
+
+[Info], 2021-07-18 05:37:16, signup successful
+
+[Info], 2021-07-18 07:24:36, login successful
+
+[Info], 2021-07-18 07:24:37, chicken has been bought
+
+[Info], 2021-07-18 07:24:37, chicken has been bought
+
+[Info], 2021-07-18 07:24:38, chicken has been bought
+
+[Info], 2021-07-18 07:24:38, chicken has been bought
+
+[Info], 2021-07-18 07:24:38, cat has been bought
+
+[Info], 2021-07-18 07:24:38, hound has been bought
+
+[Info], 2021-07-18 07:24:38, planted successfully
+
+[Info], 2021-07-18 07:24:38, planted successfully
+
+[Info], 2021-07-18 07:24:38, planted successfully
+
+[Info], 2021-07-18 07:24:38, planted successfully
+
+[Info], 2021-07-18 07:24:38, hound got killed
+
+[Info], 2021-07-18 07:24:38, lion got killed
+
+[Info], 2021-07-18 07:25:01, login successful
+
+[Info], 2021-07-18 07:25:03, chicken has been bought
+
+[Info], 2021-07-18 07:25:03, chicken has been bought
+
+[Info], 2021-07-18 07:25:03, chicken has been bought
+
+[Info], 2021-07-18 07:25:03, chicken has been bought
+
+[Info], 2021-07-18 07:25:03, cat has been bought
+
+[Info], 2021-07-18 07:25:03, hound has been bought
+
+[Info], 2021-07-18 07:25:03, planted successfully
+
+[Info], 2021-07-18 07:25:03, planted successfully
+
+[Info], 2021-07-18 07:25:03, planted successfully
+
+[Info], 2021-07-18 07:25:03, planted successfully
+
+[Info], 2021-07-18 07:25:08, chicken has been bought
+
+[Info], 2021-07-18 07:25:08, chicken has been bought
+
+[Info], 2021-07-18 07:25:08, chicken has been bought
+
+[Info], 2021-07-18 07:25:08, chicken has been bought
+
+[Info], 2021-07-18 07:25:08, cat has been bought
+
+[Info], 2021-07-18 07:25:08, hound has been bought
+
+[Info], 2021-07-18 07:25:08, planted successfully
+
+[Info], 2021-07-18 07:25:09, planted successfully
+
+[Info], 2021-07-18 07:25:09, planted successfully
+
+[Info], 2021-07-18 07:25:09, planted successfully
+
+[Info], 2021-07-18 07:25:12, chicken has been bought
+
+[Info], 2021-07-18 07:25:12, chicken has been bought
+
+[Info], 2021-07-18 07:25:12, chicken has been bought
+
+[Info], 2021-07-18 07:25:12, chicken has been bought
+
+[Info], 2021-07-18 07:25:12, cat has been bought
+
+[Info], 2021-07-18 07:25:12, hound has been bought
+
+[Info], 2021-07-18 07:25:12, planted successfully
+
+[Info], 2021-07-18 07:25:12, planted successfully
+
+[Info], 2021-07-18 07:25:12, planted successfully
+
+[Info], 2021-07-18 07:25:12, planted successfully
+
+[Info], 2021-07-18 07:25:20, chicken has been bought
+
+[Info], 2021-07-18 07:25:20, chicken has been bought
+
+[Info], 2021-07-18 07:25:20, chicken has been bought
+
+[Info], 2021-07-18 07:25:20, chicken has been bought
+
+[Info], 2021-07-18 07:25:20, cat has been bought
+
+[Info], 2021-07-18 07:25:20, hound has been bought
+
+[Info], 2021-07-18 07:25:20, planted successfully
+
+[Info], 2021-07-18 07:25:20, planted successfully
+
+[Info], 2021-07-18 07:25:20, planted successfully
+
+[Info], 2021-07-18 07:25:20, planted successfully
+
+[Info], 2021-07-18 07:25:50, login successful
+
+[Info], 2021-07-18 07:25:51, chicken has been bought
+
+[Info], 2021-07-18 07:25:51, chicken has been bought
+
+[Info], 2021-07-18 07:25:51, chicken has been bought
+
+[Info], 2021-07-18 07:25:51, chicken has been bought
+
+[Info], 2021-07-18 07:25:51, cat has been bought
+
+[Info], 2021-07-18 07:25:51, hound has been bought
+
+[Info], 2021-07-18 07:25:51, planted successfully
+
+[Info], 2021-07-18 07:25:51, planted successfully
+
+[Info], 2021-07-18 07:25:51, planted successfully
+
+[Info], 2021-07-18 07:25:51, planted successfully
+
+[Info], 2021-07-18 07:25:57, chicken has been bought
+
+[Info], 2021-07-18 07:25:57, chicken has been bought
+
+[Info], 2021-07-18 07:25:57, chicken has been bought
+
+[Info], 2021-07-18 07:25:57, chicken has been bought
+
+[Info], 2021-07-18 07:25:57, cat has been bought
+
+[Info], 2021-07-18 07:25:57, hound has been bought
+
+[Info], 2021-07-18 07:25:58, planted successfully
+
+[Info], 2021-07-18 07:25:58, planted successfully
+
+[Info], 2021-07-18 07:25:58, planted successfully
+
+[Info], 2021-07-18 07:25:58, planted successfully
+
+[Info], 2021-07-18 07:26:32, login successful
+
+[Info], 2021-07-18 07:26:33, chicken has been bought
+
+[Info], 2021-07-18 07:26:33, chicken has been bought
+
+[Info], 2021-07-18 07:26:33, chicken has been bought
+
+[Info], 2021-07-18 07:26:33, chicken has been bought
+
+[Info], 2021-07-18 07:26:33, cat has been bought
+
+[Info], 2021-07-18 07:26:33, hound has been bought
+
+[Info], 2021-07-18 07:26:33, planted successfully
+
+[Info], 2021-07-18 07:26:33, planted successfully
+
+[Info], 2021-07-18 07:26:33, planted successfully
+
+[Info], 2021-07-18 07:26:33, planted successfully
+
+[Info], 2021-07-18 07:26:35, Factory was built successfully
+
+[Info], 2021-07-18 07:26:38, chicken has been bought
+
+[Info], 2021-07-18 07:26:38, chicken has been bought
+
+[Info], 2021-07-18 07:26:38, chicken has been bought
+
+[Info], 2021-07-18 07:26:38, chicken has been bought
+
+[Info], 2021-07-18 07:26:38, cat has been bought
+
+[Info], 2021-07-18 07:26:38, hound has been bought
+
+[Info], 2021-07-18 07:26:38, planted successfully
+
+[Info], 2021-07-18 07:26:38, planted successfully
+
+[Info], 2021-07-18 07:26:39, planted successfully
+
+[Info], 2021-07-18 07:26:39, planted successfully
+
+[Info], 2021-07-18 07:28:36, login successful
+
+[Info], 2021-07-18 07:28:38, chicken has been bought
+
+[Info], 2021-07-18 07:28:38, chicken has been bought
+
+[Info], 2021-07-18 07:28:38, chicken has been bought
+
+[Info], 2021-07-18 07:28:38, chicken has been bought
+
+[Info], 2021-07-18 07:28:38, cat has been bought
+
+[Info], 2021-07-18 07:28:38, hound has been bought
+
+[Info], 2021-07-18 07:28:38, planted successfully
+
+[Info], 2021-07-18 07:28:38, planted successfully
+
+[Info], 2021-07-18 07:28:38, planted successfully
+
+[Info], 2021-07-18 07:28:38, planted successfully
+
+[Info], 2021-07-18 07:28:38, cat got killed
+
+[Info], 2021-07-18 07:28:40, Factory was built successfully
+
+[Info], 2021-07-18 07:28:41, Factory was built successfully
+
+[Info], 2021-07-18 07:28:45, chicken has been bought
+
+[Info], 2021-07-18 07:28:45, chicken has been bought
+
+[Info], 2021-07-18 07:28:45, chicken has been bought
+
+[Info], 2021-07-18 07:28:45, chicken has been bought
+
+[Info], 2021-07-18 07:28:46, cat has been bought
+
+[Info], 2021-07-18 07:28:46, hound has been bought
+
+[Info], 2021-07-18 07:28:46, planted successfully
+
+[Info], 2021-07-18 07:28:46, planted successfully
+
+[Info], 2021-07-18 07:28:46, planted successfully
+
+[Info], 2021-07-18 07:28:46, planted successfully
+
+[Info], 2021-07-18 07:28:51, chicken died
+
+[Info], 2021-07-18 07:28:53, chicken died
+
+[Info], 2021-07-18 07:28:55, bear got caged
+
+[Info], 2021-07-18 07:28:57, lion got caged
+
+[Info], 2021-07-18 07:28:57, lion got picked up
+
+[Info], 2021-07-18 07:28:59, chicken produced egg
+
+[Info], 2021-07-18 07:28:59, chicken produced egg
+
+[Info], 2021-07-18 07:29:00, bear got picked up
+
+[Info], 2021-07-18 07:29:00, planted successfully
+
+[Info], 2021-07-18 07:29:03, chicken has been bought
+
+[Info], 2021-07-18 07:29:03, chicken has been bought
+
+[Info], 2021-07-18 07:29:03, chicken has been bought
+
+[Info], 2021-07-18 07:29:04, chicken has been bought
+
+[Info], 2021-07-18 07:29:04, cat has been bought
+
+[Info], 2021-07-18 07:29:04, hound has been bought
+
+[Info], 2021-07-18 07:29:04, planted successfully
+
+[Info], 2021-07-18 07:29:04, planted successfully
+
+[Info], 2021-07-18 07:29:04, planted successfully
+
+[Info], 2021-07-18 07:29:04, planted successfully
+
+[Info], 2021-07-18 07:29:55, login successful
+
+[Info], 2021-07-18 07:29:56, chicken has been bought
+
+[Info], 2021-07-18 07:29:56, chicken has been bought
+
+[Info], 2021-07-18 07:29:56, chicken has been bought
+
+[Info], 2021-07-18 07:29:56, chicken has been bought
+
+[Info], 2021-07-18 07:29:56, cat has been bought
+
+[Info], 2021-07-18 07:29:56, hound has been bought
+
+[Info], 2021-07-18 07:29:56, planted successfully
+
+[Info], 2021-07-18 07:29:56, planted successfully
+
+[Info], 2021-07-18 07:29:56, planted successfully
+
+[Info], 2021-07-18 07:29:56, planted successfully
+
+[Info], 2021-07-18 07:31:00, login successful
+
+[Info], 2021-07-18 07:31:01, chicken has been bought
+
+[Info], 2021-07-18 07:31:01, chicken has been bought
+
+[Info], 2021-07-18 07:31:01, chicken has been bought
+
+[Info], 2021-07-18 07:31:01, chicken has been bought
+
+[Info], 2021-07-18 07:31:01, cat has been bought
+
+[Info], 2021-07-18 07:31:01, hound has been bought
+
+[Info], 2021-07-18 07:31:01, planted successfully
+
+[Info], 2021-07-18 07:31:01, planted successfully
+
+[Info], 2021-07-18 07:31:01, planted successfully
+
+[Info], 2021-07-18 07:31:01, planted successfully
+
+[Info], 2021-07-18 07:31:01, hound got killed
+
+[Info], 2021-07-18 07:31:01, lion got killed
