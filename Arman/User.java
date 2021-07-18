@@ -2,6 +2,9 @@ import com.google.gson.Gson;
 
 import java.io.*;
 import java.sql.*;
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -22,12 +25,14 @@ public class User {
         points=0;
         unlockedLevels = 1;
     }
+
     User(String name, String pass, int unlockedLevels,int points) {
         userName = name;
         password = pass;
         this.points=points;
         this.unlockedLevels = unlockedLevels;
     }
+
     static void sqlLoad() throws SQLException{
         String url = "jdbc:mysql://localhost:3306/mydb";
         String username = "root";
@@ -83,10 +88,7 @@ public class User {
 
 
 
-
-
-    static void load()
-    {
+    static void load() {
         try {
             sqlLoad();
         }
@@ -158,40 +160,10 @@ public class User {
         user.points+=Game.mission.reward;
         HashMap<Integer,Integer> map=Game.mission.TimeBonus;
         for (Integer time:map.keySet()){
-            if (Time.time<=time){
+            if (Duration.of(time, ChronoUnit.MINUTES).compareTo(Duration.from(Game.myClock.getLocalTime()))>=0){
                 user.points+=map.get(time);
             }
         }
         save();
-        /*
-        try {
-            FileReader reader = new FileReader("users.txt");
-            Scanner sc = new Scanner(reader);
-            while (sc.hasNextLine())
-            {
-                s = sc.nextLine();
-                if(!s.contains(user.userName))
-                    st += s;
-            }
-            reader.close();
-        }
-        catch (IOException e)
-        {}
-
-        try
-        {
-            FileWriter writer = new FileWriter("users.txt");
-            String json = new Gson().toJson(user);
-            writer.write(st + json + "*\n");
-            writer.close();
-            User.list.clear();
-            User.load();
-        }
-        catch (IOException e)
-        {
-            System.out.println("error");
-            Logger.write('e',"error");
-        }
-         */
     }
 }
