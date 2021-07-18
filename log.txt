@@ -1,6 +1,6 @@
 2021-06-19 00:05:46.396156
 Latest change by :arman
-2021-07-18 12:54:47
+2021-07-18 13:38:34
 
 
 [Info], 2021-07-12 05:01:11, planted successfully
@@ -2014,3 +2014,497 @@ Latest change by :arman
 [Info], 2021-07-18 12:54:47, planted successfully
 
 [Info], 2021-07-18 12:54:47, planted successfully
+
+[Info], 2021-07-18 01:21:56, login successful
+
+[Info], 2021-07-18 01:21:57, chicken has been bought
+
+[Info], 2021-07-18 01:21:57, chicken has been bought
+
+[Info], 2021-07-18 01:21:57, chicken has been bought
+
+[Info], 2021-07-18 01:21:58, chicken has been bought
+
+[Info], 2021-07-18 01:21:58, cat has been bought
+
+[Info], 2021-07-18 01:21:58, hound has been bought
+
+[Info], 2021-07-18 01:21:58, planted successfully
+
+[Info], 2021-07-18 01:21:58, planted successfully
+
+[Info], 2021-07-18 01:21:58, planted successfully
+
+[Info], 2021-07-18 01:21:58, planted successfully
+
+[Info], 2021-07-18 01:22:02, Factory was built successfully
+
+[Info], 2021-07-18 01:22:03, Factory was built successfully
+
+[Info], 2021-07-18 01:22:04, Factory was built successfully
+
+[Info], 2021-07-18 01:22:06, Factory was built successfully
+
+[Info], 2021-07-18 01:22:07, Factory was built successfully
+
+[Info], 2021-07-18 01:22:08, Factory was built successfully
+
+[Info], 2021-07-18 01:22:09, Factory was built successfully
+
+[Info], 2021-07-18 01:24:27, login successful
+
+[Info], 2021-07-18 01:24:28, chicken has been bought
+
+[Info], 2021-07-18 01:24:28, chicken has been bought
+
+[Info], 2021-07-18 01:24:28, chicken has been bought
+
+[Info], 2021-07-18 01:24:28, chicken has been bought
+
+[Info], 2021-07-18 01:24:28, cat has been bought
+
+[Info], 2021-07-18 01:24:29, hound has been bought
+
+[Info], 2021-07-18 01:24:29, planted successfully
+
+[Info], 2021-07-18 01:24:29, planted successfully
+
+[Info], 2021-07-18 01:24:29, planted successfully
+
+[Info], 2021-07-18 01:24:29, planted successfully
+
+[Info], 2021-07-18 01:24:31, Factory was built successfully
+
+[Info], 2021-07-18 01:24:36, chicken died
+
+[Info], 2021-07-18 01:24:43, chicken produced egg
+
+[Info], 2021-07-18 01:24:43, chicken produced egg
+
+[Info], 2021-07-18 01:24:43, chicken produced egg
+
+[Info], 2021-07-18 01:24:45, Factory was built successfully
+
+[Info], 2021-07-18 01:24:47, Factory was built successfully
+
+[Info], 2021-07-18 01:24:48, Factory was built successfully
+
+[Info], 2021-07-18 01:24:50, Factory ice cream factory was upgraded to level 2
+
+[Info], 2021-07-18 01:24:50, chicken died
+
+[Info], 2021-07-18 01:24:51, Factory sewing factory was upgraded to level 2
+
+[Info], 2021-07-18 01:24:51, chicken ate
+
+[Info], 2021-07-18 01:24:52, Factory was built successfully
+
+[Error], 2021-07-18 01:24:53, Insufficient money or max level error
+
+[Info], 2021-07-18 01:24:56, chicken produced egg
+
+[Info], 2021-07-18 01:24:56, chicken produced egg
+
+[Info], 2021-07-18 01:24:58, chicken ate
+
+[Info], 2021-07-18 01:25:00, cat collected egg
+
+[Error], 2021-07-18 01:25:01, Insufficient money or max level error
+
+[Info], 2021-07-18 01:25:02, chicken died
+
+[Info], 2021-07-18 01:25:02, Factory mill was upgraded to level 2
+
+[Info], 2021-07-18 01:25:06, cat collected egg
+
+[Info], 2021-07-18 01:25:10, Factory was built successfully
+
+[Info], 2021-07-18 01:25:10, egg got expired
+
+[Info], 2021-07-18 01:25:10, egg got expired
+
+[Info], 2021-07-18 01:25:10, chicken produced egg
+
+[Info], 2021-07-18 01:25:22, login successful
+
+[Info], 2021-07-18 01:25:23, chicken has been bought
+
+[Info], 2021-07-18 01:25:23, chicken has been bought
+
+[Info], 2021-07-18 01:25:23, chicken has been bought
+
+[Info], 2021-07-18 01:25:23, chicken has been bought
+
+[Info], 2021-07-18 01:25:23, cat has been bought
+
+[Info], 2021-07-18 01:25:23, hound has been bought
+
+[Info], 2021-07-18 01:25:23, planted successfully
+
+[Info], 2021-07-18 01:25:23, planted successfully
+
+[Info], 2021-07-18 01:25:23, planted successfully
+
+[Info], 2021-07-18 01:25:23, planted successfully
+
+[Info], 2021-07-18 01:25:25, Factory was built successfully
+
+[Info], 2021-07-18 01:25:27, Factory was built successfully
+
+[Info], 2021-07-18 01:25:29, Factory bakery was upgraded to level 2
+
+[Info], 2021-07-18 01:25:31, Factory milk packaging factory was upgraded to level 2
+
+[Info], 2021-07-18 01:25:32, Factory was built successfully
+
+[Info], 2021-07-18 01:25:34, Factory was built successfully
+
+[Info], 2021-07-18 01:25:35, Factory was built successfully
+
+[Info], 2021-07-18 01:25:37, chicken produced egg
+
+[Info], 2021-07-18 01:25:37, chicken produced egg
+
+[Info], 2021-07-18 01:25:37, chicken produced egg
+
+[Info], 2021-07-18 01:25:37, chicken produced egg
+
+[Info], 2021-07-18 01:25:38, Factory was built successfully
+
+[Info], 2021-07-18 01:25:39, Factory was built successfully
+
+[Info], 2021-07-18 01:25:41, Factory hen incubator was upgraded to level 2
+
+[Error], 2021-07-18 01:25:42, Insufficient money or max level error
+
+[Info], 2021-07-18 01:25:42, cat collected egg
+
+[Error], 2021-07-18 01:25:44, Insufficient money or max level error
+
+[Error], 2021-07-18 01:25:45, Insufficient money or max level error
+
+[Error], 2021-07-18 01:25:46, Insufficient money or max level error
+
+[Info], 2021-07-18 01:25:47, chicken ate
+
+[Info], 2021-07-18 01:25:49, cat collected egg
+
+[Info], 2021-07-18 01:26:00, login successful
+
+[Info], 2021-07-18 01:26:02, chicken has been bought
+
+[Info], 2021-07-18 01:26:02, chicken has been bought
+
+[Info], 2021-07-18 01:26:02, chicken has been bought
+
+[Info], 2021-07-18 01:26:02, chicken has been bought
+
+[Info], 2021-07-18 01:26:02, cat has been bought
+
+[Info], 2021-07-18 01:26:02, hound has been bought
+
+[Info], 2021-07-18 01:26:02, planted successfully
+
+[Info], 2021-07-18 01:26:02, planted successfully
+
+[Info], 2021-07-18 01:26:02, planted successfully
+
+[Info], 2021-07-18 01:26:02, planted successfully
+
+[Info], 2021-07-18 01:26:03, Factory was built successfully
+
+[Info], 2021-07-18 01:26:04, chicken died
+
+[Info], 2021-07-18 01:26:04, Factory was built successfully
+
+[Info], 2021-07-18 01:26:05, Factory was built successfully
+
+[Info], 2021-07-18 01:26:06, Factory ice cream factory was upgraded to level 2
+
+[Info], 2021-07-18 01:26:07, Factory sewing factory was upgraded to level 2
+
+[Info], 2021-07-18 01:26:08, Factory was built successfully
+
+[Info], 2021-07-18 01:26:09, Factory mill was upgraded to level 2
+
+[Info], 2021-07-18 01:26:11, Factory bakery was upgraded to level 2
+
+[Info], 2021-07-18 01:26:12, chicken died
+
+[Info], 2021-07-18 01:26:16, chicken produced egg
+
+[Info], 2021-07-18 01:26:16, chicken produced egg
+
+[Info], 2021-07-18 01:26:20, chicken died
+
+[Info], 2021-07-18 01:26:29, chicken produced egg
+
+[Info], 2021-07-18 01:26:41, login successful
+
+[Info], 2021-07-18 01:26:43, chicken has been bought
+
+[Info], 2021-07-18 01:26:43, chicken has been bought
+
+[Info], 2021-07-18 01:26:43, chicken has been bought
+
+[Info], 2021-07-18 01:26:43, chicken has been bought
+
+[Info], 2021-07-18 01:26:43, cat has been bought
+
+[Info], 2021-07-18 01:26:43, hound has been bought
+
+[Info], 2021-07-18 01:26:43, planted successfully
+
+[Info], 2021-07-18 01:26:43, planted successfully
+
+[Info], 2021-07-18 01:26:43, planted successfully
+
+[Info], 2021-07-18 01:26:43, planted successfully
+
+[Info], 2021-07-18 01:26:45, Factory was built successfully
+
+[Info], 2021-07-18 01:26:46, Factory was built successfully
+
+[Info], 2021-07-18 01:26:48, Factory was built successfully
+
+[Info], 2021-07-18 01:26:49, Factory was built successfully
+
+[Info], 2021-07-18 01:26:50, Factory was built successfully
+
+[Info], 2021-07-18 01:26:52, Factory was built successfully
+
+[Info], 2021-07-18 01:26:53, Factory was built successfully
+
+[Info], 2021-07-18 01:27:07, login successful
+
+[Info], 2021-07-18 01:27:09, chicken has been bought
+
+[Info], 2021-07-18 01:27:09, chicken has been bought
+
+[Info], 2021-07-18 01:27:09, chicken has been bought
+
+[Info], 2021-07-18 01:27:09, chicken has been bought
+
+[Info], 2021-07-18 01:27:09, cat has been bought
+
+[Info], 2021-07-18 01:27:09, hound has been bought
+
+[Info], 2021-07-18 01:27:09, planted successfully
+
+[Info], 2021-07-18 01:27:09, planted successfully
+
+[Info], 2021-07-18 01:27:09, planted successfully
+
+[Info], 2021-07-18 01:27:09, planted successfully
+
+[Info], 2021-07-18 01:27:10, Factory was built successfully
+
+[Info], 2021-07-18 01:27:11, Factory was built successfully
+
+[Info], 2021-07-18 01:27:13, Factory was built successfully
+
+[Info], 2021-07-18 01:27:14, Factory was built successfully
+
+[Info], 2021-07-18 01:27:14, Factory was built successfully
+
+[Info], 2021-07-18 01:27:15, Factory bakery was upgraded to level 2
+
+[Info], 2021-07-18 01:27:16, Factory ice cream factory was upgraded to level 2
+
+[Error], 2021-07-18 01:27:17, Insufficient money or max level error
+
+[Info], 2021-07-18 01:27:19, Factory was built successfully
+
+[Info], 2021-07-18 01:27:22, Factory was built successfully
+
+[Info], 2021-07-18 01:27:23, chicken produced egg
+
+[Info], 2021-07-18 01:27:23, chicken produced egg
+
+[Info], 2021-07-18 01:27:23, chicken produced egg
+
+[Info], 2021-07-18 01:27:23, chicken produced egg
+
+[Error], 2021-07-18 01:27:24, Insufficient money or max level error
+
+[Error], 2021-07-18 01:27:25, Insufficient money or max level error
+
+[Error], 2021-07-18 01:27:26, Insufficient money or max level error
+
+[Info], 2021-07-18 01:27:26, chicken ate
+
+[Error], 2021-07-18 01:27:27, Insufficient money or max level error
+
+[Info], 2021-07-18 01:27:30, chicken ate
+
+[Info], 2021-07-18 01:27:33, chicken died
+
+[Info], 2021-07-18 01:34:27, login successful
+
+[Info], 2021-07-18 01:34:28, chicken has been bought
+
+[Info], 2021-07-18 01:34:28, chicken has been bought
+
+[Info], 2021-07-18 01:34:28, chicken has been bought
+
+[Info], 2021-07-18 01:34:28, chicken has been bought
+
+[Info], 2021-07-18 01:34:28, cat has been bought
+
+[Info], 2021-07-18 01:34:28, hound has been bought
+
+[Info], 2021-07-18 01:34:28, planted successfully
+
+[Info], 2021-07-18 01:34:28, planted successfully
+
+[Info], 2021-07-18 01:34:28, planted successfully
+
+[Info], 2021-07-18 01:34:28, planted successfully
+
+[Info], 2021-07-18 01:35:17, login successful
+
+[Info], 2021-07-18 01:35:18, chicken has been bought
+
+[Info], 2021-07-18 01:35:18, chicken has been bought
+
+[Info], 2021-07-18 01:35:18, chicken has been bought
+
+[Info], 2021-07-18 01:35:18, chicken has been bought
+
+[Info], 2021-07-18 01:35:18, cat has been bought
+
+[Info], 2021-07-18 01:35:18, hound has been bought
+
+[Info], 2021-07-18 01:35:18, planted successfully
+
+[Info], 2021-07-18 01:35:18, planted successfully
+
+[Info], 2021-07-18 01:35:18, planted successfully
+
+[Info], 2021-07-18 01:35:18, planted successfully
+
+[Info], 2021-07-18 01:36:06, login successful
+
+[Info], 2021-07-18 01:36:07, chicken has been bought
+
+[Info], 2021-07-18 01:36:07, chicken has been bought
+
+[Info], 2021-07-18 01:36:07, chicken has been bought
+
+[Info], 2021-07-18 01:36:07, chicken has been bought
+
+[Info], 2021-07-18 01:36:07, cat has been bought
+
+[Info], 2021-07-18 01:36:07, hound has been bought
+
+[Info], 2021-07-18 01:36:07, planted successfully
+
+[Info], 2021-07-18 01:36:07, planted successfully
+
+[Info], 2021-07-18 01:36:07, planted successfully
+
+[Info], 2021-07-18 01:36:07, planted successfully
+
+[Info], 2021-07-18 01:37:05, login successful
+
+[Info], 2021-07-18 01:37:07, chicken has been bought
+
+[Info], 2021-07-18 01:37:07, chicken has been bought
+
+[Info], 2021-07-18 01:37:07, chicken has been bought
+
+[Info], 2021-07-18 01:37:07, chicken has been bought
+
+[Info], 2021-07-18 01:37:07, cat has been bought
+
+[Info], 2021-07-18 01:37:07, hound has been bought
+
+[Info], 2021-07-18 01:37:07, planted successfully
+
+[Info], 2021-07-18 01:37:07, planted successfully
+
+[Info], 2021-07-18 01:37:07, planted successfully
+
+[Info], 2021-07-18 01:37:07, planted successfully
+
+[Info], 2021-07-18 01:37:46, login successful
+
+[Info], 2021-07-18 01:37:48, chicken has been bought
+
+[Info], 2021-07-18 01:37:48, chicken has been bought
+
+[Info], 2021-07-18 01:37:48, chicken has been bought
+
+[Info], 2021-07-18 01:37:48, chicken has been bought
+
+[Info], 2021-07-18 01:37:48, cat has been bought
+
+[Info], 2021-07-18 01:37:48, hound has been bought
+
+[Info], 2021-07-18 01:37:48, planted successfully
+
+[Info], 2021-07-18 01:37:48, planted successfully
+
+[Info], 2021-07-18 01:37:48, planted successfully
+
+[Info], 2021-07-18 01:37:48, planted successfully
+
+[Info], 2021-07-18 01:38:01, login successful
+
+[Info], 2021-07-18 01:38:03, chicken has been bought
+
+[Info], 2021-07-18 01:38:03, chicken has been bought
+
+[Info], 2021-07-18 01:38:03, chicken has been bought
+
+[Info], 2021-07-18 01:38:03, chicken has been bought
+
+[Info], 2021-07-18 01:38:03, cat has been bought
+
+[Info], 2021-07-18 01:38:03, hound has been bought
+
+[Info], 2021-07-18 01:38:03, planted successfully
+
+[Info], 2021-07-18 01:38:03, planted successfully
+
+[Info], 2021-07-18 01:38:03, planted successfully
+
+[Info], 2021-07-18 01:38:03, planted successfully
+
+[Info], 2021-07-18 01:38:09, Factory was built successfully
+
+[Info], 2021-07-18 01:38:11, Factory mill was upgraded to level 2
+
+[Info], 2021-07-18 01:38:12, Factory was built successfully
+
+[Info], 2021-07-18 01:38:14, chicken died
+
+[Info], 2021-07-18 01:38:14, Factory was built successfully
+
+[Info], 2021-07-18 01:38:16, Factory ice cream factory was upgraded to level 2
+
+[Info], 2021-07-18 01:38:16, chicken died
+
+[Info], 2021-07-18 01:38:17, Factory was built successfully
+
+[Info], 2021-07-18 01:38:17, chicken produced egg
+
+[Info], 2021-07-18 01:38:17, chicken produced egg
+
+[Info], 2021-07-18 01:38:18, Factory sewing factory was upgraded to level 2
+
+[Info], 2021-07-18 01:38:20, Factory was built successfully
+
+[Info], 2021-07-18 01:38:20, chicken died
+
+[Error], 2021-07-18 01:38:21, Insufficient money or max level error
+
+[Info], 2021-07-18 01:38:29, cat collected egg
+
+[Info], 2021-07-18 01:38:31, chicken produced egg
+
+[Info], 2021-07-18 01:38:31, cat collected egg
+
+[Info], 2021-07-18 01:38:33, chicken ate
+
+[Info], 2021-07-18 01:38:34, chicken died

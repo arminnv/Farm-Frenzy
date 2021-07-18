@@ -23,6 +23,7 @@ import java.io.IOException;
 
     static BufferedImage main_back;
     static BufferedImage login_back;
+    static BufferedImage pause;
 
     static BufferedImage egg;
     static BufferedImage feather;
@@ -45,6 +46,8 @@ import java.io.IOException;
     static BufferedImage[] bakery=new BufferedImage[2];
     static BufferedImage[] incubator=new BufferedImage[2];
 
+    static BufferedImage upgrade;
+
     static BufferedImage truck;
     static BufferedImage warehouse;
     static BufferedImage grass;
@@ -57,6 +60,7 @@ import java.io.IOException;
         {
             main_back=ImageIO.read(new File("mainb.jpg"));
             login_back=ImageIO.read(new File("login_back.jpg"));
+            pause=ImageIO.read(new File("pause.jpg"));
 
             warehouse=ImageIO.read(new File("warehouse.png"));
 
@@ -139,6 +143,8 @@ import java.io.IOException;
             iceCreamFactory[1] = ImageIO.read(new File("factory/ice cream2.png"));
             bakery[1] = ImageIO.read(new File("factory/bakery2.png"));
             incubator[1] = ImageIO.read(new File("factory/incubator2.png"));
+
+            upgrade=ImageIO.read(new File("upgrade.png"));
 
             grass = ImageIO.read(new File("grass.png"));
             well[0] = ImageIO.read(new File("well.png"));

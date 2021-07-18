@@ -19,6 +19,7 @@ public class Canvas extends JComponent{
     JPanel mousePanel=new JPanel();
     JButton pause=new JButton();
     JButton tasks=new JButton("Tasks");
+    JLabel coins=new JLabel();
     static int y0 ;
     ArrayList<JButton> jButtons=new ArrayList<>();
     ArrayList<JButton> factoryButtons=new ArrayList<>();
@@ -124,7 +125,7 @@ public class Canvas extends JComponent{
                 Menu.getTaskMenuInstance().setVisible(true);
             }
         });
-
+        tasks.setBounds(700,670,100,40);
 
 
         pause.addActionListener(new ActionListener() {
@@ -135,8 +136,15 @@ public class Canvas extends JComponent{
                 Menu.getPauseMenuInstance().setVisible(true);
             }
         });
-        tasks.setBounds(700,670,100,40);
+        pause.setIcon(FactoryWellGraphics.resizeIcon(new ImageIcon(Images.pause),60,60
+        ));
+
         pause.setBounds(600,670,60,60);
+
+        coins.setBackground(Color.GREEN);
+        coins.setOpaque(true);
+        coins.setBounds(850,710,130,40);
+        container.add(coins);
         container.add(tasks);
         container.add(pause);
         container.add(Warehouse.getInstance().jButton);
@@ -182,6 +190,8 @@ public class Canvas extends JComponent{
             paintCats(gg);
             paintHounds(gg);
             Game.myClock.setTimeLabel();
+            coins.setText("Coins: "+Game.getCoins());
+            coins.repaint();
             //TODO
             //uncomment to see jpanel
             //mousePanel.repaint();

@@ -33,11 +33,12 @@ public class FactoryWellGraphics {
         jPanel.setLayout(new GroupLayout(jPanel));
         jPanel.setVisible(true);
         if (upgradable){
-            upgrade=new JButton("Upgrade");
+            upgrade=new JButton();
             if (alignment==LEFT_ALIGNMENT)
                 upgrade.setBounds(Scale(scale,X_SCALE-SPACE_SCALE-BUTTON_W_SCALE),Scale(scale,SPACE_SCALE),Scale(scale,BUTTON_W_SCALE),Scale(scale,BUTTON_H_SCALE));
             else//=RIGHT
                 upgrade.setBounds(Scale(scale,SPACE_SCALE),Scale(scale,SPACE_SCALE),Scale(scale,BUTTON_W_SCALE),Scale(scale,BUTTON_H_SCALE));
+            upgrade.setIcon(resizeIcon(new ImageIcon(Images.upgrade),Scale(scale,BUTTON_W_SCALE),Scale(scale,BUTTON_H_SCALE)));
             jPanel.add(upgrade);
         }
 
