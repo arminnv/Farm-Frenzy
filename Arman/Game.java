@@ -10,6 +10,14 @@ public class Game {
     public static MyClock myClock=new MyClock();
     static Mission mission;
     static void MyStart(Mission mission){
+        Animal.deleteAnimals();
+        Factory.deleteFactories();
+        Truck.deleteTruck();
+        Plant.deletePlants();
+        Well.deleteWell();
+        Warehouse.deleteWarehouse();
+        coins=4000;
+
         System.out.println("level "+mission.level+" started");
         Game.mission = mission;
         Task.add(mission);
@@ -29,7 +37,7 @@ public class Game {
         Menu.game=true;
         Canvas canvas = new Canvas();
         canvas.frame.setBackground(Color.green);
-        myClock=new MyClock();
+        myClock=new MyClock();//important
         canvas.setFrame();
     }
     static void run(Mission mission) {
@@ -58,21 +66,41 @@ public class Game {
             e.printStackTrace();
         }
          */
-        while (!Task.check(mission.level)) {
+        while ( (!Task.check(mission.level) )&&Main.ifRun) {
             //InputProcessor.process();
             Time.update();
 
             try {
-            Thread.sleep(30);
-
+            Thread.sleep(20);
             }
-            catch (Exception e)
-            {
+            catch (Exception e) {
                 e.printStackTrace();
             }
         }
-        Main.ifRun=false;
-        Menu.getMainMenuInstance().setVisible(true);
+        if (!Main.ifRun){//if not restart or map selection or logout
+            Task.clear();
+            if (Main.ifRestart){
+                Main.ifRestart=false;
+                Main.ifRun=true;
+
+            }
+            else if (Main.ifMap){
+                Main.ifMap=false;
+                Menu.getMainMenuInstance().setVisible(true);
+                Canvas.frame.setVisible(false);
+            }
+            else if (Main.ifLogout){
+                Main.ifLogout=false;
+                Canvas.frame.setVisible(false);
+                Menu.getLoginMenuInstance().setVisible(true);
+            }
+
+        }
+        else {
+            Main.ifRun = false;
+            Menu.getMainMenuInstance().setVisible(true);
+            Canvas.frame.setVisible(false);
+        }
     }
 
     public static void addCoins(int coins) {

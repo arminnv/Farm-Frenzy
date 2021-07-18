@@ -1,5 +1,8 @@
 public class Main {
     public static boolean ifRun=false;
+    public static boolean ifMap=false;
+    public static boolean ifLogout=false;
+    public static boolean ifRestart=false;
     public static int level=1;
     public static void main(String[] args)
     {
@@ -7,7 +10,7 @@ public class Main {
         Mission.write();
         User.load();
         Mission.load();
-        User.current = User.list.get(0);
+        //User.current = User.list.get(0);
         Menu.getLoginMenuInstance().setVisible(true);
         while (true) {
             while (!ifRun) {

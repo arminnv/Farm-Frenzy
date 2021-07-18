@@ -34,6 +34,9 @@ public class Warehouse {
             w=new Warehouse();
         return w;
     }
+    public static void deleteWarehouse(){
+        w=null;
+    }
 
     public boolean add(Product product){
         if (occupied+product.space<=capacity) {

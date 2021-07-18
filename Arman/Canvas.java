@@ -23,9 +23,30 @@ public class Canvas extends JComponent{
     static int y0 ;
     ArrayList<JButton> jButtons=new ArrayList<>();
     ArrayList<JButton> factoryButtons=new ArrayList<>();
-    void setFrame()
-    {
+    Canvas() {
+        frame = new JFrame("Farm Frenzy");
+        mousePanel=new JPanel();
+        pause=new JButton();
+        tasks=new JButton("Tasks");
+        coins=new JLabel();
+        jButtons=new ArrayList<>();
+        factoryButtons=new ArrayList<>();
+        Thread animationThread = new Thread(new Runnable() {
+            public void run() {
+                while (true) {
+                    repaint();
+                    revalidate();
+                    Well.getInstance().wellGraphics.jPanel.repaint();
+                    try {Thread.sleep(40);} catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+                }
+            }
+        });
+        animationThread.start();
+    }
 
+    void setFrame() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(w, h);
         frame.setLocationRelativeTo(null);
@@ -155,25 +176,9 @@ public class Canvas extends JComponent{
         container.add(Well.getInstance().wellGraphics.jPanel);
     }
 
-    Canvas()
-    {
-        Thread animationThread = new Thread(new Runnable() {
-            public void run() {
-                while (true) {
-                    repaint();
-                    revalidate();
-                    Well.getInstance().wellGraphics.jPanel.repaint();
-                    try {Thread.sleep(10);} catch (Exception ex) {
-                        ex.printStackTrace();
-                    }
-                }
-            }
-        });
-        animationThread.start();
-    }
 
-    public void paintComponent(Graphics g)
-    {
+
+    public void paintComponent(Graphics g) {
         Graphics2D gg = (Graphics2D) g;
 
 

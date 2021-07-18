@@ -2,7 +2,7 @@ public class Time {
 
     static double time = 0;
 
-    static boolean isPaused;
+    static boolean isPaused=false;
     public static final double DT=0.005;
     static double dt = DT;
     static void turn(int n) {

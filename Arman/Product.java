@@ -134,5 +134,8 @@ public class Product {
             a=0.5;
         return Math.abs(x - X) < a && Math.abs(y - Y) < a;
     }
+    public static void deleteProducts(){
+        Product.list=new ArrayList<>();
+    }
 
 }

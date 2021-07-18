@@ -204,24 +204,40 @@ public class Menu {
             restart.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    Main.ifRun=false;
+                    Main.ifRestart=true;
+                    Game.myClock.setPaused(false);
+                    pauseMenu.setVisible(false);
+                    Time.setIsPaused(false);
                     //TODO
                 }
             });
             map.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    Main.ifRun=false;
+                    Main.ifMap=true;
+                    Game.myClock.setPaused(false);
+                    pauseMenu.setVisible(false);
+                    Time.setIsPaused(false);
                     //TODO
                 }
             });
             logout.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    Main.ifRun=false;
+                    Main.ifLogout=true;
+                    Game.myClock.setPaused(false);
+                    pauseMenu.setVisible(false);
+                    Time.setIsPaused(false);
                     //TODO
                 }
             });
             exit.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    User.save();
                     //TODO
                     System.exit(0);
                 }

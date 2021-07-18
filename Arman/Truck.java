@@ -40,6 +40,9 @@ public class Truck {
             t=new Truck();
         return t;
     }
+    public static void deleteTruck(){
+        t=null;
+    }
     public void TruckUnload(String item){
         if (Product.nameList.contains(item))
             unloadProduct(item);

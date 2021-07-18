@@ -22,7 +22,14 @@ public abstract class Animal {
     double t = 1;
     int d = Animal.randomDirection();
     static Random rand = new Random();
-
+    public static void deleteAnimals(){
+        animalCount=new HashMap<>();
+        animalIDNumHashMap=new HashMap<>();
+        Domestic.list=new ArrayList<>();
+        Wild.list=new ArrayList<>();
+        Hound.list=new ArrayList<>();
+        Cat.list=new ArrayList<>();
+    }
     Animal(){}
     protected Animal(String type, int price, int step, int space, int h, int w){
         this.x=random();

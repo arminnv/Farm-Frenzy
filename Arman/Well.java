@@ -29,6 +29,9 @@ public class Well {
             w=new Well();
         return w;
     }
+    public static void deleteWell(){
+        w=null;
+    }
     public void water(double x, double y){
         System.out.println(x+" "+y);
         if ((capacity>0)&&(x>0)&&(x<6) &&(y>0)&&(y<6)){

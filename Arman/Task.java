@@ -40,10 +40,8 @@ public class Task {
     static boolean check(int level)
     {
         boolean result  = true;
-        for (int i=0; i<list.size(); i++)
-        {
-            if(!list.get(i).complete)
-            {
+        for (int i=0; i<list.size(); i++) {
+            if(!list.get(i).complete) {
                 result = false;
                 break;
             }
@@ -52,7 +50,7 @@ public class Task {
             User.current.unlockedLevels = Math.max(User.current.unlockedLevels, level + 1);
             User.levelUp(User.current);
 
-            System.out.println("****** level complete ******");
+            //System.out.println("****** level complete ******");
             Logger.write('i',"level complete");
             clear();
         }
@@ -68,6 +66,9 @@ public class Task {
         Wild.list.clear();
         Product.list.clear();
         Task.list.clear();
+        Truck.deleteTruck();
+        Warehouse.deleteWarehouse();
+        Factory.deleteFactories();
         for (int i=0; i<6; i++)
             for (int j=0; j<6; j++)
                 Plant.num[i][j] = 0;

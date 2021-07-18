@@ -165,4 +165,7 @@ public abstract class Factory {
         Logger.write('e',"Factory name is invalid");
         return false;
     }
+    public static void deleteFactories(){
+        factories=new ArrayList<>();
+    }
 }
