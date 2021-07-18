@@ -1,9 +1,10 @@
 public class Time {
 
     static double time = 0;
-    static double dt = 0.005;
-    static boolean isPaused;
 
+    static boolean isPaused;
+    public static final double DT=0.005;
+    static double dt = DT;
     static void turn(int n) {
         for(int i=0; i<n; i++) {
             update();

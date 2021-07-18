@@ -33,7 +33,7 @@ public abstract class Factory {
         level=1;
         maxAllowedLevel=2;
         factoryGraphics=new FactoryWellGraphics(2.7,true,image,alignment);
-        factoryGraphics.jProgressBar.setMaximum(productionDefaultDuration);
+        factoryGraphics.jProgressBar.setMaximum((int)(productionDefaultDuration/Time.DT));
         //TODO
         factoryGraphics.mainButton.addActionListener(new ActionListener() {
             @Override
@@ -71,7 +71,7 @@ public abstract class Factory {
     }
     protected void produce() {
         for (int number=level;number>=1;number--) {
-            if (Warehouse.getInstance().inquiry(validType, number)) {
+            if (Warehouse.getInstance().inquiry(validType, number)&&(underProduction==0)) {
                 productionDuration = (int) Math.ceil(productionDefaultDuration * number * 1.0 / level);
                 Warehouse.getInstance().remove(Product.newProduct(validType), number);
                 underProduction = number;//Class.forName(outputType.getTypeName()).getDeclaredConstructor().newInstance()
@@ -100,7 +100,7 @@ public abstract class Factory {
     public void update(){
         if (productionDuration>0){
             productionDuration-=Time.dt;
-            factoryGraphics.jProgressBar.setValue((int)(productionDefaultDuration-productionDuration));
+            factoryGraphics.jProgressBar.setValue((int) ((productionDefaultDuration-productionDuration)/Time.DT) );
         }
         if (productionDuration<=0){
             for(int i=0;i<underProduction;i++){
@@ -134,14 +134,15 @@ public abstract class Factory {
         System.out.println("Factory was not found");
         Logger.write('e',"Factory was not found");
     }
-    public static void build(String name,JFrame jFrame){
+    public static boolean build(String name,JFrame jFrame){
+        System.out.println(name);
         for (String name1:nameList){
             if (name1.equals(name)){
                 for (Factory factory:factories){
                     if (factory.name.equals(name)){
                         System.out.println("Factory already exists");
                         Logger.write('e',"Factory already exists");
-                        return;
+                        return false;
                     }
                 }
                 Factory f=createFactory(name,false);
@@ -153,14 +154,15 @@ public abstract class Factory {
                         container.add(f.factoryGraphics.jPanel);
                         System.out.println("Factory was built successfully");
                         Logger.write('i',"Factory was built successfully");
-                        return;
+                        return true;
                     }
                 }
                 System.out.println("Error");
-                return;
+                return false;
             }
         }
         System.out.println("Factory name is invalid");
         Logger.write('e',"Factory name is invalid");
+        return false;
     }
 }

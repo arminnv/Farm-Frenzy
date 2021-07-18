@@ -76,6 +76,8 @@ public class Menu {
                     User.list.add(newUser);
                     Menu.showMessage('i',"Successful signup");
                     Logger.write('i', "signup successful");
+                    User.save();
+                    /*
                     try
                     {
                         FileWriter writer = new FileWriter("users.txt",true);
@@ -88,6 +90,7 @@ public class Menu {
                         Menu.showMessage('e',"Error in saving the new user");
                         Logger.write('e',"error");
                     }
+                     */
             }});
             exit.addActionListener(new ActionListener() {
                 @Override

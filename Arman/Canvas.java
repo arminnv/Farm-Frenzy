@@ -92,16 +92,17 @@ public class Canvas extends JComponent{
             b.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    Factory.build(b.getName(),Canvas.frame);
+                    boolean b1=Factory.build(b.getName(),Canvas.frame);
                     FactoryWellGraphics graphics;
-                    if (!Factory.factories.isEmpty()) {
+                    if (!Factory.factories.isEmpty()&&b1) {
                         graphics= Factory.factories.get(Factory.factories.size()-1).factoryGraphics;
                         System.out.println(graphics.scale);
                         System.out.println(FactoryWellGraphics.X_SCALE*graphics.scale);
                         graphics.jPanel.setBounds(b.getX(), b.getY(), (int)(FactoryWellGraphics.X_SCALE*graphics.scale),(int)(FactoryWellGraphics.Y_SCALE*graphics.scale));
+                        Container container1=Canvas.frame.getContentPane();
+                        container1.remove(b);
                     }
-                    Container container1=Canvas.frame.getContentPane();
-                    container1.remove(b);
+
                 }
             });
             int x=30;
